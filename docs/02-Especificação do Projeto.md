@@ -12,15 +12,37 @@ Vale ainda ressaltar que as histórias de usuário foram criadas para ilustrar s
 
 
 
-| <img src= '/docs/img/persona1.jpg' width="250px">  | **Ana Silva** | |
+| <img src= '/docs/img/persona1.jpg' width="200px">  | **Ana Silva** | |
 | :-------------: | :-------------: | :-------------: 
 | Idade | 35 anos| 
 |  Ocupação | Professora  |
 |Aplicativos| Whatsapp, Instragram |
 | **Motivações**  | **Frustações** | **Hobbies e História**  |
 | Encontrar cuidadores confiáveis para cuidar de seus filhos enquanto está no trabalho|Dificuldade em conciliar horários de trabalho com horários disponíveis de cuidadores qualificados; | Gosta de ler, fazer atividade física; |
-||Dificuldade em encontrar um serviço que disponha de diversos profissionais e suas especializações; |Gosta de passear no parque aos finais de semana com a família; |
-||||Mãe de dois filhos pequenos|
+||Dificuldade em encontrar um serviço que disponha de diversos profissionais e suas especializações; |Gosta de passear no parque aos finais de semana com a família;|
+|||Mãe de dois filhos pequenos|
+
+| <img src= '/docs/img/persona2.jpg' width="200px">  | **João Oliveira** | |
+| :-------------: | :-------------: | :-------------: 
+| Idade | 68 anos| 
+|  Ocupação | Aposentado  |
+|Aplicativos| Facebook e Youtube |
+| **Motivações**  | **Frustações** | **Hobbies e História**  |
+| Encontrar profissionais que possam auxiliá-lo em tarefas diárias;|Encontrar pessoas de confiança para cuidar de sua saúde e bem-estar |Gosta de jardinagem;|
+| Ter um profissional que possa ajudá-lo em suas necessidades básicas;|Encontrar pessoas especializadas em cuidar de idosos; |Gosta de assistir filmes clássicos;|
+| Encontrar alguém que faça companhia;||Frequenta grupos de leitura na biblioteca local;|
+|||Viúvo, mora sozinho em um bairro tranquilo;|
+
+
+| <img src= '/docs/img/persona3.jpg' width="200px">  | **Marina Santos** | |
+| :-------------: | :-------------: | :-------------: 
+| Idade | 28 anos| 
+|  Ocupação | Gerente de Marketing  |
+|Aplicativos| Linkedln e Spotify |
+| **Motivações**  | **Frustações** | **Hobbies e História**  |
+| Encontrar cuidadores especializados para cuidar de seu irmão mais novo que possui deficiência física, enquanto ela está no trabalho. |Dificuldade em encontrar profissionais experientes e dedicados para cuidar das necessidades específicas de seu irmão;| Gosta de praticar yoga, cozinhar receitas saudáveis;| 
+|||Participar de eventos culturais;|
+|||Mora com o seu irmão em um apartamento na cidade; |
 
 ## Histórias de Usuários
 
