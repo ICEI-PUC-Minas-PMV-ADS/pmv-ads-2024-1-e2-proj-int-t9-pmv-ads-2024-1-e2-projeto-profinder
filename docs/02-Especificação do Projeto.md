@@ -18,7 +18,7 @@ Vale ainda ressaltar que as histórias de usuário foram criadas para ilustrar s
 |  Ocupação | Professora  |
 |Aplicativos| Whatsapp, Instragram |
 | **Motivações**  | **Frustações** | **Hobbies e História**  |
-| Encontrar cuidadores confiáveis para cuidar de seus filhos enquanto está no trabalho||Dificuldade em conciliar horários de trabalho com horários disponíveis de cuidadores qualificados; | Gosta de ler, fazer atividade física; |
+| Encontrar cuidadores confiáveis para cuidar de seus filhos enquanto está no trabalho|Dificuldade em conciliar horários de trabalho com horários disponíveis de cuidadores qualificados; | Gosta de ler, fazer atividade física; |
 ||Dificuldade em encontrar um serviço que disponha de diversos profissionais e suas especializações; |Gosta de passear no parque aos finais de semana com a família; |
 ||||Mãe de dois filhos pequenos|
 
