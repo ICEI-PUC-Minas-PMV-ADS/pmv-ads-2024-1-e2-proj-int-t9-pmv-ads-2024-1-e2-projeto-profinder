@@ -2,25 +2,25 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+A definição precisa do problema e dos pontos mais relevantes a serem abordados neste projeto foi realizada com a participação ativa dos usuários. Inicialmente, os membros da equipe conduziram um trabalho de imersão, o qual envolveu observações diretas dos usuários em seus ambientes naturais e a realização de entrevistas abertas e estruturadas. 
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+Com base nos dados obtidos, as personas foram desenvolvidas para representar perfis típicos de usuários do ProFinder. Cada persona foi cuidadosamente elaborada, levando em consideração características demográficas, comportamentais, motivações, frustrações, hobbies e histórias de vida relevantes para o contexto do projeto. 
+
+Vale ainda ressaltar que as histórias de usuário foram criadas para ilustrar situações e cenários comuns enfrentados pelos usuários ao buscar e fornecer serviços de cuidado. 
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+| <img src= '/docs/img/persona1.jpg' width="250px">  | **Ana Silva** | |
+| :-------------: | :-------------: | :-------------: 
+| Idade | 35 anos| 
+|  Ocupação | Professora  |
+|Aplicativos| Whatsapp, Instragram |
+| **Motivações**  | **Frustações** | **Hobbies e História**  |
+| Encontrar cuidadores confiáveis para cuidar de seus filhos enquanto está no trabalho||Dificuldade em conciliar horários de trabalho com horários disponíveis de cuidadores qualificados; | Gosta de ler, fazer atividade física; |
+||Dificuldade em encontrar um serviço que disponha de diversos profissionais e suas especializações; |Gosta de passear no parque aos finais de semana com a família; |
+||||Mãe de dois filhos pequenos|
 
 ## Histórias de Usuários
 
