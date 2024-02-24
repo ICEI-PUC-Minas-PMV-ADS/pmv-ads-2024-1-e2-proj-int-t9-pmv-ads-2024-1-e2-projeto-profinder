@@ -1,6 +1,5 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
 A definição precisa do problema e dos pontos mais relevantes a serem abordados neste projeto foi realizada com a participação ativa dos usuários. Inicialmente, os membros da equipe conduziram um trabalho de imersão, o qual envolveu observações diretas dos usuários em seus ambientes naturais e a realização de entrevistas abertas e estruturadas. 
 
