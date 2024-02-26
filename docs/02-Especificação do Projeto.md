@@ -51,15 +51,28 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|------------------------------------|----------------------------------------|
 |Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
 |Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+|     Ana Silva      | Encontrar cuidadores para meus filhos| Deixar meus filhos em segurança enquanto trabalho |
+|                    | Filtrar os cuidadores por avaliação, preço e disponibilidade | Encontrar o cuidador ideal de acordo com as minhas necessidades |
+|                    | Conseguir entrar em contato com os cuidadores pelo aplicativo  | Fazer perguntas e agendar uma entrevista |
+|                    | Gerenciar antigos contratos com cuidadores | Ter um acompanhamento dos serviços já contratados |
+|                    | Avaliar os cuidadores após serviço prestado | Ajudar outros pais a encontrar um cuidador ideal |
+|   João Oliveira    | Encontrar cuidadores de idosos | Proporcionar companhia e ajuda em tarefas diárias |
+|                    | Visualizar comentários de outras pessoas sobre o cuidador | Para ter certeza de que o cuidador é o ideal para minhas necessidades |
+|                    | Agendar serviço pelo aplicativo | Ter comodidade quanto ao local de contrato |
+|                    | Pagar pelos serviços pelo aplicativo com segurança e comodidade | Não se preocupar com problemas de pagamentos |
+|                    | Compartilhar minha experiência com os cuidadores | Ajudar outras pessoas a encontrar um cuidador que atenda suas necessidades |
+|   Marina Santos    | Encontrar cuidadores para pessoas com deficiência | Cuidar do meu irmão mais novo |
+|                    | Filtrar os cuidadores por experiência | Para saber se o cuidador tem experiência com uma deficiência específica |  
+|                    | Agendar serviços com antecedência | Saber que terei ajuda quando necessário |
+|                    | Ter acesso ao histórico de contratos | Possa manter um controle financeiro |
+|      Cuidador      | Criar um perfil completo com experiências, qualificações e disponibilidade | Ter destaque para potenciais clientes |
+|                    | Atualizar informações de perfil | Sempre manter minhas informações atualizadas |
+|                    | Definir horário e preço dos serviços | Ter um acompanhamento dos serviços e evitar conflitos de horário |
+|                    | Receber notificações quando for solicitado para serviços | Responder rapidamente possíveis clientes |
+|                    | Visualizar informações do cliente como endereço, telefone e necessidades específicas | Conseguir me preparar para o serviço |
+|                    | Receber os pagamentos diretamente pelo aplicativo e ter acesso ao histórico de serviços | Não precisar se preocupar com pagamentos posteriores e ter um controle financeiro |
+|                    | Conseguir me comunicar com os clientes diretamente pelo aplicativo | Possa esclarecer dúvidas e confirmar os detalhes do serviço |
+|                    | Dar feedback de clientes | Para que outros cuidadores possam encontrar clientes confiáveis |
 
 ## Requisitos
 
