@@ -17,9 +17,8 @@ Vale ainda ressaltar que as histórias de usuário foram criadas para ilustrar s
 |  Ocupação | Cuidador profissional de idosos  |
 |Aplicativos| Whatsapp, Instragram, Google Calendar, Medscape |
 | **Motivações**  | **Frustações** | **Hobbies e História**  |
-| Disponibilizar o seu serviço especializado de forma segura e ampliar a busca para novos clientes; Ter controle sobre os seus agendamentos, horários, pacientes e pagamentos |
-||Dificuldade de gerenciar múltiplos clientes e agendas, além de ter um controle sobre o montante a receber pelo atendimento realizado ; |É voluntário em um centro comunitário local; ;|
-|||Gosta de ler e participar de seminários sobre cuidados geriátricos; |
+| Disponibilizar o seu serviço especializado de forma segura e ampliar a busca para novos clientes|Ter controle sobre os seus agendamentos, horários, pacientes e pagamentos |É voluntário em um centro comunitário local|
+||Dificuldade de gerenciar múltiplos clientes e agendas, além de ter um controle sobre o montante a receber pelo atendimento realizado |Gosta de ler e participar de seminários sobre cuidados geriátricos |
 
 | <img src= '/docs/img/Beatriz.png' width="200px">  | **Beatriz Filho** | |
 | :-------------: | :-------------: | :-------------: 
@@ -27,9 +26,8 @@ Vale ainda ressaltar que as histórias de usuário foram criadas para ilustrar s
 |  Ocupação | Cuidadora especializada em pessoas com deficiência física e intelectual  |
 |Aplicativos| Trello, Instragram, Youtube, Udemy |
 | **Motivações**  | **Frustações** | **Hobbies e História**  |
-| Empoderar pessoas com deficiência, ajudando a ter maior autonomia e qualidade de vida; Ferramentas que possam facilitar a sua comunicação e aprendizado com os seus assistidos. |
-||Dificuldade em expandir o seu âmbito profissional em um local seguro e eficiente; Gerir e organizar as informações de seus pacientes em um local que gere histórico. | Gosta de estudar línguas e sinais;|
-|||Fotografar e registrar momentos de conquista e alegria. |
+| Empoderar pessoas com deficiência, ajudando a ter maior autonomia e qualidade de vida|Dificuldade em expandir o seu âmbito profissional em um local seguro e eficiente|Gosta de estudar línguas e sinais|
+||Gerir e organizar as informações de seus pacientes em um local que gere histórico. |Fotografar e registrar momentos de conquista e alegria. |
 
 | <img src= '/docs/img/Roberto.png' width="200px">  | **Roberto Moreno** | |
 | :-------------: | :-------------: | :-------------: 
@@ -37,9 +35,8 @@ Vale ainda ressaltar que as histórias de usuário foram criadas para ilustrar s
 |  Ocupação | Engenheiro de Software  |
 |Aplicativos| Linkedln, Uber, IFood |
 | **Motivações**  | **Frustações** | **Hobbies e História**  |
-| Encontrar um cuidador de confiança para seu pai, que recentemente iniciou com sintomas de Alzheimer; Encontrar um profissional que dê atenção especializada enquanto cuida de suas obrigações profissionais e pessoais.  |
-||Dificuldade em encontrar um profissional de confiança especializado em pessoas com Alzheimer. | Ler sobre tecnologia;|
-|||Estar com a sua família e cozinhar para eles. |
+| Encontrar um cuidador de confiança para seu pai, que recentemente iniciou com sintomas de Alzheimer;|Dificuldade em encontrar um profissional de confiança especializado em pessoas com Alzheimer. | Ler sobre tecnologia;| 
+|Encontrar um profissional que dê atenção especializada enquanto cuida de suas obrigações profissionais e pessoais.||Estar com a sua família e cozinhar para eles. |
 
 
 | <img src= '/docs/img/persona2.jpg' width="200px">  | **João Oliveira** | |
