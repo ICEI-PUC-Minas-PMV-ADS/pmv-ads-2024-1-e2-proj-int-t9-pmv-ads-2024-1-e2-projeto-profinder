@@ -11,15 +11,36 @@ Vale ainda ressaltar que as histórias de usuário foram criadas para ilustrar s
 
 
 
-| <img src= '/docs/img/persona1.jpg' width="200px">  | **Ana Silva** | |
+| <img src= '/docs/img/Carlos.png' width="200px">  | **Carlos Silva** | |
 | :-------------: | :-------------: | :-------------: 
-| Idade | 35 anos| 
-|  Ocupação | Professora  |
-|Aplicativos| Whatsapp, Instragram |
+| Idade | 42 anos| 
+|  Ocupação | Cuidador profissional de idosos  |
+|Aplicativos| Whatsapp, Instragram, Google Calendar, Medscape |
 | **Motivações**  | **Frustações** | **Hobbies e História**  |
-| Encontrar cuidadores confiáveis para cuidar de seus filhos enquanto está no trabalho|Dificuldade em conciliar horários de trabalho com horários disponíveis de cuidadores qualificados; | Gosta de ler, fazer atividade física; |
-||Dificuldade em encontrar um serviço que disponha de diversos profissionais e suas especializações; |Gosta de passear no parque aos finais de semana com a família;|
-|||Mãe de dois filhos pequenos|
+| Disponibilizar o seu serviço especializado de forma segura e ampliar a busca para novos clientes; Ter controle sobre os seus agendamentos, horários, pacientes e pagamentos |
+||Dificuldade de gerenciar múltiplos clientes e agendas, além de ter um controle sobre o montante a receber pelo atendimento realizado ; |É voluntário em um centro comunitário local; ;|
+|||Gosta de ler e participar de seminários sobre cuidados geriátricos; |
+
+| <img src= '/docs/img/Beatriz.png' width="200px">  | **Beatriz Filho** | |
+| :-------------: | :-------------: | :-------------: 
+| Idade | 29 anos| 
+|  Ocupação | Cuidadora especializada em pessoas com deficiência física e intelectual  |
+|Aplicativos| Trello, Instragram, Youtube, Udemy |
+| **Motivações**  | **Frustações** | **Hobbies e História**  |
+| Empoderar pessoas com deficiência, ajudando a ter maior autonomia e qualidade de vida; Ferramentas que possam facilitar a sua comunicação e aprendizado com os seus assistidos. |
+||Dificuldade em expandir o seu âmbito profissional em um local seguro e eficiente; Gerir e organizar as informações de seus pacientes em um local que gere histórico. | Gosta de estudar línguas e sinais;|
+|||Fotografar e registrar momentos de conquista e alegria. |
+
+| <img src= '/docs/img/Roberto.png' width="200px">  | **Roberto Moreno** | |
+| :-------------: | :-------------: | :-------------: 
+| Idade | 45 anos| 
+|  Ocupação | Engenheiro de Software  |
+|Aplicativos| Linkedln, Uber, IFood |
+| **Motivações**  | **Frustações** | **Hobbies e História**  |
+| Encontrar um cuidador de confiança para seu pai, que recentemente iniciou com sintomas de Alzheimer; Encontrar um profissional que dê atenção especializada enquanto cuida de suas obrigações profissionais e pessoais.  |
+||Dificuldade em encontrar um profissional de confiança especializado em pessoas com Alzheimer. | Ler sobre tecnologia;|
+|||Estar com a sua família e cozinhar para eles. |
+
 
 | <img src= '/docs/img/persona2.jpg' width="200px">  | **João Oliveira** | |
 | :-------------: | :-------------: | :-------------: 
