@@ -69,7 +69,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|------------------------------------|----------------------------------------|
 |Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
 |Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|     Ana Silva      | Encontrar cuidadores para meus filhos| Deixar meus filhos em segurança enquanto trabalho |
+|   Roberto Moreno   | Encontrar um cuidador especializado | Cuidar do meu pai com Alzheimer |
 |                    | Filtrar os cuidadores por avaliação, preço e disponibilidade | Encontrar o cuidador ideal de acordo com as minhas necessidades |
 |                    | Conseguir entrar em contato com os cuidadores pelo aplicativo  | Fazer perguntas e agendar uma entrevista |
 |                    | Gerenciar antigos contratos com cuidadores | Ter um acompanhamento dos serviços já contratados |
@@ -83,14 +83,17 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |                    | Filtrar os cuidadores por experiência | Para saber se o cuidador tem experiência com uma deficiência específica |  
 |                    | Agendar serviços com antecedência | Saber que terei ajuda quando necessário |
 |                    | Ter acesso ao histórico de contratos | Possa manter um controle financeiro |
-|      Cuidador      | Criar um perfil completo com experiências, qualificações e disponibilidade | Ter destaque para potenciais clientes |
+|    Carlos Silva    | Criar um perfil completo com experiências, qualificações e disponibilidade | Ter destaque para potenciais clientes |
 |                    | Atualizar informações de perfil | Sempre manter minhas informações atualizadas |
 |                    | Definir horário e preço dos serviços | Ter um acompanhamento dos serviços e evitar conflitos de horário |
-|                    | Receber notificações quando for solicitado para serviços | Responder rapidamente possíveis clientes |
-|                    | Visualizar informações do cliente como endereço, telefone e necessidades específicas | Conseguir me preparar para o serviço |
 |                    | Receber os pagamentos diretamente pelo aplicativo e ter acesso ao histórico de serviços | Não precisar se preocupar com pagamentos posteriores e ter um controle financeiro |
 |                    | Conseguir me comunicar com os clientes diretamente pelo aplicativo | Possa esclarecer dúvidas e confirmar os detalhes do serviço |
+|    Beatriz Filho   | Criar um perfil completo com experiências, qualificações e disponibilidade | Mostrar a possíveis clientes suas qualificações como cuidadora |
+|                    | Visualizar informações do cliente como endereço, telefone e necessidades específicas | Conseguir me preparar para o serviço |
+|                    | Ter acesso ao histórico de serviços | Ter um controle dos serviços já feitos e clientes anteriores |
+|                    | Receber notificações quando for solicitado para serviços | Responder rapidamente possíveis clientes |
 |                    | Dar feedback de clientes | Para que outros cuidadores possam encontrar clientes confiáveis |
+
 
 ## Requisitos
 
