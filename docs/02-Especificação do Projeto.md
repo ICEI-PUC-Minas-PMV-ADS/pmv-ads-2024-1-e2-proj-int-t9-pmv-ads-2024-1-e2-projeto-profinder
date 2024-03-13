@@ -174,7 +174,7 @@ Os clientes poderão buscar por profissionais da área de cuidados, verificando 
 
 Os profissionais poderão realizar agendamentos junto ao cliente assim como acessar atendimentos anteriores. 
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/blob/main/docs/img/DiagramasCasos.png
+> - [Diagrama de casos](img/DiagramasCasos.png)
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
 
