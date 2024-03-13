@@ -175,6 +175,7 @@ Os clientes poderão buscar por profissionais da área de cuidados, verificando 
 Os profissionais poderão realizar agendamentos junto ao cliente assim como acessar atendimentos anteriores. 
 
 > - [Diagrama de casos](img/DiagramasCasos.png)
+> - <img src= '/docs/img/DiagramasCasos.png'>
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
 
