@@ -1,4 +1,4 @@
-# ProFinder 🔍🧒👴👨‍🦽
+# ProFinder 🔍👴👨‍🦽
 
 `Análise e Desenvolvimento de Sistemas - PUC Minas`
 
@@ -6,8 +6,7 @@
 
 `2° SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
-
+O ProFinder é uma plataforma desenvolvida para unir usuários a cuidadores especializados no atendimento de idosos e pessoas com deficiência. A plataforma oferece espaço interativo onde usuários poderão facilmente localizar e contratar estes profissionais. Além disso, os cuidadores terão a oportunidade de divulgar seus serviços e gerenciar os seus comprimissos.
 ## Integrantes
 
 * Brian Mucio Duarte
