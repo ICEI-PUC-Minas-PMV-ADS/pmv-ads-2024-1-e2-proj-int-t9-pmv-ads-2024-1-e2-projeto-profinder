@@ -97,21 +97,45 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+O Website permitirá que pessoas façam buscas por profissionais qualificados para cuidar de crianças, idosos e pessoas com deficiências. 
+
+Para os profissionais, o sistema deverá possuir uma área de cadastro onde deverão informar o grau de especialidades, experiencias e localização.   
+
+Quanto aos usuários, o sistema deverá possuir uma área de cadastro informando dados dos pacientes e localização.  
+
+Após o cadastro os usuários poderão utilizar a ferramenta de busca para encontrar profissionais que atuam na área. .
 
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | ALTA | 
-|RF-002| A aplicação deve emitir um relatório de tarefas realizadas no mês   | MÉDIA |
+|RF-001|O software deve ser capaz de cadastrar usuários e profissionais.  | ALTA | 
+|RF-002|Deverá ser possível fazer busca por profissional e especialidade.   | ALTA |
+|RF-003|Deverá conter dados do profissional para agendamento.   | ALTA | 
+|RF-004|Deverá emitir um relatório para o cliente referente as contratações realizadas    | ALTA |
+|RF-005|Permitirá ao usuário incluir informações como cuidados especiais com o paciente.  | MEDIA| 
+|RF-006|Opção de editar dados do profissional, como experiências. | MEDIA|
+|RF-007|Os usuários poderão avaliar e verificar as avaliações anteriores dos profissionais   | MEDIA | 
+|RF-008| Os profissionais poderão avaliar e verificar as avaliações anteriores dos usuários.     | MEDIA |
+|RF-009|O profissional poderá acessar o relatório de trabalhos realizados   | MEDIA |
+|RF-010|Permitir que os usuários enviem informações para os profissionais.  | BAIXA| 
+|RF-011|Permitir que os profissionais enviem informações para os usuários  | BAIXA|
+
+
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| Garantir que o site seja acessível para pessoas com deficiência, seguindo as diretrizes de acessibilidade da Web
+          (Web Content Accessibility Guidelines – WCAG).  | ALTA| 
+|RNF-002| O site deve ser fácil de navegar, com uma interface intuitiva para facilitar o uso por parte de usuários de 
+          diferentes níveis de habilidade tecnológica.  |  ALTA| 
+|RNF-003| Desenvolver o site de acordo com os padrões web estabelecidos, garantindo compatibilidade com diferentes navegadores e     
+          dispositivos.   | ALTA| 
+|RNF-004| Garantir que o site seja facilmente atualizável para incorporar novos recursos, correções de bugs e melhorias.    | MEDIA| 
+|RNF-005| O site deve ter um tempo de resposta aceitável, garantindo que os usuários possam acessar rapidamente as informações    
+          necessárias.     | BAIXA| 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
