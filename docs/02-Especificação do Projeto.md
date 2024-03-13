@@ -127,15 +127,11 @@ Após o cadastro os usuários poderão utilizar a ferramenta de busca para encon
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| Garantir que o site seja acessível para pessoas com deficiência, seguindo as diretrizes de acessibilidade da Web
-          (Web Content Accessibility Guidelines – WCAG).  | ALTA| 
-|RNF-002| O site deve ser fácil de navegar, com uma interface intuitiva para facilitar o uso por parte de usuários de 
-          diferentes níveis de habilidade tecnológica.  |  ALTA| 
-|RNF-003| Desenvolver o site de acordo com os padrões web estabelecidos, garantindo compatibilidade com diferentes navegadores e     
-          dispositivos.   | ALTA| 
+|RNF-001| Garantir que o site seja acessível para pessoas com deficiência, seguindo as diretrizes de acessibilidade da Web  (Web Content Accessibility Guidelines – WCAG).  | ALTA| 
+|RNF-002| O site deve ser fácil de navegar, com uma interface intuitiva para facilitar o uso por parte de usuários de diferentes níveis de habilidade tecnológica.  |  ALTA| 
+|RNF-003| Desenvolver o site de acordo com os padrões web estabelecidos, garantindo compatibilidade com diferentes navegadores e dispositivos.   | ALTA| 
 |RNF-004| Garantir que o site seja facilmente atualizável para incorporar novos recursos, correções de bugs e melhorias.    | MEDIA| 
-|RNF-005| O site deve ter um tempo de resposta aceitável, garantindo que os usuários possam acessar rapidamente as informações    
-          necessárias.     | BAIXA| 
+|RNF-005| O site deve ter um tempo de resposta aceitável, garantindo que os usuários possam acessar rapidamente as informações   necessárias.     | BAIXA| 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
