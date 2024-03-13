@@ -166,7 +166,14 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+No primeiro acesso ao site, tanto os clientes quanto os profissionais deverão realizar um cadastro. Para os clientes, o cadastro incluirá informações como telefone para contato, nome completo e endereço. Já para os profissionais, serão solicitados dados como nome, telefone, endereço e especialidade. 
+
+Após o cadastro realizado os acessos seguintes serão feitos através de login e senha.  
+
+Os clientes poderão buscar por profissionais da área de cuidados, verificando a especialização de cada um. Neste momento haverá um contato de cada profissional para que o cliente possa realizar o agendamento.  
+
+Os profissionais poderão realizar agendamentos junto ao cliente assim como acessar atendimentos anteriores. 
+(https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/blob/main/docs/img/DiagramasCasos.png) 
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
 
