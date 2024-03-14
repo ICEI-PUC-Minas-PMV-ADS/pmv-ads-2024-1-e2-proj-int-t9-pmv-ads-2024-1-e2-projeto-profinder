@@ -63,7 +63,7 @@ Vale ainda ressaltar que as histórias de usuário foram criadas para ilustrar s
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
@@ -97,7 +97,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ## Requisitos
 
-O Website permitirá que pessoas façam buscas por profissionais qualificados para cuidar de crianças, idosos e pessoas com deficiências. 
+O Website permitirá que pessoas façam buscas por profissionais qualificados para cuidar de idosos e pessoas com deficiências. 
 
 Para os profissionais, o sistema deverá possuir uma área de cadastro onde deverão informar o grau de especialidades, experiencias e localização.   
 
