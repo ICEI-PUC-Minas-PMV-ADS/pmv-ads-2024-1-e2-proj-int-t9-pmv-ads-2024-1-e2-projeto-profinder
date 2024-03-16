@@ -1,46 +1,42 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+No contexto contemporâneo, a busca por profissionais capacitados para atender necessidades específicas de diferentes grupos populacionais tem se mostrado um desafio relevante. Com o envelhecimento da população e o apoio necessário para pessoas com deficiência, torna-se imprescindível contar com recursos que facilitem o acesso a serviços especializados. 
+
+De acordo com dados do Instituto Brasileiro de Geografia e Estatística (IBGE), a expectativa de vida da população brasileira vem aumentando significativamente, o que reflete diretamente no aumento da demanda por serviços voltados para idosos. 
+
+No que se refere às pessoas com deficiência, o último Censo Demográfico realizado pelo IBGE revelou que mais de 45 milhões de brasileiros possuem algum tipo de deficiência, o que reforça a importância de garantir acessibilidade e disponibilidade de serviços especializados para atender suas necessidades. 
+
+Diante desse contexto, o ProFinder se apresenta como uma solução necessária, que visa atender às demandas emergentes de uma sociedade em constante transformação. Por meio da conectividade e da tecnologia, o aplicativo busca promover a inclusão, a acessibilidade e o bem-estar de todos os segmentos da população, ao mesmo tempo em que oferece oportunidades de trabalho e desenvolvimento profissional para os prestadores de serviços especializados. 
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+A problemática abordada para este projeto busca enfrentar desafios da sociedade em relação a busca por um cuidador qualificado em idosos e pessoas com deficiência. Uma das principais preocupações é garantir que os cuidadores cadastrados nas plataformas sejam qualificados, confiáveis e capazes de oferecer um serviço de alta qualidade. Atualmente não há um processo de verificação adequado, tendo riscos de cuidadores não idôneos ou inexperientes exercerem a função de cuidador, comprometendo a segurança e o bem-estar dos clientes.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo geral deste trabalho é criar um site em que se envolva os cuidadores especializados em idosos e pessoas com deficiência e familiares para uma possível contratação de serviços, através de perfis e experiência do usuário. 
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Como objetivo específicos, podemos ressaltar: 
+
+Desenvolver uma plataforma para contratação imediata de cuidadores especializados. 
+
+Ampliar a oferta e divulgação de serviços para os cuidadores especializados e que atuam de forma autônoma. 
+
+Reduzir problemas de comunicação entre cuidadores e familiares de forma inovadora. 
+
+Documentar exercício realizado no momento do serviço. 
+
+Permitir que cuidadores, idosos e deficientes compartilhassem informações relevantes. 
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Em um contexto em que a população idosa cresce exponencialmente e a demanda por cuidados específicos aumenta, é imperativo desenvolver soluções que facilitem o acesso a serviços especializados. De acordo com dados do IBGE, a população brasileira com mais de 60 anos alcançou 29,3 milhões em 2019, representando 13,8% do total. Além disso, estima-se que até 2060, a parcela de idosos possa ultrapassar a marca de 25% da população total. 
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+A mesma preocupação se estende para pessoas com deficiência, grupos que demandam atenção e cuidados particulares.  
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Diante desses dados, fica evidente a necessidade de uma plataforma como o ProFinder, que visa não apenas atender à crescente demanda por serviços especializados, mas também promover a inclusão e a acessibilidade para todos os segmentos da sociedade. 
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+Embora o aplicativo possa beneficiar uma ampla gama de usuários, o foco principal está naqueles que estão diretamente envolvidos na busca por serviços especializados ou na oferta desses serviços. Isso inclui familiares que estão em busca de profissionais capacitados para assistência a idosos e pessoas com deficiência que atendam às suas necessidades específicas. 
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Além disso, o ProFinder também se destina a profissionais autônomos que trabalham nas áreas de cuidados com idosos e pessoas com deficiência, oferecendo-lhes uma plataforma para se cadastrarem, divulgarem seus serviços e expandirem sua clientela. 
