@@ -58,9 +58,11 @@ p {
     background-color: var(--amarelo);
     color: #ffffff;
     padding: 5px 10px;
+    height: 35px;
+    font-size: 15px;
     margin-block: 10px;
-    border-radius: 8px;
-    border: 1px solid #ffffff6d;
+    border-radius: 7px;
+    border: 1px solid #ffd600;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -71,6 +73,7 @@ p {
     background-color: transparent;
     color: var(--amarelo);
     padding: 5px 10px;
+    height: 40px;
     margin-block: 10px;
     border-radius: 8px;
     border: 1px solid var(--amarelo);
