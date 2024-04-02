@@ -73,9 +73,9 @@ p {
     background-color: transparent;
     color: var(--amarelo);
     padding: 5px 10px;
-    height: 40px;
+    height: 35px;
     margin-block: 10px;
-    border-radius: 8px;
+    border-radius: 7px;
     border: 1px solid var(--amarelo);
     text-decoration: none;
     display: inline-block;
