@@ -114,7 +114,7 @@
 | Step 4 	| Clicar na opção "Contratar" para o profissional desejado|
 | Step 5 	| Redirecionar para tela de "Etapa de Solicitação do Agendamento"|
 | Step 6 	| Inserir o período e horário de contratação do serviço que foi acordado com o profissional via whatsapp|
-| Step 6 	| Clicar em "Avançar"|
+| Step 7 	| Clicar em "Avançar"|
 | Resultado esperado | Usuário deverá ser redirecionado para a página de "Análise do agendamento" |
 |  	|  	|
 
@@ -129,9 +129,9 @@
 | Step 4 	| Clicar na opção "Contratar" para o profissional desejado|
 | Step 5 	| Redirecionar para tela de "Etapa de Solicitação do Agendamento"|
 | Step 6 	| Inserir o período e horário de contratação do serviço que foi acordado com o profissional via whatsapp|
-| Step 6 	| Clicar em "Avançar"|
-| Step 7 	| Visualizar as etapas confirmadas pelo Profissional |
-| Step 8 	| Visualizar botão habilitado para clicar em "Avançar" |
+| Step 7 	| Clicar em "Avançar"|
+| Step 8 	| Visualizar as etapas confirmadas pelo Profissional |
+| Step 9	| Visualizar botão habilitado para clicar em "Avançar" |
 | Resultado esperado | Usuário deverá ser redirecionado para a página de "Etapa de Conclusão do Agendamento" |
 |  	|  	|
 
@@ -146,10 +146,10 @@
 | Step 4 	| Clicar na opção "Contratar" para o profissional desejado|
 | Step 5 	| Redirecionar para tela de "Etapa de Solicitação do Agendamento"|
 | Step 6 	| Inserir o período e horário de contratação do serviço que foi acordado com o profissional via whatsapp|
-| Step 6 	| Clicar em "Avançar"|
-| Step 7 	| Visualizar as etapas confirmadas pelo Profissional |
-| Step 8 	| Visualizar botão habilitado para clicar em "Avançar" |
-| Step 9 	| Visualizar a tela de "Etapa de Conclusão do Agendamento" |
+| Step 7 	| Clicar em "Avançar"|
+| Step 8 	| Visualizar as etapas confirmadas pelo Profissional |
+| Step 9 	| Visualizar botão habilitado para clicar em "Avançar" |
+| Step 10 	| Visualizar a tela de "Etapa de Conclusão do Agendamento" |
 | Resultado esperado | Usuário deverá visualizar os dados resumidos contendo nome do profissional, período contratado, horário e endereço onde o profissional prestará o serviço e opções para pagamento" |
 |  	|  	|
 
@@ -164,10 +164,10 @@
 | Step 4 	| Clicar na opção "Contratar" para o profissional desejado|
 | Step 5 	| Redirecionar para tela de "Etapa de Solicitação do Agendamento"|
 | Step 6 	| Inserir o período e horário de contratação do serviço que foi acordado com o profissional via whatsapp|
-| Step 6 	| Clicar em "Avançar"|
-| Step 7 	| Visualizar as etapas confirmadas pelo Profissional |
-| Step 8 	| Visualizar botão habilitado para clicar em "Avançar" |
-| Step 9 	| Visualizar a tela de "Etapa de Conclusão do Agendamento" |
-| Step 10 	| Inserir dados válidos para pagamento |
+| Step 7 	| Clicar em "Avançar"|
+| Step 8 	| Visualizar as etapas confirmadas pelo Profissional |
+| Step 9 	| Visualizar botão habilitado para clicar em "Avançar" |
+| Step 10 	| Visualizar a tela de "Etapa de Conclusão do Agendamento" |
+| Step 11 	| Inserir dados válidos para pagamento |
 | Resultado esperado | Modal deverá ser exibido confirmando o pagamento e o usuário deverá ser redirecionado para a aba "Minhas Contratações"   |
 |  	|  	|
