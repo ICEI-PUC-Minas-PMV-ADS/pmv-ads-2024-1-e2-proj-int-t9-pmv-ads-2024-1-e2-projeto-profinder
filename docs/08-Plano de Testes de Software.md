@@ -56,12 +56,11 @@
 | Objetivo do Teste 	| Acessar área de usuário para buscar profissionais |
 | Pré-condição 	| O usuário precisa ter um login válido no sistema ProFinder |
 | Step 1 	| Acessar um navegador e inserir a url do sistema <br>www.profinder.com.br<br> |
-| Step 2 	| Clicar no botão Entrar |
-| Step 3 	| Fazer login inserindo dados válidos |
-| Step 4 	| Visualizar a tela Profissionais  |
-| Step 5 	| Selecionar através dos filtros disponíveis o profissional e sua especialidade, caso deseje para este último|
-| Step 6 	| Os filtros selecionados deverão ser exibidos em uma linha resumo para que o usuário saiba o que será buscado quando aplicá-los |
-| Step 7 	| Clicar em Aplicar para que o filtro retorne suas seleções |
+| Step 2 	| Fazer login como Usuário
+| Step 3 	| Acessar a tela >> Profissionais  |
+| Step 4 	| Selecionar através dos filtros disponíveis o profissional e sua especialidade, caso deseje para este último|
+| Step 5 	| Os filtros selecionados deverão ser exibidos em uma linha resumo para que o usuário saiba o que será buscado quando aplicá-los |
+| Step 6 	| Clicar em Aplicar para que o filtro retorne suas seleções |
 | Resultado esperado | Deverá ser exibido uma lista de profissionais apenas com as seleções indicadas pelo usuário para tipo de profissional e especialidade |
 |  	|  	|
 
@@ -71,14 +70,104 @@
 | Objetivo do Teste 	| Entrar em contato com o profissional desejado para agendamento do serviço |
 | Pré-condição 	| O usuário precisa ter um login válido no sistema ProFinder |
 | Step 1 	| Acessar um navegador e inserir a url do sistema <br>www.profinder.com.br<br> |
-| Step 2 	| Clicar no botão Entrar |
-| Step 3 	| Fazer login inserindo dados válidos |
-| Step 4 	| Visualizar a tela Profissionais  |
-| Step 5 	| Selecionar através dos filtros disponíveis o profissional e sua especialidade, caso deseje para este último|
-| Step 6 	| Os filtros selecionados deverão ser exibidos em uma linha resumo para que o usuário saiba o que será buscado quando aplicá-los |
-| Step 7 	| Clicar em Aplicar para que o filtro retorne suas seleções |
-| Step 8 	| Visualizar uma listagem em formato de cards com os profissionais e suas informações gerais |
-| Step 9 	| Clicar no botão "Contratar"  |
-| Resultado esperado | O usuário deverá ser redirecionado para uma nova aba onde poderá iniciar um diálogo com o profissional e prosseguir com o agendamento/contratação do serviço  |
+| Step 2 	| Fazer login como Usuário
+| Step 3 	| Acessar a tela >> Profissionais  |
+| Step 4 	| Clicar na opção "Contratar" para o profissional desejado|
+| Resultado esperado | O usuário deverá ser redirecionado para a tela de "Etapa de Solicitação do Agendamento"|
 |  	|  	|
 
+| **Caso de Teste** 	| **CT-07 – Entrar em contato com o profissional para Agendamento** 	|
+|:---:	|:---:	|
+|	Requisito 	| RF-003 - Deverá conter dados do profissional para agendamento. |
+| Objetivo do Teste 	| Usuário deverá visualizar os dados do profissional selecionado |
+| Pré-condição 	| O usuário precisa ter um login válido no sistema ProFinder |
+| Step 1 	| Acessar um navegador e inserir a url do sistema <br>www.profinder.com.br<br> |
+| Step 2 	| Fazer login como Usuário
+| Step 3 	| Acessar a tela >> Profissionais  |
+| Step 4 	| Clicar na opção "Contratar" para o profissional desejado|
+| Step 5 	| Redirecionar para tela de "Etapa de Solicitação do Agendamento"|
+| Resultado esperado | Visualizar os dados do profissional selecionado ao lado esquerdo da tela  |
+|  	|  	|
+
+| **Caso de Teste** 	| **CT-08 – Entrar em contato com o profissional para Agendamento** 	|
+|:---:	|:---:	|
+|	Requisito 	| RF-003 - Deverá conter dados do profissional para agendamento. |
+| Objetivo do Teste 	| Usuário deve ser redirecionado para whatsapp do profissional selecionado |
+| Pré-condição 	| O usuário precisa ter um login válido no sistema ProFinder |
+| Step 1 	| Acessar um navegador e inserir a url do sistema <br>www.profinder.com.br<br> |
+| Step 2 	| Fazer login como Usuário
+| Step 3 	| Acessar a tela >> Profissionais  |
+| Step 4 	| Clicar na opção "Contratar" para o profissional desejado|
+| Step 5 	| Redirecionar para tela de "Etapa de Solicitação do Agendamento"|
+| Step 6 	| Selecionar o botão "Iniciar conversa"|
+| Resultado esperado | O usuário deverá ser redirecionado para whatsapp do profissional selecionado  |
+|  	|  	|
+
+| **Caso de Teste** 	| **CT-09 – Entrar em contato com o profissional para Agendamento** 	|
+|:---:	|:---:	|
+|	Requisito 	| RF-003 - Deverá conter dados do profissional para agendamento. |
+| Objetivo do Teste 	| Inserir o período acordado com o profissional e avançar para próxima etapa |
+| Pré-condição 	| O usuário precisa ter um login válido no sistema ProFinder |
+| Step 1 	| Acessar um navegador e inserir a url do sistema <br>www.profinder.com.br<br> |
+| Step 2 	| Fazer login como Usuário
+| Step 3 	| Acessar a tela >> Profissionais  |
+| Step 4 	| Clicar na opção "Contratar" para o profissional desejado|
+| Step 5 	| Redirecionar para tela de "Etapa de Solicitação do Agendamento"|
+| Step 6 	| Inserir o período e horário de contratação do serviço que foi acordado com o profissional via whatsapp|
+| Step 6 	| Clicar em "Avançar"|
+| Resultado esperado | Usuário deverá ser redirecionado para a página de "Análise do agendamento" |
+|  	|  	|
+
+| **Caso de Teste** 	| **CT-10 – Entrar em contato com o profissional para Agendamento** 	|
+|:---:	|:---:	|
+|	Requisito 	| RF-003 - Deverá conter dados do profissional para agendamento. |
+| Objetivo do Teste 	| Visualizar etapas confirmadas pelo profissional para Avançar com a contratação |
+| Pré-condição 	| O usuário precisa ter um login válido no sistema ProFinder |
+| Step 1 	| Acessar um navegador e inserir a url do sistema <br>www.profinder.com.br<br> |
+| Step 2 	| Fazer login como Usuário
+| Step 3 	| Acessar a tela >> Profissionais  |
+| Step 4 	| Clicar na opção "Contratar" para o profissional desejado|
+| Step 5 	| Redirecionar para tela de "Etapa de Solicitação do Agendamento"|
+| Step 6 	| Inserir o período e horário de contratação do serviço que foi acordado com o profissional via whatsapp|
+| Step 6 	| Clicar em "Avançar"|
+| Step 7 	| Visualizar as etapas confirmadas pelo Profissional |
+| Step 8 	| Visualizar botão habilitado para clicar em "Avançar" |
+| Resultado esperado | Usuário deverá ser redirecionado para a página de "Etapa de Conclusão do Agendamento" |
+|  	|  	|
+
+| **Caso de Teste** 	| **CT-11 – Entrar em contato com o profissional para Agendamento** 	|
+|:---:	|:---:	|
+|	Requisito 	| RF-003 - Deverá conter dados do profissional para agendamento. |
+| Objetivo do Teste 	| Visualizar resumo do período contratado e opções de pagamento |
+| Pré-condição 	| O usuário precisa ter um login válido no sistema ProFinder |
+| Step 1 	| Acessar um navegador e inserir a url do sistema <br>www.profinder.com.br<br> |
+| Step 2 	| Fazer login como Usuário
+| Step 3 	| Acessar a tela >> Profissionais  |
+| Step 4 	| Clicar na opção "Contratar" para o profissional desejado|
+| Step 5 	| Redirecionar para tela de "Etapa de Solicitação do Agendamento"|
+| Step 6 	| Inserir o período e horário de contratação do serviço que foi acordado com o profissional via whatsapp|
+| Step 6 	| Clicar em "Avançar"|
+| Step 7 	| Visualizar as etapas confirmadas pelo Profissional |
+| Step 8 	| Visualizar botão habilitado para clicar em "Avançar" |
+| Step 9 	| Visualizar a tela de "Etapa de Conclusão do Agendamento" |
+| Resultado esperado | Usuário deverá visualizar os dados resumidos contendo nome do profissional, período contratado, horário e endereço onde o profissional prestará o serviço e opções para pagamento" |
+|  	|  	|
+
+| **Caso de Teste** 	| **CT-12 – Entrar em contato com o profissional para Agendamento** 	|
+|:---:	|:---:	|
+|	Requisito 	| RF-003 - Deverá conter dados do profissional para agendamento. |
+| Objetivo do Teste 	| Usuário efetuar o pagamento com dados válidos |
+| Pré-condição 	| O usuário precisa ter um login válido no sistema ProFinder |
+| Step 1 	| Acessar um navegador e inserir a url do sistema <br>www.profinder.com.br<br> |
+| Step 2 	| Fazer login como Usuário
+| Step 3 	| Acessar a tela >> Profissionais  |
+| Step 4 	| Clicar na opção "Contratar" para o profissional desejado|
+| Step 5 	| Redirecionar para tela de "Etapa de Solicitação do Agendamento"|
+| Step 6 	| Inserir o período e horário de contratação do serviço que foi acordado com o profissional via whatsapp|
+| Step 6 	| Clicar em "Avançar"|
+| Step 7 	| Visualizar as etapas confirmadas pelo Profissional |
+| Step 8 	| Visualizar botão habilitado para clicar em "Avançar" |
+| Step 9 	| Visualizar a tela de "Etapa de Conclusão do Agendamento" |
+| Step 10 	| Inserir dados válidos para pagamento |
+| Resultado esperado | Modal deverá ser exibido confirmando o pagamento e o usuário deverá ser redirecionado para a aba "Minhas Contratações"   |
+|  	|  	|
