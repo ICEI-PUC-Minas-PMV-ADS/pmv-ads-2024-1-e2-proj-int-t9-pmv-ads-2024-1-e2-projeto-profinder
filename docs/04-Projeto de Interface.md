@@ -11,7 +11,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 O diagrama apresenta o fluxo de interação do usuário com o sistema interativo utilizando o protótipo de baixa fidelidade do projeto.
 
-![Exemplo de Diagrama de Fluxo](img/Fluxograma-Projeto-ProFfinder.png)
+![Exemplo de Diagrama de Fluxo](img/Fluxograma%20Projeto%20ProFinder.png)
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
 
