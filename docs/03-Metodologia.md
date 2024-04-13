@@ -36,6 +36,6 @@ _Closed_: etapa de conclusão onde as tarefas foram desenvolvidas e validadas.
 
  
 
-O gerenciamento do projeto encontra-se disponível através deste Link. Abaixo, é possível observá-lo em sua condição atual: 
+O gerenciamento do projeto encontra-se disponível através deste [Link](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/797/views/1). Abaixo, é possível observá-lo em sua condição atual: 
 
-<img src='/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/docs/img/tarefas.png'>
+<img src='/docs/img/tarefas.png'>
