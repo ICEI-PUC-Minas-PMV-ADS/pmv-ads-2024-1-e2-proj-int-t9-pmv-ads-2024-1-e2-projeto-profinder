@@ -20,9 +20,9 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 
 ## Projeto da Base de Dados
 
-O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
- 
-Para mais informações, consulte o microfundamento "Modelagem de Dados".
+[projetoBD_ProFinder.pdf](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/files/14968165/projetoBD_ProFinder.pdf)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/assets/137580591/405405e4-f6fb-45f3-9d41-44a2ae9b5d12)
+
 
 ## Tecnologias Utilizadas
 
