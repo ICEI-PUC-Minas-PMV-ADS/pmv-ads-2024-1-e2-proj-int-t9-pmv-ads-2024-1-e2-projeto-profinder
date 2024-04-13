@@ -113,13 +113,13 @@ Após o cadastro os usuários poderão utilizar a ferramenta de busca para encon
 |RF-002|Deverá ser possível fazer busca por profissional e especialidade.   | ALTA |
 |RF-003|Deverá conter dados do profissional para agendamento.   | ALTA | 
 |RF-004|Deverá emitir um relatório para o cliente referente as contratações realizadas    | ALTA |
-|RF-005|Permitirá ao usuário incluir informações como cuidados especiais com o paciente.  | MEDIA| 
-|RF-006|Opção de editar dados do profissional, como experiências. | MEDIA|
-|RF-007|Os usuários poderão avaliar e verificar as avaliações anteriores dos profissionais   | MEDIA | 
-|RF-008| Os profissionais poderão avaliar e verificar as avaliações anteriores dos usuários.     | MEDIA |
-|RF-009|O profissional poderá acessar o relatório de trabalhos realizados   | MEDIA |
-|RF-010|Permitir que os usuários enviem informações para os profissionais.  | BAIXA| 
-|RF-011|Permitir que os profissionais enviem informações para os usuários  | BAIXA|
+|RF-005|Permitirá ao usuário incluir informações como cuidados especiais com o paciente.  | ALTA | 
+|RF-006|Opção de editar cadastro dos usuários e profissionais.  | ALTA |
+|RF-007|O profissional poderá acessar o relatório de trabalhos realizados   | ALTA | 
+|RF-008|Os usuários poderão avaliar e verificar as avaliações anteriores dos profissionais      | MEDIA |
+|RF-009|Os profissionais poderão avaliar e verificar as avaliações anteriores dos usuários.   | MEDIA |
+|RF-010|Permitir que os usuários enviem informações para os profissionais. .  | BAIXA| 
+|RF-011|Permitir que os profissionais enviem informações para os usuários   | BAIXA|
 
 
 
