@@ -76,7 +76,7 @@
 | Resultado esperado | O usuário deverá ser redirecionado para a tela de "Etapa de Solicitação do Agendamento"|
 |  	|  	|
 
-| **Caso de Teste** 	| **CT-07 – Entrar em contato com o profissional para Agendamento** 	|
+| **Caso de Teste** 	| **CT-07 – Visualizar dados do Profissional** 	|
 |:---:	|:---:	|
 |	Requisito 	| RF-003 - Deverá conter dados do profissional para agendamento. |
 | Objetivo do Teste 	| Usuário deverá visualizar os dados do profissional selecionado |
@@ -89,7 +89,7 @@
 | Resultado esperado | Visualizar os dados do profissional selecionado ao lado esquerdo da tela  |
 |  	|  	|
 
-| **Caso de Teste** 	| **CT-08 – Entrar em contato com o profissional para Agendamento** 	|
+| **Caso de Teste** 	| **CT-08 – Redirecionamento para Whatsapp entre Usuário e Profissional** 	|
 |:---:	|:---:	|
 |	Requisito 	| RF-003 - Deverá conter dados do profissional para agendamento. |
 | Objetivo do Teste 	| Usuário deve ser redirecionado para whatsapp do profissional selecionado |
@@ -103,7 +103,7 @@
 | Resultado esperado | O usuário deverá ser redirecionado para whatsapp do profissional selecionado  |
 |  	|  	|
 
-| **Caso de Teste** 	| **CT-09 – Entrar em contato com o profissional para Agendamento** 	|
+| **Caso de Teste** 	| **CT-09 – Inserir data, hora e valor para avançar** 	|
 |:---:	|:---:	|
 |	Requisito 	| RF-003 - Deverá conter dados do profissional para agendamento. |
 | Objetivo do Teste 	| Inserir o período acordado com o profissional e avançar para próxima etapa |
@@ -118,7 +118,7 @@
 | Resultado esperado | Usuário deverá ser redirecionado para a página de "Análise do agendamento" |
 |  	|  	|
 
-| **Caso de Teste** 	| **CT-10 – Entrar em contato com o profissional para Agendamento** 	|
+| **Caso de Teste** 	| **CT-10 – Usuário visualizar confirmações pelo Profissional do serviço agendado** 	|
 |:---:	|:---:	|
 |	Requisito 	| RF-003 - Deverá conter dados do profissional para agendamento. |
 | Objetivo do Teste 	| Visualizar etapas confirmadas pelo profissional para Avançar com a contratação |
@@ -135,7 +135,7 @@
 | Resultado esperado | Usuário deverá ser redirecionado para a página de "Etapa de Conclusão do Agendamento" |
 |  	|  	|
 
-| **Caso de Teste** 	| **CT-11 – Entrar em contato com o profissional para Agendamento** 	|
+| **Caso de Teste** 	| **CT-11 – Visualizar resumo da contratação e opções de pagamento** 	|
 |:---:	|:---:	|
 |	Requisito 	| RF-003 - Deverá conter dados do profissional para agendamento. |
 | Objetivo do Teste 	| Visualizar resumo do período contratado e opções de pagamento |
@@ -153,7 +153,7 @@
 | Resultado esperado | Usuário deverá visualizar os dados resumidos contendo nome do profissional, período contratado, horário e endereço onde o profissional prestará o serviço e opções para pagamento" |
 |  	|  	|
 
-| **Caso de Teste** 	| **CT-12 – Entrar em contato com o profissional para Agendamento** 	|
+| **Caso de Teste** 	| **CT-12 – Usuário efetivar pagamento** 	|
 |:---:	|:---:	|
 |	Requisito 	| RF-003 - Deverá conter dados do profissional para agendamento. |
 | Objetivo do Teste 	| Usuário efetuar o pagamento com dados válidos |
