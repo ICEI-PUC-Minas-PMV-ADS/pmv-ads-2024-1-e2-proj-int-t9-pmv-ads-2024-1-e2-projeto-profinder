@@ -13,7 +13,6 @@ O diagrama apresenta o fluxo de interação do usuário com o sistema interativo
 
 ![Exemplo de Diagrama de Fluxo](img/Fluxograma%20Projeto%20ProFinder.png)
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
 
 ## Wireframes
 
