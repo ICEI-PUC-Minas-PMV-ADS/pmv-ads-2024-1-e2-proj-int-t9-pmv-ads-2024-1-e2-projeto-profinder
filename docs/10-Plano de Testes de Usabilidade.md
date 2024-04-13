@@ -1,15 +1,38 @@
 # Plano de Testes de Usabilidade
 
-Os testes de usabilidade permitem avaliar a qualidade da interface com o usuário da aplicação interativa.
+##### Procedimento de teste
+Os testes poderão ser presenciais ou remotos.
 
-Um plano de teste de usabilidade deverá conter: o detalhamento dos objetivos (em função dos requisitos levantados/implementados), dos critérios que serão utilizados para a seleção dos participantes, dos procedimentos a serem adotados pelos condutores de teste (por exemplo: os testes serão presenciais ou remotos? o método será observação direta, medição ou avaliação?), das tarefas a serem executadas, dos dados a serem coletados (quantidade de cliques, número de erros, tempo etc.), a ordem de execução das tarefas e das etapas da sessão de teste, recursos demandados, métricas coletadas etc.
+##### Critério de escolha dos participantes 
+1. Uma pessoa, maior de idade, que precise contratar um profissional para cuidar de um ente querido que requer cuidados especiais.
+2. Um profissional, maior de idade, com formação na área da saúde, e que deseja ofertar os seus cuidados, ampliar sua rede de clientes ou até mesmo ter mais visibilidade.
 
-Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
+##### Método do Teste de Usabilidade
+Observação direta
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+##### Objetivo do teste
+1. Coleta de dados: recolher dados quantitativos e qualitativos durante o teste., incluindo o tempo que os participantes levarão para completar as tarefas, erros que cometerão e comentários sobre a experiência de uso.
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+2. Analisar os resultados: os dados coletados para identificar padrões de comportamento, dificuldades enfrentadas pelos usuários e oportunidades de melhoria.
+
+3. Fazer recomendações: diante dos resultados, elaborar recomendações para melhorar a interface e a experiência do usuário, mudanças na navegação, disposição de elementos na tela, entre outros.
+
+4. Implementar mudanças: aplicar as mudanças conforme a experiência dos usuários.
+
+
+##### Teste de Usabilidade para o perfil Usuário
+1. Verificar se os usuários conseguem se cadastrar facilmente.
+2. Verificar se após o cadastro, os usuários conseguem acessar à plataforma.
+3. Verificar se após realizar o login, o usuário conseguirá encontrar  facilmente os profissionais.
+4. Verificar se ao selecionar o profissional desejado, o usuário terá facilidade para seguir o proceso de agendamento e confirmação do serviço.
+5. Verificar se o usuário, após contratar o profissional, conseguirá acessar facilmente a sua área de contratações para visualizar os dados do profissional, acessar os relatórios e avaliar o profissional.
+6. Verificar se o usuário conseguirá atualizar suas informações cadastrais facilmente.
+
+##### Teste de Usabilidade para o perfil Profissional
+1. Verificar se os profissionais conseguem se cadastrar facilmente.
+2. Verificar se após o cadastro, os profissioanis conseguem acessar à plataforma.
+3. Verificar se após realizar o login, o profissional conseguirá preencher facilmente as suas formações, experiências, resumo profisisonal e demais dados.
+4. Verificar se ao receber uma solicitação de agendamento, o profissional terá facilidade para aceitar ou recusar o pedido.
+5. Verificar se o profissional, após aceitar um pedido, conseguirá acessar facilmente a sua área de clientes e gerenciá-los.
+6. Verificar se o profissional conseguirá acessar a área de clientes para preencher informações sobre os pacientes, avaliar o usuário e analisar o histórico dos últimos serviços.
+
