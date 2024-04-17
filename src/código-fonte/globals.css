@@ -3,7 +3,6 @@
 :root {
     --amarelo: #ffd600;
     --azul: #8f9bef;
-
 }
 
 *,
@@ -14,11 +13,12 @@ html {
 }
 
 body {
-    font-family: Inter, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.375;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 0.9rem;
 }
+
+
 
 h1 {
     font-size: 2.986rem;

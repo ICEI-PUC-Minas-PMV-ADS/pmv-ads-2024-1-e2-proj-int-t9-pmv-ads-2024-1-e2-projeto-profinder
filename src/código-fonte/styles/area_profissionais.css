@@ -1,0 +1,150 @@
+
+/* ------------- INÍCIO ÁREA DO HEADER------------*/
+.container-navegation {
+    display: flex;
+    width: 100%;
+}
+
+.img-header {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.area-search {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+
+.search-bar {
+    width: 100%;
+    padding-left: 40px;
+    height: 30px;
+    border-radius: 13px;
+    border: 0.5px solid #d3d3d3;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    color: #b1b1b1;
+}
+
+.search-bar::placeholder{
+    color: #b1b1b1;
+    font-weight: 300;
+}
+
+.search-bar:focus {
+    border-color: #FFD600;
+}
+
+.search-bar::-webkit-search-cancel-button {
+    cursor: pointer; /* Muda o cursor para apontador */
+    margin-right: 15px;
+}
+
+.search-icon {
+    position: absolute;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.list-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 2%;
+    width: 38%;
+}
+
+.list-menu li {
+    list-style-type: none;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.list-menu li:hover {
+    font-weight: 400;
+    color: #FFD600;
+    transition: 0.3s ease;
+}
+
+.line-style-top {
+    height: 1px;
+    background-color: #FFD600;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin-top: 29px;
+}
+
+.line-style-base {
+    height: 1px;
+    background-color: #FFD600;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------FIM ÁREA DO HEADER------------*/
+
+/* -------------INÍCIO ÁREA DOS FILTROS ------------*/
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.filters-container {
+    display: flex;
+    width: 100%;
+    
+}
+/* -------------FIM ÁREA DOS FILTROS ------------*/
+
+.img-filter {
+    margin-top: 25px;
+    margin-left: 10px;
+    width: 65px;
+}
+
+.filters-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+
+.filter-option {
+    padding: 0.3em 0.7em;
+    border: 1px solid #F5F5F5;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.filter-option:hover {
+    background-color: #F5F5F5;
+}
+
+.filter-option.selected {
+    border-color: #FFD600;
+    background-color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
