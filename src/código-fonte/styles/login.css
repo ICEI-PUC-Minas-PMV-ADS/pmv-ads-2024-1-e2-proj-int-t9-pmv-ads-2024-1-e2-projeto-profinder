@@ -1,0 +1,33 @@
+.img-header {
+  display: block;
+  margin: 3vh auto;
+  filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.4));
+
+  /* -webkit-box-shadow: 1px 0px 14px 4px rgba(0,0,0,0.33);
+-moz-box-shadow: 1px 0px 14px 4px rgba(0,0,0,0.33);
+box-shadow: 1px 0px 14px 4px rgba(0,0,0,0.33); */
+}
+
+.line-separation {
+  border: 1px solid #ffd600;
+}
+
+.form-login {
+  position: absolute;
+  display: block;
+  margin: 50vh auto;
+}
+
+.user-email > input,
+.user-pass > input {
+  margin: 15px 0;
+  width: 350px;
+  height: 35px;
+  padding: 15px 0 10px 10px;
+  border: 1px solid #C5C5C5;
+  border-radius: 5px;
+}
+
+.button-login {
+    text-align: center;
+}
