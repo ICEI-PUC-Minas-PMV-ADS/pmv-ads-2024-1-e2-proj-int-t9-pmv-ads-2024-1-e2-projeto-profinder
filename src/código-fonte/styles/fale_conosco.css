@@ -11,6 +11,8 @@ body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
 }
 
 p {
@@ -197,9 +199,34 @@ input[type="text"], textarea {
     border: 1px;
     font-size: 1.25rem;
     font-family: "Inter", sans-serif;
+    margin-bottom: 100px;
 }
 
 .send-button:hover {
     transform: scale(1.02);
     cursor: pointer
 }
+
+footer { 
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 92px;
+    margin-top: auto;
+    background-color: #303030;
+    color: #FFFFFF;
+}
+
+.footer-obj {
+    margin-left: 50px; 
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    font-size: 0.9375rem;
+}
+
+.footer-text {
+    font-size: 0.6875rem;
+    margin-left: 50px;
+}
+   
