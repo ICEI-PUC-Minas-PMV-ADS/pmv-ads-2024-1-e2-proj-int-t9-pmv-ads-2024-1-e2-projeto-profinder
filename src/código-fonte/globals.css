@@ -58,9 +58,8 @@ p {
     background-color: var(--amarelo);
     color: #ffffff;
     padding: 5px 10px;
-    height: 35px;
+    height: 30px;
     font-size: 15px;
-    margin-block: 10px;
     border-radius: 7px;
     border: 1px solid #ffd600;
     text-decoration: none;
@@ -73,8 +72,7 @@ p {
     background-color: transparent;
     color: var(--amarelo);
     padding: 5px 10px;
-    height: 35px;
-    margin-block: 10px;
+    height: 30px;
     border-radius: 7px;
     border: 1px solid var(--amarelo);
     text-decoration: none;
