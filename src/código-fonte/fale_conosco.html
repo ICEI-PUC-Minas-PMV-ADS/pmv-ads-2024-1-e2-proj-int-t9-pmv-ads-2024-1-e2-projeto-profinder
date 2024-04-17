@@ -1,1 +1,61 @@
 <!--Desenvolvedor responsável: MATEUS--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../código-fonte/styles/fale_conosco.css">
+    <link rel="stylesheet" href="../código-fonte/globals.css">
+    <title>Fale conosco - ProFinder</title>
+    <link rel="icon" href="../código-fonte/img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html"><img src="../código-fonte/img/logo.png" alt="Logo do site"></a>
+        </div>
+    
+        <ul class="nav-bar">
+            <li><a class="nav-link" href="../código-fonte/home.html">Home</a></li>
+            <li><a class="nav-link" href="../código-fonte/sobre.html">Sobre</a></li>
+            <li><a class="nav-link" href="../código-fonte/serviços.html">Serviços</a></li>
+            <li><a class="nav-link" href="../código-fonte/fale_conosco.html">Fale Conosco</a></li>
+        </ul>
+
+        <div class="login-signup">
+            <p class="entry"><a href="../código-fonte/login.html"></a>Entrar</p>
+            <p class="create"><a href="../código-fonte/cadastro.html"></a>Criar conta</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="fale-container">
+            <p class="titulo-container">Fale Conosco</p>
+        </div>
+    
+        <p class="introducao-text">Precisa de ajuda com alguma coisa? Caso queira fazer elogios, 
+            reclamações, sugestões ou se tornar um parceiro ProFinder, envie-nos uma mensagem e 
+            responderemos o mais breve possível.</p>
+
+        <div class="fale-conosco">
+            <form>
+                <label for="nome">Nome Completo<span class="label-span">*</span></label>
+                <input type="text" id="nome" name="nome" placeholder="Insira seu nome Completo">
+
+                <label for="email">Endereço de E-mail<span class="label-span">*</span></label>
+                <input type="text" id="email" name="email" placeholder="Seu endereço de e-mail">
+
+                <label for="telefone">N° de telefone<span class="label-span">*</span></label>
+                <input type="text" id="telefone" name="telefone" placeholder="Seu número de telefone">
+
+                <label for="mensagem">Escreva sua mensagem<span class="label-span">*</span></label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui" rows="4"></textarea>
+
+                <div class="button">
+                    <input class="send-button" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </main>
