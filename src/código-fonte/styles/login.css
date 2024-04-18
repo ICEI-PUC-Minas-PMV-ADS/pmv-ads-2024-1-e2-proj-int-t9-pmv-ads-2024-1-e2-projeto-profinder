@@ -1,7 +1,9 @@
+/*Rever este código*/
 .img-header {
   display: block;
   margin: 3vh auto;
   filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.4));
+  
 
   /* -webkit-box-shadow: 1px 0px 14px 4px rgba(0,0,0,0.33);
 -moz-box-shadow: 1px 0px 14px 4px rgba(0,0,0,0.33);
@@ -26,6 +28,11 @@ box-shadow: 1px 0px 14px 4px rgba(0,0,0,0.33); */
 }
 .icon-email, .icon-secure {
   margin-right: 10px;
+}
+
+ .pass-invisible{
+  position: absolute;
+  right: 25%;
 }
 
 .user-email > input,
