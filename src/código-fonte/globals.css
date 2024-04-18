@@ -123,3 +123,27 @@ img {
     grid-gap: 20px;
     /* Espaçamento entre as células */
 }
+
+
+footer { 
+    width: 100%;
+    bottom: 0;
+    height: 92px;
+    margin-top: 50px; /* ajustar depois */
+    background-color: #303030;
+    color: #FFFFFF;
+}
+
+.footer-obj {
+    margin-left: 50px; 
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    font-size: 0.9375rem;
+}
+
+.footer-text {
+    font-size: 0.6875rem;
+    margin-left: 50px;
+}
+   

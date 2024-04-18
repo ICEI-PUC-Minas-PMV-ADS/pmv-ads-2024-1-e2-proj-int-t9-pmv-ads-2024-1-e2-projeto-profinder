@@ -168,5 +168,120 @@ nav {
 }
 
 
+/* ÁREA DO CARD */
+
+#professional-title {
+    margin-top: 3%;
+    margin-left: 30px;
+    color: #757575;
+    font-size: 1.2em;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 16px;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #FFD600;
+    border-radius: 7px;
+    padding: 15px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.photo-example {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    background-color: #FFD600;
+    color: #ffffff;
+}
+
+.professional-name {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.professional-area {
+    width: 100%;
+    height: 90px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    border: 1px solid #F5F5F5;
+    margin-bottom: 8px;
+}
+
+.professional-bio,
+.professional-qualifications,
+.rating,
+.comment,
+.comments h6 {
+    font-size: 13px;
+    margin: 8px 0px;
+}
+
+.qualifications {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 10px;
+}
+
+.qualifications-item {
+    padding: 0.2em 0.6em;
+    border-radius: 13px;
+    color: #ffffff;
+    background-color: #FFD600;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.rating-area {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #F5F5F5;
+    border-radius: 7px;
+    margin-top: 8px;
+}
+
+.rating-text {
+    font-size: 11px;
+    color: #8d8d8d;
+    margin-left: 8px;
+}
+
+.comment-area {
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    border: 1px solid #F5F5F5;
+    border-radius: 7px;
+    margin-top: 8px;
+}
 
 
+.btn-area {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-pro {
+    margin-top: 20px;
+}
+/* ÁREA DO CARD */
