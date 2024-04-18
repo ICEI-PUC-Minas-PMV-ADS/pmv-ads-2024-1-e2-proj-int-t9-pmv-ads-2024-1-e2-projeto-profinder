@@ -92,6 +92,11 @@ img {
     height: auto;
 }
 
+.img-header {
+    width: 120px;
+    height: 60px;
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -146,4 +151,3 @@ footer {
     font-size: 0.6875rem;
     margin-left: 50px;
 }
-   
