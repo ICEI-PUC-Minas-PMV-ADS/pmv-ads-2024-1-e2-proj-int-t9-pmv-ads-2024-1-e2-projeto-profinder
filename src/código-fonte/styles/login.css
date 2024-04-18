@@ -1,13 +1,7 @@
-/*Rever este código*/
-.img-header {
-  display: block;
-  margin: 3vh auto;
-  filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.4));
-  
-
-  /* -webkit-box-shadow: 1px 0px 14px 4px rgba(0,0,0,0.33);
--moz-box-shadow: 1px 0px 14px 4px rgba(0,0,0,0.33);
-box-shadow: 1px 0px 14px 4px rgba(0,0,0,0.33); */
+.login {
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
 }
 
 .line-separation {
@@ -44,6 +38,10 @@ box-shadow: 1px 0px 14px 4px rgba(0,0,0,0.33); */
   border: 1px solid #c5c5c5;
   border-radius: 5px;
   font-style: italic;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  color: #b1b1b1;
 }
 
 .button-login {
@@ -59,4 +57,19 @@ box-shadow: 1px 0px 14px 4px rgba(0,0,0,0.33); */
   width: 140px;
   height: 35px;
   cursor: pointer;
+}
+
+.input-login:focus {
+  border-color: #FFD600;
+}
+
+.login-area {
+  display: flex;
+  justify-content: center;
+}
+
+.login-btn {
+  margin-top: 15px;
+  width: 120px;
+  height: 35px;
 }

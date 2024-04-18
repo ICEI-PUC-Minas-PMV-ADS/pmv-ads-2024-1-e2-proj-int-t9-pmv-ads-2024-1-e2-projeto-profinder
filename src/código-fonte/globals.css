@@ -83,7 +83,6 @@ p {
 
 .cta_btn_primary:hover,
 .cta_btn_secondary:hover {
-    transform: scale(1.05);
     box-shadow: 0px 0px 15px 1px #ffe355;
 }
 
