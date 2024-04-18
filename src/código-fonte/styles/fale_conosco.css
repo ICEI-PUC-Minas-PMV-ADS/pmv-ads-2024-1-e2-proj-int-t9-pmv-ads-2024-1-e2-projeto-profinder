@@ -20,12 +20,6 @@ p {
     margin-block: 10px;
 }
 
-header {
-    width: 100%;
-    display: flex; 
-    align-items: center;
-    border-bottom: 1.5px solid #FFD600;
-}
 
 #servicos-imagens {
     width: 336px;
@@ -128,7 +122,7 @@ header {
 }
 
 .titulo-container {
-    font-size: 2.1875rem;
+    font-size: 1.8em;
 }
 
 .introducao-text {

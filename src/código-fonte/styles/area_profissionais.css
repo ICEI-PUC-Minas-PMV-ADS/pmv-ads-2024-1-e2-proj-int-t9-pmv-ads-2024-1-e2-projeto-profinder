@@ -1,21 +1,12 @@
 
 /* ------------- INÍCIO ÁREA DO HEADER------------*/
-.container-navegation {
-    display: flex;
-    width: 100%;
-}
 
-.img-header {
-    margin-left: 30px;
-    margin-top: 15px;
-}
 
 .area-search {
     width: 35%;
     display: flex;
     align-items: center;
     margin-left: 5%;
-    margin-top: 30px;
 }
 
 .search-bar {
@@ -50,36 +41,6 @@
     font-size: 20px;
 }
 
-.list-menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 30px;
-    margin-left: 2%;
-    width: 38%;
-}
-
-.list-menu li {
-    list-style-type: none;
-    font-weight: 400;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.list-menu li:hover {
-    font-weight: 400;
-    color: #FFD600;
-    transition: 0.3s ease;
-}
-
-.line-style-top {
-    height: 1px;
-    background-color: #FFD600;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    margin-top: 29px;
-}
 
 .line-style-base {
     height: 1px;
