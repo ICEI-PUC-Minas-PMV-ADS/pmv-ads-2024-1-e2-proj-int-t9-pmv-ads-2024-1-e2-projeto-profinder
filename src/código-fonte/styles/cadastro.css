@@ -1,0 +1,74 @@
+main {
+    display: grid;
+    grid-template-areas: 
+    'aside section'
+    'footer footer';
+    height: 110vh;
+
+    /* Ajustar distanciamento dos elementos*/
+    
+    /* grid-template-columns: 200px auto;
+    grid-template-rows: auto 100px;
+    grid-gap: 20px;
+    height: 100vh; */
+}
+
+aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 214, 00, .4);
+}
+
+section {
+    grid-area: section;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+footer {
+    grid-area: footer;
+    margin-top:0 ;
+}
+
+.form-cadastro {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    text-align: start;
+}
+
+.select-user {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+    height: 1.5rem;
+}
+
+#tipo {
+    margin-left: 10px;
+    border:1px solid #FFD600;
+    border-radius: 5px;
+    width: 15rem;
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-conclude {
+    background-color: #FFD600;
+    color: #FFF;
+    width: 9rem;
+    height: 2rem;
+    border: #FFD600;
+    border-radius: 3px;
+    margin: 10px auto;
+}
+
+

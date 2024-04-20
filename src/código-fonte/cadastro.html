@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/src/código-fonte/globals.css">
+    <link rel="stylesheet" href="/src/código-fonte/styles/cadastro.css">
     <script defer src="/src/código-fonte/js/cadastro.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
@@ -13,7 +14,7 @@
 <body>
 
     <main>
-        <aside>
+        <aside id="asideLateral">
             <img src="/src/código-fonte/img/removebg_preview_2.png" alt="">
             <div class="descripitions">
                 <h1>Seja bem-vindo (a)</h1>
@@ -22,7 +23,7 @@
                     poderá utilizar essa ferramenta incrível! Bora lá? </p>
             </div>
         </aside>
-        <section >
+        <section id="conteudoCadastro">
             <header>
                 <div class="img-header">
                     <img  src="/src/código-fonte/img/logo.png" alt="Logo do site">
@@ -31,14 +32,15 @@
 
             <div class="select-user">
                 <h6>Eu quero me cadastrar como:</h6>
-                <select required>
-                    <option value=""></option>
-                    <option value="">Usuário</option>
-                    <option value="">Profissional</option>
+                <select onchange="atualizarParagrafo()"  id="tipo">
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="usuario">Usuário</option>
+                    <option value="profissional">Profissional</option>
                 </select>
             </div>
-
+            
             <div class="form-cadastro">
+                <div class="dadosPessoais column-left">
                 <form action="cadastrar">
                     <label for="name">Nome completo</label>
                     <input type="text">
@@ -46,17 +48,16 @@
                     <label for="number-phone">Número de Telefone</label>
                     <input type="number">
 
-                    
-
                     <label for="pass">Senha</label>
                     <input type="password" placeholder="Ex: User123*">
 
                     <label for="confirm-pass">Confirmar a senha</label>
                     <input type="text" placeholder="Confirmar senha">
 
-                   
                 </form>
-                <section class="adress">
+            </div>
+                <div class="adress column-right">
+                    <form action="adress">
                     <label for="cep">Digite o CEP:</label>
                     <input type="text" id="cep" maxlength="9" placeholder="XXXXX-XXX" oninput="formatarCEP()">
                     <button onclick="buscarEndereco()">Buscar</button>
@@ -69,19 +70,22 @@
                     <input type="text" id="cidade">
                     <label for="estado">Estado:</label>
                     <input type="text" id="estado">
-                </section>
+                </form>
+                </div>
 
-                <div>
-                <p>Selecione o tipo de profissional que está buscando (você pode selecionar mais de uma opção):</p>
-                <input type="checkbox"> Cuidadores de idosos.
-                <input type="checkbox" name="" id=""> Cuidadores de pesoas com deficiência.
+               
             </div>
-            <button type="submit">Concluir</button>
+            <div>
+                <p id="mensagem"></p>
+                <div id="checkboxAreas" style="display: none;">
+                <input type="checkbox" id="checkbox1"> Cuidadores de idosos.
+                <input type="checkbox" id="checkbox2"> Cuidadores de pesoas com deficiência.
             </div>
+            </div>
+            <button class="button-conclude" type="submit">Concluir</button>
         </section>
-    </main>
 
-    <!--ÁREA DO FOOTER-->
+         <!--ÁREA DO FOOTER-->
     <footer>
         <p class="footer-obj">ACESSIBILIDADE</p>
         <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
@@ -95,6 +99,10 @@
     </footer>
 
     <!--ÁREA DO FOOTER-->
+        
+    </main>
+
+   
 </body>
 
 </footer>

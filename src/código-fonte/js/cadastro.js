@@ -1,4 +1,27 @@
-  function formatarCEP() {
+function atualizarParagrafo() {
+    var select = document.getElementById('tipo');
+    var escolha = select.options[select.selectedIndex].value;
+
+    var paragrafo = document.getElementById('mensagem');
+    var checkboxAreas = document.getElementById("checkboxAreas")
+
+    if (escolha === 'usuario') {
+        paragrafo.textContent = 'Selecione o tipo de profissional que está buscando (você pode selecionar mais de uma opção):';
+        checkboxAreas.style.display = "block";
+    } else if (escolha === 'profissional') {
+        paragrafo.textContent = 'Selecione abaixo a sua especialidade (você poderá selecionar mais de uma opção):';
+        checkboxAreas.style.display = "block";
+    } else {
+        paragrafo.textContent = ''; // Limpa o texto se nenhuma opção for selecionada
+        checkboxAreas.style.display = "none";
+    }
+}
+window.onload = atualizarParagrafo;
+
+
+
+
+function formatarCEP() {
             var cep = document.getElementById('cep').value;
             cep = cep.replace(/\D/g, ''); // Remove caracteres não numéricos
 
