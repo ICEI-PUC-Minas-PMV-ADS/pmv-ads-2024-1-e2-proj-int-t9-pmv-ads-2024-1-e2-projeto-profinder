@@ -8,28 +8,38 @@
     <link rel="stylesheet" href="/src/código-fonte/styles/area_profissionais.css">
     <link rel="stylesheet" href="/src/código-fonte/globals.css">
     <script defer src="/src/código-fonte/js/profissionais.js"></script>
+    <script defer src="/src/código-fonte/js/toggle-menu.js"></script>
     <title>ProFinder - Profissionais</title>
 
 
 <!-- MENU DE NAVEGAÇÃO-->
     <header>
-        <div class="container-navegation">
-            <img class="img-header" src="/src/código-fonte/img/logo.png" alt="Logo do site">
-            
-            <div class="area-search">
+            <div class="container-navegation">
+                <img class="img-header" src="/src/código-fonte/img/logo.png" alt="Logo do site">
+                
+                <div class="toggle-menu">
+                    <img class="hamburger-icon" src="/src/código-fonte/img/Menu.png" alt="Ícone de menu">
+                </div>
+        
+                <div class="list-menu-finder">
+                        <li>Profissionais</li>
+                        <li>Minhas Contratações</li>
+                        <li>Meu Perfil</li>
+                        <li>Sair</li>
+                </div>
+            </div>
+
+            <div class="ajust-icon">
                 <img class="search-icon" src="/src/código-fonte/img/search_icon.png" alt="icone de lupa">
+            </div>
+
+            <div class="area-search">
                 <input type="search" class="search-bar" placeholder="Pesquise um profissional pela especialidade ou nome">
             </div>
 
-            <div class="list-menu">
-                <li>Profissionais</li>
-                <li>Minhas Contratações</li>
-                <li>Meu Perfil</li>
-                <li>Sair</li>
-            </div>
-        </div>
     </header>
     <div class="line-style-top"></div>
+
 <!-- MENU DE NAVEGAÇÃO-->  
 
 
@@ -38,7 +48,8 @@
         
         <div class="filters-container">
             <div class="img-filter"> <img src="/src/código-fonte/img/filters.png" alt="Ícone de filtro"></div>
-            
+
+
             <div class="filters-options">
                 <div class="filter-option" data-filter="option1">Cuidadores de Idosos</div>
                 <div class="filter-option" data-filter="option2">Alzheimer</div>
@@ -118,17 +129,17 @@
 
 
 <!--ÁREA DO FOOTER-->
-<footer>
-    <p class="footer-obj">ACESSIBILIDADE</p>
-    <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
-    <p class="footer-obj">PRIVACIDADE</p>
-    <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat 
-        illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia 
-        repudiandae nihil minus commodi doloremque velit. Officia eaque suscipit dignissimos, 
-        ex tempore voluptatibus quisquam ad earum obcaecati libero expedita ab quam a quae 
-        perferendis fugit voluptate corrupti qui et. Ab, illo ipsa quod, qui perferendis natus at
-   !</p>
-</footer>
+    <footer>
+        <p class="footer-obj">ACESSIBILIDADE</p>
+        <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
+        <p class="footer-obj">PRIVACIDADE</p>
+        <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat 
+            illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia 
+            repudiandae nihil minus commodi doloremque velit. Officia eaque suscipit dignissimos, 
+            ex tempore voluptatibus quisquam ad earum obcaecati libero expedita ab quam a quae 
+            perferendis fugit voluptate corrupti qui et. Ab, illo ipsa quod, qui perferendis natus at
+    !</p>
+    </footer>
 
 <!--ÁREA DO FOOTER-->
 </head>
