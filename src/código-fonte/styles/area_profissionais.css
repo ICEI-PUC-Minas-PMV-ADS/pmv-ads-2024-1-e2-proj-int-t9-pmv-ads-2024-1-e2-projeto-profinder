@@ -148,12 +148,12 @@ nav {
 .card {
     display: flex;
     flex-direction: column;
-    border: 1px solid #FFD600;
     border-radius: 7px;
     padding: 15px;
     margin: 10px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
 .profile-picture {

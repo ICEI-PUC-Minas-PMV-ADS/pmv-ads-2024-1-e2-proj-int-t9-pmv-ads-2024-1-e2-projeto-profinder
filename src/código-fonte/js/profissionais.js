@@ -62,3 +62,5 @@ applyfilters.addEventListener('click', () => {
     // Exibir os filtros selecionados no console
     console.log('Filtros selecionados:', selectedFilters);
 });
+
+
