@@ -248,7 +248,6 @@ footer {
     color: #FFD600;
     cursor: pointer;
     font-weight: 400;
-    transform: scale(1.02);
     transition: 0.3s ease;
 }
 

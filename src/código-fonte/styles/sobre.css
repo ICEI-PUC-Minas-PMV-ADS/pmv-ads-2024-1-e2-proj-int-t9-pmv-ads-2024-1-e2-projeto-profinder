@@ -1,0 +1,121 @@
+main {
+    padding: 25px;
+    
+}
+
+.area-sobre {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-us-area {
+    width: 50%;
+    height: 250px;
+    padding: 25px;
+    background-color: #FFD600 ;
+    border-radius: 7px 0px 0px 7px;
+}
+
+.about-us-images {
+    width: 50%;
+    height: 250px;
+    background-color: #FFD600;
+    border-radius: 0px 7px 7px 0px;
+}
+
+#title {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.about-us-area p {
+    text-align: justify;
+    margin-top: 25px;
+    color: #323232;
+    font-size: 1em;
+}
+
+.image-local {
+    margin: 15px;
+}
+
+.image-local img {
+    margin-left: 15px;
+    width: auto;
+    height: auto;
+    margin-top: 15px;
+}
+
+.logo-area-detail {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin-top: -10px;
+    text-align: center;
+    background-color: #FFD600;
+    border-radius: 0px 0px 7px 7px;
+}
+
+.logo-area-detail img {
+    width: 80%;
+}
+
+.description-area {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.devs-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.devs-card {
+    width: 200px;
+    height: 290px;
+    border-radius: 7px;
+    border: 1px solid #FFD600;
+    margin: 0 auto 25px auto;
+}
+
+.description-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-card a {
+    text-decoration: none;
+}
+
+.description-card img {
+    margin: 15px;
+}
+
+#description-profile {
+    margin-left: 15px;
+}
+
+#sub-profile {
+    font-size: 12px;
+    margin-left: 15px;
+    margin-block: 0;
+    font-weight: 300;
+}
+
+.line-profile {
+    width: 165px;
+    height: 1px;
+    margin-top: 5px;
+    margin-left: 15px;
+    background-color: #d6d6d6;
+}
+
+.icons-card {
+    display: flex;
+    margin: auto;
+    margin-top: -5px;
+    gap: 10px;
+}
