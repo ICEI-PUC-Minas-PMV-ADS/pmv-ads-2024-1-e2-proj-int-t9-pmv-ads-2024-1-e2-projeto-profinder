@@ -3,7 +3,6 @@ main {
     grid-template-areas: 
     'aside section'
     'footer footer';
-    height: 110vh;
 
     /* Ajustar distanciamento dos elementos*/
     
@@ -48,29 +47,22 @@ section {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 880px;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
-footer {
-    grid-area: footer;
-    margin-top:0 ;
-}
-
 .form-cadastro {
     display: flex;
     flex-direction: row;
-    margin: 0 5rem;
-    height: 20rem;
     width: 70%;
 }
 
 .select-user {
     display: flex;
     flex-direction: row;
-    margin-bottom: 60px;
-    height: 1.5rem;
+    padding: 45px;
 }
 
 #tipo {
@@ -122,4 +114,13 @@ footer {
 
 .checkboxAreas > input {
     border: 1px solid #FFD600;
+}
+
+#asideLateral {
+    justify-content: center;
+    align-items: center;
+}
+
+#asideLateral img {
+    width: 70%;
 }

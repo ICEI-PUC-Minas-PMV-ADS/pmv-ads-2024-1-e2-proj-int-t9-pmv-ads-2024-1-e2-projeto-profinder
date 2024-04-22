@@ -1,15 +1,15 @@
 
 /* ------------- INÍCIO ÁREA DO HEADER------------*/
 
+
 .list-menu-finder {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 75%;
     margin-left: 5%;
     margin-right: 5%;
-    width: 75%;
     flex-wrap: wrap;
-    display: none;
 }
 
 .list-menu-finder li {
@@ -20,25 +20,32 @@
     justify-content: space-between;
 }
 
-.toggle-menu {
-    display: none; /* Oculta por padrão */
-}
-
-.hamburger-icon {
-    cursor: pointer;
-    position: absolute; 
-    margin-left: 25px;
-}
-
-.blur-background {
-    backdrop-filter: blur(5px); /* Adiciona um leve desfoque ao fundo */
-    background-color: rgba(255, 255, 255, 0.5); /* Fundo semi-transparente */
-}
-
 .list-menu-finder li:hover {
     font-weight: 400;
     color: #FFD600;
     transition: 0.3s ease;
+}
+
+
+/* TELAS EXTRA PEQUENAS */
+@media (min-width: 350px) and (max-width: 800px) {
+    .list-menu-finder {
+        display: flex;
+        position: absolute;
+        align-items: end;
+        justify-content: space-around;
+        width: 95%;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .list-menu-finder li {
+        list-style-type: none;
+        font-weight: 400;
+        cursor: pointer;
+        padding: 10px;
+        justify-content: space-around;
+    }
 }
 
 .area-search {
