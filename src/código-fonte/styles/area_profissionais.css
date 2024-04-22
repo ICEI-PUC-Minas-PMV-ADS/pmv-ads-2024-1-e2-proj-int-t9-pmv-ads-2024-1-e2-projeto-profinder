@@ -1,7 +1,6 @@
 
 /* ------------- INÍCIO ÁREA DO HEADER------------*/
 
-
 .list-menu-finder {
     display: flex;
     align-items: center;
@@ -18,6 +17,15 @@
     cursor: pointer;
     padding: 10px;
     justify-content: space-between;
+    text-decoration: none;
+}
+
+.list-menu-finder a {
+    text-decoration: none;
+}
+
+.list-menu-finder a:visited {
+    color: #000;
 }
 
 .list-menu-finder li:hover {
@@ -79,7 +87,7 @@
 }
 
 .search-bar::-webkit-search-cancel-button {
-    cursor: pointer; /* Muda o cursor para apontador */
+    cursor: pointer;
     margin-right: 15px;
 }
 
