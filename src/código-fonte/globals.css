@@ -212,7 +212,59 @@ footer {
     height: 35px;
 }
 
+/* HEADER - ESTILIZAÇÃO - USUÁRIO NÃO CADASTRADO */
 
+.border-header {
+    width: 100%;
+    border-bottom: 1.5px solid #FFD600;
+}
+
+.logo-header {
+    width: 120px;
+    height: 60px;
+    margin-left: 30px;
+}
+
+.container-nav {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    width: 100%;
+    height: 100px;
+}
+
+.menu-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; 
+    width: 60%;
+}
+
+.menu-list li {
+    margin-right: 20px;
+}
+
+.menu-list li:hover {
+    color: #FFD600;
+    cursor: pointer;
+    font-weight: 400;
+    transform: scale(1.02);
+    transition: 0.3s ease;
+}
+
+.spaces {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.area-login {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* FIM - HEADER ESTILIZAÇÃO */
 
 /* TOGGLE MENU */
 
