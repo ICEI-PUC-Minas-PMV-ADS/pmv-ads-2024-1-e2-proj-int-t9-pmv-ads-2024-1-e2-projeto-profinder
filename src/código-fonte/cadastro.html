@@ -40,68 +40,79 @@
             </div>
             
             <div class="form-cadastro">
-                <div class="dadosPessoais column-left">
-                <form action="cadastrar">
-                    <label for="name">Nome completo</label>
-                    <input type="text">
+                <div class=" column-left">
+                <form action="dadosPessoais" class="dadosPessoais">
+                    <label for="name">Nome completo <span style="color: red;">*</span></label><br>
+                    <input type="text"><br>
 
-                    <label for="number-phone">Número de Telefone</label>
-                    <input type="number">
+                    <label for="name">Endereço de e-mail <span style="color: red;">*</span></label><br>
+                    <input type="email"><br>
 
-                    <label for="pass">Senha</label>
-                    <input type="password" placeholder="Ex: User123*">
+                    <label for="number-phone">Número de Telefone <span style="color: red;">*</span></label><br>
+                    <input type="number"><br>
 
-                    <label for="confirm-pass">Confirmar a senha</label>
+                    <label for="cpf">CPF <span style="color: red;">*</span></label><br>
+                    <input type="number" placeholder="Ex: 123.456.789.12"><br>
+
+                    <label for="pass">Senha <span style="color: red;">*</span></label><br>
+                    <input type="password" placeholder="Ex: User123*"><br>
+
+                    <label for="confirm-pass">Confirmar a senha <span style="color: red;">*</span></label><br>
                     <input type="text" placeholder="Confirmar senha">
 
                 </form>
             </div>
-                <div class="adress column-right">
-                    <form action="adress">
-                    <label for="cep">Digite o CEP:</label>
-                    <input type="text" id="cep" maxlength="9" placeholder="XXXXX-XXX" oninput="formatarCEP()">
-                    <button onclick="buscarEndereco()">Buscar</button>
-                    
-                    <label for="logradouro">Logradouro:</label>
-                    <input type="text" id="logradouro">
-                    <label for="bairro">Bairro:</label>
-                    <input type="text" id="bairro">
-                    <label for="cidade">Cidade:</label>
-                    <input type="text" id="cidade">
-                    <label for="estado">Estado:</label>
-                    <input type="text" id="estado">
-                </form>
+                <div class=" column-right">
+                    <form  method="get" class="adress">
+                        <label for="cep">Digite o CEP <span style="color: red;">*</span>:</label> <br>
+                        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                        onblur="pesquisacep(this.value);" oninput="formatarCEP()">
+                
+                        
+                        
+                        <label for="logradouro">Logradouro <span style="color: red;">*</span></label><br>
+                        <input name="rua" type="text" id="rua" size="60"><br>
+                        <label for="numero">Nº da residência <span style="color: red;">*</span></label><br>
+                        <input name="rua" type="text" id="rua" size="60"><br>
+                        <label for="bairro">Bairro <span style="color: red;">*</span></label><br>
+                        <input name="bairro" type="text" id="bairro" size="40""><br>
+                        <label for="cidade">Cidade <span style="color: red;">*</span></label><br>
+                        <input name="cidade" type="text" id="cidade" size="40"><br>
+                        <label for="uf">Estado <span style="color: red;">*</span></label><br>
+                        <input name="uf" type="text" id="uf" size="2" "><br>
+                        <label >Complemento(opcional)</label><br>
+                        <input type="text" id="Complemento">
+                    </form>
                 </div>
 
                
             </div>
-            <div>
+            <div class="selecionaEscolha"> 
                 <p id="mensagem"></p>
                 <div id="checkboxAreas" style="display: none;">
-                <input type="checkbox" id="checkbox1"> Cuidadores de idosos.
+                <input type="checkbox" id="checkbox1"> Cuidadores de idosos. <br>
                 <input type="checkbox" id="checkbox2"> Cuidadores de pesoas com deficiência.
             </div>
             </div>
             <button class="button-conclude" type="submit">Concluir</button>
         </section>
 
-         <!--ÁREA DO FOOTER-->
-    <footer>
-        <p class="footer-obj">ACESSIBILIDADE</p>
-        <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
-        <p class="footer-obj">PRIVACIDADE</p>
-        <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat
-            illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia
-            repudiandae nihil minus commodi doloremque velit. Officia eaque suscipit dignissimos,
-            ex tempore voluptatibus quisquam ad earum obcaecati libero expedita ab quam a quae
-            perferendis fugit voluptate corrupti qui et. Ab, illo ipsa quod, qui perferendis natus at
-            !</p>
-    </footer>
-
-    <!--ÁREA DO FOOTER-->
+    
+        
         
     </main>
+        <!--ÁREA DO FOOTER-->
+        <footer>
+            <p class="footer-obj">ACESSIBILIDADE</p>
+            <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
+            <p class="footer-obj">PRIVACIDADE</p>
+            <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat 
+                illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia!
+            </p>
+        </footer>
 
+        <!--ÁREA DO FOOTER-->
+    
    
 </body>
 

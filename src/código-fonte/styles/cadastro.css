@@ -3,7 +3,6 @@ main {
     grid-template-areas: 
     'aside section'
     'footer footer';
-    height: 110vh;
 
     /* Ajustar distanciamento dos elementos*/
     
@@ -17,9 +16,29 @@ aside {
     grid-area: aside;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40vw;
     height: 100%;
-    background-color: rgba(255, 214, 00, .4);
+    width: 100%;
+    background-color: rgba(255, 214, 0, 0.28);
+} 
+
+.descripitions {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside h1{
+    font-size: 1.5rem;
+} 
+
+aside p{
+    text-align: center;
+    margin-top: 20px;
+    width: 90%;
+    width: 452px;
+    height: 287px;
 }
 
 section {
@@ -27,26 +46,23 @@ section {
     margin-left: auto;
     display: flex;
     flex-direction: column;
-    width: 500px;
-}
-
-footer {
-    grid-area: footer;
-    margin-top:0 ;
+    width: 100%;
+    height: 880px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-cadastro {
     display: flex;
     flex-direction: row;
-    margin: 0;
-    text-align: start;
+    width: 70%;
 }
 
 .select-user {
     display: flex;
     flex-direction: row;
-    margin-bottom: 60px;
-    height: 1.5rem;
+    padding: 45px;
 }
 
 #tipo {
@@ -56,19 +72,55 @@ footer {
     width: 15rem;
 }
 
-.column-left {
+.column-left, .column-right {
     display: flex;
     flex-direction: column;
+    width: 30vw;
+    margin: 0 5px;
+    text-align: start;
 }
 
 .button-conclude {
     background-color: #FFD600;
     color: #FFF;
-    width: 9rem;
-    height: 2rem;
+    width: 172px;
+    height: 43px;
     border: #FFD600;
-    border-radius: 3px;
-    margin: 10px auto;
+    border-radius: 7px;
+    margin: 60px auto;
+    font-size: medium;
+    cursor: pointer;
 }
 
 
+.dadosPessoais > input, .adress > input {
+    border: 2px solid #C5C5C5;
+    border-radius: 5px;
+    width: 90%;
+    height: 1.65rem;
+    margin-bottom: 6px;
+}
+
+.selecionaEscolha {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 70%;
+}
+ 
+#checkboxAreas {
+    cursor: pointer;
+}
+
+.checkboxAreas > input {
+    border: 1px solid #FFD600;
+}
+
+#asideLateral {
+    justify-content: center;
+    align-items: center;
+}
+
+#asideLateral img {
+    width: 70%;
+}
