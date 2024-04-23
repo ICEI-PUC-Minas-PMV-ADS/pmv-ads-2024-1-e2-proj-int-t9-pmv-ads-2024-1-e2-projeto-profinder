@@ -1,0 +1,45 @@
+main {
+    padding: 25px;
+    height: 767px;
+    display: flex;
+    justify-content: center;
+}
+
+.contratações {
+    width: 80%;
+}
+
+.container-profile {
+    display: flex;
+    border-radius: 7px;
+    border: 1px solid #FFD600;
+    width: 80%;
+    height: 710px;
+}
+
+.detail-top-menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 85px;
+    border-radius: 6px 6px 0px 0px;
+    background-color: #FFD600;
+}
+
+.detail-circle {
+    margin-top: 37px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #FFD600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-circle p {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #FFD600;
+}

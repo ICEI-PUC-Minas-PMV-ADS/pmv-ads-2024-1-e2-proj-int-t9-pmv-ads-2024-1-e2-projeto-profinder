@@ -1,0 +1,167 @@
+<!--Desenvolvedor responsável: LUIZ--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/código-fonte/styles/area_profissionais.css">
+    <link rel="stylesheet" href="/src/código-fonte/styles/are_minhas_contratacoes.css">
+    <script defer src="/src/código-fonte/js/are_minhas_contratacoes.js"></script>
+    <script defer src="/src/código-fonte/js/profissionais.js"></script>
+    <title>Profissionais</title>
+
+    <header>
+        <div class="container-navegation">
+            <img class="img-header" src="/src/código-fonte/img/logo.png" alt="Logo do site">
+        
+            <div class="container-navbar">
+                <div class="list-menu">
+                    <li>Profissionais</li>
+                    <li>Minhas Contratações</li>
+                    <li>Meu Perfil</li>
+                    <li>Sair</li>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="line-style-top"></div>
+
+    <div id="download-relatorio">
+    <a href="" id=""> Baixar Relatório De Atendimento</a>
+    </div>
+
+    <main class="main-container">
+        <div class="relatório-atendimento">
+            <div class="container-top">
+                <p class="itens-containe-main" id="nome-profissional">Nome Profissional</p>
+                <p class="itens-containe-main" id="nome-pessoal"> Luiz Gustavo </p>
+            </div>
+            
+            <div class="container-base">
+                <p class="itens-containe-main" id="periodo-contrato"> Periodo de Contratação </p>
+                <p class="itens-containe-main" id="data-contrato"> 19/04/2023 a 17/04/2024</p>
+            </div>
+
+            <a href="" class="item-avaliar"> <img src="../../src/código-fonte/img/avaliar_prof.png" alt="icon de avaliação"> Avaliar Profissional</a>
+
+        </div>
+
+        <div class="relatório-atendimento">
+            <div class="container-top">
+                <p class="itens-containe-main" id="nome-profissional"> Idade </p>
+                <p class="itens-containe-main" id="nome-pessoal"> 26 </p>
+            </div>
+
+            <div class="container-base">
+                <p class="itens-containe-main" id="periodo-contrato"> Valor </p>
+                <p class="itens-containe-main" id="data-contrato"> R$1.200,00</p>
+            </div>
+        </div>
+
+        <div class="relatório-atendimento">
+            <div class="container-top">
+                <p class="itens-containe-main" id="nome-profissional">Especialização</p>
+                <p class="itens-containe-main" id="nome-pessoal"> Cuidador de Idosos </p>
+            </div>
+
+            <div class="container-base">
+                <p class="itens-containe-main" id="periodo-contrato"> Registro </p>
+                <p class="itens-containe-main" id="data-contrato"> #1022</p>
+            </div>
+        </div>
+    </main>
+
+    <div id="download-relatorio">
+        <a href="" id=""> Baixar Relatório De Atendimento</a>
+        </div>
+    
+        <main class="main-container">
+            <div class="relatório-atendimento">
+                <div class="container-top">
+                    <p class="itens-containe-main" id="nome-profissional">Nome Profissional</p>
+                    <p class="itens-containe-main" id="nome-pessoal"> Luiz Gustavo </p>
+                </div>
+                
+                <div class="container-base">
+                    <p class="itens-containe-main" id="periodo-contrato"> Periodo de Contratação </p>
+                    <p class="itens-containe-main" id="data-contrato"> 19/04/2023 a 17/04/2024</p>
+                </div>
+    
+                <a href="" class="item-avaliar"> <img src="../../src/código-fonte/img/avaliar_prof.png" alt="icon de avaliação"> Avaliar Profissional</a>
+    
+            </div>
+    
+            <div class="relatório-atendimento">
+                <div class="container-top">
+                    <p class="itens-containe-main" id="nome-profissional"> Idade </p>
+                    <p class="itens-containe-main" id="nome-pessoal"> 26 </p>
+                </div>
+    
+                <div class="container-base">
+                    <p class="itens-containe-main" id="periodo-contrato"> Valor </p>
+                    <p class="itens-containe-main" id="data-contrato"> R$1.200,00</p>
+                </div>
+            </div>
+    
+            <div class="relatório-atendimento">
+                <div class="container-top">
+                    <p class="itens-containe-main" id="nome-profissional">Especialização</p>
+                    <p class="itens-containe-main" id="nome-pessoal"> Cuidador de Idosos </p>
+                </div>
+    
+                <div class="container-base">
+                    <p class="itens-containe-main" id="periodo-contrato"> Registro </p>
+                    <p class="itens-containe-main" id="data-contrato"> #1022</p>
+                </div>
+            </div>
+        </main>
+
+        <div id="fade"></div>
+        <div id="containerModal" class="hide">
+         <div id="modal" >
+                <div class="cabecalhoModal">
+                <h2>Avaliação do Profissional</h2>
+                <p class="closeModal">X</p>
+                </div>
+                <p> Luiz Gustavo Rodrigues Pereira </p>
+                <p> Você ficou satisfeito com atendimento? </p>
+
+                <div class="buttonYesOrNo">
+                    <button class="sim-avaliar">Sim</button>
+                    <button class="nao-avaliar">Não</button>
+                </div>
+                
+                <p> Oque achou do valor cobrado deste profissional?</p>
+
+                <div class="imgEstrela">
+                    <img src="/src/código-fonte/img/estrela.png" class="estrela_prof" id="estrela_prof1" alt="estrela para avaliação"> 
+                    <img src="/src/código-fonte/img/estrela.png" class="estrela_prof" id="estrela_prof2" alt="estrela para avaliação"> 
+                    <img src="/src/código-fonte/img/estrela.png" class="estrela_prof" id="estrela_prof3" alt="estrela para avaliação"> 
+                    <img src="/src/código-fonte/img/estrela.png" class="estrela_prof" id="estrela_prof4" alt="estrela para avaliação"> 
+                    <img src="/src/código-fonte/img/estrela.png" class="estrela_prof" id="estrela_prof5" alt="estrela para avaliação">
+                </div>
+
+                <p> Qual nota você daria para a qualidade do serviço prestado?</p>
+
+                <div class="imgEstrela">
+                    <img src="/src/código-fonte/img/estrela.png" class="estrela_sis" id="estrela_sis1" alt="estrela para avaliação"> 
+                    <img src="/src/código-fonte/img/estrela.png" class="estrela_sis" id="estrela_sis2" alt="estrela para avaliação"> 
+                    <img src="/src/código-fonte/img/estrela.png" class="estrela_sis" id="estrela_sis3" alt="estrela para avaliação"> 
+                    <img src="/src/código-fonte/img/estrela.png" class="estrela_sis" id="estrela_sis4" alt="estrela para avaliação"> 
+                    <img src="/src/código-fonte/img/estrela.png" class="estrela_sis" id="estrela_sis5" alt="estrela para avaliação">
+                </div>
+                <br>
+                <input type="text" placeholder="Digite seu comentário aqui" class="">
+
+                <button class="confirmarAvaliacao"> Avaliar </button>
+            </div>
+        </div>
+
+    <div class="line-style-base"></div>
+
+</head>
+<body>
+    
+</body>
+</html>
