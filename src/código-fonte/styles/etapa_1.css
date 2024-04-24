@@ -80,7 +80,10 @@
 #info-dados-prf {
     color: #c5c5c5;
     margin-left: 5px;
+    font-size: 1.1rem;
+    font-weight: 300;
 }
+
 .container-geral {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px, 2fr));
@@ -91,3 +94,140 @@
     margin-bottom: 90px;
 }
 
+.container-right {
+    padding: 15px;
+}
+
+.title-right {
+    color: #C5C5C5;
+    font-weight: 300;
+}
+
+.general-text {
+    margin: 10px;
+    margin-top: 25px;
+}
+
+.general-text p {
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.wpp-area {
+    border-radius: 7px;
+    color: #ffffff;
+    background-color: #FFD600;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.wpp-area img {
+    margin-right: 2px;
+    width: 15px;
+}
+
+#person-details {
+    width: 100%;
+    height: 120px;
+    border-radius: 7px;
+    border: 1px solid #C5C5C5;
+    transition: border-color 0.3s ease;
+    padding: 5px;
+    outline: none;
+    color: #8f8f8f;
+    font-family: 'Inter';
+    font-style: italic;
+}
+
+#person-details:focus {
+    border-color:#FFD600;
+}
+
+#initial-date, #end-date,
+#initial-time, #end-time {
+    margin-left:5px;
+    border: 1px solid #FFD600;
+    border-radius: 7px;
+    height: 20px;
+    color: #8f8f8f;
+    padding: 2px;
+}
+
+.date-initial-end {
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.avanced {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.btn-area .none {
+    background-color: #ffffff;
+    border: #ffffff;
+    cursor: none;
+}
+
+#initial-date.invalid, #end-date.invalid,
+#initial-time.invalid, #end-time.invalid {
+    border: 1px solid #ff1e1e !important;
+}
+
+.error-message {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    color: #ad1212;
+    font-size: 0.9em;
+    margin-left: 40%;
+    background-color: #ffffff;
+    border: 2px solid #ff1e1e;
+    border-radius: 7px;
+    height: 50px;
+    animation: slideRightToLeft 0.5s ease forwards;
+}
+
+    @keyframes slideRightToLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+}
+
+.error-message span {
+    height: 35px;
+}
+
+.show-error {
+    animation-name: slideRightToLeft;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.progress-bar {
+    height: 3px;
+    background-color: #ff1e1e;
+    width: 100%;
+    animation: progressAnimation 7s linear forwards;
+}
+
+@keyframes progressAnimation {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
