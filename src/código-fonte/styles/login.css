@@ -1,3 +1,10 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+
 .login {
   justify-content: center;
   text-align: center;
@@ -10,9 +17,11 @@
 
 .form-login {
   position: absolute;
-  display: block;
+  display: flex;
   margin: 25vh auto;
   width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 
 .user-email, .user-pass {
@@ -54,8 +63,6 @@
   font-size: large;
   border: none;
   border-radius: 6px;
-  width: 140px;
-  height: 35px;
   cursor: pointer;
 }
 
@@ -70,6 +77,6 @@
 
 .login-btn {
   margin-top: 15px;
-  width: 120px;
+  width: 12rem;
   height: 35px;
 }
