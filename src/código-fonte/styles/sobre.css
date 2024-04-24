@@ -1,24 +1,25 @@
 main {
     padding: 25px;
-    
+
 }
 
 .area-sobre {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .about-us-area {
-    width: 50%;
-    height: 250px;
-    padding: 25px;
+    width: 45%;
+    height: auto;
+    padding: 15px;
     background-color: #FFD600 ;
     border-radius: 7px 0px 0px 7px;
 }
 
 .about-us-images {
-    width: 50%;
-    height: 250px;
+    width: 45%;
+    height: auto;
     background-color: #FFD600;
     border-radius: 0px 7px 7px 0px;
 }
@@ -26,6 +27,7 @@ main {
 #title {
     font-size: 25px;
     color: #ffffff;
+    margin: 15px;
 }
 
 .about-us-area p {
@@ -33,6 +35,7 @@ main {
     margin-top: 25px;
     color: #323232;
     font-size: 1em;
+    margin: 15px;
 }
 
 .image-local {
@@ -47,10 +50,9 @@ main {
 }
 
 .logo-area-detail {
-    width: 100%;
+    width: 92.6%;
     height: 80px;
-    padding: 10px;
-    margin-top: -10px;
+    margin-top: -15px;
     text-align: center;
     background-color: #FFD600;
     border-radius: 0px 0px 7px 7px;
@@ -95,6 +97,7 @@ main {
 }
 
 #description-profile {
+    margin: 0;
     margin-left: 15px;
 }
 
