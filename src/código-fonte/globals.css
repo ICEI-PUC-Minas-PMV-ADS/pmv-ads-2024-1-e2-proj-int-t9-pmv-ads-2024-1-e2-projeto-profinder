@@ -256,6 +256,15 @@ footer {
     transition: 0.3s ease;
 }
 
+.menu-list a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-list a:visited {
+    color: #000;
+}
+
 .spaces {
     margin-right: 10px;
     margin-left: 10px;
