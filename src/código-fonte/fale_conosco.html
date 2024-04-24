@@ -1,6 +1,7 @@
-<!--Desenvolvedor responsável: MATEUS--> 
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,38 +13,33 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-navegation">
-            <img class="img-header" src="/src/código-fonte/img/logo.png" alt="Logo do site">
-            
-    
-            <div class="menu-list">
-                <a href="../código-fonte/home.html"><li>Home</li></a>
-                <a href="../código-fonte/sobre.html"><li>Sobre</li></a>
-                <a href="../código-fonte/serviços.html"><li>Serviços</li></a>
-                <a href="../código-fonte/fale_conosco.html"><li>Fale Conosco</li></a>
-            </div>
-    
-            <div class="area-login">
-                <a href="../código-fonte/login.html"><button class="cta_btn_secondary spaces">Entrar</button></a>
-                <a href="../código-fonte/cadastro.html"><button class="cta_btn_primary spaces">Criar Conta</button></a>
-            </div>
-            
-        </div>
-    </header>
-    <div class="line-style-top"></div>
+    <div class="wrapper">
 
-    <main>
-        <div class="fale-container">
-            <p class="titulo-container">Fale Conosco</p>
-        </div>
-    
-        <p class="introducao-text">Precisa de ajuda com alguma coisa? Caso queira fazer elogios, 
-            reclamações, sugestões ou se tornar um parceiro ProFinder, envie-nos uma mensagem e 
-            responderemos o mais breve possível.</p>
+        <header class="header">
+            <div class="logo-profinder"><img class="img-logo" src="../código-fonte/img/logo.png" alt="Logo ProFinder"></div>
+            <div class="nav">
+                <a class="nav-link" href="../código-fonte/home.html"><li class="nav-li">Home</li></a>
+                <a class="nav-link" href="../código-fonte/sobre.html"><li class="nav-li">Sobre</li></a>
+                <a class="nav-link" href="../código-fonte/serviços.html"><li class="nav-li">Servicos</li></a>
+                <a class="nav-link" href="../código-fonte/fale_conosco.html"><li class="nav-li">Fale Conosco</li></a>
+            </div>
+            <div class="login-area">
+                <div class="area-login">
+                    <button class="cta_btn_secondary spaces">Entrar</button>
+                    <button class="cta_btn_primary spaces">Criar Conta</button>
+                </div>
+            </div>
+        </header>
 
-        <div class="fale-conosco">
-            <form>
+        <article class="fale-conosco">
+            <p class="title">Fale Conosco</p>
+            <p class="introduction">Precisa de ajuda com alguma coisa? Caso queira fazer elogios, 
+                reclamações, sugestões ou se tornar um parceiro ProFinder, envie-nos uma mensagem e 
+                responderemos o mais breve possível.</p>
+        </article>
+
+        <div class="forms">
+            <form class="input-forms">
                 <label for="nome">Nome Completo<span class="label-span">*</span></label>
                 <input type="text" id="nome" name="nome" placeholder="Insira seu nome Completo">
 
@@ -61,18 +57,14 @@
                 </div>
             </form>
         </div>
-
-       
-<!--ÁREA DO FOOTER-->
-    <footer>
-        <p class="footer-obj">ACESSIBILIDADE</p>
-        <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
-        <p class="footer-obj">PRIVACIDADE</p>
-        <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat 
-            illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia!
-        </p>
-    </footer>
-
-<!--ÁREA DO FOOTER-->
-    </main>
+        <footer>
+            <p class="footer-obj">ACESSIBILIDADE</p>
+            <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
+            <p class="footer-obj">PRIVACIDADE</p>
+            <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat 
+                illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia!
+            </p>
+        </footer>
+    </div>
 </body>
+</html>

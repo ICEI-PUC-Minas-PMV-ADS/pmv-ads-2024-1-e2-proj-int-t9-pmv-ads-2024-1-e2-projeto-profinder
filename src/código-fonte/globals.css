@@ -5,7 +5,6 @@
     --azul: #8f9bef;
 }
 
-*,
 html {
     box-sizing: border-box;
     margin: 0;
@@ -15,9 +14,9 @@ html {
 body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
 }
-
 
 
 h1 {
@@ -200,13 +199,6 @@ footer {
     margin-left: 30px;
 }
 
-.login-area {
-    display: flex;
-    width: 20%;
-    align-items: center;
-    justify-content: space-around;
-}
-
 .space {
     margin-left: 10px;
 }
@@ -219,65 +211,148 @@ footer {
 
 /* HEADER - ESTILIZAÇÃO - USUÁRIO NÃO CADASTRADO */
 
-.border-header {
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper > * {
+    flex: 1 100%;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     border-bottom: 1.5px solid #FFD600;
 }
 
-.logo-header {
-    width: 120px;
-    height: 60px;
-    margin-left: 30px;
-}
-
-.container-nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    height: 100px;
-}
-
-.menu-list {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    width: 60%;
-}
-
-.menu-list li {
-    margin-right: 20px;
-}
-
-.menu-list li:hover {
-    color: #FFD600;
-    cursor: pointer;
+.nav li:hover {
     font-weight: 400;
+    color: #FFD600;
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
-.menu-list a {
-    text-decoration: none;
-    color: #000;
+.logo-profinder {
+    height: 120px;
+    padding-top: 20px;
+    padding-left: 3%;
 }
 
-.menu-list a:visited {
-    color: #000;
-}
-
-.spaces {
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.area-login {
+.nav {
     display: flex;
-    width: 25%;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    width: 60%;
+    justify-content: space-around;    
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-li {
+    list-style: none;
+    margin-left: 100px;
+}
+
+.login-area {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10%;
 }
 
 /* FIM - HEADER ESTILIZAÇÃO */
+
+/* AREA DE RESPONSIVIDADE - HEADER */
+
+@media screen and (max-width:1260px) {
+    .login-area {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width:1145px) {
+    .logo-profinder {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .nav, .login-area{
+        margin-bottom: 3%;
+    }
+
+    .login-area {
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width:1115px) {
+    .logo-profinder {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+
+    }
+
+    .nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .login-area {
+        width: 100%;
+        text-align: center;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .logo-profinder {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    input[type="text"] {
+        width: 300px;
+    }
+    
+    textarea {
+        width: 300px;
+    }
+
+    .nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .nav-li {
+        margin-left: 0px;
+    }
+
+    .login-area {
+        width: 100%;
+        text-align: center;
+        justify-content: space-around;
+        margin-left: 0;
+    }
+}
+
+/* FIM AREA DE RESPONSIVIDADE - HEADER */
 
 /* TOGGLE MENU */
 
