@@ -16,7 +16,6 @@ main {
 }
 
 .form-login {
-  position: absolute;
   display: flex;
   margin: 25vh auto;
   width: 100%;
