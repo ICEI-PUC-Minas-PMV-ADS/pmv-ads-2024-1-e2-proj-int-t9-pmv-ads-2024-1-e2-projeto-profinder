@@ -1,26 +1,38 @@
-/* AREA DE SERVIÇOS*/
-
-.servicos {
-    margin-bottom: 5%;
+.services {
+    text-align: center;
+    margin-top: 20px;
 }
 
-.title.container {
-    display: flex;
-    width: 100%;
-    
-}
-
-.title-services {
-    background-color: #FFD600;
-    height: 50pt;
-    margin-top: 4%;
+.title {
+    background-color: yellow;
+    color: white;
     width: 92%;
     margin-left: 5%;
-    margin-bottom: 5%;
+    height: 40pt;
     border-radius: 7px;
-    font-size: 1.9rem;
-    color: white;
-    padding: 15px;
+    align-items: center;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 10px;
+    font-size: 1.8rem;
+}
+
+.texts {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.text-prof {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.text-wrapper1 {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .profissionais-titulo {
@@ -30,63 +42,29 @@
     color: #FFD600;
 }
 
-.profissionais-texto {
-    font-size: 1.25rem;
-    width: 500pt;
-    line-height: 27.79px;
-    text-align: justify;
-    margin-bottom: 5%;
+.profissionais-imagens {
+    min-width: 350px;
+    height: auto;
+    margin-top: 15%;
 }
 
 .profissionais-span {
     text-decoration: underline;
 }
 
-.usuarios-span {
-    text-decoration: underline;
-}
-
-.text-prof {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.text-wrapper1 {
-    margin-left: 10%;
-}
-
-.img-user {
-    margin-left: 10%;
-}
-
-.profissionais-titulo, .profissionais-texto {
-    justify-content: right;
-}
-
-.profissionais-imagens {
-    min-width: 350px;
-    height: auto;
-}
-
-.usuarios-texto {
+.profissionais-texto {
     font-size: 1.25rem;
     line-height: 27.79px;
-    width: 500pt;
     text-align: justify;
     margin-bottom: 5%;
 }
 
-.usuarios-titulo {
-    height: 56px;
-    align-items: center;
-    font-size: 2.5rem;
-    line-height: 55.57px;
-    color: #FFD600;
+.usuarios-span {
+    text-decoration: underline;
 }
 
 .cuidadores-span {
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 27.79px;
@@ -94,50 +72,90 @@
 }
 
 .text-user {
-    margin-top: 5%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap-reverse;
+    margin-top: 8%;
+    margin-bottom: 5%;
 }
 
 .usuarios-imagens {
     min-width: 350px;
     height: auto;
+    margin-bottom: 10%;
 }
 
-/* FIM - AREA DE SERVIÇOS */
-
-
-@media screen and (max-width:1200px) {
-
-    .text-wrapper1 {
-        margin-left: 0;
-    }
-    
-    .img-user {
-        margin-left: 0;
-    }
-
-    .area-login {
-        margin-left: 0px;
-    }
+.usuarios-texto {
+    font-size: 1.25rem;
+    line-height: 27.79px;
+    text-align: justify;
+    margin-top: 0;
 }
 
-@media screen and (max-width:1000px) {
+.usuarios-titulo {
+    align-items: center;
+    height: 55.62px;
+    font-size: 2.5rem;
+    line-height: 55.57px;
+    color: #FFD600;
+    margin-top: 0;
+}
 
-    .text-wrapper1 {
+.text-wrapper2 {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:680px) {
+    .text-1, .text-2 {
+        width: auto;
         margin-left: 0;
+    }
+
+    .texts {
+        width: 92%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .profissionais-titulo {
+        align-items: center;
+        font-size: 1.8rem;
+        line-height: 55.57px;
+        color: #FFD600;
+    }
+
+    .profissionais-texto {
+        font-size: 1rem;
+        line-height: 27.79px;
+        margin-bottom: 5%;
+    }
+
+    .usuarios-texto {
+        font-size: 1rem;
+        line-height: 27.79px;
+        text-align: justify;
+        margin-top: 0;
     }
     
-    .img-user {
-        margin-left: 0;
+    .usuarios-titulo {
+        align-items: center;
+        height: 55.62px;
+        font-size: 1.8rem;
+        line-height: 55.57px;
+        color: #FFD600;
+        margin-top: 0;
     }
 
-    .area-login {
-        margin-left: 0px;
-    }
+    .usuarios-span, .profissionais-span {
+        text-decoration: underline;
+    } 
 
-    .cta_btn_primary {
-        width: 100px;
+    .cuidadores-span {
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 27.79px;
     }
 }
