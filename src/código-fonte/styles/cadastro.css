@@ -37,7 +37,7 @@ aside h1{
 } 
 
 aside p {
-    margin-top: 20px;
+    margin: 20px auto;
     width: 70%;
     height: 287px;
     font-size: 24px;
