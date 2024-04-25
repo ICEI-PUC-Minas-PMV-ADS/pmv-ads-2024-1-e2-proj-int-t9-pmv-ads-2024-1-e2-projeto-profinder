@@ -18,7 +18,6 @@ main {
 .form-login {
   display: flex;
   margin: 25vh auto;
-  width: 100%;
   flex-direction: column;
   align-items: center;
 }
@@ -78,4 +77,14 @@ main {
   margin-top: 15px;
   width: 12rem;
   height: 35px;
+}
+
+/* Configuração do botao de esconder a senha ou exibila */
+::-ms-reveal {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 3px currentColor;
+  background-color: #FFD600;
+  width: 20px;
+  height: 20px;
 }

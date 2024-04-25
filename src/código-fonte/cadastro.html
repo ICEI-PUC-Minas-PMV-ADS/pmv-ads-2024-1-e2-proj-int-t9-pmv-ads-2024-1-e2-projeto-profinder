@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/src/código-fonte/globals.css">
     <link rel="stylesheet" href="/src/código-fonte/styles/cadastro.css">
     <script defer src="/src/código-fonte/js/cadastro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
 </head>
@@ -43,22 +45,22 @@
                 <div class=" column-left">
                 <form action="dadosPessoais" class="dadosPessoais">
                     <label for="name">Nome completo <span style="color: red;">*</span></label><br>
-                    <input type="text"><br>
+                    <input type="text" id="fullName"><br>
 
-                    <label for="name">Endereço de e-mail <span style="color: red;">*</span></label><br>
-                    <input type="email"><br>
+                    <label for="email">Endereço de e-mail <span style="color: red;">*</span></label><br>
+                    <input type="email" id="email"><br>
 
                     <label for="number-phone">Número de Telefone <span style="color: red;">*</span></label><br>
-                    <input type="number"><br>
+                    <input type="number" id="numberPhone"><br>
 
                     <label for="cpf">CPF <span style="color: red;">*</span></label><br>
-                    <input type="number" placeholder="Ex: 123.456.789.12"><br>
+                    <input type="text" id="cpf" placeholder="123.456.789-00" maxlength="14" oninput="formatarCPF()"><br>
 
                     <label for="pass">Senha <span style="color: red;">*</span></label><br>
-                    <input type="password" placeholder="Ex: User123*"><br>
+                    <input type="password" id="pass" placeholder="User123*"><br>
 
                     <label for="confirm-pass">Confirmar a senha <span style="color: red;">*</span></label><br>
-                    <input type="text" placeholder="Confirmar senha">
+                    <input type="password" id="confirmPass" placeholder="Confirmar senha">
 
                 </form>
             </div>
@@ -73,7 +75,7 @@
                         <label for="logradouro">Logradouro <span style="color: red;">*</span></label><br>
                         <input name="rua" type="text" id="rua" size="60"><br>
                         <label for="numero">Nº da residência <span style="color: red;">*</span></label><br>
-                        <input name="rua" type="text" id="rua" size="60"><br>
+                        <input name="numberResidence" type="text" id="numberResidence" size="60"><br>
                         <label for="bairro">Bairro <span style="color: red;">*</span></label><br>
                         <input name="bairro" type="text" id="bairro" size="40""><br>
                         <label for="cidade">Cidade <span style="color: red;">*</span></label><br>
@@ -94,7 +96,7 @@
                 <input type="checkbox" id="checkbox2"> Cuidadores de pesoas com deficiência.
             </div>
             </div>
-            <button class="button-conclude" type="submit">Concluir</button>
+            <button class="button-conclude" type="submit" onclick="validarCadastro()">Concluir</button>
         </section>
 
     
