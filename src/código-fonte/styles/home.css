@@ -2,6 +2,12 @@
 @import url(globals.css);
 
 
+.backgroun-detail {
+    width: auto;
+    height: 650px;
+    background-color: #ffd50028;
+}
+
 .tabela {
     text-align: center;
     height: auto;
@@ -56,6 +62,7 @@
 .left {
     width: 470px;
     position: relative;
+    margin-left: 35px;
 }
 
 .left span {
@@ -146,30 +153,13 @@
 .btn-area button {
     margin-top: 25px;
     width: 30%;
-}
-
-
-.telefone {
-    position: relative;
-    padding: 40px;
-    margin-left: 40px;
-}
-
-
-.telefone img {
-    width: 360px;
-    height: 400px;
-    top: 41px;
-    gap: 0px;
-    border-radius: 62px 0px 0px 0px;
-    opacity: 0px;
-    margin-top: 1px;
-
+    height: 40px;
+    font-size: 0.9em;
 }
 
 .rodape {
+    margin-top: 350px;
     display: flex;
-    margin-bottom: 80px;
     background-color: #8F8F8F;
     color: #ffffff; 
     font-family: "Inter", sans-serif;
