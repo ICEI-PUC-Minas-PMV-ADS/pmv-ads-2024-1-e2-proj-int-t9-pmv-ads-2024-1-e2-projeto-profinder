@@ -11,6 +11,7 @@ main {
 
 .container-profile {
     display: flex;
+    flex-direction: column;
     border-radius: 7px;
     border: 1px solid #FFD600;
     width: 80%;
@@ -43,3 +44,71 @@ main {
     font-weight: 700;
     color: #FFD600;
 }
+
+.Line1{
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+}
+
+.Line2{
+    margin-left: 10px;
+}
+
+.Line-grid{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    margin: 20px;
+}
+
+.Line-grid input{
+    width: 70%;
+}
+
+#espaçamento{
+    margin: 40px 0px 10px 0px;
+}
+
+.stage1{
+    
+}
+
+.stage2{
+    margin: 0px 30px;
+}
+
+.stage3{
+    margin: 0px 30px;
+}
+
+.stage1 input , .stage2 input , .stage3 input{
+    padding: 2px 0px;
+}
+
+
+.buttonSalvar{
+    display: flex;
+    justify-content: center;
+}
+
+.buttonSalvar button{
+    background-color: #FFD600;
+    border: none;
+    color: white;
+    width: 15%;
+    margin-top: 20px;
+    padding: 6px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#espacoContatos{
+    font-size: larger;
+}
+
+#senha-perfil , #senha2-perfil {    
+    background-image: url("/src/código-fonte/img/pass_Invisible.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  

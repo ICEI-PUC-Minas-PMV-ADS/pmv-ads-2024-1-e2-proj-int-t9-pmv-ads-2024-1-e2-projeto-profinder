@@ -100,3 +100,77 @@ function meu_callback(conteudo) {
 };
         
 // Fim do Localizador CEP -----------------------------------------------------------------------------------
+
+// Fortatação de um CPF
+    // Função para formatar o CPF enquanto o usuário digita
+    function formatarCPF() {
+        let input = document.getElementById('cpf');
+        let cpf = input.value.replace(/\D/g, ''); // Remove todos os caracteres que não são dígitos
+        cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2'); // Adiciona o primeiro ponto
+        cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2'); // Adiciona o segundo ponto
+        cpf = cpf.replace(/(\d{3})(\d{1,2})$/, '$1-$2'); // Adiciona o traço
+        input.value = cpf;
+    }
+
+    // Função para validar o CPF
+    function validarCPF() {
+        let input = document.getElementById('cpf');
+        let cpf = input.value.replace(/\D/g, ''); // Remove todos os caracteres que não são dígitos
+
+        if (cpf.length !== 11) {
+            alert('CPF inválido! O CPF deve conter 11 dígitos.');
+            input.focus();
+            return false;
+        }
+
+        // Algoritmo para validar CPF
+        // Implemente o algoritmo de validação de CPF aqui
+        // Aqui está um exemplo de implementação simples: https://gist.github.com/guisehn/46de78dbb945da1edca98bdae75e5a7a
+
+        return true; // Retorna verdadeiro se o CPF for válido
+    }
+
+
+
+// Validação do cadastro completo
+
+function validarCadastro() {
+    var fullName = document.getElementById('fullName')
+    var email = document.getElementById('email')
+    var numberPhone = document.getElementById('numberPhone')
+    var cpf = document.getElementById('cpf')
+    var pass = document.getElementById('pass')
+    var confirmPass = document.getElementById('confirPass')
+    var cep = document.getElementById('cep')
+    var rua = document.getElementById('rua')
+    var numberResidence = document.getElementById('numberResidence')
+    var bairro = document.getElementById('bairro')
+    var cidade = document.getElementById('cidade')
+    var estado = document.getElementById('uf')
+
+
+    if (fullName === "" || email === "" || numberPhone === "" || cpf === "" || pass === "" || confirmPass === "" || cep === "" || rua === "" || numberResidence === "" || bairro === "" || cidade === "" || estado === "") {
+        // alert('Por favor, preencha todos os campos vazios!');
+        Swal.fire({
+            title: 'Olá ProFinder, parece que:',
+            html: '<strong>Existem campos vazios, preencha-os para prosseguirmos!</strong>',
+            icon: 'warning',})
+        return;
+    }
+    
+    if (pass !== confirmPass) {
+        //  alert('As senhas nao coicidem!');
+         Swal.fire({
+            title: 'Olá ProFinder, parece que:',
+             html: '<strong>As senhas nao coicidem, verifique novamente!</strong>',
+             icon: 'warning',})
+       
+        return;
+    }
+
+
+    alert('Formulário enviado com sucesso!')
+    window.location.href = '../home.html'
+}
+    
+ 
