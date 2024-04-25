@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
-    --amarelo: #ffd600;
+    --amarelo: #FFD600;
     --azul: #8f9bef;
 }
 
@@ -170,7 +170,7 @@ footer {
     justify-content: space-between;
     margin-left: 5%;
     margin-right: 5%;
-    width: 50%;
+    width: 55%;
 }
 
 .list-menu li {
@@ -263,7 +263,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-left: 10%;
 }
 
 /* FIM - HEADER ESTILIZAÇÃO */
