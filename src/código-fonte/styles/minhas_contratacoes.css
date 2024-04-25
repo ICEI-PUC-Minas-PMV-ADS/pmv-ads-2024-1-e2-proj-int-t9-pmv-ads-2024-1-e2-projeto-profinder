@@ -127,6 +127,11 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 2px;
+    font-family: "Inter", sans-serif;
+}
+
+.Linha1 h4{
+    margin: 2px;
 }
 
 .Linha4{
@@ -150,6 +155,7 @@ main {
 
 .Linha6 img, .Linha8 img{
     height: 28px;
+    cursor: pointer;
 }
 
 
