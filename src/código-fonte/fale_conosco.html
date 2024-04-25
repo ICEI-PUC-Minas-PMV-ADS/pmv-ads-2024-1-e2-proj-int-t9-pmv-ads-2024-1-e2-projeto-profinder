@@ -1,3 +1,5 @@
+<!--Desenvolvedor responsável: MATEUS--> 
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -10,27 +12,55 @@
     <title>Fale conosco - ProFinder</title>
     <link rel="icon" href="../código-fonte/img/logo.png" type="image/x-icon">
     <script defer src="/src/código-fonte/js/fale_conosco.js"></script>
+    <script defer src="../código-fonte/js/header.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
 
-        <header class="header">
-            <div class="logo-profinder"><img class="img-logo" src="../código-fonte/img/logo.png" alt="Logo ProFinder"></div>
-            <div class="nav">
-                <a class="nav-link" href="../código-fonte/home.html"><li class="nav-li">Home</li></a>
-                <a class="nav-link" href="../código-fonte/sobre.html"><li class="nav-li">Sobre</li></a>
-                <a class="nav-link" href="../código-fonte/serviços.html"><li class="nav-li">Servicos</li></a>
-                <a class="nav-link" href="../código-fonte/fale_conosco.html"><li class="nav-li">Fale Conosco</li></a>
-            </div>
-            <div class="login-area">
-                <div class="area-login">
-                    <button class="cta_btn_secondary spaces">Entrar</button>
-                    <button class="cta_btn_primary spaces">Criar Conta</button>
+<!--AREA DO HEADER--> 
+        <div class="user-not-logged" >
+            <header class="header">
+                <div class="logo-profinder"><img src="../código-fonte/img/logo.png" alt="Logo ProFinder"></div>
+                <div class="nav">
+                    <a class="nav-link" href="../código-fonte/home.html"><li class="nav-li">Home</li></a>
+                    <a class="nav-link" href="../código-fonte/sobre.html"><li class="nav-li">Sobre</li></a>
+                    <a class="nav-link" href="../código-fonte/serviços.html"><li class="nav-li">Servicos</li></a>
+                    <a class="nav-link" href="../código-fonte/fale_conosco.html"><li class="nav-li">Fale Conosco</li></a>
                 </div>
-            </div>
-        </header>
+                <div class="login-area">
+                    <div class="area-login">
+                        <a href="../código-fonte/login.html"><button class="cta_btn_secondary spaces">Entrar</button></a>
+                        <a href="../código-fonte/cadastro.html"><button class="cta_btn_primary spaces">Criar Conta</button></a>
+                    </div>
+                </div>       
+            </header>
+        </div>
 
+        <div class="user-logged" style="display: none;">
+            <header class="header">
+                <div class="logo-profinder-logged"><img src="../código-fonte/img/logo.png" alt="Logo ProFinder"></div>
+                <div class="nav-logged">
+                    <a class="nav-link" href="../código-fonte/home.html"><li class="nav-li">Home</li></a>
+                    <a class="nav-link" href="../código-fonte/sobre.html"><li class="nav-li">Sobre</li></a>
+                    <a class="nav-link" href="../código-fonte/serviços.html"><li class="nav-li">Servicos</li></a>
+                    <a class="nav-link" href="../código-fonte/fale_conosco.html"><li class="nav-li">Fale Conosco</li></a>
+                    <a class="nav-link" href="../código-fonte/fale_conosco.html"><li class="nav-li">Profissionais</li></a>
+
+                    <li id="user-dropdown">
+                        <a class="account-drop" href="#">Minha Conta</a>
+                        <ul id="user-menu" class="dropdown-content" style="display: none;">
+                            <li class="toggle-options"><a href="../código-fonte/area_meu_perfil.html">Perfil</a></li>
+                            <li class="toggle-options"><a href="../código-fonte/area_minhas_contratacoes.html">Minhas contratações</a></li>
+                            <li class="toggle-options"><a href="#">Sair</a></li>
+                        </ul>
+                    </li>
+                </div>   
+            </header>
+        </div>
+<!--FIM AREA DO HEADER--> 
+
+<!--AREA DO FORMS-->
         <article class="fale-conosco">
             <p class="title">Fale Conosco</p>
             <p class="introduction">Precisa de ajuda com alguma coisa? Caso queira fazer elogios, 
@@ -57,6 +87,9 @@
                 </div>
             </form>
         </div>
+<!--FIM AREA DO FORMS-->
+
+<!--AREA DO FOOTER-->
         <footer>
             <p class="footer-obj">ACESSIBILIDADE</p>
             <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
@@ -65,6 +98,8 @@
                 illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia!
             </p>
         </footer>
+<!--FIM AREA DO FOOTER-->
+
     </div>
 </body>
 </html>

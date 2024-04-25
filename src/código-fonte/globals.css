@@ -235,10 +235,25 @@ footer {
     cursor: pointer;
 }
 
+.nav-logged li:hover {
+    font-weight: 400;
+    color: #FFD600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+
+
 .logo-profinder {
     height: 120px;
     padding-top: 20px;
     padding-left: 3%;
+}
+
+.logo-profinder-logged {
+    height: 120px;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 .nav {
@@ -248,6 +263,28 @@ footer {
     width: 60%;
     justify-content: space-around;    
 }
+
+.nav-logged {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.account-drop {
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+
+.account-drop:hover {
+    font-weight: 400;
+    color: #FFD600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
 
 .nav-link {
     text-decoration: none;
@@ -264,6 +301,53 @@ footer {
     flex-wrap: wrap;
     align-items: center;
 }
+
+.account-li {
+    text-decoration: none;
+}
+
+.toggle-options:hover {
+    background-color: #FFD600;
+    border-radius: 5px;
+    font-weight: 400;
+    transition: 0.3s ease;
+    cursor: pointer;
+} 
+
+#user-dropdown {
+    position: relative;
+    list-style: none;
+    margin-left: 5%;
+}
+  
+#user-menu {
+    position: absolute;
+    display: none; 
+    background-color: #ffffff; 
+    padding: 10px; 
+    z-index: 1; 
+    border-radius: 5px;
+}
+  
+#user-dropdown:hover #user-menu {
+    display: block; 
+}
+  
+#user-menu li {
+    list-style: none; 
+    margin: 0; 
+    padding: 5px; 
+}
+  
+#user-menu li a {
+    text-decoration: none; 
+    color: #000; 
+}
+
+#user-menu li:not(:first-child) {
+    margin-top: 10px;
+}
+
 
 /* FIM - HEADER ESTILIZAÇÃO */
 
@@ -349,6 +433,47 @@ footer {
         text-align: center;
         justify-content: space-around;
         margin-left: 0;
+    }
+}
+
+/* RESPONSIVIDADE PARA USUARIOS LOGADOS */
+
+@media screen and (max-width:1700px) {
+
+    .logo-profinder-logged {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        margin-bottom: 2%;
+    }
+
+    .nav-logged {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:999px) {
+
+    .logo-profinder-logged {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        margin-bottom: 2%;
+    }
+
+    .nav-logged {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: 0;
+        gap: 30px;
     }
 }
 

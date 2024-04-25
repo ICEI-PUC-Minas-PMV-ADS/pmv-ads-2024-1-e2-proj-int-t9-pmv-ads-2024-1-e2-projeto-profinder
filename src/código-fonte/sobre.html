@@ -14,21 +14,44 @@
 <!--AREA DO HEADER-->        
     <div class="wrapper">
 
-        <header class="header">
-            <div class="logo-profinder"><img src="../código-fonte/img/logo.png" alt=""></div>
-            <div class="nav">
-                <a class="nav-link" href="../código-fonte/home.html"><li class="nav-li">Home</li></a>
-                <a class="nav-link" href="../código-fonte/sobre.html"><li class="nav-li">Sobre</li></a>
-                <a class="nav-link" href="../código-fonte/serviços.html"><li class="nav-li">Servicos</li></a>
-                <a class="nav-link" href="../código-fonte/fale_conosco.html"><li class="nav-li">Fale Conosco</li></a>
-            </div>
-            <div class="login-area">
-                <div class="area-login">
-                    <button class="cta_btn_secondary spaces">Entrar</button>
-                    <button class="cta_btn_primary spaces">Criar Conta</button>
+        <div class="user-not-logged" >
+            <header class="header">
+                <div class="logo-profinder"><img src="../código-fonte/img/logo.png" alt="Logo ProFinder"></div>
+                <div class="nav">
+                    <a class="nav-link" href="../código-fonte/home.html"><li class="nav-li">Home</li></a>
+                    <a class="nav-link" href="../código-fonte/sobre.html"><li class="nav-li">Sobre</li></a>
+                    <a class="nav-link" href="../código-fonte/serviços.html"><li class="nav-li">Servicos</li></a>
+                    <a class="nav-link" href="../código-fonte/fale_conosco.html"><li class="nav-li">Fale Conosco</li></a>
                 </div>
-            </div>
-        </header>
+                <div class="login-area">
+                    <div class="area-login">
+                        <a href="../código-fonte/login.html"><button class="cta_btn_secondary spaces">Entrar</button></a>
+                        <a href="../código-fonte/cadastro.html"><button class="cta_btn_primary spaces">Criar Conta</button></a>
+                    </div>
+                </div>       
+            </header>
+        </div>
+
+        <div class="user-logged" style="display: none;">
+            <header class="header">
+                <div class="logo-profinder-logged"><img src="../código-fonte/img/logo.png" alt="Logo ProFinder"></div>
+                <div class="nav-logged">
+                    <a class="nav-link" href="../código-fonte/home.html"><li class="nav-li">Home</li></a>
+                    <a class="nav-link" href="../código-fonte/sobre.html"><li class="nav-li">Sobre</li></a>
+                    <a class="nav-link" href="../código-fonte/serviços.html"><li class="nav-li">Servicos</li></a>
+                    <a class="nav-link" href="../código-fonte/fale_conosco.html"><li class="nav-li">Fale Conosco</li></a>
+                    <a class="nav-link" href="../código-fonte/fale_conosco.html"><li class="nav-li">Profissionais</li></a>
+
+                    <li id="user-dropdown">
+                        <a class="account-drop" href="#">Minha Conta</a>
+                        <ul id="user-menu" class="dropdown-content" style="display: none;">
+                            <li class="toggle-options"><a href="../código-fonte/area_meu_perfil.html">Perfil</a></li>
+                            <li class="toggle-options"><a href="../código-fonte/area_minhas_contratacoes.html">Minhas contratações</a></li>
+                            <li class="toggle-options"><a href="#">Sair</a></li>
+                        </ul>
+                    </li>
+                </div>   
+            </header>
     </div>
 <!--FIM - AREA DO HEADER-->
 
