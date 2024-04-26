@@ -16,7 +16,6 @@ function atualizarParagrafo() {
         checkboxAreas.style.display = "none";
     }
 }
-window.onload = atualizarParagrafo;
 
 
 //  Localizador CEP -----------------------------------------------------------------------------------------
@@ -148,15 +147,39 @@ function validarCadastro() {
     var cidade = document.getElementById('cidade')
     var estado = document.getElementById('uf')
 
-
-    if (fullName === "" || email === "" || numberPhone === "" || cpf === "" || pass === "" || confirmPass === "" || cep === "" || rua === "" || numberResidence === "" || bairro === "" || cidade === "" || estado === "") {
-        // alert('Por favor, preencha todos os campos vazios!');
-        Swal.fire({
-            title: 'Olá ProFinder, parece que:',
-            html: '<strong>Existem campos vazios, preencha-os para prosseguirmos!</strong>',
-            icon: 'warning',})
-        return;
+    if (validarCPF = true) {
+        
     }
+
+    const inputs = document.querySelectorAll('input');
+
+  // Verifica se todos os inputs estão preenchidos
+  let allFilled = true;
+  inputs.forEach(input => {
+    if (input.value === '') {
+      allFilled = false;
+    }
+  });
+    
+  if (!allFilled) {
+    Swal.fire({
+     title: 'Olá ProFinder, parece que:',
+     html: '<strong>Existem campos vazios, preencha-os para prosseguirmos!</strong>',
+     icon: 'warning',})
+    return false;
+    }
+    // Verifica se o CEP está digitado corretamente
+    // const cepInput = document.querySelector('input[name="CEP"]');
+    cep = /^\d{5}-\d{3}$/;
+    if (!cep.test(cep.value)) {
+      alert('CEP inválido!');
+      return false;
+    }
+
+  //  Verifica se o CPF está digitado corretamente 
+//    const cpfInput = document.querySelector('input[name="cpf"]');
+  
+    
     
     if (pass !== confirmPass) {
         //  alert('As senhas nao coicidem!');
@@ -168,7 +191,7 @@ function validarCadastro() {
         return;
     }
 
-
+    return true;
     alert('Formulário enviado com sucesso!')
     window.location.href = '../home.html'
 }

@@ -44,43 +44,43 @@
             <div class="form-cadastro">
                 <div class=" column-left">
                 <form action="dadosPessoais" class="dadosPessoais">
-                    <label for="name">Nome completo <span style="color: red;">*</span></label><br>
+                    <label for="name">Nome completo <span id="campoObrig" style="color: red;">*</span></label><br>
                     <input type="text" id="fullName"><br>
 
-                    <label for="email">Endereço de e-mail <span style="color: red;">*</span></label><br>
+                    <label for="email">Endereço de e-mail <span id="campoObrig" style="color: red;">*</span></label><br>
                     <input type="email" id="email"><br>
 
-                    <label for="number-phone">Número de Telefone <span style="color: red;">*</span></label><br>
-                    <input type="number" id="numberPhone"><br>
+                    <label for="number-phone">Número de Telefone <span id="campoObrig" style="color: red;">*</span></label><br>
+                    <input type="text" id="numberPhone"><br>
 
-                    <label for="cpf">CPF <span style="color: red;">*</span></label><br>
-                    <input type="text" id="cpf" placeholder="123.456.789-00" maxlength="14" oninput="formatarCPF()"><br>
+                    <label for="cpf">CPF <span id="campoObrig" style="color: red;">*</span></label><br>
+                    <input type="text" id="cpf" name="cpf" placeholder="123.456.789-00" maxlength="14" oninput="formatarCPF()" onblur="validarCPF()"><br>
 
-                    <label for="pass">Senha <span style="color: red;">*</span></label><br>
+                    <label for="pass">Senha <span id="campoObrig" style="color: red;">*</span></label><br>
                     <input type="password" id="pass" placeholder="User123*"><br>
 
-                    <label for="confirm-pass">Confirmar a senha <span style="color: red;">*</span></label><br>
+                    <label for="confirmPass">Confirmar a senha <span id="campoObrig" style="color: red;">*</span></label><br>
                     <input type="password" id="confirmPass" placeholder="Confirmar senha">
 
                 </form>
             </div>
                 <div class=" column-right">
                     <form  method="get" class="adress">
-                        <label for="cep">Digite o CEP <span style="color: red;">*</span>:</label> <br>
+                        <label for="cep">Digite o CEP <span id="campoObrig" style="color: red;">*</span>:</label> <br>
                         <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
                         onblur="pesquisacep(this.value);" oninput="formatarCEP()">
                 
                         
                         
-                        <label for="logradouro">Logradouro <span style="color: red;">*</span></label><br>
+                        <label for="logradouro">Logradouro <span id="campoObrig" style="color: red;">*</span></label><br>
                         <input name="rua" type="text" id="rua" size="60"><br>
-                        <label for="numero">Nº da residência <span style="color: red;">*</span></label><br>
+                        <label for="numero">Nº da residência <span id="campoObrig" style="color: red;">*</span></label><br>
                         <input name="numberResidence" type="text" id="numberResidence" size="60"><br>
-                        <label for="bairro">Bairro <span style="color: red;">*</span></label><br>
+                        <label for="bairro">Bairro <span id="campoObrig" style="color: red;">*</span></label><br>
                         <input name="bairro" type="text" id="bairro" size="40""><br>
-                        <label for="cidade">Cidade <span style="color: red;">*</span></label><br>
+                        <label for="cidade">Cidade <span id="campoObrig" style="color: red;">*</span></label><br>
                         <input name="cidade" type="text" id="cidade" size="40"><br>
-                        <label for="uf">Estado <span style="color: red;">*</span></label><br>
+                        <label for="uf">Estado <span id="campoObrig" style="color: red;">*</span></label><br>
                         <input name="uf" type="text" id="uf" size="2" "><br>
                         <label >Complemento(opcional)</label><br>
                         <input type="text" id="Complemento">
