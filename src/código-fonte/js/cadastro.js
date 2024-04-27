@@ -147,9 +147,10 @@ function validarCadastro() {
     var cidade = document.getElementById('cidade')
     var estado = document.getElementById('uf')
 
-    if (validarCPF = true) {
-        
-    }
+    //Verificar ao prosseguir se está correto
+    // if (validarCPF = true) {
+    //     return;
+    // }
 
     const inputs = document.querySelectorAll('input');
 
@@ -175,11 +176,6 @@ function validarCadastro() {
       alert('CEP inválido!');
       return false;
     }
-
-  //  Verifica se o CPF está digitado corretamente 
-//    const cpfInput = document.querySelector('input[name="cpf"]');
-  
-    
     
     if (pass !== confirmPass) {
         //  alert('As senhas nao coicidem!');
