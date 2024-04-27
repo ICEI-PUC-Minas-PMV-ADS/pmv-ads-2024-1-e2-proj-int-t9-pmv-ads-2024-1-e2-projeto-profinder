@@ -1,15 +1,21 @@
 # Programação de Funcionalidades
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
-
-Implementação do sistema descrita por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos com os artefatos criados (código fonte), deverão apresentadas as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
-
-Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos desenvolvidos.
 
 |ID    | Descrição do Requisito  | Artefato(s) produzido(s) |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | tarefas.shtml / tarefas.cs / controllertarefas.cs | 
-|RF-002| A aplicação deve permitir a emissão de um relatório de tarefas realizadas no mês   | relatorio.shtml |
+|RF-001| O software deve ser capaz de cadastrar usuários e profissionais. | cadastro.html / cadastro.css / cadastro.js | 
+|RF-002| Deverá ser possível fazer busca por profissional e especialidade.   | area_profissionais.html / area_profissionais.css / profissionais.js |
+|RF-003| Deverá conter dados do profissional para agendamento.   | contratação_etapa_1.html / contratação_etapa_2.html / contratação_etapa_3.html / etapa_1.css / etapa1.js |
+|RF-004| Deverá emitir um relatório para o cliente referente as contratações realizadas.   | area_minhas_contratacoes.html / minhas_contratacoes.css |
+|RF-005| Permitirá ao usuário incluir informações como cuidados especiais com o paciente.   | contratação_etapa_1.html / contratação_etapa_2.html / contratação_etapa_3.html / etapa_1.css / etapa1.js |
+|RF-006| Opção de editar cadastro dos usuários e profissionais.  | area_meu_perfil.html / area_meu_perfil.css / meu_perfil_profinder.html |
+|RF-007| O profissional poderá acessar o relatório de trabalhos realizados | relatorios.html / relatorios.css |
+|RF-008| Os usuários poderão avaliar e verificar as avaliações anteriores dos profissionais  | area_minhas_contratacoes.html / minhas_contratacoes.css / area_profissionais.html / area_profissionais.css / profissionais.js |
+|RF-009| Os profissionais poderão avaliar os usuários.  | meus_pacientes.html |
+|RF-010| Permitir que os usuários enviem informações para os profissionais.    | contratação_etapa_1.html / contratação_etapa_2.html / contratação_etapa_3.html / etapa_1.css / etapa1.js |
+|RF-011| Permitir que os profissionais enviem informações para os usuárioss.  | contratação_etapa_1.html / contratação_etapa_2.html / contratação_etapa_3.html / etapa_1.css / etapa1.js |
+
+
 
 # Instruções de acesso
 
