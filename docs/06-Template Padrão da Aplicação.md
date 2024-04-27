@@ -24,15 +24,12 @@ O template padrão utilizado no desenvolvimento da interface segue conforme orde
 ![Início](../docs/img/Página%20Inicial.png)
 
 - Tela Sobre Nós (Sobre);
-![Home](../docs/img/Template%20Padrão%20-%20Home.png)
 ![Início](../docs/img/Sobre%20Nós.png)
 
 - Tela Serviços (Serviços);
-![Home](../docs/img/Template%20Padrão%20-%20Home.png)
 ![Início](../docs/img/Serviços.png)
 
 - Tela Fale Conosco (Fale Conosco);
-![Home](../docs/img/Template%20Padrão%20-%20Home.png)
 ![Início](../docs/img/Fale%20Conosco.png)
 
 
