@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../código-fonte/globals.css">
     <link rel="stylesheet" href="../código-fonte/styles/area_meu_perfil.css">
     <link rel="stylesheet" href="../código-fonte/styles/area_profissionais.css">
+    <script defer src="/src/código-fonte/js/meu_perfil.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
     <title>ProFinder - Meu Perfil</title>
 </head>
 <!--AREA DO HEADER-->  
@@ -49,42 +52,42 @@
 
                 <div class="Line-grid">
                     <div class="stage1">
-                        <p>Nome completo</p>
+                        <p>Nome completo <span class="not-null">*</span></p>
                         <input type="text" name="nome" id="nome-perfil" placeholder="Digite seu nome.">
                     </div>
 
                     <div class="stage2">
-                        <p>Endereço de e-mail</p>
+                        <p>Endereço de e-mail<span class="not-null">*</span></p>
                         <input type="email" name="email" id="email-perfil" placeholder="Digite seu e-mail.">
                     </div>
 
                     <div class="stage3">
-                        <p>Data de nascimento</p>
+                        <p>Data de nascimento<span class="not-null">*</span></p>
                         <input type="date" name="data" id="datNasc-perfil" placeholder="01/01/2000">
                     </div>
 
                     <div class="stage1">
-                        <p>Endereço completo</p>
+                        <p>Endereço completo<span class="not-null">*</span></p>
                         <input type="text" name="endereco" id="endereco-perfil" placeholder="Ex: Rua Walter Ianni, 255 .">
                     </div>
 
                     <div class="stage2">
-                        <p>N° da residência</p>
+                        <p>N° da residência<span class="not-null">*</span></p>
                         <input type="text" name="numCasa" id="numCasa-perfil" placeholder="123">
                     </div>
 
                     <div class="stage3">
-                        <p>CEP</p>
+                        <p>CEP<span class="not-null">*</span></p>
                         <input type="text" name="cep" id="cep-perfil" placeholder="34000-000">
                     </div>
 
                     <div class="stage1">
-                        <p>Bairro</p>
+                        <p>Bairro<span class="not-null">*</span></p>
                         <input type="text" name="bairro" id="bairro-perfil" placeholder="Ex: São Gabriel">
                     </div>
 
                     <div class="stage2">
-                        <p>Cidade</p>
+                        <p>Cidade<span class="not-null">*</span></p>
                         <input type="text" name="cidade" id="cidade-perfil" placeholder="Ex: Belo Horizonte">
                     </div>
 
@@ -95,7 +98,7 @@
                     
                     <div class="stage1">
                         <p id="espacoContatos">CONTATOS</p>
-                        <p>N° de Telefone</p>
+                        <p>N° de Telefone<span class="not-null">*</span></p>
                         <input type="text" name="telefone" id="telefone-perfil" placeholder="(31) 0000-0000">
                     </div>
 
@@ -109,12 +112,12 @@
                     </div>
 
                     <div class="stage1">
-                        <p>Nova senha</p>
+                        <p>Nova senha<span class="not-null">*</span></p>
                         <input type="password" name="senha" id="senha-perfil" placeholder="Digite sua senha">
                     </div>
 
                     <div class="stage2">
-                        <p>Confirmar nova senha</p>
+                        <p>Confirmar nova senha<span class="not-null">*</span></p>
                         <input type="password" name="senha2" id="senha2-perfil" placeholder="Digite sua senha">
                     </div>
                 </div>
@@ -147,6 +150,9 @@
         </div>
     </footer>
     <!--FIM AREA DO FOOTER-->
+    
+    
 
+  
 </body>
 </html>

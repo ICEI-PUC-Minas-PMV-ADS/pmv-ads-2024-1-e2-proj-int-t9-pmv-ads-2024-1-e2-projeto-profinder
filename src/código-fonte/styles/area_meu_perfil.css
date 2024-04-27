@@ -1,6 +1,7 @@
 main {
     padding: 25px;
-    height: 767px;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -15,8 +16,10 @@ main {
     border-radius: 7px;
     border: 1px solid #FFD600;
     width: 80%;
-    height: 710px;
+    height: 100%;
 }
+
+
 
 .detail-top-menu {
     display: flex;
@@ -74,21 +77,27 @@ main {
 }
 
 .stage2{
-    margin: 0px 30px;
+    margin-left:90px;
 }
 
 .stage3{
-    margin: 0px 30px;
+    margin-left:90px;
 }
 
+.stage1 p , .stage2 p , .stage3 p{
+    width: 100%;
+    display: flex;
+}
 .stage1 input , .stage2 input , .stage3 input{
-    padding: 2px 0px;
+    padding: 5px 0px;
+    width: 70%;
 }
 
 
 .buttonSalvar{
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .buttonSalvar button{
@@ -111,4 +120,24 @@ main {
     background-repeat: no-repeat;
     background-position: right;
   }
+
+.not-null{
+    color: red;
+}
   
+
+@media (max-width:600px){
+    .Line-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-navegation{
+        display: flex;
+        flex-direction: column;
+    }
+
+   .line-style-top{
+        margin: 100px 0px;
+   }
+}
