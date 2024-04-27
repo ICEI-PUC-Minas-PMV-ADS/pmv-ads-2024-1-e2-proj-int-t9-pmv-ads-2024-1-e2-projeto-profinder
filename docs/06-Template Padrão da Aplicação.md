@@ -1,17 +1,20 @@
 # Template Padrão da Aplicação
 
-- Cores de referência da aplicação:
+
+### Cores de referência da aplicação
+
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | Amarelo | ![#FFD600](https://via.placeholder.com/10/ffd600?text=+) #FFD600 |
-| Cinza Claro | ![#ECECEC](https://via.placeholder.com/10/ececec?text=+) #ECECEC |
-| Cinza Escuro | ![#5F5F5F](https://via.placeholder.com/10/5f5f5f?text=+) #5F5F5F |
-| Branco | ![#FFFFFF](https://via.placeholder.com/10/ffffff?text=+) #FFFFFF |
-| Violeta | ![#8F9BEF](https://via.placeholder.com/10/8f9bef?text=+) #8F9BEF |
+| Cinza Claro | ![#f8f8f8](https://via.placeholder.com/10/ECECEC?text=+) #ECECEC |
+| Cinza Escuro | ![#00b48a](https://via.placeholder.com/10/5F5F5F?text=+) #5F5F5F |
+| Violeta | ![#00d1a0](https://via.placeholder.com/10/8F9BEF?text=+) #8F9BEF |
 
 
-- Logo da aplicação
-![Logo](../src/código-fonte/img/logo.png)
+
+
+### Logo da aplicação
+<br>![Logo](../src/código-fonte/img/logo.png)
 
 
 O template padrão utilizado no desenvolvimento da interface segue conforme ordenação abaixo:
