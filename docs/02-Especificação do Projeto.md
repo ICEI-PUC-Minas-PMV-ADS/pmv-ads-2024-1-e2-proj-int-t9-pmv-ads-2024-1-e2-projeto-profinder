@@ -118,7 +118,7 @@ Após o cadastro os usuários poderão utilizar a ferramenta de busca para encon
 |RF-007|O profissional poderá acessar o relatório de trabalhos realizados   | ALTA | 
 |RF-008|Os usuários poderão avaliar e verificar as avaliações anteriores dos profissionais      | MEDIA |
 |RF-009|Os profissionais poderão avaliar os usuários.   | MEDIA |
-|RF-010|Permitir que os usuários enviem informações para os profissionais. .  | BAIXA| 
+|RF-010|Permitir que os usuários enviem informações para os profissionais.  | BAIXA| 
 |RF-011|Permitir que os profissionais enviem informações para os usuários   | BAIXA|
 
 
