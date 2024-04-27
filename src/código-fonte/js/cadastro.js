@@ -100,6 +100,31 @@ function meu_callback(conteudo) {
         
 // Fim do Localizador CEP -----------------------------------------------------------------------------------
 
+// Função de formatar um número de telefone enquanto digita.
+
+function formatarTelefone() {
+    var input = document.getElementById('numberPhone');
+    var telefone = input.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+
+    // Limita o tamanho do número de telefone
+    if (telefone.length > 11) {
+        telefone = telefone.substring(0, 11);
+    }
+
+    // Formatação para números com 10 ou 11 dígitos
+    if (telefone.length >= 2 && telefone.length <= 6) {
+        input.value = '(' + telefone.substring(0, 2) + ') ' + telefone.substring(2);
+    } else if (telefone.length >= 7 && telefone.length <= 10) {
+        input.value = '(' + telefone.substring(0, 2) + ') ' + telefone.substring(2, 6) + '-' + telefone.substring(6);
+    } else {
+        input.value = telefone;
+        return false
+    }
+
+    return true
+}
+
+
 // Fortatação de um CPF
     // Função para formatar o CPF enquanto o usuário digita
     function formatarCPF() {
@@ -108,7 +133,7 @@ function meu_callback(conteudo) {
         cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2'); // Adiciona o primeiro ponto
         cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2'); // Adiciona o segundo ponto
         cpf = cpf.replace(/(\d{3})(\d{1,2})$/, '$1-$2'); // Adiciona o traço
-        input.value = cpf;
+        input.value = cpf;   
     }
 
     // Função para validar o CPF
@@ -118,16 +143,24 @@ function meu_callback(conteudo) {
 
         if (cpf.length !== 11) {
             alert('CPF inválido! O CPF deve conter 11 dígitos.');
-            input.focus();
-            return false;
+            return false
         }
-
-        // Algoritmo para validar CPF
-        // Implemente o algoritmo de validação de CPF aqui
-        // Aqui está um exemplo de implementação simples: https://gist.github.com/guisehn/46de78dbb945da1edca98bdae75e5a7a
-
         return true; // Retorna verdadeiro se o CPF for válido
+}
+    
+
+function validarEmail() {
+    var email = document.getElementById('email').value;
+
+    // Expressão regular para verificar se o e-mail possui um formato válido
+    var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (regex.test(email)) {
+        document.getElementById('email').style.borderColor = 'green'; // E-mail válido, borda verde
+    } else {
+        document.getElementById('email').style.borderColor = 'red'; // E-mail inválido, borda vermelha
     }
+}
 
 
 
@@ -139,7 +172,7 @@ function validarCadastro() {
     var numberPhone = document.getElementById('numberPhone')
     var cpf = document.getElementById('cpf')
     var pass = document.getElementById('pass')
-    var confirmPass = document.getElementById('confirPass')
+    var confirmPass = document.getElementById('confirmPass')
     var cep = document.getElementById('cep')
     var rua = document.getElementById('rua')
     var numberResidence = document.getElementById('numberResidence')
@@ -169,15 +202,8 @@ function validarCadastro() {
      icon: 'warning',})
     return false;
     }
-    // Verifica se o CEP está digitado corretamente
-    // const cepInput = document.querySelector('input[name="CEP"]');
-    cep = /^\d{5}-\d{3}$/;
-    if (!cep.test(cep.value)) {
-      alert('CEP inválido!');
-      return false;
-    }
     
-    if (pass !== confirmPass) {
+    if (confirmPass !== pass ) {
         //  alert('As senhas nao coicidem!');
          Swal.fire({
             title: 'Olá ProFinder, parece que:',
@@ -187,7 +213,7 @@ function validarCadastro() {
         return;
     }
 
-    return true;
+
     alert('Formulário enviado com sucesso!')
     window.location.href = '../home.html'
 }

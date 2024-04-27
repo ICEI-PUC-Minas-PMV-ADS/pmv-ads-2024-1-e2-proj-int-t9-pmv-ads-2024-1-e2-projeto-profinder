@@ -134,3 +134,7 @@ section {
     border: 2px solid #FFD600;
     border-radius: 2px;
 }
+
+#campoObrig{
+    display: inline-block;
+}
