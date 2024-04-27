@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../código-fonte/globals.css">
+    <link rel="stylesheet" href="../código-fonte/styles/area_meu_perfil.css">
+    <link rel="stylesheet" href="../código-fonte/styles/area_profissionais.css">
+    <script defer src="/src/código-fonte/js/meu_perfil.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <title>ProFinder - Meu Perfil</title>
+</head>
+<!--AREA DO HEADER-->  
+<body>
+    
+         
+    <header>
+        <div class="container-navegation">
+            <a href="../código-fonte/home.html"><img class="img-header" src="/src/código-fonte/img/logo.png" alt="Logo do site"></a>
+            
+            <div class="list-menu-finder">    
+                <a href="../código-fonte/meu_perfil_profinder.html"><li>Meu Perfil</li></a>
+                <a href="../código-fonte/meus_pacientes.html"><li>Meus Pacientes</li></a>
+                <a href="../código-fonte/relatórios.html"><li>Relatórios</li></a>
+                <a href="#"><li>Sair</li></a>
+            </div> 
+        </div>
+    
+    </header>
+    <div class="line-style-top"></div>
+    <!--FIM - AREA DO HEADER-->
+
+    <!--INÍCIO CONTEÚDO-->
+
+    <main>
+        
+        <div class="container-profile">
+            <div class="detail-top-menu">
+                <div class="detail-circle">
+                    <p>LI</p>
+                </div>
+            </div>
+            <div class="detail-bot-menu">
+                <div class="Line1">
+                    <h4>LOREM IPSUM</h4>
+                </div>
+                <div class="Line2">
+                    <p>Dados Pessoais</p>
+                </div>
+
+                <div class="Line-grid">
+                    <div class="stage1">
+                        <p>Nome completo <span class="not-null">*</span></p>
+                        <input type="text" name="nome" id="nome-perfil" placeholder="Digite seu nome.">
+                    </div>
+
+                    <div class="stage2">
+                        <p>Endereço de e-mail<span class="not-null">*</span></p>
+                        <input type="email" name="email" id="email-perfil" placeholder="Digite seu e-mail.">
+                    </div>
+
+                    <div class="stage3">
+                        <p>Data de nascimento<span class="not-null">*</span></p>
+                        <input type="date" name="data" id="datNasc-perfil" placeholder="01/01/2000">
+                    </div>
+
+                    <div class="stage1">
+                        <p>Endereço completo<span class="not-null">*</span></p>
+                        <input type="text" name="endereco" id="endereco-perfil" placeholder="Ex: Rua Walter Ianni, 255 .">
+                    </div>
+
+                    <div class="stage2">
+                        <p>N° da residência<span class="not-null">*</span></p>
+                        <input type="text" name="numCasa" id="numCasa-perfil" placeholder="123">
+                    </div>
+
+                    <div class="stage3">
+                        <p>CEP<span class="not-null">*</span></p>
+                        <input type="text" name="cep" id="cep-perfil" placeholder="34000-000">
+                    </div>
+
+                    <div class="stage1">
+                        <p>Bairro<span class="not-null">*</span></p>
+                        <input type="text" name="bairro" id="bairro-perfil" placeholder="Ex: São Gabriel">
+                    </div>
+
+                    <div class="stage2">
+                        <p>Cidade<span class="not-null">*</span></p>
+                        <input type="text" name="cidade" id="cidade-perfil" placeholder="Ex: Belo Horizonte">
+                    </div>
+
+                    <div class="stage3">
+                        <p>Complento (opcional)</p>
+                        <input type="text" name="complemento" id="complemento-perfil" placeholder="Ex: casa, apartamento...">
+                    </div>
+                    
+                    <div class="stage1">
+                        <p id="espacoContatos">CONTATOS</p>
+                        <p>N° de Telefone<span class="not-null">*</span></p>
+                        <input type="text" name="telefone" id="telefone-perfil" placeholder="(31) 0000-0000">
+                    </div>
+
+                    <div class="stage2">
+                        <p id="espaçamento">N° de Celular</p>
+                        <input type="text" name="celular" id="celular-perfil" placeholder="(31) 0 0000-0000">
+                    </div>
+
+                    <div>
+                        
+                    </div>
+
+                    <div class="stage1">
+                        <p>Nova senha<span class="not-null">*</span></p>
+                        <input type="password" name="senha" id="senha-perfil" placeholder="Digite sua senha">
+                    </div>
+
+                    <div class="stage2">
+                        <p>Confirmar nova senha<span class="not-null">*</span></p>
+                        <input type="password" name="senha2" id="senha2-perfil" placeholder="Digite sua senha">
+                    </div>
+                </div>
+
+                <div class="buttonSalvar">
+                    <button>Avaliar</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+
+    <!--FIM CONTEÚDO-->
+
+    <!--AREA DO FOOTER-->
+    <footer>
+        <div class="footer">
+            <p class="footer-obj">ACESSIBILIDADE</p>
+            <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
+            <p class="footer-obj">PRIVACIDADE</p>
+            <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat 
+            illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia 
+            repudiandae nihil minus commodi doloremque velit.
+            </p>
+        </div>
+    </footer>
+    <!--FIM AREA DO FOOTER-->
+    
+    
+
+  
+</body>
+</html>
