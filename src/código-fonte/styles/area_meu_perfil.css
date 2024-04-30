@@ -55,13 +55,16 @@ main {
 }
 
 .Line2{
-    margin-left: 10px;
+    position: relative;
+    top: 30px;
+    margin-left: 20px;
+    color: #8F8F8F;
 }
 
 .Line-grid{
     display: grid;
     grid-template-columns:repeat(3,1fr);
-    margin: 20px;
+    margin: 30px;
 }
 
 .Line-grid input{
@@ -77,22 +80,32 @@ main {
 }
 
 .stage2{
-    margin-left:90px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 .stage3{
-    margin-left:90px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 .stage1 p , .stage2 p , .stage3 p{
-    width: 100%;
-    display: flex;
+    font-weight: bold
+    
 }
 .stage1 input , .stage2 input , .stage3 input{
     padding: 5px 0px;
     width: 70%;
+    
 }
 
+.campoP{
+    width: 71%;
+}
 
 .buttonSalvar{
     display: flex;
@@ -109,10 +122,18 @@ main {
     padding: 6px 0px;
     border-radius: 4px;
     cursor: pointer;
+    transition: 0.8s;
 }
 
+.buttonSalvar button:hover{
+    background-color: #ccad13e3;
+}
 #espacoContatos{
-    font-size: larger;
+    position: relative;
+    right: 10px;
+    height: 25px;
+    color: #8F8F8F;
+    font-weight:normal;
 }
 
 #senha-perfil , #senha2-perfil {    
