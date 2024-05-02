@@ -90,3 +90,13 @@ input[type="text"], textarea {
     transform: scale(1.02);
     cursor: pointer
 }
+
+.error-message {
+    color: red;
+    display: none;
+}
+
+.error-message {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}

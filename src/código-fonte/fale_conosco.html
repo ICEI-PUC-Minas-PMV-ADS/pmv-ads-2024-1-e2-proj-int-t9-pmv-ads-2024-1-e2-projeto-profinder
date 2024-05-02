@@ -67,17 +67,21 @@
         </article>
 
         <div class="forms">
-            <form class="input-forms">
+            <form class="input-forms" id="verif-form">
                 <label for="nome">Nome Completo<span class="label-span">*</span></label>
-                <input type="text" id="nome" name="nome" placeholder="Insira seu nome Completo">
+                <span class="error-message" id="errorMessage1">Por favor, preencha o campo com seu nome completo.</span>
+                <input type="text" id="nome" name="nome" placeholder="Insira seu nome Completo" onkeypress="onlyLetters(event)">
 
                 <label for="email">Endereço de E-mail<span class="label-span">*</span></label>
+                <span class="error-message" id="errorMessage2">Por favor, preencha o campo com um e-mail válido</e-mail>.</span>
                 <input type="text" id="email" name="email" placeholder="Seu endereço de e-mail">
 
                 <label for="telefone">N° de telefone<span class="label-span">*</span></label>
-                <input type="text" id="telefone" name="telefone" placeholder="Seu número de telefone - (XX) 9 XXXX-XXXX">
+                <span class="error-message" id="errorMessage3">Por favor, insira um número de telefone válido com 11 dígitos.</span>
+                <input type="text" id="telefone" name="telefone" placeholder="Seu número de telefone com DDD">
 
                 <label for="mensagem">Escreva sua mensagem<span class="label-span">*</span></label>
+                <span class="error-message" id="errorMessage4">Por favor, preencha o campo com sua mensagem.</span>
                 <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui" rows="4"></textarea>
 
                 <div class="button">
