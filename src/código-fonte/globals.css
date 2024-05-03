@@ -93,8 +93,8 @@ img {
 }
 
 .img-header {
-    width: 140px;
-    height: 70px;
+    width: auto;
+    height: auto;
 }
 
 .container {

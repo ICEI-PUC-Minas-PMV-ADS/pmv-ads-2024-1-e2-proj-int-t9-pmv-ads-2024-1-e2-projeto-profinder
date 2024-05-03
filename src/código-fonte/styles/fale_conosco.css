@@ -18,12 +18,11 @@
 }
 
 .introduction {
-    font-size: 1.1rem;
-    margin-top: 20px;
+    padding: 25px;
+    font-size: 1.0em;
 }
 
 .forms {
-    margin-top: 500px;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -32,13 +31,13 @@
 }
 
 .input-forms {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 label {
     display: block;
     margin-bottom: 7px;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .label-span {

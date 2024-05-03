@@ -1,10 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url(globals.css);
-
-
 .backgroun-detail {
     width: auto;
-    height: 650px;
+    height: 990px;
     background-color: #ffd50028;
 }
 
@@ -34,10 +30,8 @@
 }
 
 .container {
-    padding: 5px;
     margin-left: 10px;
     display: flex;
-
 }
 
 .list-menu a {
@@ -152,41 +146,47 @@
 
 .btn-area button {
     margin-top: 25px;
-    width: 30%;
     height: 40px;
     font-size: 0.9em;
 }
 
 .rodape {
-    margin-top: 350px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: #8F8F8F;
     color: #ffffff; 
-    font-family: "Inter", sans-serif;
+    padding: 50px;
 }  
 
 .rodape-cabecalho {
-    font-family: "Inter", sans-serif;
-    font-size: 15px;
+    font-size: 1.1em;
+}
+
+
+.rodape-text {
+    font-size: 0.9em;
 }
 
 .secao-rodape {
     text-align: justify;
-    font-family: "Inter", sans-serif;
-    font-size: 0.6875rem;
-    margin-left: 100px;
-    padding-right: 200px;
-}
-
-.secao-rodape-redes-sociais {
-    font-family: "Inter", sans-serif;
-    font-size: 0.6875rem;
-    border-left: 2px solid #FFFFFF;
-    padding-left: 50px;
+    font-size: 0.9em;
 }
 
 .secao-rodape-redes-sociais img {
-    width: 45px;
+    width: 30px;
     height: 30px;
+    margin-left: 25px;
 }
 
+
+#home-footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-color: #303030;
+    color: #FFFFFF;
+}
+
+/*
