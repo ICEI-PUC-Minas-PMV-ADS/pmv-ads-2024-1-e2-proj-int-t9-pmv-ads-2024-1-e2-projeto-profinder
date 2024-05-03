@@ -94,13 +94,27 @@ main {
 }
 
 .stage1 p , .stage2 p , .stage3 p{
-    font-weight: bold
+    font-weight: bold;
+    width: 150%;
     
 }
 .stage1 input , .stage2 input , .stage3 input{
     padding: 5px 0px;
     width: 70%;
-    
+    border-radius: 7px;
+    border: 0.5px solid #c5c5c5;
+    padding: 6px;
+    transition: border-color 0.3s ease;
+    color: #b1b1b1;  
+}
+
+.stage1 input::placeholder , .stage2 input::placeholder , .stage3 input::placeholder{
+    color: #b1b1b1;
+    font-weight: 300;
+}
+
+.stage1 input:focus , .stage2 input:focus , .stage3 input:focus{
+      border-color:#FFD600;
 }
 
 .campoP{
@@ -136,11 +150,22 @@ main {
     font-weight:normal;
 }
 
-#senha-perfil , #senha2-perfil {    
-    background-image: url("/src/código-fonte/img/pass_Invisible.png");
+#icon-senha {    
+    position: relative;
+    bottom: 25px;
+    width: 10%;
+    left: 65%;
     background-repeat: no-repeat;
-    background-position: right;
+    cursor: pointer;
   }
+
+#icon-senha2 {    
+    position: relative;
+    bottom: 25px;
+    left: 31%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
 
 .not-null{
     color: red;

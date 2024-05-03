@@ -1,5 +1,6 @@
 const senha1 = document.querySelector("#senha-perfil")
 const senha2 = document.querySelector("#senha2-perfil")
+const imgPass = document.querySelector(".imgPass")
 
 $(document).ready(function(){
 $('#cep-perfil').mask('00000-000');
@@ -13,13 +14,13 @@ senha1.addEventListener('keypress' , () =>{
         senha1.style.border = "2px solid red";
 });
 
-[senha1, senha2].forEach(senha => {
-    senha.addEventListener('click', function() {
-        if (senha.style.backgroundImage = "url('/src/código-fonte/img/pass_Invisible.png')") {
-            senha.style.backgroundImage = "url('/src/código-fonte/img/pass_open.png')";
-            senha.setAttribute("type", "text");
+
+    imgPass.addEventListener('click', function() {
+        if (imgPass.src.endsWith('/src/código-fonte/img/pass_open.png')) {
+            imgPass.src = "/src/código-fonte/img/pass_Invisible.png";
+            senha1.setAttribute("type", "text");
         } else {
-            senha.style.backgroundImage = "url('/src/código-fonte/img/pass_Invisible.png')";
+            imgPass.src = "/src/código-fonte/img/pass_open.png";
         }
     });
-});
+    
