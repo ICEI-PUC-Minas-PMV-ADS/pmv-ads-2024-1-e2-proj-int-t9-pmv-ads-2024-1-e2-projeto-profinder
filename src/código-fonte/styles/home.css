@@ -163,14 +163,27 @@
     font-size: 1.1em;
 }
 
-
 .rodape-text {
     font-size: 0.9em;
 }
 
+.rodape-text img {
+    margin-right: 5px;
+    margin-top: 15px;
+}
+
+
 .secao-rodape {
     text-align: justify;
     font-size: 0.9em;
+}
+
+.secao-rodape p {
+    margin-top: 28px;
+}
+
+.secao-rodape-redes-sociais {
+    margin-top: 15px;
 }
 
 .secao-rodape-redes-sociais img {
