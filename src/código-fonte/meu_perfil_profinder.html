@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../código-fonte/globals.css">
-    <link rel="stylesheet" href="../código-fonte/styles/area_meu_perfil.css">
+    <link rel="stylesheet" href="../código-fonte/styles/area_meu_perfil_pro.css">
     <link rel="stylesheet" href="../código-fonte/styles/area_profissionais.css">
     <script defer src="/src/código-fonte/js/meu_perfil.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
@@ -46,63 +46,63 @@
                     <h4>LOREM IPSUM</h4>
                 </div>
                 <div class="Line2">
-                    <p>Dados Pessoais</p>
+                    <p>DADOS PESSOAIS</p>
                 </div>
 
                 <div class="Line-grid">
                     <div class="stage1">
-                        <p>Nome completo <span class="not-null">*</span></p>
+                        <div class="campoP"><p>Nome completo <span class="not-null">*</span></p></div>
                         <input type="text" name="nome" id="nome-perfil" placeholder="Digite seu nome.">
                     </div>
 
                     <div class="stage2">
-                        <p>Endereço de e-mail<span class="not-null">*</span></p>
+                        <div class="campoP"><p>Endereço de e-mail<span class="not-null">*</span></p></div>
                         <input type="email" name="email" id="email-perfil" placeholder="Digite seu e-mail.">
                     </div>
 
                     <div class="stage3">
-                        <p>Data de nascimento<span class="not-null">*</span></p>
+                        <div class="campoP"><p>Data de nascimento<span class="not-null">*</span></p></div>
                         <input type="date" name="data" id="datNasc-perfil" placeholder="01/01/2000">
                     </div>
 
                     <div class="stage1">
-                        <p>Endereço completo<span class="not-null">*</span></p>
+                        <div class="campoP"><p>Endereço completo<span class="not-null">*</span></p></div>
                         <input type="text" name="endereco" id="endereco-perfil" placeholder="Ex: Rua Walter Ianni, 255 .">
                     </div>
 
                     <div class="stage2">
-                        <p>N° da residência<span class="not-null">*</span></p>
+                        <div class="campoP"><p>N° da residência<span class="not-null">*</span></p></div>
                         <input type="text" name="numCasa" id="numCasa-perfil" placeholder="123">
                     </div>
 
                     <div class="stage3">
-                        <p>CEP<span class="not-null">*</span></p>
+                        <div class="campoP"><p>CEP<span class="not-null">*</span></p></div>
                         <input type="text" name="cep" id="cep-perfil" placeholder="34000-000">
                     </div>
 
                     <div class="stage1">
-                        <p>Bairro<span class="not-null">*</span></p>
+                        <div class="campoP"><p>Bairro<span class="not-null">*</span></p></div>
                         <input type="text" name="bairro" id="bairro-perfil" placeholder="Ex: São Gabriel">
                     </div>
 
                     <div class="stage2">
-                        <p>Cidade<span class="not-null">*</span></p>
+                        <div class="campoP"><p>Cidade<span class="not-null">*</span></p></div>
                         <input type="text" name="cidade" id="cidade-perfil" placeholder="Ex: Belo Horizonte">
                     </div>
 
                     <div class="stage3">
-                        <p>Complento (opcional)</p>
+                        <div class="campoP"><p>Complento (opcional)</p></div>
                         <input type="text" name="complemento" id="complemento-perfil" placeholder="Ex: casa, apartamento...">
                     </div>
                     
                     <div class="stage1">
                         <p id="espacoContatos">CONTATOS</p>
-                        <p>N° de Telefone<span class="not-null">*</span></p>
+                        <div class="campoP"><p>N° de Telefone<span class="not-null">*</span></p></div>
                         <input type="text" name="telefone" id="telefone-perfil" placeholder="(31) 0000-0000">
                     </div>
 
                     <div class="stage2">
-                        <p id="espaçamento">N° de Celular</p>
+                        <div class="campoP"><p id="espaçamento">N° de Celular</p></div>
                         <input type="text" name="celular" id="celular-perfil" placeholder="(31) 0 0000-0000">
                     </div>
 
@@ -111,18 +111,156 @@
                     </div>
 
                     <div class="stage1">
-                        <p>Nova senha<span class="not-null">*</span></p>
-                        <input type="password" name="senha" id="senha-perfil" placeholder="Digite sua senha">
+                        <div class="campoP"><p>Nova senha<span class="not-null">*</span></p></div>
+                                <input type="password" name="senha" id="senha-perfil" placeholder="Digite sua senha">
+                                <div id="icon-senha"> <img  class="imgPass" src="/src/código-fonte/img/pass_Invisible.png" alt=""></div>
+                        
                     </div>
 
                     <div class="stage2">
-                        <p>Confirmar nova senha<span class="not-null">*</span></p>
-                        <input type="password" name="senha2" id="senha2-perfil" placeholder="Digite sua senha">
+                        <div class="campoP"><p>Confirmar nova senha<span class="not-null">*</span></p></div>
+                            
+                                <input type="password" name="senha2" id="senha2-perfil" placeholder="Digite sua senha">
+                                <div id="icon-senha2"> <img class="imgPass" src="/src/código-fonte/img/pass_Invisible.png" alt=""> </div>
+                            
+                        
                     </div>
                 </div>
 
+                <div class="sobre_pro">
+                    <p class="bold_form"> Sobre </p>
+                </div>
+
+                <div class="textarea_pro">
+                    <textarea name="campoPro" class="campo_pro"id="" rows="5" placeholder="Fale sobre você, suas últimas experiências, qualificações, hobbies, e tudo aquilo que considerar relevante para o seu perfil! Essas informações serão exibidas para os usuários. Portanto, capriche ;)"></textarea>
+                </div>
+                
+                <div class="linha_pro">
+                    <div></div>
+                </div>
+
+                <div class="formacao_pro">
+                    <p class="bold_form"> Formação </p>
+                    <p class="bold_form pointEvent"> + </p>
+                </div>
+
+                <div class="campo_formacao">
+                    <div class="nome_curso" >
+                        <p class="bold_form">Nome do curso <span class="not-null">*</span></p>
+                        <input type="text" class="input_default">
+                    </div>
+
+                    <div class="nome_instituicao">
+                        <p class="bold_form">Instituição <span class="not-null">*</span></p>
+                        <input type="text" class="input_default">
+                    </div>
+                </div>
+
+                <div class="campo_formacao">
+                    <div class="nome_curso" >
+                        <p class="bold_form">Cidade <span class="not-null">*</span></p>
+                        <input type="text" class="input_default">
+                    </div>
+
+                    <!-- very hard -->
+                    <div class="nome_instituicao">
+                        <p class="bold_form">Data(Fazer depois)<span class="not-null">*</span></p>
+                        <input type="text" class="input_default">
+                    </div>
+                </div>
+
+                <div class="descricao_pro">
+                    <p class="bold_form"> Descrição </p>
+                </div>
+
+                <div class="textarea_pro">
+                    <textarea name="campoPro" class="campo_pro"id="" rows="5" placeholder="Fale, resumidamente, sobre o âmbito de formação e o seu objetivo."></textarea>
+                </div>
+
+                <div class="add_pro">
+                        <p class="bold_form"><span> + </span> Adicionar Experiência </p>
+                </div>
+                 
+                <!-- Experiência -->
+
+                <div class="linha_pro">
+                    <div></div>
+                </div class="bold_form">
+
+                <div class="formacao_pro">
+                    <p class="bold_form"> EXPERIÊNCIA </p>
+                    <p class="bold_form pointEvent"> + </p>
+                </div>
+
+                <div class="campo_formacao">
+                    <div class="nome_curso" >
+                        <p class="bold_form">Função <span class="not-null">*</span></p>
+                        <input type="text" class="input_default">
+                    </div>
+
+                    <div class="nome_instituicao">
+                        <p class="bold_form">Empresa <span class="not-null">*</span></p>
+                        <input type="text" class="input_default">
+                    </div>
+                </div>
+
+                <div class="campo_formacao">
+                    <div class="nome_curso" >
+                        <p class="bold_form">Cidade <span class="not-null">*</span></p>
+                        <input type="text" class="input_default">
+                    </div>
+
+                    <!-- very hard -->
+                    <div class="nome_instituicao">
+                        <p class="bold_form">Data(Fazer depois)<span class="not-null">*</span></p>
+                        <input type="text" class="input_default">
+                    </div>
+                </div>
+
+                <div class="descricao_pro">
+                    <p class="bold_form"> Descrição </p>
+                </div>
+
+                <div class="textarea_pro">
+                    <textarea name="campoPro" class="campo_pro"id="" rows="5" placeholder="Fale, resumidamente, sobre o âmbito de formação e o seu objetivo."></textarea>
+                </div>
+
+                <div class="add_pro">
+                        <p class="bold_form"><span> + </span> Adicionar Experiência </p>
+                </div>
+
+                <div class="linha_pro">
+                    <div></div>
+                </div>
+
+                <div class="formacao_pro">
+                    <p class="bold_form"> IDIOMAS </p>
+                    <p class="bold_form pointEvent"> + </p>
+                </div>
+
+                <div class="idioma_nivel">
+                    <div class="idioma">
+                        <p class="bold_form">Cidade <span class="not-null">*</span></p>
+                        <input type="text">
+                    </div>
+
+                    <div class="nivel">
+                        <p class="bold_form">Nivel <span class="not-null">*</span></p>
+                        <select id="ingles" name="ingles">
+                            <option value=""></option>
+                            <option value="iniciante">Iniciante</option>
+                            <option value="básico">Básico</option>
+                            <option value="intermediário">Intermediário</option>
+                            <option value="avançado">Avançado</option>
+                            <option value="fluente">Fluente</option>
+                        </select>
+                    </div>
+                </div>
+
+                
+
                 <div class="buttonSalvar">
-                    <button>Avaliar</button>
+                    <button>Concluir</button>
                 </div>
 
             </div>
