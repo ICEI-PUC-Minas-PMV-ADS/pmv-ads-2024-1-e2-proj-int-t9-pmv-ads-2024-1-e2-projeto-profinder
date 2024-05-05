@@ -1,172 +1,145 @@
 <!--Desenvolvedor responsável: ERICK-->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contratação etapa 3</title>
-    <link rel="stylesheet" href="styles/contratacao.css">
+    <link rel="stylesheet" href="../código-fonte/styles/area_profissionais.css">
+    <link rel="stylesheet" href="../código-fonte/styles/etapa_1.css">
+    <link rel="stylesheet" href="../código-fonte/globals.css">
+    <link rel="stylesheet" href="../código-fonte/styles/contratacao.css">
+    <script defer src="../código-fonte/js/etapa1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>ProFinder - Ánalise do agendamento</title>
 </head>
 
 <body>
-    <header style="border: 1px solid #ffd600;">
-        <div class="container-navegation"
-            style="justify-content: space-between; align-items: center; flex-wrap: wrap; padding-inline: 20px">
-            <img class="img-header" style="margin-block: 10px; margin-left: 0;" src="/src/código-fonte/img/logo.png"
-                alt="Logo do site">
+    <header>
+        <div class="container-navegation">
+            <a href="../código-fonte/home.html"><img class="img-header" src="/src/código-fonte/img/logo.png"
+                    alt="Logo do site"></a>
+            <div class="list-menu-etapa">
+                <li>Solicitar agendamento </li>
+                <span id="line"></span>
+                <li>Análise do agendamento</li>
+                <span id="line-2"></span>
+                <li id="step-2">Conclusão</li>
 
-            <div class="progress-container">
-                <div class="step">Solicitar agendamento</div>
-                <div class="line"></div>
-                <div class="step">Análise do agendamento</div>
-                <div class="line"></div>
-
-                <div class="step">Conclusão</div>
             </div>
-            <button class="cta_btn_primary" onclick="avançar()">Avançar</button>
-
-            <div class="list-menu" style="margin: 0; width: auto;">
-
-                <li>Voltar à página inicial</li>
-            </div>
+            <a href="../código-fonte/area_profissionais.html"
+                style="margin-right: 5%; text-decoration: none;"><span>Voltar</span></a>
         </div>
     </header>
+    <div class="line-style-top"></div>
 
-
-    <div class="container flex" style="align-items: center; margin-block: 30px;">
+    <div class="icon-text">
         <i class="fa-regular fa-hourglass-half"
             style="margin-right: 10px; margin-bottom: 10px; color: #ffd600; font-size: 55px;"></i>
-        <h4 style="font-weight: 400;">
-            Etapa de Análise do agendamento
-        </h4>
+
+        <h6> Etapa de Análise do Agendamento</h6><span class="info-icon">i</span>
+        <div class="info-bubble">Nesta etapa o profissional irá visualizar e análisar a proposta feita e você poderá ver
+            o progresso.</div>
+        <div id="error-message" class="error-message"><span>Por favor, preencha todos os campos obrigatórios!</span>
+            <div id="progress-bar" class="progress-bar"></div>
+            <div id="error-timer" class="error-timer"></div>
+        </div>
     </div>
-    <div class="container flex"
-        style="flex-direction: column; border: 1px solid #ffd600; border-radius: 7px;padding-inline: 30px;">
 
-        <div class="column-layout">
-            <div class="professional_data column">
-                <p class="section-title">Dados do profissional selecionado</p>
+    <div class="container-geral" style="align-items: normal;">
 
-                <div class="professional_info flex">
-                    <img class="avatar"
-                        src="https://w7.pngwing.com/pngs/223/244/png-transparent-computer-icons-avatar-user-profile-avatar-heroes-rectangle-black.png">
-                    <h6 class="professional-name">nome do profissa</h6>
-                </div>
-
-                <div class="about_professional">
-                    <p>Quem sou eu</p>
-                    <p class="professional_description" readonly>
-                        Sou um profissional responsável e especializado em
-                        idosos
-                        com Alzheimer, depressão, hipertensos e diabéticos.</p>
-                </div>
-
-                <div class="professional-qualifications">
-                    <p>Qualificações do profissa</p>
-                    <div class="filters-options">
-                        <div class="filter-option" data-filter="option1">Cuidadores de Idosos</div>
-                        <div class="filter-option" data-filter="option2">Alzheimer</div>
-                        <div class="filter-option" data-filter="option3">Hipertensão</div>
-                        <div class="filter-option" data-filter="option4">Depressão</div>
-
+        <div class="card-container">
+            <span id="info-dados-prf">DADOS DO PROFISSIONAL SELECIONADO</span>
+            <div class="card">
+                <div class="profile-picture">
+                    <!--<img src="" alt="Foto do Profissional">-->
+                    <div class="photo-example">
+                        <span>JS</span>
                     </div>
+                    <h6 class="professional-name">João da Silva</h6>
                 </div>
 
-                <p>Avaliação dos usuários</p>
-                <div class="professional_feedback">
+                <div class="cad-content">
 
-                    <div class="rating">
-                        <p>Qualidade de serviço</p>
-                        <form id="serviceForm">
-                            <label for="s1"></label>
-                            <input type="radio" id="s1" name="service_rating" value="1.0">
-                            <label for="s2"></label>
-                            <input type="radio" id="s2" name="service_rating" value="2.0">
-                            <label for="s3"></label>
-                            <input type="radio" id="s3" name="service_rating" value="3.0">
-                            <label for="s4"></label>
-                            <input type="radio" id="s4" name="service_rating" value="4.0">
-                            <label for="s5"></label>
-                            <input type="radio" id="s5" name="service_rating" value="5.0">
+                    <p class="professional-bio">Quem sou eu</p>
+                    <div class="professional-area"></div>
 
-                        </form>
-                    </div>
-                    <div class="rating">
-                        <p>Preço</p>
-                        <form id="priceForm">
-                            <label for="p1"></label>
-                            <input type="radio" id="p1" name="price_rating" value="1.0">
-                            <label for="p2"></label>
-                            <input type="radio" id="p2" name="price_rating" value="2.0">
-                            <label for="p3"></label>
-                            <input type="radio" id="p3" name="price_rating" value="3.0">
-                            <label for="p4"></label>
-                            <input type="radio" id="p4" name="price_rating" value="4.0">
-                            <label for="p5"></label>
-                            <input type="radio" id="p5" name="price_rating" value="5.0">
-
-
-                        </form>
+                    <p class="professional-qualifications">Minhas Qualificações</p>
+                    <div class="qualifications">
+                        <div class="qualifications-item">+ Enfermagem</div>
+                        <div class="qualifications-item">+ Gestão Hospitalar</div>
+                        <div class="qualifications-item">+ Psicologia</div>
+                        <div class="qualifications-item">+ Téc. em Cuidadores de Idosos</div>
                     </div>
 
 
-                </div>
-
-                <div class="users_quotes">
-                    <div class="flex " style="gap: 5px;">
-                        <p class="user_feedback_number">5.0</p>
-                        <p><span class="user_feedback" id>Pedrin</span> avaliou:</p>
-                        <p class="user_quote" id="user_quote">"Profissional muito atencioso e dedicado"</p>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="vertical-progress-line" style="border: 1px solid #ffd600; margin-top:25px;height: 600px;">
-            </div>
-
-
-
-            <div class="professional_data column">
-                <div class="flex"
-                    style="flex-direction: column; max-height: 600px; height: 100%;justify-content: space-between; align-items: center;">
-
-                    <p class="section-title">Confirme os dados do agendamento e pagamento</p>
-                    <div class="conclusion_inputs">
-
-                        <label for="name_professional">1. Nome do profissional contratado.</label>
-                        <input type="text" name="" id="name_professional" placeholder="Fulano da Silva">
-
-                        <label for="date_hour_service">2. Data e hora em que o serviço será prestado:</label>
-                        <input type="text" name="" id="date_hour_service" placeholder="Dia 01/01/2024 às 12:00">
-
-                        <label for="address_service">3. Revise o endereço onde o profissional prestará o
-                            serviço:</label>
-                        <input type="text" name="" id="address_service" placeholder="Rua do Fulano da Silva Jr, 108">
-
-                        <label for="payment_method">4. Como você deseja pagar?</label>
-
-                        <div class="payment_methods">
-                            <div class="payment_text">
-                                <p style="color: #ffd600;">Cartão de crédito</p>
-                                <p class="small" style="color: #ccc;">Pague à vista ou em até 12x sem juros</p>
-                                <p style="color: #ffd600;">A partir de R$00,00</p>
-                            </div>
-                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="user-rating">
+                        <span class="rating">Avaliação dos usuários</span>
+                        <div class="rating-area">
+                            <p class="rating-text">Qualidade do Serviço</p>
+                            <p class="rating-text">Preço</p>
                         </div>
                     </div>
 
 
-                    <button class="cta_btn_primary" style="width: 128px;">Concluir</button>
+                    <div class="comments">
+                        <div class="comment">Comentários</div>
+                        <div class="comment-area"></div>
+                    </div>
+
+                    <div class="btn-area">
+                        <button class="cta_btn_primary btn-pro none">Contratar</button>
+                    </div>
+
 
                 </div>
             </div>
         </div>
+
+        <!-- BLOCO 2-->
+        <div class="professional_data column">
+            <div class="flex"
+                style="flex-direction: column; max-height: 600px; height: 100%;justify-content: space-between;">
+
+
+
+                <h6 class="title-right">Confirme os dados do agendamento e pagamento</h6>
+                <div class="conclusion_inputs">
+
+                    <label for="name_professional">1. Nome do profissional contratado.</label>
+                    <input type="text" name="" id="name_professional" placeholder="Fulano da Silva">
+
+                    <label for="date_hour_service">2. Data e hora em que o serviço será prestado:</label>
+                    <input type="text" name="" id="date_hour_service" placeholder="Dia 01/01/2024 às 12:00">
+
+                    <label for="address_service">3. Revise o endereço onde o profissional prestará o
+                        serviço:</label>
+                    <input type="text" name="" id="address_service" placeholder="Rua do Fulano da Silva Jr, 108">
+
+                    <label for="payment_method">4. Como você deseja pagar?</label>
+
+                    <div class="payment_methods">
+                        <div class="payment_text">
+                            <p style="color: #ffd600;">Cartão de crédito</p>
+                            <p class="small" style="color: #ccc;">Pague à vista ou em até 12x sem juros</p>
+                            <p style="color: #ffd600;">A partir de R$00,00</p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="avanced">
+                    <button id="prosseg" class="cta_btn_primary">Avançar</button>
+                </div>
+
+            </div>
+        </div>
     </div>
+
 
 
 
@@ -180,61 +153,7 @@
     </footer>
 
 
-    <script>let currentStep = 0;
-        const steps = document.querySelectorAll('.step');
-        const lines = document.querySelectorAll('.line');
 
-        function avançar() {
-            if (currentStep < steps.length - 1) {
-                steps[currentStep].classList.add('active');
-                lines[currentStep].classList.add('active');
-                currentStep++;
-            }
-        }
-
-        document.querySelector('#serviceForm').addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent form submission
-
-            // Get all radio buttons
-            var radios = document.getElementsByName('service_rating');
-
-            // Loop through all radio buttons to find the checked one
-            for (var i = 0, length = radios.length; i < length; i++) {
-                if (radios[i].checked) {
-                    // Get the value of the checked radio button
-                    var rating = radios[i].value;
-
-                    // Do something with the selected rating
-                    console.log("serviço: ", rating);
-
-                    //document.querySelector('.user_feedback_number').textContent = rating;
-                    // Only one radio button can be checked, so stop the loop
-                    break;
-                }
-            }
-        });
-        document.querySelector('#priceForm').addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent form submission
-
-            // Get all radio buttons
-            var radios = document.getElementsByName('price_rating');
-
-            // Loop through all radio buttons to find the checked one
-            for (var i = 0, length = radios.length; i < length; i++) {
-                if (radios[i].checked) {
-                    // Get the value of the checked radio button
-                    var rating = radios[i].value;
-
-                    // Do something with the selected rating
-                    console.log("preço: ", rating);
-
-                    // document.querySelector('.user_feedback_number').textContent = rating;
-                    // Only one radio button can be checked, so stop the loop
-                    break;
-                }
-            }
-        });
-    </script>
 </body>
 
 </html>
