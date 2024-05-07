@@ -243,9 +243,8 @@ main {
 /* Aqui será feito o modal de Observações do paciente -----------------*/
 
 #open_set,#disappear_set{
-    transition: .5s;
     opacity: 1;
-    pointer-events: all;
+    pointer-events: fill;
 } 
 
 #open_set.cover2 , #disappear_set.cover2 {
@@ -302,6 +301,17 @@ main {
     border-radius: 8px;
 }
 
+#textarea_observacao{
+    padding: 5px;
+    color: #8f8f8f;
+    
+}
+
+#textarea_observacao{
+    font-size: small;
+}
+
+
 .div_button{
     display: flex;
     justify-content: end;
@@ -310,8 +320,8 @@ main {
 
 .div_button button{
     position: absolute;
-    top: 150px;
-    right: 7px;
+    top: 155px;
+    right: 15px;
     background-color: #FFD600;
     color: white;
     margin: 18px;
