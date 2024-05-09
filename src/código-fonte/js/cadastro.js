@@ -138,17 +138,63 @@ function formatarTelefone() {
 
     // Função para validar o CPF
     function validarCPF() {
-        let input = document.getElementById('cpf');
-        let cpf = input.value.replace(/\D/g, ''); // Remove todos os caracteres que não são dígitos
-
+        const cpf = document.getElementById('cpf').value.replace(/[^\d]/g, ''); // Remove caracteres não numéricos
+        const cpfError = document.getElementById('cpfError');
+        const cpfInput = document.getElementById('cpf');
+      
         if (cpf.length !== 11) {
-            alert('CPF inválido! O CPF deve conter 11 dígitos.');
-            return false
+          cpfError.textContent = "CPF deve conter 11 dígitos.";
+          cpfInput.classList.add('invalid-input');
+          return;
         }
-        return true; // Retorna verdadeiro se o CPF for válido
-}
+      
+        if (/^(\d)\1{10}$/.test(cpf)) {
+          cpfError.textContent = "CPF inválido.";
+          cpfInput.classList.add('invalid-input');
+          return;
+        }
+      
+        let sum = 0;
+        let remainder;
+      
+        for (let i = 1; i <= 9; i++) {
+          sum += parseInt(cpf.substring(i-1, i)) * (11 - i);
+        }
+      
+        remainder = (sum * 10) % 11;
+      
+        if ((remainder === 10) || (remainder === 11)) {
+          remainder = 0;
+        }
+      
+        if (remainder !== parseInt(cpf.substring(9, 10))) {
+          cpfError.textContent = "CPF inválido.";
+          cpfInput.classList.add('invalid-input');
+          return;
+        }
+      
+        sum = 0;
+        for (let i = 1; i <= 10; i++) {
+          sum += parseInt(cpf.substring(i-1, i)) * (12 - i);
+        }
+      
+        remainder = (sum * 10) % 11;
+      
+        if ((remainder === 10) || (remainder === 11)) {
+          remainder = 0;
+        }
+      
+        if (remainder !== parseInt(cpf.substring(10, 11))) {
+          cpfError.textContent = "CPF inválido.";
+          cpfInput.classList.add('invalid-input');
+          return;
+        }
+      
+        cpfError.textContent = "";
+        cpfInput.classList.remove('invalid-input');
+      }
     
-
+// Validação de um Email
 function validarEmail() {
     var email = document.getElementById('email').value;
 
@@ -156,7 +202,7 @@ function validarEmail() {
     var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (regex.test(email)) {
-        document.getElementById('email').style.borderColor = 'green'; // E-mail válido, borda verde
+        document.getElementById('email').style.borderColor = '#C5C5C5'; // E-mail válido, borda verde
     } else {
         document.getElementById('email').style.borderColor = 'red'; // E-mail inválido, borda vermelha
     }
@@ -171,8 +217,8 @@ function validarCadastro() {
     var email = document.getElementById('email')
     var numberPhone = document.getElementById('numberPhone')
     var cpf = document.getElementById('cpf')
-    var pass = document.getElementById('pass')
-    var confirmPass = document.getElementById('confirmPass')
+    var pass = document.getElementById('pass').value
+    var confirmPass = document.getElementById('confirmPass').value
     var cep = document.getElementById('cep')
     var rua = document.getElementById('rua')
     var numberResidence = document.getElementById('numberResidence')
@@ -215,7 +261,6 @@ function validarCadastro() {
 
 
     alert('Formulário enviado com sucesso!')
-    window.location.href = '../home.html'
+    window.location.href = '../login.html'
 }
-    
- 
+

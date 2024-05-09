@@ -44,23 +44,24 @@
             <div class="form-cadastro">
                 <div class=" column-left">
                 <form action="dadosPessoais" class="dadosPessoais">
-                    <label for="name">Nome completo <span id="campoObrig" style="color: red;">*</span></label><br>
+                    <label for="name">Nome completo <span class="campoObrig" style="color: red;">*</span></label><br>
                     <input type="text" id="fullName"><br>
 
-                    <label for="email">Endereço de e-mail <span id="campoObrig" style="color: red;">*</span></label><br>
+                    <label for="email">Endereço de e-mail <span class="campoObrig" style="color: red;">*</span></label><br>
                     <input type="email" id="email" oninput="validarEmail()"><br>
 
-                    <label for="number-phone">Número de Telefone <span id="campoObrig" style="color: red;">*</span></label><br>
+                    <label for="number-phone">Número de Telefone <span class="campoObrig" style="color: red;">*</span></label><br>
                     <input type="text" id="numberPhone" maxlength="14" oninput="formatarTelefone()"><br>
 
-                    <label for="cpf">CPF <span id="campoObrig" style="color: red;">*</span></label><br>
+                    <label for="cpf">CPF <span class="campoObrig" style="color: red;">*</span></label><br>
                     <input type="text" id="cpf" name="cpf" placeholder="123.456.789-00" maxlength="14" oninput="formatarCPF()" onblur="validarCPF()"><br>
+                    <p id="cpfError" class="error"></p>
 
-                    <label for="pass">Senha <span id="campoObrig" style="color: red;">*</span></label><br>
-                    <input type="password" id="pass" placeholder="User123*"><br>
+                    <label for="pass">Senha <span class="campoObrig" style="color: red;">*</span></label><br>
+                    <input type="password" id="pass"><br>
 
-                    <label for="confirmPass">Confirmar a senha <span id="campoObrig" style="color: red;">*</span></label><br>
-                    <input type="password" id="confirmPass" placeholder="Confirmar senha">
+                    <label for="confirmPass">Confirmar a senha <span class="campoObrig" style="color: red;">*</span></label><br>
+                    <input type="password" id="confirmPass">
 
                 </form>
             </div>
@@ -72,15 +73,15 @@
                 
                         
                         
-                        <label for="logradouro">Logradouro <span id="campoObrig" style="color: red;">*</span></label><br>
+                        <label for="logradouro">Logradouro <span class="campoObrig" style="color: red;">*</span></label><br>
                         <input name="rua" type="text" id="rua" size="60"><br>
-                        <label for="numero">Nº da residência <span id="campoObrig" style="color: red;">*</span></label><br>
+                        <label for="numero">Nº da residência <span class="campoObrig" style="color: red;">*</span></label><br>
                         <input name="numberResidence" type="text" id="numberResidence" size="60"><br>
-                        <label for="bairro">Bairro <span id="campoObrig" style="color: red;">*</span></label><br>
+                        <label for="bairro">Bairro <span class="campoObrig" style="color: red;">*</span></label><br>
                         <input name="bairro" type="text" id="bairro" size="40""><br>
-                        <label for="cidade">Cidade <span id="campoObrig" style="color: red;">*</span></label><br>
+                        <label for="cidade">Cidade <span class="campoObrig" style="color: red;">*</span></label><br>
                         <input name="cidade" type="text" id="cidade" size="40"><br>
-                        <label for="uf">Estado <span id="campoObrig" style="color: red;">*</span></label><br>
+                        <label for="uf">Estado <span class="campoObrig" style="color: red;">*</span></label><br>
                         <input name="uf" type="text" id="uf" size="2" "><br>
                         <label >Complemento(opcional)</label><br>
                         <input type="text" id="Complemento">

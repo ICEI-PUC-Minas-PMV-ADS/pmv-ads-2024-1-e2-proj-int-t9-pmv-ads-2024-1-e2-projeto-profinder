@@ -151,3 +151,12 @@ section {
 #campoObrig{
     display: inline-block;
 }
+
+.error{
+    color: red;
+    font-size: 13px;
+    margin-top: 0;
+}
+.invalid-input {
+    border: 2px solid red;
+  }
