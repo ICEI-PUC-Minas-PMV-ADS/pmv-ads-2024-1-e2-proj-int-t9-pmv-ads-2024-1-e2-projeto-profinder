@@ -94,23 +94,3 @@ main {
   ;
 }
 /**/
-.user-pass {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.user-pass input[type="password"] {
-  padding-left: 30px; /* Espaço para a imagem */
-}
-
-.user-pass input[type="password"]::before {
-  content: "";
-  position: absolute;
-  left: 10px; /* Ajuste a posição horizontal conforme necessário */
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px; /* Ajuste o tamanho da imagem conforme necessário */
-  height: 20px;
-  background-image: url('/src/código-fonte/img/secure_icon.png'); /* URL da sua imagem */
-  background-size: cover;
-}
