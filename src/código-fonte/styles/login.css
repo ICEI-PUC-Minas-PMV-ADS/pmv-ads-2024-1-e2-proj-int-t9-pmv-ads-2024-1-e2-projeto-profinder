@@ -36,21 +36,6 @@ main {
   right: 25%;
 }
 
-.user-email > input,
-.user-pass > input {
-  margin: 15px 0;
-  width: 350px;
-  height: 40px;
-  padding: 15px 0 10px 10px;
-  border: 1px solid #c5c5c5;
-  border-radius: 5px;
-  font-style: italic;
-  outline: none;
-  box-sizing: border-box;
-  transition: border-color 0.3s ease;
-  color: #b1b1b1;
-}
-
 .button-login {
   text-align: center;
 }
@@ -62,6 +47,20 @@ main {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.input-login{
+  margin: 15px 0;
+  width: 350px;
+  height: 40px;
+  padding: 15px 0 10px 10px;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+  font-style: italic;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  color: #b1b1b1;
 }
 
 .input-login:focus {
@@ -87,4 +86,31 @@ main {
   background-color: #FFD600;
   width: 20px;
   height: 20px;
+}
+
+.messageError{
+  color: red;
+  margin: 0
+  ;
+}
+/**/
+.user-pass {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.user-pass input[type="password"] {
+  padding-left: 30px; /* Espaço para a imagem */
+}
+
+.user-pass input[type="password"]::before {
+  content: "";
+  position: absolute;
+  left: 10px; /* Ajuste a posição horizontal conforme necessário */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 20px;
+  background-image: url('/src/código-fonte/img/secure_icon.png'); /* URL da sua imagem */
+  background-size: cover;
 }
