@@ -230,7 +230,7 @@ main {
     width: 100%;  
 }
 
-.nome_curso , .nome_instituicao{
+.nome_curso , .nome_instituicao , .campo_date{
     width: 50%;
     margin: 0px 30px;
 }
@@ -300,24 +300,25 @@ main {
     font-weight: bold;
 }
 
-
-
-
-
-
-
-@media (max-width:600px){
-    .Line-grid{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .container-navegation{
-        display: flex;
-        flex-direction: column;
-    }
-
-   .line-style-top{
-        margin: 100px 0px;
-   }
+.formacaoDate{
+    display: flex;
 }
+
+.campo_date{
+    margin-top: 5px;
+    display: flex;
+    gap: 10%;
+}
+
+.bold_form_date{
+    font-size: small;
+    font-weight: bold;
+}
+
+.campo_date input{
+    width: 80%;
+}
+
+
+
+

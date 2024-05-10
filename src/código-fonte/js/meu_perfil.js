@@ -1,6 +1,7 @@
 const senha1 = document.querySelector("#senha-perfil")
 const senha2 = document.querySelector("#senha2-perfil")
 const imgPass = document.querySelector(".imgPass")
+const imgPass2 = document.querySelector(".imgPass2")
 
 $(document).ready(function(){
 $('#cep-perfil').mask('00000-000');
@@ -15,12 +16,28 @@ senha1.addEventListener('keypress' , () =>{
 });
 
 
-    imgPass.addEventListener('click', function() {
-        if (imgPass.src.endsWith('/src/código-fonte/img/pass_open.png')) {
-            imgPass.src = "/src/código-fonte/img/pass_Invisible.png";
-            senha1.setAttribute("type", "text");
-        } else {
-            imgPass.src = "/src/código-fonte/img/pass_open.png";
-        }
-    });
-    
+let isPasswordVisible1 = false;
+
+imgPass.addEventListener('click', function() {
+    if (!isPasswordVisible1) {
+        imgPass.src = "/src/código-fonte/img/pass_Invisible.png";
+        senha1.setAttribute("type", "text");
+    } else {
+        imgPass.src = "/src/código-fonte/img/pass_open.png";
+        senha1.setAttribute("type", "password");
+    }
+    isPasswordVisible1 = !isPasswordVisible1;
+});
+
+let isPasswordVisible2 = false;
+
+imgPass2.addEventListener('click', function() {
+    if (!isPasswordVisible2) {
+        imgPass2.src = "/src/código-fonte/img/pass_Invisible.png";
+        senha2.setAttribute("type", "text");
+    } else {
+        imgPass2.src = "/src/código-fonte/img/pass_open.png";
+        senha2.setAttribute("type", "password");
+    }
+    isPasswordVisible2 = !isPasswordVisible2;
+});
