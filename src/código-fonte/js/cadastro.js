@@ -43,7 +43,7 @@ function limpa_formulário_cep() {
 function meu_callback(conteudo) {
     if (!("erro" in conteudo)) {
         //Atualiza os campos com os valores.
-        document.getElementById('rua').value=(conteudo.logradouro);
+        document.getElementById('rua').value=(conteudo.rua);
         document.getElementById('bairro').value=(conteudo.bairro);
         document.getElementById('cidade').value=(conteudo.localidade);
         document.getElementById('uf').value=(conteudo.uf);
