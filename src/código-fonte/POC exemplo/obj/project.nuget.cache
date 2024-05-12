@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gCh3z4orhnqe0dcCllL5Ay0+UjDc7rWfXvUBxdKvb3SG3zrPVVyt8Yae25ywqXSeRZxRx3tTf0jZABxBXQSkwA==",
+  "dgSpecHash": "zDDucClyt2wVV2H0Bnj2vTGIiC00V6uGRJbVAA1E1tLQPSPQ1bRPd6krE76P8ToRVCGp614dZfrtR47A5aACFg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mateu\\Documents\\ProFinder integracao back end\\ProFinder MVC\\ProFinder MVC\\ProFinder MVC.csproj",
+  "projectFilePath": "C:\\Users\\mateu\\Documents\\git\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\POC exemplo\\ProFinder MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mateu\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

@@ -8047,11 +8047,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mateu\\Documents\\ProFinder integracao back end\\ProFinder MVC\\ProFinder MVC\\ProFinder MVC.csproj",
+      "projectUniqueName": "C:\\Users\\mateu\\Documents\\git\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\POC exemplo\\ProFinder MVC.csproj",
       "projectName": "ProFinder MVC",
-      "projectPath": "C:\\Users\\mateu\\Documents\\ProFinder integracao back end\\ProFinder MVC\\ProFinder MVC\\ProFinder MVC.csproj",
+      "projectPath": "C:\\Users\\mateu\\Documents\\git\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\POC exemplo\\ProFinder MVC.csproj",
       "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mateu\\Documents\\ProFinder integracao back end\\ProFinder MVC\\ProFinder MVC\\obj\\",
+      "outputPath": "C:\\Users\\mateu\\Documents\\git\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\POC exemplo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config",
