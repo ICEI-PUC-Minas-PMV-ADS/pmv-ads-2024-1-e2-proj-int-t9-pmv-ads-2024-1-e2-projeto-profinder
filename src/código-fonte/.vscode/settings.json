@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "POC exemplo\\bin\\Release\\net8.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/40ee6e85-a5b7-4268-a153-cfb8827cffb3/resourceGroups/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/providers/Microsoft.Web/sites/profinderads"
+}

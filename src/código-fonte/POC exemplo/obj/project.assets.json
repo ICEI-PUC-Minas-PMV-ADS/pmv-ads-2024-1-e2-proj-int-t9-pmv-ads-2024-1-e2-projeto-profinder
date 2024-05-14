@@ -8042,19 +8042,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mateu\\.nuget\\packages\\": {}
+    "C:\\Users\\Byan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "C:\\Users\\mateu\\Documents\\git\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\POC exemplo\\ProFinder MVC.csproj",
       "projectName": "ProFinder MVC",
       "projectPath": "C:\\Users\\mateu\\Documents\\git\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\POC exemplo\\ProFinder MVC.csproj",
       "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\mateu\\Documents\\git\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\POC exemplo\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Byan\\OneDrive\\Área de Trabalho\\ProFinder\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\POC exemplo\\ProFinder MVC.csproj",
+      "projectName": "ProFinder MVC",
+      "projectPath": "C:\\Users\\Byan\\OneDrive\\Área de Trabalho\\ProFinder\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\POC exemplo\\ProFinder MVC.csproj",
+      "packagesPath": "C:\\Users\\Byan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Byan\\OneDrive\\Área de Trabalho\\ProFinder\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\POC exemplo\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Byan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
