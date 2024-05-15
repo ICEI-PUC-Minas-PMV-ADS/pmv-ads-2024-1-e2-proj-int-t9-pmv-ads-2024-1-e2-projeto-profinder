@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProFinder MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+868482ed68e5dcdc34150a9d6d9f820ad28e897d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b78031143834483b5e0447ef6ee2e17e63718826")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProFinder MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProFinder MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
