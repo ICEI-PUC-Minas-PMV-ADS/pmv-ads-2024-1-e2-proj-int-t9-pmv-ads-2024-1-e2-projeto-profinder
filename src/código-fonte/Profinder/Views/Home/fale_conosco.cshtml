@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/fale_conosco.css">
+    <link rel="stylesheet" href="~/css/globals.css">
+    <title>Fale conosco - ProFinder</title>
+    <link rel="icon" href="~/img/logo.png" type="image/x-icon">
+    <script defer src="/js/fale_conosco.js"></script>
+    <script defer src="/js/header.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="logo-profinder"><a href="/home.html"><img class="img-header" src="~/img/logo.png" alt="Logo do site"></a></div>
+            <div class="nav">
+                <a class="nav-link" href="/home.html"><li class="nav-li">Home</li></a>
+                <a class="nav-link" href="/sobre.html"><li class="nav-li">Sobre</li></a>
+                <a class="nav-link" href="/serviços.html"><li class="nav-li">Serviços</li></a>
+                <a class="nav-link" href="/fale_conosco.html"><li class="nav-li">Fale Conosco</li></a>
+            </div>
+                <div class="login-area">
+                    <div class="area-login">
+                        <a href="/login.html"><button class="cta_btn_secondary spaces">Entrar</button></a>
+                        <a href="/cadastro.html"><button class="cta_btn_primary spaces">Criar Conta</button></a>
+                    </div>
+                </div>       
+            </header>
+        </div>
+
+        <div class="user-logged" style="display: none;">
+            <header class="header">
+                <div class="logo-profinder-logged"><img src="~/img/logo.png" alt="Logo ProFinder"></div>
+                <div class="nav-logged">
+                    <a class="nav-link" href="/home.html"><li class="nav-li">Home</li></a>
+                    <a class="nav-link" href="/sobre.html"><li class="nav-li">Sobre</li></a>
+                    <a class="nav-link" href="/serviços.html"><li class="nav-li">Servicos</li></a>
+                    <a class="nav-link" href="/fale_conosco.html"><li class="nav-li">Fale Conosco</li></a>
+                    <a class="nav-link" href="/fale_conosco.html"><li class="nav-li">Profissionais</li></a>
+
+                    <li id="user-dropdown">
+                        <a class="account-drop" href="#">Minha Conta</a>
+                        <ul id="user-menu" class="dropdown-content" style="display: none;">
+                            <li class="toggle-options"><a href="/area_meu_perfil.html">Perfil</a></li>
+                            <li class="toggle-options"><a href="/area_minhas_contratacoes.html">Minhas contratações</a></li>
+                            <li class="toggle-options"><a href="#">Sair</a></li>
+                        </ul>
+                    </li>
+                </div>   
+            </header>
+        </div>
+<!--FIM AREA DO HEADER--> 
+
+<!--AREA DO FORMS-->
+        <article class="fale-conosco">
+            <p class="title">Fale Conosco</p>
+            <p class="introduction">Precisa de ajuda com alguma coisa? Caso queira fazer elogios, 
+                reclamações, sugestões ou se tornar um parceiro ProFinder, envie-nos uma mensagem e 
+                responderemos o mais breve possível.</p>
+        </article>
+
+        <div class="forms">
+            <form class="input-forms" id="verif-form">
+                <label for="nome">Nome Completo<span class="label-span">*</span></label>
+                <span class="error-message" id="errorMessage1">Por favor, preencha o campo com seu nome completo.</span>
+                <input type="text" id="nome" name="nome" placeholder="Insira seu nome Completo" onkeypress="onlyLetters(event)">
+
+                <label for="email">Endereço de E-mail<span class="label-span">*</span></label>
+                <span class="error-message" id="errorMessage2">Por favor, preencha o campo com um e-mail válido</e-mail>.</span>
+                <input type="text" id="email" name="email" placeholder="Seu endereço de e-mail">
+
+                <label for="telefone">N° de telefone<span class="label-span">*</span></label>
+                <span class="error-message" id="errorMessage3">Por favor, insira um número de telefone válido com 11 dígitos.</span>
+                <input type="text" id="telefone" name="telefone" placeholder="Seu número de telefone com DDD">
+
+                <label for="mensagem">Escreva sua mensagem<span class="label-span">*</span></label>
+                <span class="error-message" id="errorMessage4">Por favor, preencha o campo com sua mensagem.</span>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui" rows="4"></textarea>
+
+                <div class="button">
+                    <input class="send-button" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+<!--FIM AREA DO FORMS-->
+
+<!--AREA DO FOOTER-->
+        <footer>
+            <p class="footer-obj">ACESSIBILIDADE</p>
+            <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
+            <p class="footer-obj">PRIVACIDADE</p>
+            <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat 
+                illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia!
+            </p>
+        </footer>
+<!--FIM AREA DO FOOTER-->
+
+    </div>
+</body>
+</html>

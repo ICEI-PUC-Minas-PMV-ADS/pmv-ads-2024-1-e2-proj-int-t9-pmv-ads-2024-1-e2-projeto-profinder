@@ -1,0 +1,96 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 733px;
+}
+
+.login {
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+}
+
+.line-separation {
+  border: 1px solid #ffd600;
+}
+
+.form-login {
+  display: flex;
+  margin: 25vh auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-email, .user-pass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-email, .icon-secure {
+  margin-right: 10px;
+}
+
+.pass-invisible{
+  position: absolute;
+  right: 25%;
+}
+
+.button-login {
+  text-align: center;
+}
+
+.button-login > button {
+  background-color: #ffd600;
+  color: #fff;
+  font-size: large;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.input-login{
+  margin: 15px 0;
+  width: 350px;
+  height: 40px;
+  padding: 15px 0 10px 10px;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+  font-style: italic;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  color: #b1b1b1;
+}
+
+.input-login:focus {
+  border-color: #FFD600;
+}
+
+.login-area {
+  display: flex;
+  justify-content: center;
+}
+
+.login-btn {
+  margin-top: 15px;
+  width: 12rem;
+  height: 35px;
+}
+
+/* Configuração do botao de esconder a senha ou exibila */
+::-ms-reveal {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 3px currentColor;
+  background-color: #FFD600;
+  width: 20px;
+  height: 20px;
+}
+
+.messageError{
+  color: red;
+  margin: 0
+  ;
+}
+/**/

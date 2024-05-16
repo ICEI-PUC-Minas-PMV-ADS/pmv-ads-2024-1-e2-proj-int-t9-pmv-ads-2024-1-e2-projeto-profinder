@@ -14,16 +14,24 @@ build_property.EnableComHosting =
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Byan\OneDrive\Área de Trabalho\ProFinder\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Byan/OneDrive/Área de Trabalho/ProFinder/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/src/código-fonte/Profinder/Views/Home/fale_conosco.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmYWxlX2Nvbm9zY28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Byan/OneDrive/Área de Trabalho/ProFinder/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/src/código-fonte/Profinder/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Byan/OneDrive/Área de Trabalho/ProFinder/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/src/código-fonte/Profinder/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/Byan/OneDrive/Área de Trabalho/ProFinder/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/src/código-fonte/Profinder/Views/Home/servicos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzZXJ2aWNvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Byan/OneDrive/Área de Trabalho/ProFinder/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/src/código-fonte/Profinder/Views/Home/sobre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzb2JyZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Byan/OneDrive/Área de Trabalho/ProFinder/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/src/código-fonte/Profinder/Views/Shared/Error.cshtml]
