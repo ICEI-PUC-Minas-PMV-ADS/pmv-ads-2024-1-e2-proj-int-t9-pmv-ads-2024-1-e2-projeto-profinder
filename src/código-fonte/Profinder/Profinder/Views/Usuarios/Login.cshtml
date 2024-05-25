@@ -1,0 +1,77 @@
+﻿@model Profinder.Models.Usuario
+
+@{
+    ViewData["Title"] = "Login";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/login-user.css">
+    <link rel="stylesheet" href="~/css/globals.css">
+    <title>Login</title>
+</head>
+
+    <body>
+        <header>
+            <div class="login">
+                <a href="@Url.Action("Index", "Home")"><img class="img-header" src="~/img/logo.png" alt="Logo do site"></a>
+            </div>
+        </header>
+
+        <div class="line-separation"></div>
+
+        <main>
+            <div class="form-login">
+                <div>
+                    <form asp-action="Login">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="user-email">
+                            <i><img src="~/img/user_icon.png" class="icon-email"></i>
+                            <input asp-for="Email" class="input-login" placeholder="Informe o e-mail cadastrado" />
+
+                        </div>
+                        <div class="user-pass">
+                            <i><img src="~/img/secure_icon.png" class="icon-secure"></i>
+                            <input asp-for="Senha" class="input-login" placeholder="Informe a senha cadastrado"/>
+
+                        </div>
+                        <div class="login-area">
+                            <input type="submit" value="Entrar" class="cta_btn_primary login-btn" />
+                        </div>
+                    </form>
+                </div>
+                <!-- Exibir mensagem de erro -->
+                @if (!string.IsNullOrEmpty(ViewBag.Message))
+                {
+                    <div class="span-error">@ViewBag.Message</div>
+                }
+            </div>
+        </main>
+    </body>
+
+<!--AREA DO FOOTER-->
+    <footer>
+        <div class="footer">
+            <p class="footer-obj">ACESSIBILIDADE</p>
+            <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
+            <p class="footer-obj">PRIVACIDADE</p>
+            <p class="footer-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat
+                illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia
+                repudiandae nihil minus commodi doloremque velit.
+            </p>
+        </div>
+    </footer>
+<!--FIM AREA DO FOOTER-->
+
+</html>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
