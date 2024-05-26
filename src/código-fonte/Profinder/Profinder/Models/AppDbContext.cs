@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+
 namespace Profinder.Models
 {
     public class AppDbContext : DbContext
@@ -8,6 +9,7 @@ namespace Profinder.Models
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Profissional> Profissionais { get; set; }
+        public IEnumerable<object> Professionals { get; internal set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

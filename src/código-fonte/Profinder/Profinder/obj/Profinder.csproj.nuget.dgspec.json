@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\coneg\\Desktop\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\Profinder.csproj": {}
+    "C:\\Users\\Byan\\OneDrive\\Área de Trabalho\\ProFinder\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\Profinder.csproj": {}
   },
   "projects": {
-    "C:\\Users\\coneg\\Desktop\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\Profinder.csproj": {
+    "C:\\Users\\Byan\\OneDrive\\Área de Trabalho\\ProFinder\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\Profinder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\coneg\\Desktop\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\Profinder.csproj",
+        "projectUniqueName": "C:\\Users\\Byan\\OneDrive\\Área de Trabalho\\ProFinder\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\Profinder.csproj",
         "projectName": "Profinder",
-        "projectPath": "C:\\Users\\coneg\\Desktop\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\Profinder.csproj",
-        "packagesPath": "C:\\Users\\coneg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\coneg\\Desktop\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\obj\\",
+        "projectPath": "C:\\Users\\Byan\\OneDrive\\Área de Trabalho\\ProFinder\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\Profinder.csproj",
+        "packagesPath": "C:\\Users\\Byan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Byan\\OneDrive\\Área de Trabalho\\ProFinder\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\coneg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Byan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

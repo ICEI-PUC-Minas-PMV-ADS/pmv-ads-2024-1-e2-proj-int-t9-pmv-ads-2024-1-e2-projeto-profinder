@@ -23,7 +23,7 @@
                 <a href="@Url.Action("Index", "Home")"><img class="img-header" src="/img/logo.png" alt="Logo do site"></a>
 
                 <div class="list-menu-finder">
-                    <a href="@Url.Action("AreaProfissionais", "Home")"><li>Profissionais</li></a>
+                    <a href="@Url.Action("AreaProfissionais", "Usuarios")"><li>Profissionais</li></a>
                     <a href="@Url.Action("MinhasContratacoes", "Home")"><li>Minhas Contratações</li></a>
                     <a asp-action="Edit" asp-controller="Usuarios" asp-route-id="@User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value" class="account-li"><li>Meu Perfil</li></a>
                     <a asp-area="" asp-controller="Usuarios" asp-action="Logout"><li>Sair</li></a>

@@ -216,6 +216,8 @@ nav {
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1;
+    background-color: #F9F9F9;
+    border: 1px solid #FFD600;
 }
 
 .profile-picture {
@@ -248,8 +250,11 @@ nav {
     background-color: #ffffff;
     border: 1px solid #F5F5F5;
     margin-bottom: 8px;
-    font-size: 11px;
+}
+
+.professional-about-me h6 {
     padding: 5px;
+    font-size: 12px;
 }
 
 .professional-bio,
@@ -257,7 +262,8 @@ nav {
 .rating,
 .comment,
 .comments h6 {
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 600;
     margin: 8px 0px;
 }
 
