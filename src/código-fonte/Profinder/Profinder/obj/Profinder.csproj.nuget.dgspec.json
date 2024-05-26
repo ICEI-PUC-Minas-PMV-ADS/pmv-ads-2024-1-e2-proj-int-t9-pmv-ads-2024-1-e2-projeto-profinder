@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Byan\\OneDrive\\Área de Trabalho\\ProFinder\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\Profinder.csproj": {}
+    "C:\\Users\\coneg\\Desktop\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\Profinder.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Byan\\OneDrive\\Área de Trabalho\\ProFinder\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\Profinder.csproj": {
+    "C:\\Users\\coneg\\Desktop\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\Profinder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Byan\\OneDrive\\Área de Trabalho\\ProFinder\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\Profinder.csproj",
+        "projectUniqueName": "C:\\Users\\coneg\\Desktop\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\Profinder.csproj",
         "projectName": "Profinder",
-        "projectPath": "C:\\Users\\Byan\\OneDrive\\Área de Trabalho\\ProFinder\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\Profinder.csproj",
-        "packagesPath": "C:\\Users\\Byan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Byan\\OneDrive\\Área de Trabalho\\ProFinder\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\obj\\",
+        "projectPath": "C:\\Users\\coneg\\Desktop\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\Profinder.csproj",
+        "packagesPath": "C:\\Users\\coneg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\coneg\\Desktop\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Byan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\coneg\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -51,15 +52,15 @@
             },
             "Azure.Storage.Blobs": {
               "target": "Package",
-              "version": "[12.13.1, )"
+              "version": "[12.20.0, )"
             },
             "Azure.Storage.Files.Shares": {
               "target": "Package",
-              "version": "[12.1.0, )"
+              "version": "[12.18.0, )"
             },
             "Azure.Storage.Queues": {
               "target": "Package",
-              "version": "[12.11.1, )"
+              "version": "[12.18.0, )"
             },
             "BCrypt.Net-Next": {
               "target": "Package",
@@ -99,15 +100,15 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.Extensions.Azure": {
               "target": "Package",
-              "version": "[1.5.0, )"
+              "version": "[1.7.3, )"
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
-              "version": "[1.19.6, )"
+              "version": "[1.20.1, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

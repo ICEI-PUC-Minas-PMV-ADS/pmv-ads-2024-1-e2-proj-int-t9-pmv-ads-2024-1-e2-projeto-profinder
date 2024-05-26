@@ -212,6 +212,16 @@ namespace Profinder.Controllers
             return View(usuario);
         }
 
+        public async Task<IActionResult> AreaProfissionais()
+        {
+            // Filtra os usuários que têm o perfil de "Profissional"
+            var profissionais = await _context.Usuarios
+                                              .Where(u => u.Perfil == Perfil.Profissional)
+                                              .ToListAsync();
+
+            return View(profissionais);
+        }
+
         // POST: Usuarios/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.

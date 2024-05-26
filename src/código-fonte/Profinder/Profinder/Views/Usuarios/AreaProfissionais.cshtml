@@ -1,4 +1,5 @@
-﻿
+﻿@model IEnumerable<Profinder.Models.Usuario>
+
 @{
     ViewData["Title"] = "AreaProfissionais";
 }
@@ -24,7 +25,7 @@
             <div class="list-menu-finder">
                 <a href="@Url.Action("AreaProfissionais", "Home")"><li>Profissionais</li></a>
                 <a href="@Url.Action("MinhasContratacoes", "Home")"><li>Minhas Contratações</li></a>
-                <a href="@Url.Action("Edit", "Usuarios")"><li>Meu Perfil</li></a>
+                <a asp-action="Edit" asp-controller="Usuarios" asp-route-id="@User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value" class="account-li"><li>Meu Perfil</li></a>
                 <a asp-area="" asp-controller="Usuarios" asp-action="Logout"><li>Sair</li></a>
             </div>
         </div>
@@ -79,65 +80,58 @@
     <!--ÁREA DOS CARDS-->
     <p id="professional-title">Veja abaixo a lista de profissionais encontrados de acordo com os filtros selecionados:</p>
     <div class="card-container">
-        <div class="card">
-            <div class="profile-picture">
-                <!--<img src="" alt="Foto do Profissional">-->
-                <div class="photo-example">
-                    <span>JS</span>
+        @foreach (var profissional in Model)
+        {
+            <div class="card">
+                <div class="profile-picture">
+                    <!--<img src="" alt="Foto do Profissional">-->
+                    <div class="photo-example">
+                        <span>@profissional.NomeUsuario.Substring(0, 2).ToUpper()</span>
+                    </div>
+                    <h6 class="professional-name">@profissional.NomeUsuario</h6>
                 </div>
-                <h6 class="professional-name">João da Silva</h6>
-            </div>
-
-            <div class="cad-content">
-
-                <p class="professional-bio">Quem sou eu</p>
-                <div class="professional-area"></div>
-
-                <p class="professional-qualifications">Minhas Qualificações</p>
-                <div class="qualifications">
-                    <div class="qualifications-item">+ Enfermagem</div>
-                    <div class="qualifications-item">+ Gestão Hospitalar</div>
-                    <div class="qualifications-item">+ Psicologia</div>
-                    <div class="qualifications-item">+ Téc. em Cuidadores de Idosos</div>
-                </div>
-
-
-                <div class="user-rating">
-                    <span class="rating">Avaliação dos usuários</span>
-                    <div class="rating-area">
-                        <p class="rating-text">Qualidade do Serviço</p>
-                        <p class="rating-text">Preço</p>
+                <div class="cad-content">
+                    <p class="professional-bio">Quem sou eu</p>
+                    <div class="professional-about-me">@profissional.SobreMim</div>
+                    <p class="professional-qualifications">Minhas Qualificações</p>
+                    <div class="qualifications">
+                        @if (!string.IsNullOrEmpty(profissional.Habilidades))
+                        {
+                            var habilidades = profissional.Habilidades.Split(',');
+                            foreach (var habilidade in habilidades)
+                            {
+                                <div class="qualifications-item">+ @habilidade</div>
+                            }
+                        }
+                    </div>
+                    <div class="user-rating">
+                        <span class="rating">Avaliação dos usuários</span>
+                        <div class="rating-area">
+                            <p class="rating-text">Qualidade do Serviço</p>
+                            <p class="rating-text">Preço</p>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="comment">Comentários</div>
+                        <div class="comment-area"></div>
+                    </div>
+                    <div class="btn-area">
+                        <a href="@Url.Action("Contratar", "Contratacoes", new { id = profissional.Id })"><button class="cta_btn_primary btn-pro">Contratar</button></a>
                     </div>
                 </div>
-
-
-                <div class="comments">
-                    <div class="comment">Comentários</div>
-                    <div class="comment-area"></div>
-                </div>
-
-                <div class="btn-area">
-                    <a href="/contratação_etapa_1.html"><button class="cta_btn_primary btn-pro">Contratar</button></a>
-                </div>
-
-
             </div>
-        </div>
+        }
     </div>
     <!--ÁREA DOS CARDS-->
-    <!--ÁREA DO FOOTER-->
-    
-
-    <!--ÁREA DO FOOTER-->
-</head>
-    <footer>
-        <p class="footer-obj">ACESSIBILIDADE</p>
-        <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
-        <p class="footer-obj">PRIVACIDADE</p>
-        <p class="footer-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat
-            illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia!
-        </p>
-    </footer>
+    </head>
+        <footer>
+            <p class="footer-obj">ACESSIBILIDADE</p>
+            <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
+            <p class="footer-obj">PRIVACIDADE</p>
+            <p class="footer-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat
+                illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia!
+            </p>
+        </footer>
 </html>
 

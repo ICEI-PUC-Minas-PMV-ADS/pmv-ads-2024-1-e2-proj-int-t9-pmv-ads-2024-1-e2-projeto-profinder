@@ -4,6 +4,10 @@ main {
     position: relative;
 }
 
+#no-profile {
+    padding: 1px;
+}
+
 .contratações {
     width: 80%;
 }

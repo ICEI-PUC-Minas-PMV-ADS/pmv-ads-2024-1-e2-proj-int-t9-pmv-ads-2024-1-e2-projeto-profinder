@@ -25,7 +25,7 @@
                 <div class="list-menu-finder">
                     <a href="@Url.Action("AreaProfissionais", "Home")"><li>Profissionais</li></a>
                     <a href="@Url.Action("MinhasContratacoes", "Home")"><li>Minhas Contratações</li></a>
-                    <a href="@Url.Action("Edit", "Usuarios")"><li>Meu Perfil</li></a>
+                    <a asp-action="Edit" asp-controller="Usuarios" asp-route-id="@User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value" class="account-li"><li>Meu Perfil</li></a>
                     <a asp-area="" asp-controller="Usuarios" asp-action="Logout"><li>Sair</li></a>
                 </div>
             </div>
@@ -40,28 +40,28 @@
                 <div class="hiring-container">
                     <div class="stage ">
                         Nome do Paciente
-                        <p>Fulano da Silva Jr.</p>
+                        <p id="no-profile">Fulano da Silva Jr.</p>
                     </div>
                     <div class="stage b">
                         Idade
-                        <p>42</p>
+                    <p id="no-profile">42</p>
                     </div>
                     <div class="stage c">
                         Necessidade
-                        <p>Cuidador de Idosos</p>
+                    <p id="no-profile">Cuidador de Idosos</p>
                     </div>
 
                     <div class="stage ">
                         Período Contratado
-                        <p>01/01/2024 a 01/02/2024</p>
+                    <p id="no-profile">01/01/2024 a 01/02/2024</p>
                     </div>
                     <div class="stage b">
                         Valor Recebido
-                        <p>R$1,00</p>
+                    <p id="no-profile">R$1,00</p>
                     </div>
                     <div class="stage c">
                         Registros
-                        <p>22</p>
+                    <p id="no-profile">22</p>
                     </div>
 
                     <!-- ÁREA DO MODAL -->

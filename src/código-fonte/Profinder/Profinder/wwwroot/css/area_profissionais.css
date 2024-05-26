@@ -241,13 +241,15 @@ nav {
     font-weight: bolder;
 }
 
-.professional-area {
+.professional-about-me {
     width: 100%;
     height: 90px;
     border-radius: 7px;
     background-color: #ffffff;
     border: 1px solid #F5F5F5;
     margin-bottom: 8px;
+    font-size: 11px;
+    padding: 5px;
 }
 
 .professional-bio,
