@@ -8,12 +8,12 @@ const searchInput = document.getElementById('searchInput');
 searchInput.addEventListener('input', () => {
     const query = searchInput.value.toLowerCase();
     const cards = document.querySelectorAll('.card');
-
+    
     cards.forEach(card => {
         const name = card.querySelector('.professional-name').textContent.toLowerCase();
         const aboutMe = card.querySelector('.professional-about-me h6').textContent.toLowerCase();
         const qualifications = card.querySelector('.qualifications').textContent.toLowerCase();
-
+        
         if (name.includes(query) || aboutMe.includes(query) || qualifications.includes(query)) {
             card.style.display = 'block'; // Mostra o card se corresponder à consulta
         } else {
@@ -66,6 +66,21 @@ applyFilters.addEventListener('click', () => {
 
     // Lógica de filtragem de AJAX omitida para simplificação
 });
+
+const input = document.getElementById('searchInput');
+const placeholderText = "Pesquise um profissional pela especialidade ou nome";
+let position = 0;
+function typeWriter() {
+    if (position < placeholderText.length) {
+        input.setAttribute('placeholder', placeholderText.substring(0, position + 1));
+        position++;
+        setTimeout(typeWriter, 30);
+    } else {
+        position = 0;
+        setTimeout(typeWriter, 2000);
+    }
+}
+typeWriter();
 
 // Função para atualizar a lista de profissionais exibida
 function updateProfessionalsList(professionals) {
