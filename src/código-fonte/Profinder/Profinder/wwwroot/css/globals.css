@@ -64,6 +64,7 @@ p {
     text-decoration: none;
     cursor: pointer;
     transition: .2s all;
+    margin-left: 5px;
 }
 
 .cta_btn_secondary {

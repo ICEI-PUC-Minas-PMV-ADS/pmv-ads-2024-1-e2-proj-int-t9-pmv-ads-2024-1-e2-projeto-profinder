@@ -2,7 +2,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 733px;
+  height: 672px;
 }
 
 .login {
@@ -94,3 +94,32 @@ main {
   ;
 }
 /**/
+
+/* Estilo para que o botão de login exiba um efeito de "load" quando o usuário clicar */
+
+.spinner {
+    border: 4px solid #ffd600;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-left-color: #fff;
+    animation: spin 1s ease infinite;
+    display: inline-block;
+    vertical-align: central;
+    margin-top: -8px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.alert alert-success {
+    margin-bottom: 15px;
+    color:#4fd328;
+}

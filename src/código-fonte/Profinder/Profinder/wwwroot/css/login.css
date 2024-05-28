@@ -128,8 +128,54 @@ main {
     justify-content: center;
 }
 
+.login-area {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.login-area a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-area h6 {
+    font-size: 15px;
+}
+
+
+.login-btn {
+    margin-top: 15px;
+    width: 12rem;
+    height: 35px;
+}
+
+.cta_btn_primary {
+    background-color: var(--amarelo);
+    color: #ffffff;
+    height: 40px;
+    padding: 0;
+    font-size: 15px;
+    border-radius: 7px;
+    border: 1px solid #ffd600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s all;
+}
+
 .cta_btn_secondary {
-    margin-right: 10px;
+    background-color: transparent;
+    color: var(--amarelo);
+    padding: 0;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 7px;
+    border: 1px solid var(--amarelo);
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s all;
 }
 
 .messageError {
@@ -209,4 +255,28 @@ main {
 .text-danger {
     color: #ff0000;
     font-size: 0.7em;
+}
+
+/* Estilo para que o botão de login exiba um efeito de "load" quando o usuário clicar */
+
+.spinner {
+    border: 4px solid #ffd600;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border-left-color: #fff;
+    animation: spin 1s ease infinite;
+    display: inline-block;
+    vertical-align: central;
+    margin-top: 3px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

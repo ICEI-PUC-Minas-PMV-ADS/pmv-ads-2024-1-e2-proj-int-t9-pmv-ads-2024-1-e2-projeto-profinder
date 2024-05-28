@@ -20,7 +20,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 
-    <title>Login</title>
+    <title>Cadastre-se ;)</title>
 </head>
 <body>
     <header>
@@ -31,7 +31,7 @@
     <div class="line-separation"></div>
     
     <div class="parent">
-        <form asp-action="Create">
+        <form asp-action="Create" id="loginForm">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="grid-container">
@@ -179,9 +179,11 @@
                 </div>
             </div>
 
-            <div class="form-group">
-                <a asp-action="Index" class="cta_btn_secondary">Voltar</a>
-                <input type="submit" value="Cadastrar-se" class="cta_btn_primary" style="margin-left: 15px" />
+            <div class="login-area">
+                <a class="cta_btn_secondary login-btn" href="@Url.Action("Index", "Home")"> <h6>Voltar</h6> </a>
+                <button type="submit" class="cta_btn_primary login-btn" id="loginButton" style="margin-left: 15px">
+                    Cadastrar-se
+                </button>
             </div>
         </form>
 
@@ -196,6 +198,25 @@
             illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia!
         </p>
     </footer>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Previne o envio imediato do formulário
+
+            var loginButton = document.getElementById('loginButton');
+            var spinner = document.createElement('div');
+            spinner.className = 'spinner';
+
+            // Desabilita o botão e adiciona o spinner
+            loginButton.disabled = true;
+            loginButton.innerHTML = ''; // Remove o texto "Entrar"
+            loginButton.appendChild(spinner);
+
+            // Adiciona o atraso de 4 segundos
+            setTimeout(function () {
+                document.getElementById('loginForm').submit(); // Envia o formulário após 4 segundos
+            }, 4000);
+        });
+    </script>
 </body>
 </html>
 
@@ -246,6 +267,7 @@
         $(document).ready(function () {
             $('#cpf').mask('000.000.000-00', { reverse: true });
         });
+
     </script>
 
     

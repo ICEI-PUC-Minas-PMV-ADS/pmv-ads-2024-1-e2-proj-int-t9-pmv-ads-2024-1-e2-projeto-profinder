@@ -24,8 +24,15 @@
 
         <main>
             <div class="form-login">
+                @if (TempData["SuccessMessage"] != null)
+                {
+                    <div class="alert alert-success">
+                        @TempData["SuccessMessage"]
+                    </div>
+                }
+
                 <div>
-                    <form asp-action="Login">
+                <form asp-action="Login" id="loginForm">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
                         <div class="user-email">
@@ -35,11 +42,13 @@
                         </div>
                         <div class="user-pass">
                             <i><img src="~/img/secure_icon.png" class="icon-secure"></i>
-                            <input asp-for="Senha" class="input-login" placeholder="Informe a senha cadastrado"/>
+                            <input asp-for="Senha" class="input-login" placeholder="Informe a senha cadastrada"/>
 
                         </div>
                         <div class="login-area">
-                            <input type="submit" value="Entrar" class="cta_btn_primary login-btn" />
+                            <button type="submit" class="cta_btn_primary login-btn" id="loginButton">
+                                Entrar
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -66,6 +75,27 @@
         </div>
     </footer>
 <!--FIM AREA DO FOOTER-->
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Previne o envio imediato do formulário
+
+            var loginButton = document.getElementById('loginButton');
+            var spinner = document.createElement('div');
+            spinner.className = 'spinner';
+
+            // Desabilita o botão e adiciona o spinner
+            loginButton.disabled = true;
+            loginButton.innerHTML = ''; // Remove o texto "Entrar"
+            loginButton.appendChild(spinner);
+
+            // Adiciona o atraso de 4 segundos
+            setTimeout(function () {
+                document.getElementById('loginForm').submit(); // Envia o formulário após 4 segundos
+            }, 2500);
+        });
+    </script>
+
 
 </html>
 
