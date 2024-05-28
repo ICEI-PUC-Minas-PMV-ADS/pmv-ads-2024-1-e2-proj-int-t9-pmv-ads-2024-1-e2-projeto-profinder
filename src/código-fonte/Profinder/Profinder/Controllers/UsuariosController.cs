@@ -186,7 +186,7 @@ namespace Profinder.Controllers
                 await _context.SaveChangesAsync();
 
                 // Mensagem exibida após cadastro com sucesso
-                TempData["SuccessMessage"] = "Parabéns, o seu cadastro foi realizado com sucesso! Faça o login =)";
+                TempData["SuccessMessage"] = "Parabéns, o seu cadastro foi realizado com sucesso! Faça o login =)"; 
 
                 return RedirectToAction(nameof(Login));
             }
