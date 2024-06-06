@@ -24,54 +24,54 @@
         </div>
     </header>
     <div class="line-style-top"></div>
-
-    <div class="container-geral">
-        <h2>Solicitações Pendentes</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Cliente</th>
-                    <th>Detalhes do Paciente</th>
-                    <th>Data de Início</th>
-                    <th>Data de Fim</th>
-                    <th>Hora de Início</th>
-                    <th>Hora de Fim</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var solicitacao in Model)
-                {
+    <div class="ajustment-page">
+        <div class="container-geral">
+        
+            <table class="table-container">
+                <thead class="table-style">
                     <tr>
-                        <td>
-                            @if (solicitacao.Cliente != null)
-                            {
-                                <p><strong>Cliente:</strong> @solicitacao.Cliente.NomeUsuario</p>
-                            }
-                            else
-                            {
-                                <p><strong>Cliente:</strong> Não disponível</p>
-                            }
-                        </td>
-                        <td>@solicitacao.DetalhesPaciente</td>
-                        <td>@solicitacao.DataInicio.ToString("dd/MM/yyyy")</td>
-                        <td>@solicitacao.DataFim.ToString("dd/MM/yyyy")</td>
-                        <td>@solicitacao.HoraInicio</td>
-                        <td>@solicitacao.HoraFim</td>
-                        <td>
-                            <!-- Botões para aceitar ou recusar a solicitação -->
-                            <form method="post" action="@Url.Action("ResponderSolicitacao", "Contratacao")">
-                                <input type="hidden" name="contratacaoId" value="@solicitacao.Id" />
-                                <button type="submit" name="resposta" value="Aceitar">Aceitar</button>
-                                <button type="submit" name="resposta" value="Recusar">Recusar</button>
-                            </form>
-                        </td>
+                        <th>Usuário</th>
+                        <th>Necessidades do Paciente</th>
+                        <th>Data de Início</th>
+                        <th>Data de Fim</th>
+                        <th>Hora de Início</th>
+                        <th>Hora de Fim</th>
+                        <th>Resposta</th>
                     </tr>
-                }
-            </tbody>
-        </table>
+                </thead>
+                <tbody class="row-style">
+                    @foreach (var solicitacao in Model)
+                    {
+                        <tr>
+                            <td>
+                                @if (solicitacao.Cliente != null)
+                                {
+                                    <p><strong></strong> @solicitacao.Cliente.NomeUsuario</p>
+                                }
+                                else
+                                {
+                                    <p><strong>Cliente:</strong> Não disponível</p>
+                                }
+                            </td>
+                            <td>@solicitacao.DetalhesPaciente</td>
+                            <td>@solicitacao.DataInicio.ToString("dd/MM/yyyy")</td>
+                            <td>@solicitacao.DataFim.ToString("dd/MM/yyyy")</td>
+                            <td>@solicitacao.HoraInicio</td>
+                            <td>@solicitacao.HoraFim</td>
+                            <td>
+                                <!-- Botões para aceitar ou recusar a solicitação -->
+                                <form method="post" action="@Url.Action("ResponderSolicitacao", "Contratacao")">
+                                    <input type="hidden" name="contratacaoId" value="@solicitacao.Id" />
+                                    <button type="submit" name="resposta" value="Aceitar" class="cta_btn_primary_">Aceitar</button>
+                                    <button type="submit" name="resposta" value="Recusar" class="cta_btn_secondary_">Recusar</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
     </div>
-
     <footer>
         <p class="footer-obj">ACESSIBILIDADE</p>
         <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>

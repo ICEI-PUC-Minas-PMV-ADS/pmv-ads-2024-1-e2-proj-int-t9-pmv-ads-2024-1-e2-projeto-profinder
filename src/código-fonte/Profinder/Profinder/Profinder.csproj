@@ -58,6 +58,7 @@
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Views\Contratacao\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="wwwroot\css\solicitacoes.css" />
   </ItemGroup>
 
 </Project>
