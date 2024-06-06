@@ -24,7 +24,7 @@
 
             <div class="list-menu-finder">
                 <a href="@Url.Action("AreaProfissionais", "Home")"><li>Profissionais</li></a>
-                <a href="@Url.Action("MinhasContratacoes", "Home")"><li>Minhas Contratações</li></a>
+                <a href="@Url.Action("SolicitarAgendamentos", "Contratacao")"><li>Minhas Contratações</li></a>
                 <a asp-action="Edit" asp-controller="Usuarios" asp-route-id="@User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value" class="account-li"><li>Meu Perfil</li></a>
                 <a asp-area="" asp-controller="Usuarios" asp-action="Logout"><li>Sair</li></a>
             </div>
@@ -113,7 +113,7 @@
                         <div class="comment-area"></div>
                     </div>
                     <div class="btn-area">
-                        <a href="@Url.Action("Contratar", "Contratacoes", new { id = profissional.Id })"><button class="cta_btn_primary btn-pro">Contratar</button></a>
+                        <a href="@Url.Action("Etapa1", "Home", new { id = profissional.Id })"><button class="cta_btn_primary btn-pro">Contratar</button></a>
                     </div>
                 </div>
             </div>

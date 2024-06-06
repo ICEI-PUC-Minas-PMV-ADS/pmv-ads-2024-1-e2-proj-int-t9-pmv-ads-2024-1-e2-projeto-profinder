@@ -36,6 +36,12 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.MapControllerRoute(
+    name: "contratacao",
+    pattern: "Contratacao/{action=RegistrarContratacao}/{id?}",
+    defaults: new { controller = "Contratacao" });
+
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 

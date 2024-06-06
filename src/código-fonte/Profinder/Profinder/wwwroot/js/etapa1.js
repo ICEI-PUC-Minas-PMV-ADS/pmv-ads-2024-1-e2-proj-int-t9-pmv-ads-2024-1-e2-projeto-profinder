@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const infoIcon = document.querySelector('.info-icon');
     const infoBubble = document.querySelector('.info-bubble');
 
     // Exibir o balão ao passar o mouse sobre o ícone de informação
-    infoIcon.addEventListener('mouseover', function() {
+    infoIcon.addEventListener('mouseover', function () {
         infoBubble.style.display = 'block';
         const iconRect = infoIcon.getBoundingClientRect();
         infoBubble.style.top = (iconRect.top + iconRect.height) + 'px';
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Ocultar o balão ao retirar o mouse do ícone de informação
-    infoIcon.addEventListener('mouseout', function() {
+    infoIcon.addEventListener('mouseout', function () {
         infoBubble.style.display = 'none';
     });
 
@@ -24,21 +24,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const errorMessage = document.getElementById('error-message');
     const errorTimer = document.getElementById('error-timer');
     const progressBar = document.getElementById('progress-bar');
+    const form = document.querySelector("form");
 
-    
-    prossegButton.addEventListener('click', function(event) {
-        event.preventDefault(); 
-        
-        if (validateInputs()) {
-            alert('Todos os campos estão preenchidos corretamente.');
-            window.location.href = '../código-fonte/contratação_etapa_2.html'
+    prossegButton.addEventListener('click', function (event) {
+        if (!validateInputs()) {
+            event.preventDefault();
+        } else {
+            form.submit();
         }
     });
 
     function validateInputs() {
         let isValid = true;
         const today = new Date(); // Obtém a data atual
-    
+
         // Verifica se a data inicial não está vazia e é anterior ou igual à data atual
         if (initialDateInput.value === '' || initialDateInput.valueAsDate <= today.setHours(0, 0, 0, 0)) {
             initialDateInput.classList.remove('invalid'); // Remover a classe de invalidade
@@ -46,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
             initialDateInput.classList.add('invalid'); // Adicionar a classe de invalidade
             isValid = false;
         }
-    
+
         // Verifica se a data final não está vazia e é posterior à data inicial
         if (endDateInput.value === '' || endDateInput.valueAsDate <= initialDateInput.valueAsDate) {
             endDateInput.classList.add('invalid');
@@ -54,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             endDateInput.classList.remove('invalid');
         }
-    
+
         // Verifica se os horários iniciais e finais estão preenchidos e se o horário final não é anterior ao inicial
         if (initialTimeInput.value === '' || endTimeInput.value === '' || endTimeInput.value <= initialTimeInput.value) {
             if (initialTimeInput.value === '') {
@@ -72,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
             initialTimeInput.classList.remove('invalid');
             endTimeInput.classList.remove('invalid');
         }
-    
+
         // Mostra a mensagem de erro se os campos não forem válidos
         if (!isValid) {
             errorMessage.style.display = 'flex';
@@ -80,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             errorMessage.style.display = 'none';
         }
-    
+
         // Calcula e exibe a quantidade de dias contratados
         if (isValid) {
             const startDate = new Date(initialDateInput.value);
@@ -90,25 +89,22 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             daysContractedText.textContent = 'Dias contratados:';
         }
-    
+
         return isValid;
     }
-    
-    
-    
 
-    // temporizador e a barra de progresso
+    // Temporizador e a barra de progresso
     function showErrorTimer() {
         errorTimer.style.display = 'block';
         errorMessage.classList.add('show-error');
 
         progressBar.style.animation = 'none';
-        void progressBar.offsetWidth; 
+        void progressBar.offsetWidth;
         progressBar.style.animation = 'progressAnimation 7s linear forwards';
 
-        setTimeout(function() {
+        setTimeout(function () {
             errorTimer.style.display = 'none';
-            errorMessage.classList.remove('show-error'); 
+            errorMessage.classList.remove('show-error');
             errorMessage.style.display = 'none';
         }, 7000);
     }

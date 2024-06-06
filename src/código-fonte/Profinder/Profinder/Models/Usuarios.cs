@@ -64,6 +64,7 @@ namespace Profinder.Models
         [DisplayName("Cuidador de Pessoas com Deficiência")]
         public bool ProcurandoCuidadorDeficiencia { get; set; }
 
+        [DisplayName("Perfil")]
         public Perfil Perfil { get; set; }
 
         [DisplayName("Cuidados Especiais")]
@@ -76,6 +77,7 @@ namespace Profinder.Models
         [DisplayName("Sobre Mim")]
         public string? SobreMim{ get; set; }
         public string? CNPJ { get; set; }
+
 
         // Brian: Setando false na aplicação
         public Usuario()

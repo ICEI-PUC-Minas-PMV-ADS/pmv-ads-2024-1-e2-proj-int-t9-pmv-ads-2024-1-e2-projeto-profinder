@@ -1,0 +1,140 @@
+﻿@model Profinder.Models.Usuario
+
+@{
+    ViewData["Title"] = "Etapa 1 - Solicitação de Agendamento";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/globals.css">
+    <link rel="stylesheet" href="~/css/etapa_1.css">
+    <link rel="stylesheet" href="~/css/area_profissionais.css">
+    <script defer src="~/js/etapa1.js"></script>
+    <title>ProFinder - Agendamento</title>
+</head>
+<body>
+    <header>
+        <div class="container-navegation">
+            <a href="@Url.Action("Index", "Home")"><img class="img-header" src="~/img/logo.png" alt="Logo do site"></a>
+            <div class="list-menu-etapa">
+                <li>Solicitar agendamento</li>
+                <span id="line"></span>
+                <li id="step-2">Análise do agendamento</li>
+                <span id="line-2"></span>
+                <li id="step-2">Conclusão</li>
+            </div>
+            <a href="@Url.Action("AreaProfissionais", "Usuarios")" style="margin-right: 5%; text-decoration: none;"><span>Voltar</span></a>
+        </div>
+    </header>
+    <div class="line-style-top"></div>
+
+    <div class="icon-text">
+        <img src="~/img/Schedule.png" alt="Calendário">
+        <h6> Etapa de Solicitação do Agendamento</h6><span class="info-icon">i</span>
+        <div class="info-bubble">Nesta etapa você poderá entrar em contato com o profissional selecionado para combinar o dia, data, hora e valores para prosseguir com a contratação do serviço.</div>
+        <div id="error-message" class="error-message">
+            <span>Por favor, preencha todos os campos obrigatórios!</span>
+            <div id="progress-bar" class="progress-bar"></div>
+            <div id="error-timer" class="error-timer"></div>
+        </div>
+    </div>
+
+    <div class="container-geral">
+        <div class="card-container">
+            <span id="info-dados-prf">DADOS DO PROFISSIONAL SELECIONADO</span>
+            <div class="card_02">
+                <div class="profile-picture">
+                    <div class="photo-example">
+                        @if (!string.IsNullOrEmpty(Model.NomeUsuario))
+                        {
+                            <span>@Model.NomeUsuario.Substring(0, 2)</span>
+                        }
+                        else
+                        {
+                            <span>NA</span> <!-- Valor padrão caso NomeUsuario seja nulo ou vazio -->
+                        }
+                    </div>
+                    <h6 class="professional-name">@Model.NomeUsuario</h6>
+                </div>
+
+                <div class="cad-content">
+                    <p class="professional-bio">Quem sou eu</p>
+                    <div class="professional-about-me"><h6>@Model.SobreMim</h6></div>
+
+                    <p class="professional-qualifications">Minhas Qualificações</p>
+                    <div class="qualifications">
+                        @if (!string.IsNullOrEmpty(Model.Habilidades))
+                        {
+                            @foreach (var habilidade in Model.Habilidades.Split(','))
+                            {
+                                <div class="qualifications-item">+ @habilidade</div>
+                            }
+                        }
+                    </div>
+
+                    <div class="user-rating">
+                        <span class="rating">Avaliação dos usuários</span>
+                        <div class="rating-area">
+                            <p class="rating-text">Qualidade do Serviço: </p>
+                            <p class="rating-text">Preço: </p>
+                        </div>
+                    </div>
+
+                    <div class="comments">
+                        <div class="comment">Comentários</div>
+                        <div class="comment-area"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-right">
+            <h6 class="title-right">CONFIRMANDO A DISPONIBILIDADE DO PROFISSIONAL</h6>
+
+            <form action="@Url.Action("RegistrarContratacao", "Contratacao")" method="post">
+                <input type="hidden" name="profissionalId" value="@Model.Id" /> <!-- ID do profissional selecionado -->
+                <div class="general-text">
+                    <p>1. Clique no botão abaixo para conversar com o @Model.NomeUsuario no Whatsapp</p>
+                    <a class="wpp-area" href="https://wa.me/@Model.Telefone" target="_blank">
+                        <img src="~/img/wpp_white.png" alt="">Iniciar conversa
+                    </a>
+
+                    <p>2. Veja a disponibilidade do profissional e confirme a <span style="color: #FFD600; font-weight: 500;">data</span> e <span style="color: #FFD600; font-weight: 500;">horário</span> desejados.</p>
+
+                    <p>3. Descreva abaixo os principais detalhes sobre a pessoa que será assistida:</p>
+                    <textarea name="detalhesPaciente" id="person-details" style="resize: none;" placeholder="Descreva detalhadamente os cuidados específicos que serão necessários com o paciente para que o cuidador se prepare da melhor maneira possível." required></textarea>
+
+                    <p>4. Selecione o período de contratação e o horário confirmado com o profissional:</p>
+                    <div class="date-area">
+                        <div class="date-initial-end">
+                            Início<span style="color: red;">*</span><input type="date" name="dataInicio" id="initial-date" required>
+                            <span style="margin-left: 15px;">Fim</span><span style="color: red;">*</span><input type="date" name="dataFim" id="end-date" required>
+                        </div>
+                        <div class="hour-initial-end">
+                            Horário de início<span style="color: red;">*</span><input type="time" name="horaInicio" id="initial-time" required>
+                            <span style="margin-left: 15px;">Horário de término<span style="color: red;">*</span><input type="time" name="horaFim" id="end-time" required>
+                        </div>
+                    </div>
+
+                    <p id="days-contracted" style="font-size: 14px; font-weight: 400;">Dias contratados:</p>
+                </div>
+
+                <div class="avanced">
+                    <button type="submit" id="prosseg" class="cta_btn_primary">Avançar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-obj">ACESSIBILIDADE</p>
+        <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
+        <p class="footer-obj">PRIVACIDADE</p>
+        <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia!</p>
+    </footer>
+</body>
+</html>

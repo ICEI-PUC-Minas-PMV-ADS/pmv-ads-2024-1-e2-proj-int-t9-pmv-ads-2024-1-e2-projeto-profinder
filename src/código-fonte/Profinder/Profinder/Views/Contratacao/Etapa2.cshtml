@@ -1,0 +1,89 @@
+﻿@model Profinder.Models.Contratacao
+
+@{
+    ViewData["Title"] = "Etapa 2 - Status da Solicitação";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/globals.css">
+    <link rel="stylesheet" href="~/css/etapa_1.css">
+    <link rel="stylesheet" href="~/css/contratacao.css">
+    <script defer src="/js/etapa1.js"></script>
+    <title>ProFinder - Status da Solicitação</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-navegation">
+            <a href="@Url.Action("Index", "Home")"><img class="img-header" src="~/img/logo.png" alt="Logo do site"></a>
+            <div class="list-menu-etapa">
+                <li>Solicitar agendamento</li>
+                <span id="line"></span>
+                <li id="step-2">Análise do agendamento</li>
+                <span id="line-2"></span>
+                <li id="step-3">Conclusão</li>
+            </div>
+            <a href="@Url.Action("AreaProfissionais", "Usuarios")" style="margin-right: 5%; text-decoration: none;"><span>Voltar</span></a>
+        </div>
+    </header>
+    <div class="line-style-top"></div>
+
+        <div class="icon-text">
+            <i class="fa-regular fa-hourglass-half"
+               style="margin-right: 10px; margin-bottom: 10px; color: #ffd600; font-size: 55px;"></i>
+
+            <h6> Etapa de Análise do Agendamento</h6><span class="info-icon">i</span>
+            <div class="info-bubble">
+                Nesta etapa o profissional irá visualizar e análisar a proposta feita e você poderá ver
+                o progresso.
+            </div>
+            <div id="error-message" class="error-message">
+                <span>Por favor, preencha todos os campos obrigatórios!</span>
+                <div id="progress-bar" class="progress-bar"></div>
+                <div id="error-timer" class="error-timer"></div>
+            </div>
+        </div>
+
+    
+        <div class="professional_data column">
+            <div class="flex"
+
+                
+
+                <div class="vertical-progress-container">
+                    <div class="vertical-step">
+                        <div class="vertical-step-number">1<i class="fa-solid fa-check"></i></div>
+                        <div class="vertical-step-label">
+                            Aguardando confirmação de agendamento pelo Profissional selecionado.
+                        </div>
+                    </div>
+                    <div class="vertical-progress-line"></div>
+                    <div class="vertical-step">
+                        <div class="vertical-step-number">2<i class="fa-solid fa-check"></i></div>
+                        <div class="vertical-step-label">
+                        Status atual do seu pedido: @Model.Status
+                        </div>
+                    </div>
+                    <div class="vertical-progress-line"></div>
+                    <div class="vertical-step">
+                        <div class="vertical-step-number">3<i class="fa-solid fa-check"></i></div>
+                        <div class="vertical-step-label">Profissional confirmou o agendamento!</div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    
+</body>
+    <footer>
+        <p class="footer-obj">ACESSIBILIDADE</p>
+        <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
+        <p class="footer-obj">PRIVACIDADE</p>
+        <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia!</p>
+    </footer>
+</html>
