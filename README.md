@@ -12,9 +12,8 @@ O ProFinder é uma plataforma desenvolvida para unir usuários a cuidadores espe
 * Brian Mucio Duarte
 * Erick Cambraia Nunes
 * Douglas Henrique de Sousa e Silva
-* Luiz Gustavo Rodrigues Pereira
 * Mateus Salomé Rocha Silva
-* Ranan Nonato Dias
+
 
 ## Orientador
 
@@ -22,7 +21,7 @@ O ProFinder é uma plataforma desenvolvida para unir usuários a cuidadores espe
 
 ## Instruções de utilização
 
-A primeira versão encontra-se disponível através do link:
+A primeira versão encontra-se disponível através do link: **https://profinder20240607215728.azurewebsites.net/**
 
 #### Usuários de teste para acessar aplicação
 #### Perfil de Cliente: <p></p>
@@ -30,7 +29,7 @@ username: usuario@gmail.com <br>
 senha: 123@usuario
 
 #### Perfil de Profisisonal <p></p>
-username: profissional01@gmail.com <br>
+username: profissional@gmail.com <br>
 senha: 123@profissional
 
 
