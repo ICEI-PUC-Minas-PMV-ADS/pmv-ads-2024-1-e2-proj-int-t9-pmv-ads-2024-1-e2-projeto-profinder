@@ -70,6 +70,14 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.AspNetCore.Authorization": {
               "target": "Package",
               "version": "[8.0.6, )"
@@ -81,6 +89,10 @@
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[8.0.6, )"
+            },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.1.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -105,6 +117,14 @@
             "Microsoft.Extensions.Azure": {
               "target": "Package",
               "version": "[1.7.3, )"
+            },
+            "Microsoft.Identity.Web": {
+              "target": "Package",
+              "version": "[2.16.0, )"
+            },
+            "Microsoft.Identity.Web.UI": {
+              "target": "Package",
+              "version": "[2.16.0, )"
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",

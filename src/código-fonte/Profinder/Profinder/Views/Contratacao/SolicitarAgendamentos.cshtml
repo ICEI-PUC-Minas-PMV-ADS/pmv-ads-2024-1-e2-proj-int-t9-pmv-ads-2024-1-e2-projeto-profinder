@@ -11,72 +11,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="~/css/globals.css">
     <link rel="stylesheet" href="~/css/solicitacoes.css">
+    <script defer src="~/js/notification.js"></script>
     <title>ProFinder - Solicitações de Agendamento</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.10/signalr.min.js"></script>
 </head>
-<body>
-    <header>
-        <div class="container-navegation">
-            <a href="@Url.Action("Index", "Home")"><img class="img-header" src="~/img/logo.png" alt="Logo do site"></a>
-            <div class="list-menu">
-                <li>Solicitações Pendentes</li>
+    <body>
+        <header>
+            <div class="container-navegation">
+                <a href="@Url.Action("Index", "Home")"><img class="img-header" src="~/img/logo.png" alt="Logo do site"></a>
+                <div class="list-menu">
+                    <li>Solicitações Pendentes</li>
+                </div>
+                <a href="@Url.Action("Index", "Home")" style="margin-right: 5%; text-decoration: none;"><span>Voltar</span></a>
             </div>
-            <a href="@Url.Action("AreaProfissionais", "Usuarios")" style="margin-right: 5%; text-decoration: none;"><span>Voltar</span></a>
+        </header>
+        <div class="line-style-top"></div>
+
+
+        <div id="notificationModal" class="modal">
+            <!-- Adiciona a classe "show" para exibir o modal por padrão -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="modalMessage">Você tem uma nova solicitação de agendamento.</p>
+            </div>
         </div>
-    </header>
-    <div class="line-style-top"></div>
-    <div class="ajustment-page">
-        <div class="container-geral">
-        
-            <table class="table-container">
-                <thead class="table-style">
-                    <tr>
-                        <th>Usuário</th>
-                        <th>Necessidades do Paciente</th>
-                        <th>Data de Início</th>
-                        <th>Data de Fim</th>
-                        <th>Hora de Início</th>
-                        <th>Hora de Fim</th>
-                        <th>Resposta</th>
-                    </tr>
-                </thead>
-                <tbody class="row-style">
-                    @foreach (var solicitacao in Model)
-                    {
+
+        <div class="ajustment-page">
+            <div class="container-geral">
+
+                <table class="table-container">
+                    <thead class="table-style">
                         <tr>
-                            <td>
-                                @if (solicitacao.Cliente != null)
-                                {
-                                    <p><strong></strong> @solicitacao.Cliente.NomeUsuario</p>
-                                }
-                                else
-                                {
-                                    <p><strong>Cliente:</strong> Não disponível</p>
-                                }
-                            </td>
-                            <td>@solicitacao.DetalhesPaciente</td>
-                            <td>@solicitacao.DataInicio.ToString("dd/MM/yyyy")</td>
-                            <td>@solicitacao.DataFim.ToString("dd/MM/yyyy")</td>
-                            <td>@solicitacao.HoraInicio</td>
-                            <td>@solicitacao.HoraFim</td>
-                            <td>
-                                <!-- Botões para aceitar ou recusar a solicitação -->
-                                <form method="post" action="@Url.Action("ResponderSolicitacao", "Contratacao")">
-                                    <input type="hidden" name="contratacaoId" value="@solicitacao.Id" />
-                                    <button type="submit" name="resposta" value="Aceitar" class="cta_btn_primary_">Aceitar</button>
-                                    <button type="submit" name="resposta" value="Recusar" class="cta_btn_secondary_">Recusar</button>
-                                </form>
-                            </td>
+                            <th>Usuário</th>
+                            <th>Necessidades do Paciente</th>
+                            <th>Data de Início</th>
+                            <th>Data de Fim</th>
+                            <th>Hora de Início</th>
+                            <th>Hora de Fim</th>
+                            <th>Resposta</th>
                         </tr>
-                    }
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody class="row-style">
+                        @foreach (var solicitacao in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @if (solicitacao.Cliente != null)
+                                    {
+                                        <p><strong></strong> @solicitacao.Cliente.NomeUsuario</p>
+                                    }
+                                    else
+                                    {
+                                        <p><strong>Cliente:</strong> Não disponível</p>
+                                    }
+                                </td>
+                                <td>@solicitacao.DetalhesPaciente</td>
+                                <td>@solicitacao.DataInicio.ToString("dd/MM/yyyy")</td>
+                                <td>@solicitacao.DataFim.ToString("dd/MM/yyyy")</td>
+                                <td>@solicitacao.HoraInicio</td>
+                                <td>@solicitacao.HoraFim</td>
+                                <td>
+                                    <!-- Botões para aceitar ou recusar a solicitação -->
+                                    <form method="post" action="@Url.Action("ResponderSolicitacao", "Contratacao")">
+                                        <input type="hidden" name="contratacaoId" value="@solicitacao.Id" />
+                                        <button type="submit" name="resposta" value="Aceitar" class="cta_btn_primary_">Aceitar</button>
+                                        <button type="submit" name="resposta" value="Recusar" class="cta_btn_secondary_">Recusar</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
-    <footer>
-        <p class="footer-obj">ACESSIBILIDADE</p>
-        <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
-        <p class="footer-obj">PRIVACIDADE</p>
-        <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia!</p>
-    </footer>
-</body>
+        <footer>
+            <p class="footer-obj">ACESSIBILIDADE</p>
+            <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
+            <p class="footer-obj">PRIVACIDADE</p>
+            <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia!</p>
+        </footer>
+
+      
+    
+    </body>
 </html>
+
+
+
+    

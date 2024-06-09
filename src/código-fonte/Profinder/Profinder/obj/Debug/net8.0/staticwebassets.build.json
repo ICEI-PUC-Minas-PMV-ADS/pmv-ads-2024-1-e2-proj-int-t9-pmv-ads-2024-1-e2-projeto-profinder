@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/3BTubFmPQ7DYHGerY8IrmdMuFxz7O7juHlWfa3hijI=",
+  "Hash": "2QDjJhshOJV36emMl9GVnT00BRTrTPBsLg0IE5pSxPo=",
   "Source": "Profinder",
   "BasePath": "_content/Profinder",
   "Mode": "Default",
@@ -245,6 +245,25 @@
       "OriginalItemSpec": "wwwroot\\css\\minhas_contratacoes.css"
     },
     {
+      "Identity": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\css\\pendentes.css",
+      "SourceId": "Profinder",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\",
+      "BasePath": "_content/Profinder",
+      "RelativePath": "css/pendentes.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\pendentes.css"
+    },
+    {
       "Identity": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\css\\servicos.css",
       "SourceId": "Profinder",
       "SourceType": "Discovered",
@@ -300,6 +319,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\sobre.css"
+    },
+    {
+      "Identity": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\css\\solicitacoes.css",
+      "SourceId": "Profinder",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\",
+      "BasePath": "_content/Profinder",
+      "RelativePath": "css/solicitacoes.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\solicitacoes.css"
     },
     {
       "Identity": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\favicon.ico",
@@ -1345,6 +1383,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\meu_perfil.js"
+    },
+    {
+      "Identity": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\js\\notification.js",
+      "SourceId": "Profinder",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\",
+      "BasePath": "_content/Profinder",
+      "RelativePath": "js/notification.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\notification.js"
     },
     {
       "Identity": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\js\\profissionais.js",

@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\css\\minhas_contratacoes.css"
     },
     {
+      "Id": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\css\\pendentes.css",
+      "PackagePath": "staticwebassets\\css\\pendentes.css"
+    },
+    {
       "Id": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\css\\servicos.css",
       "PackagePath": "staticwebassets\\css\\servicos.css"
     },
@@ -55,6 +59,10 @@
     {
       "Id": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\css\\sobre.css",
       "PackagePath": "staticwebassets\\css\\sobre.css"
+    },
+    {
+      "Id": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\css\\solicitacoes.css",
+      "PackagePath": "staticwebassets\\css\\solicitacoes.css"
     },
     {
       "Id": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\favicon.ico",
@@ -275,6 +283,10 @@
     {
       "Id": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\js\\meu_perfil.js",
       "PackagePath": "staticwebassets\\js\\meu_perfil.js"
+    },
+    {
+      "Id": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\js\\notification.js",
+      "PackagePath": "staticwebassets\\js\\notification.js"
     },
     {
       "Id": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\js\\profissionais.js",

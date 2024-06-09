@@ -11,6 +11,10 @@
       "ignored": "true",
       "type": "storage"
     },
+    "identityapp1": {
+      "connectionInfo": "Registro do aplicativo: profinderads, Locatário: sga.pucminas.br (sgapucminasbr.onmicrosoft.com - Microsoft Entra ID)",
+      "type": "identityapp.default"
+    },
     "mssql2": {
       "serviceConnectorResourceId": "",
       "secretStore": "LocalSecretsFile",

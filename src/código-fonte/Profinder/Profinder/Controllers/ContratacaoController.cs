@@ -1,23 +1,27 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Profinder.Models;
+using Profinder.Hubs;
 using System;
 using System.Linq;
 using System.Security.Claims;
-
+using System.Threading.Tasks;
 namespace Profinder.Controllers
 {
     public class ContratacaoController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly IHubContext<NotificationHub> _hubContext;
 
-        public ContratacaoController(AppDbContext context)
+        public ContratacaoController(AppDbContext context, IHubContext<NotificationHub> hubContext)
         {
             _context = context;
+            _hubContext = hubContext;
         }
 
         [HttpPost]
-        public IActionResult RegistrarContratacao(int profissionalId, string detalhesPaciente, DateTime dataInicio, DateTime dataFim, TimeSpan horaInicio, TimeSpan horaFim)
+        public async Task<IActionResult> RegistrarContratacao(int profissionalId, string detalhesPaciente, DateTime dataInicio, DateTime dataFim, TimeSpan horaInicio, TimeSpan horaFim)
         {
             var profissional = _context.Usuarios.FirstOrDefault(u => u.Id == profissionalId);
             if (profissional == null) return NotFound("Profissional não encontrado.");
@@ -34,11 +38,16 @@ namespace Profinder.Controllers
                 DataInicio = dataInicio,
                 DataFim = dataFim,
                 HoraInicio = horaInicio,
-                HoraFim = horaFim
+                HoraFim = horaFim,
+                Status = "Pendente" // Adicione um status inicial
             };
 
             _context.Contratacoes.Add(contratacao);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
+
+            // Enviar notificação para o profissional
+            var hubContext = HttpContext.RequestServices.GetRequiredService<IHubContext<NotificationHub>>();
+            await hubContext.Clients.User(profissionalId.ToString()).SendAsync("ReceiveNotification", "Você tem uma nova solicitação de agendamento.");
 
             return RedirectToAction("Etapa2", new { id = contratacao.Id });
         }
@@ -49,6 +58,17 @@ namespace Profinder.Controllers
             if (contratacao == null) return NotFound();
 
             return View(contratacao);
+        }
+
+        public IActionResult PedidosPendentes()
+        {
+            int clienteId = GetAuthenticatedUserId();
+            var pedidosPendentes = _context.Contratacoes
+                .Where(c => c.ClienteId == clienteId && c.Status == "Pendente")
+                .Include(c => c.Profissional)
+                .ToList();
+
+            return View(pedidosPendentes);
         }
 
         public IActionResult SolicitarAgendamentos()
@@ -76,13 +96,20 @@ namespace Profinder.Controllers
         }
 
         [HttpPost]
-        public IActionResult ResponderSolicitacao(int contratacaoId, string resposta)
+        public async Task<IActionResult> ResponderSolicitacao(int contratacaoId, string resposta)
         {
             var contratacao = _context.Contratacoes.FirstOrDefault(c => c.Id == contratacaoId);
             if (contratacao == null) return NotFound("Solicitação não encontrada.");
 
             contratacao.Status = resposta == "Aceitar" ? "Confirmado" : "Recusado";
             _context.SaveChanges();
+
+            // Verificar se ainda há solicitações pendentes para o profissional
+            var solicitacoesPendentes = _context.Contratacoes.Any(c => c.ProfissionalId == contratacao.ProfissionalId && c.Status == "Pendente");
+            if (solicitacoesPendentes)
+            {
+                await _hubContext.Clients.User(contratacao.ProfissionalId.ToString()).SendAsync("ReceiveNotification", "Você tem uma nova solicitação de agendamento.");
+            }
 
             return RedirectToAction("SolicitarAgendamentos");
         }

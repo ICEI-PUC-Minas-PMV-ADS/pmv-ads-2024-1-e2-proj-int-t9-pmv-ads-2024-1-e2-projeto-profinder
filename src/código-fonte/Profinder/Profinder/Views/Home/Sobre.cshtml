@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="~/css/globals.css">
     <link rel="stylesheet" href="~/css/sobre.css">
-    <link rel="icon" href="../código-fonte/img/logo.png" type="image/x-icon">
+    <link rel="icon" href="/img/logo.png" type="image/x-icon">
     <script defer src="~/js/header.js"></script>
     <title>Sobre - ProFinder</title>
 
@@ -18,55 +18,55 @@
 <body>
 
     <!--AREA DO HEADER-->
-        @if (User.Identity.IsAuthenticated)
-        {
-            <div class="user-logged">
-                <header class="header">
-                    <div class="logo-profinder-logged"><img src="~/img/logo.png" alt="Logo ProFinder"></div>
-                    <div class="nav-logged">
-                        <a class="nav-link" href="@Url.Action("Index", "Home")"><li class="nav-li">Home</li></a>
-                        <a class="nav-link" href="@Url.Action("Sobre", "Home")"><li class="nav-li">Sobre</li></a>
-                        <a class="nav-link" href="@Url.Action("Servicos", "Home")"><li class="nav-li">Servicos</li></a>
-                        <a class="nav-link" href="@Url.Action("FaleConosco", "Home")"><li class="nav-li">Fale Conosco</li></a>
-                        <a class="nav-link" href=""><li class="nav-li">Profissionais</li></a>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="user-logged">
+            <header class="header">
+                <div class="logo-profinder-logged"><img src="~/img/logo.png" alt="Logo ProFinder"></div>
+                <div class="nav-logged">
+                    <a class="nav-link" href="@Url.Action("Index", "Home")"><li class="nav-li">Home</li></a>
+                    <a class="nav-link" href="@Url.Action("Sobre", "Home")"><li class="nav-li">Sobre</li></a>
+                    <a class="nav-link" href="@Url.Action("Servicos", "Home")"><li class="nav-li">Servicos</li></a>
+                    <a class="nav-link" href="@Url.Action("FaleConosco", "Home")"><li class="nav-li">Fale Conosco</li></a>
+                    <a class="nav-link" href=""><li class="nav-li">Profissionais</li></a>
 
-                        <li id="user-dropdown">
-                            <a class="account-drop" href="#">Minha Conta</a>
-                            <ul id="user-menu" class="dropdown-content" style="display: none;">
-                                <li class="toggle-options"><a class="account-li" href="@Url.Action("Edit", "Usuarios")">Perfil</a></li>
-                                <li class="toggle-options"><a class="account-li" href="../código-fonte/area_minhas_contratacoes.html">Minhas contratações</a></li>
-                                <li class="toggle-options"><a class="account-li" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
-                            </ul>
-                        </li>
-                    </div>
-                </header>
-            </div>
-        }
-        else
-        {
-            <div class="wrapper">
+                    <li id="user-dropdown">
+                        <a class="account-drop" href="#">Minha Conta</a>
+                        <ul id="user-menu" class="dropdown-content" style="display: none;">
+                            <li class="toggle-options"><a class="account-li" href="@Url.Action("Edit", "Usuarios")">Perfil</a></li>
+                            <li class="toggle-options"><a class="account-li" href="../código-fonte/area_minhas_contratacoes.html">Minhas contratações</a></li>
+                            <li class="toggle-options"><a class="account-li" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </header>
+        </div>
+    }
+    else
+    {
+        <div class="wrapper">
 
-                <header class="header">
+            <header class="header">
                 <div class="logo-profinder"><a href="@Url.Action("Index", "Home")"><img class="img-header" src="~/img/logo.png" alt="Logo do site"></a></div>
-                    <div class="nav">
-                        <a class="nav-link" href="@Url.Action("Index", "Home")"><li class="nav-li">Home</li></a>
-                        <a class="nav-link" href="@Url.Action("Sobre", "Home")"><li class="nav-li">Sobre</li></a>
-                        <a class="nav-link" href="@Url.Action("Servicos", "Home")"><li class="nav-li">Serviços</li></a>
-                        <a class="nav-link" href="@Url.Action("FaleConosco", "Home")"><li class="nav-li">Fale Conosco</li></a>
-                    </div>
+                <div class="nav">
+                    <a class="nav-link" href="@Url.Action("Index", "Home")"><li class="nav-li">Home</li></a>
+                    <a class="nav-link" href="@Url.Action("Sobre", "Home")"><li class="nav-li">Sobre</li></a>
+                    <a class="nav-link" href="@Url.Action("Servicos", "Home")"><li class="nav-li">Serviços</li></a>
+                    <a class="nav-link" href="@Url.Action("FaleConosco", "Home")"><li class="nav-li">Fale Conosco</li></a>
+                </div>
 
-                    <div class="login-area">
-                        <div class="area-login">
-                            <a href="@Url.Action("Login", "Usuarios")">
-                                <button class="cta_btn_secondary spaces">Entrar</button>
-                            </a>
-                            <a href="@Url.Action("Create", "Usuarios")" class="cta_btn_primary spaces">Criar Conta</a>
+                <div class="login-area">
+                    <div class="area-login">
+                        <a href="@Url.Action("Login", "Usuarios")">
+                            <button class="cta_btn_secondary spaces">Entrar</button>
+                        </a>
+                        <a href="@Url.Action("Create", "Usuarios")" class="cta_btn_primary spaces">Criar Conta</a>
 
-                        </div>
                     </div>
-                </header>
-            </div>
-        }
+                </div>
+            </header>
+        </div>
+    }
     <!--FIM - AREA DO HEADER-->
     <!--INÍCIO CONTEÚDO-->
 

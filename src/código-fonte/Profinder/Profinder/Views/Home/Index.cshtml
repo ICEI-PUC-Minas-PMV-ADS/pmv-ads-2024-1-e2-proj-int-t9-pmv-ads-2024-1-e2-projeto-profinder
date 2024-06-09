@@ -11,12 +11,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="~/css/home.css">
     <link rel="stylesheet" href="~/css/globals.css">
-    <link rel="icon" href="~/img/logo.png" type="image/x-icon">
+    <link rel="icon" href="/img/logo.png" type="image/x-icon">
     <script defer src="~/js/header.js"></script>
-
+    <link rel="stylesheet" href="~/css/solicitacoes.css">
+    <script defer src="~/js/notification.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.10/signalr.min.js"></script>
 </head>
 
 <body>
+
+    
+
     @if (User.Identity.IsAuthenticated)
     {
         var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
@@ -29,7 +34,7 @@
                     <div class="logo-profinder-logged"><img src="~/img/logo.png" alt="Logo ProFinder"></div>
                     <div class="nav-logged">
                         <a class="nav-link" href="@Url.Action("Index", "Home")"><li class="nav-li">Home</li></a>
-                   
+                        <a class="nav-link" href="@Url.Action("PedidosPendentes", "Contratacao")"><li class="nav-li">Minhas solicitações</li></a>
                         <a class="nav-link" href="@Url.Action("AreaProfissionais", "Usuarios")"><li class="nav-li">Profissionais</li></a>
                         <li id="user-dropdown">
                             <a class="account-drop" href="#">Minha Conta</a>
@@ -69,6 +74,13 @@
                     <h2 id="welcome_name">Seja Bem-vindo, ProFinder!</h2>
                 </div>
                 <!-- Conteúdo específico para Profissional -->
+            </div>
+            <div id="notificationModal" class="modal">
+                <!-- Adiciona a classe "show" para exibir o modal por padrão -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="modalMessage">Você tem uma nova solicitação de agendamento.</p>
+                </div>
             </div>
         }
     }
