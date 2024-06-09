@@ -25,10 +25,24 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-
 
  
 
-| **Caso de Teste** 	| **CT-03 – Realizar login** 	|
+| **Caso de Teste** 	| **CT-03 – Login válido** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-00Y - A aplicação deve permitir que um usuário previamente cadastrado faça login |
-|Registro de evidência | www.teste.com.br/drive/ct-03 ></video> |
+|	Requisito Associado 	| RF-012 - Deverá ser possível fazer login com a conta cadastrada do usuário/profissional |
+|Registro de evidência | |
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/assets/46661756/88ff4533-c078-4838-b987-4c4f5b5710ac
+
+| **Caso de Teste** 	| **CT-04 – Login inválido** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-012 - Deverá ser possível fazer login com a conta cadastrada do usuário/profissional |
+|Registro de evidência | |
+
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/assets/46661756/11b3f30a-7478-4ce8-8156-d6e612d532e0
+
+
 
 ## Avaliação
 
