@@ -7,12 +7,12 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-01 – Cadastro de Usuário Válido** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-001 - O software deve ser capaz de cadastrar usuários e profissionais. |
-|Registro de evidência | <video src= '/docs/video/CT-01-ProFinder-teste-de-cadastro-valido.mp4'></video> |
+|Registro de evidência | <video controls width= '350px'> <source src= '/docs/video/CT-01-ProFinder-teste-de-cadastro-valido.mp4'></video> |
 
 | **Caso de Teste** 	| **CT-02 – Cadastro de Usuário Inválido** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-001 - O software deve ser capaz de cadastrar usuários e profissionais. |
-|Registro de evidência | <video src= '/docs/video/CT-02-ProFinder-teste-de-cadastro-invalido.mp4'></video> |
+|Registro de evidência | <video  controls width= '350px'> <source src= '/docs/video/CT-02-ProFinder-teste-de-cadastro-invalido.mp4'></video> |
 
 | **Caso de Teste** 	| **CT-03 – Realizar login** 	|
 |:---:	|:---:	|
