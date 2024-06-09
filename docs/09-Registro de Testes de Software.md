@@ -7,12 +7,24 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-01 – Cadastro de Usuário Válido** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-001 - O software deve ser capaz de cadastrar usuários e profissionais. |
-|Registro de evidência | <video controls width= '350px'> <source src= '/docs/video/CT-01-ProFinder-teste-de-cadastro-valido.mp4'></video> |
+|Registro de evidência |
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/assets/117125295/f2530e2f-d844-4cb9-b8aa-720e34697c80
+
+
+
+ 
+
+
 
 | **Caso de Teste** 	| **CT-02 – Cadastro de Usuário Inválido** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-001 - O software deve ser capaz de cadastrar usuários e profissionais. |
-|Registro de evidência | <video  controls width= '350px'> <source src= '/docs/video/CT-02-ProFinder-teste-de-cadastro-invalido.mp4'></video> |
+|Registro de evidência | |
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/assets/117125295/285fc1c6-eb5f-4ca1-94b7-2afd38301b14
+
+ 
 
 | **Caso de Teste** 	| **CT-03 – Realizar login** 	|
 |:---:	|:---:	|
