@@ -14,6 +14,7 @@
 |RF-009| Os profissionais poderão avaliar os usuários.  | meus_pacientes.html |
 |RF-010| Permitir que os usuários enviem informações para os profissionais.    | contratação_etapa_1.html / contratação_etapa_2.html / contratação_etapa_3.html / etapa_1.css / etapa1.js |
 |RF-011| Permitir que os profissionais enviem informações para os usuárioss.  | contratação_etapa_1.html / contratação_etapa_2.html / contratação_etapa_3.html / etapa_1.css / etapa1.js |
+|RF-012| Deverá ser possível fazer login com a conta cadastrada do usuário/profissional   | login.html / login.css / login.js |
 
 
 
