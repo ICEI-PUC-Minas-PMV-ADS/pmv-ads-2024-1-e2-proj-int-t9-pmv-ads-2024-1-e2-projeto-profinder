@@ -1140,8 +1140,6 @@ C:\Users\coneg\Desktop\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-p
 C:\Users\coneg\Desktop\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Debug\net8.0\Profinder.pdb
 C:\Users\coneg\Desktop\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Debug\net8.0\Profinder.genruntimeconfig.cache
 C:\Users\coneg\Desktop\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Debug\net8.0\ref\Profinder.dll
-C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\bin\Debug\net8.0\appsettings.json
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\bin\Debug\net8.0\Profinder.staticwebassets.runtime.json
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\bin\Debug\net8.0\Profinder.exe
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\bin\Debug\net8.0\Profinder.deps.json

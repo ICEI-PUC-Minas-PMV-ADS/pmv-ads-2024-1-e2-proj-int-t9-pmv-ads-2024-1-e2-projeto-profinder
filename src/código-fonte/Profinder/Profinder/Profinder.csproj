@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -10,9 +10,13 @@
 
   <ItemGroup>
     <Compile Remove="Views\AlterarSenha\**" />
+    <Compile Remove="wwwroot\gitignore\**" />
     <Content Remove="Views\AlterarSenha\**" />
+    <Content Remove="wwwroot\gitignore\**" />
     <EmbeddedResource Remove="Views\AlterarSenha\**" />
+    <EmbeddedResource Remove="wwwroot\gitignore\**" />
     <None Remove="Views\AlterarSenha\**" />
+    <None Remove="wwwroot\gitignore\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -67,6 +71,11 @@
     <_ContentIncludedByDefault Remove="Views\Contratacao\Index.cshtml" />
     <_ContentIncludedByDefault Remove="wwwroot\css\solicitacoes.css" />
     <_ContentIncludedByDefault Remove="wwwroot\js\etapa2.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include=".gitignore\appsettings.Development.json" />
+    <Content Include=".gitignore\appsettings.json" />
   </ItemGroup>
 
   <ItemGroup>
