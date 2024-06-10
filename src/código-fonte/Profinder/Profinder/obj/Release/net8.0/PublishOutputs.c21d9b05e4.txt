@@ -16,6 +16,7 @@ C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.Components.Forms.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.Components.Server.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.CookiePolicy.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.Cors.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
@@ -33,6 +34,7 @@ C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.Html.Abstractions.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.Http.Connections.Common.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.Http.Connections.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.Http.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.Http.Extensions.dll
@@ -77,8 +79,10 @@ C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.Session.dll
+C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.SignalR.Common.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.SignalR.Core.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.SignalR.dll
+C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.StaticFiles.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.WebSockets.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.WebUtilities.dll
@@ -105,6 +109,7 @@ C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.Extensions.Diagnostics.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.Extensions.Features.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.Extensions.FileProviders.Composite.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.Extensions.FileProviders.Embedded.dll
@@ -220,6 +225,7 @@ C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\System.Net.WebProxy.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\System.Net.WebSockets.Client.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\System.Net.WebSockets.dll
+C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\System.Net.WebSockets.WebSocketProtocol.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\System.Numerics.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\System.Numerics.Vectors.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\System.ObjectModel.dll
@@ -318,17 +324,10 @@ C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Authorization.dll
-C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Connections.Abstractions.dll
-C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Http.Connections.Client.dll
-C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Http.Connections.Common.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Metadata.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Razor.Language.dll
-C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.SignalR.Client.dll
-C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.SignalR.Client.Core.dll
-C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.SignalR.Common.dll
-C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.Build.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.Build.Framework.dll
@@ -352,7 +351,6 @@ C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.Azure.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.DependencyModel.dll
-C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.Features.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.Options.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Microsoft.Identity.Abstractions.dll
@@ -408,6 +406,7 @@ C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\System.IO.Hashing.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\System.Memory.Data.dll
+C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\System.Net.WebSockets.WebSocketProtocol.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\System.Reflection.MetadataLoadContext.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\System.Runtime.Caching.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\System.Security.Cryptography.ProtectedData.dll

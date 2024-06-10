@@ -1,4 +1,43 @@
-﻿
+﻿/* Modal styles */
+.modal {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Ajuste na cor de fundo */
+    padding-top: 60px;
+}
+
+    .modal.show {
+        display: block; /* Exibir quando a classe "show" estiver presente */
+    }
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
 .ajustment-page {
     height: 687px;
 }
@@ -9,18 +48,17 @@
     display: flex;
 }
 
-
 .table-container {
     margin-top: 25px;
     padding: 25px;
     font-size: 14px;
 }
 
-.table-container tr {
-    border: 1px solid #ffd800;
-    border-radius: 7px;
-    padding: 10px;
-}
+    .table-container tr {
+        border: 1px solid #ffd800;
+        border-radius: 7px;
+        padding: 10px;
+    }
 
 .table-style th {
     border: 1px solid #ffd800;
@@ -58,8 +96,7 @@
     transition: .2s all;
 }
 
-
-.cta_btn_primary_:hover,
-.cta_btn_secondary_:hover {
-    box-shadow: 0px 0px 15px 1px #ffe355;
-}
+    .cta_btn_primary_:hover,
+    .cta_btn_secondary_:hover {
+        box-shadow: 0px 0px 15px 1px #ffe355;
+    }

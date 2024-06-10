@@ -5,6 +5,12 @@
     --azul: #8f9bef;
 }
 
+.scrollable-container {
+    margin-top: 25px;
+    max-height: 620px;
+    overflow-y: auto;
+}
+
 html, body {
     box-sizing: border-box;
     margin: 0;

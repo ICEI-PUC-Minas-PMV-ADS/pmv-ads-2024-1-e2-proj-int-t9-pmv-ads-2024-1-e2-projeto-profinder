@@ -7,7 +7,11 @@ using System;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+
+
+
 namespace Profinder.Controllers
+
 {
     public class ContratacaoController : Controller
     {
@@ -60,24 +64,31 @@ namespace Profinder.Controllers
             return View(contratacao);
         }
 
+        public IActionResult Etapa3()
+        {
+            
+            return View();
+        }
+
+
         public IActionResult PedidosPendentes()
         {
             int clienteId = GetAuthenticatedUserId();
-            var pedidosPendentes = _context.Contratacoes
-                .Where(c => c.ClienteId == clienteId && c.Status == "Pendente")
+            var pedidos = _context.Contratacoes
+                .Where(c => c.ClienteId == clienteId)
                 .Include(c => c.Profissional)
                 .ToList();
 
-            return View(pedidosPendentes);
+            return View(pedidos);
         }
 
         public IActionResult SolicitarAgendamentos()
         {
-            int profissionalId = GetAuthenticatedUserId();  // Obtém o ID do profissional autenticado
+            int profissionalId = GetAuthenticatedUserId();
 
             var solicitacoes = _context.Contratacoes
-                .Include(c => c.Cliente)  // Inclui a entidade Cliente
-                .Where(c => c.ProfissionalId == profissionalId && c.Status == "Pendente")
+                .Include(c => c.Cliente)
+                .Where(c => c.ProfissionalId == profissionalId)
                 .ToList();
 
             return View(solicitacoes);

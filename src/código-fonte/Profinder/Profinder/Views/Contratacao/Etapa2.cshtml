@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="~/css/etapa_1.css">
     <link rel="stylesheet" href="~/css/contratacao.css">
     <script defer src="/js/etapa1.js"></script>
+    <script defer src="/js/etapa2.js"></script>
     <title>ProFinder - Status da Solicitação</title>
 </head>
 
@@ -66,19 +67,24 @@
                     <div class="vertical-step">
                         <div class="vertical-step-number">2<i class="fa-solid fa-check"></i></div>
                         <div class="vertical-step-label">
-                        Status atual do seu pedido: @Model.Status
+                        <p id="status" data-status="@Model.Status"><strong>Status atual da sua solicitação:</strong> @Model.Status</p>
                         </div>
                     </div>
                     <div class="vertical-progress-line"></div>
                     <div class="vertical-step">
                         <div class="vertical-step-number">3<i class="fa-solid fa-check"></i></div>
-                        <div class="vertical-step-label">Profissional confirmou o agendamento!</div>
+                        <div class="vertical-step-label">Após confirmação, o botão abaixo ficará habilitado para prosseguir para a próxima etapa!</div>
                     </div>
+
+                    <div class="area-ajs">
+                        <button class="cta_btn_primary" id="btnAvancar" disabled>Avançar</button>
+                    </div>
+                    
+                
                 </div>
-        
             </div>
         </div>
-    
+        
 </body>
     <footer>
         <p class="footer-obj">ACESSIBILIDADE</p>

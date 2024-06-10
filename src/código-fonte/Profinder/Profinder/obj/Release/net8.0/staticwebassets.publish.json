@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GrkawJU1ev0qykfxj93mbsh+udtswO4E9ujXyEBlmCg=",
+  "Hash": "GRD8Pd7mhApKY6JqZmD00OL7VnmGWvRodd+txa82clA=",
   "Source": "Profinder",
   "BasePath": "_content/Profinder",
   "Mode": "Default",
@@ -1383,6 +1383,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\meu_perfil.js"
+    },
+    {
+      "Identity": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\js\\notification.js",
+      "SourceId": "Profinder",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\",
+      "BasePath": "_content/Profinder",
+      "RelativePath": "js/notification.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\notification.js"
     },
     {
       "Identity": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\js\\profissionais.js",

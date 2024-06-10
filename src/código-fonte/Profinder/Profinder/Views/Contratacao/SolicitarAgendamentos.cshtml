@@ -14,31 +14,32 @@
     <script defer src="~/js/notification.js"></script>
     <title>ProFinder - Solicitações de Agendamento</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.10/signalr.min.js"></script>
+ 
 </head>
-    <body>
-        <header>
-            <div class="container-navegation">
-                <a href="@Url.Action("Index", "Home")"><img class="img-header" src="~/img/logo.png" alt="Logo do site"></a>
-                <div class="list-menu">
-                    <li>Solicitações Pendentes</li>
-                </div>
-                <a href="@Url.Action("Index", "Home")" style="margin-right: 5%; text-decoration: none;"><span>Voltar</span></a>
+<body>
+    <header>
+        <div class="container-navegation">
+            <a href="@Url.Action("Index", "Home")"><img class="img-header" src="~/img/logo.png" alt="Logo do site"></a>
+            <div class="list-menu">
+                <li>Solicitações Pendentes</li>
             </div>
-        </header>
-        <div class="line-style-top"></div>
-
-
-        <div id="notificationModal" class="modal">
-            <!-- Adiciona a classe "show" para exibir o modal por padrão -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p id="modalMessage">Você tem uma nova solicitação de agendamento.</p>
-            </div>
+            <a href="@Url.Action("Index", "Home")" style="margin-right: 5%; text-decoration: none;"><span>Voltar</span></a>
         </div>
+    </header>
+    <div class="line-style-top"></div>
 
-        <div class="ajustment-page">
-            <div class="container-geral">
+    <div id="notificationModal" class="modal">
+        <!-- Adiciona a classe "show" para exibir o modal por padrão -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalMessage">Você tem uma nova solicitação de agendamento.</p>
+        </div>
+    </div>
 
+    <div class="ajustment-page">
+        <div class="container-geral">
+
+            <div class="scrollable-container">
                 <table class="table-container">
                     <thead class="table-style">
                         <tr>
@@ -58,11 +59,11 @@
                                 <td>
                                     @if (solicitacao.Cliente != null)
                                     {
-                                        <p><strong></strong> @solicitacao.Cliente.NomeUsuario</p>
+                                        <p>@solicitacao.Cliente.NomeUsuario</p>
                                     }
                                     else
                                     {
-                                        <p><strong>Cliente:</strong> Não disponível</p>
+                                        <p>Não disponível</p>
                                     }
                                 </td>
                                 <td>@solicitacao.DetalhesPaciente</td>
@@ -71,12 +72,19 @@
                                 <td>@solicitacao.HoraInicio</td>
                                 <td>@solicitacao.HoraFim</td>
                                 <td>
-                                    <!-- Botões para aceitar ou recusar a solicitação -->
-                                    <form method="post" action="@Url.Action("ResponderSolicitacao", "Contratacao")">
-                                        <input type="hidden" name="contratacaoId" value="@solicitacao.Id" />
-                                        <button type="submit" name="resposta" value="Aceitar" class="cta_btn_primary_">Aceitar</button>
-                                        <button type="submit" name="resposta" value="Recusar" class="cta_btn_secondary_">Recusar</button>
-                                    </form>
+                                    @if (solicitacao.Status == "Pendente")
+                                    {
+                                        <!-- Botões para aceitar ou recusar a solicitação -->
+                                        <form method="post" action="@Url.Action("ResponderSolicitacao", "Contratacao")">
+                                            <input type="hidden" name="contratacaoId" value="@solicitacao.Id" />
+                                            <button type="submit" name="resposta" value="Aceitar" class="cta_btn_primary_">Aceitar</button>
+                                            <button type="submit" name="resposta" value="Recusar" class="cta_btn_secondary_">Recusar</button>
+                                        </form>
+                                    }
+                                    else
+                                    {
+                                        <span>Solicitação @solicitacao.Status.ToLower()</span>
+                                    }
                                 </td>
                             </tr>
                         }
@@ -84,18 +92,12 @@
                 </table>
             </div>
         </div>
-        <footer>
-            <p class="footer-obj">ACESSIBILIDADE</p>
-            <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
-            <p class="footer-obj">PRIVACIDADE</p>
-            <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia!</p>
-        </footer>
-
-      
-    
-    </body>
+    </div>
+    <footer>
+        <p class="footer-obj">ACESSIBILIDADE</p>
+        <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
+        <p class="footer-obj">PRIVACIDADE</p>
+        <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia!</p>
+    </footer>
+</body>
 </html>
-
-
-
-    
