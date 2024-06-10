@@ -1,7 +1,6 @@
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\Profinder.exe
-C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
-C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\appsettings.json
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\wwwroot\css\solicitacoes.css
+C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\wwwroot\js\etapa2.js
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.Antiforgery.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\refs\Microsoft.AspNetCore.Authentication.BearerToken.dll
@@ -393,6 +392,8 @@ C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\NuGet.ProjectModel.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\NuGet.Protocol.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\NuGet.Versioning.dll
+C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\PagedList.dll
+C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\PagedList.Mvc.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\BouncyCastle.Crypto.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\System.ClientModel.dll
 C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder\obj\Release\net8.0\PubTmp\Out\System.CodeDom.dll
