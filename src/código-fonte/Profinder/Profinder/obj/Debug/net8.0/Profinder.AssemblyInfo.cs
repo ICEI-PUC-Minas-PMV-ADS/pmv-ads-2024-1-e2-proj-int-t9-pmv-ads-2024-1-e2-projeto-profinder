@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Profinder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8359e386a0746d106692a5876cd6d5230d1d4a18")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8045e06c06509fba3bdd335d8072205f26c235c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Profinder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Profinder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

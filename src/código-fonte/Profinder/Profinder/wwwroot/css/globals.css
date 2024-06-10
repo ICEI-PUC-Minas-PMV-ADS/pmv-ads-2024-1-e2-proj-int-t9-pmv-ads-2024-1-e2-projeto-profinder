@@ -137,28 +137,16 @@ img {
 }
 
 
-footer {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    background-color: #303030;
-    color: #FFFFFF;
-}
-
-.footer-obj {
-    margin-left: 50px;
-    display: inline-block;
+.copy {
     text-align: center;
-    align-items: center;
-    font-size: 0.9375rem;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
 }
 
-.footer-text {
-    font-size: 0.6875rem;
-    margin-left: 50px;
-    background-color: #303030;
-    margin-bottom: 0;
-    height: 50px;
+.copy img {
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 .container-navegation {
@@ -256,13 +244,12 @@ footer {
 
 .logo-profinder-logged {
     height: 100px;
-    padding-top: 20px;
-    padding-left: 20px;
 }
 
 .nav {
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
     align-items: center;
     width: 60%;
     justify-content: space-around;
@@ -289,15 +276,23 @@ footer {
         cursor: pointer;
     }
 
+.nav {
+    justify-content: space-around;
+    display: flex;
+}
 
 .nav-link {
     text-decoration: none;
     color: black;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    transition: ease 0.4s;
 }
 
 .nav-li {
     list-style: none;
-    margin-left: 100px;
 }
 
 .login-area {
@@ -400,7 +395,7 @@ footer {
         flex-wrap: wrap;
         text-align: center;
         margin-bottom: 20px;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .login-area {
@@ -409,6 +404,11 @@ footer {
         justify-content: space-around;
         margin-bottom: 20px;
         margin-left: 0;
+    }
+
+
+    .benefits {
+        margin: 15px;
     }
 }
 
@@ -454,7 +454,6 @@ footer {
     .logo-profinder-logged {
         width: 100%;
         text-align: center;
-        padding-top: 20px;
         margin-bottom: 2%;
     }
 
@@ -479,7 +478,6 @@ footer {
     .logo-profinder-logged {
         width: 100%;
         text-align: center;
-        padding-top: 20px;
         margin-bottom: 2%;
     }
 
@@ -496,8 +494,3 @@ footer {
 
 /* FIM AREA DE RESPONSIVIDADE - HEADER */
 
-/* TOGGLE MENU */
-
-
-
-/* TOGGLE MENU */
