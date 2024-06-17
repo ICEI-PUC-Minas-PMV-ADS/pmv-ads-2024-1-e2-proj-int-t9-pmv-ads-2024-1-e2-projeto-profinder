@@ -1,0 +1,39 @@
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+    height: 725px;
+}
+
+.container-table {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #FFD600;
+    border-radius: 7px 7px 0px 0px;
+    padding: 5px;
+}
+
+.container-table div {
+    padding: 5px;
+    margin-right: 30px;
+}
+
+
+.container-line {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #FFD600;
+    border-top: 0px;
+    padding: 5px;
+}
+
+.container-line div {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+

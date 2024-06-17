@@ -1,0 +1,153 @@
+<!--Desenvolvedor responsável: ERICK-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/area_profissionais.css">
+    <link rel="stylesheet" href="/styles/etapa_1.css">
+    <link rel="stylesheet" href="/globals.css">
+    <link rel="stylesheet" href="/styles/contratacao.css">
+    <script defer src="/js/etapa1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>ProFinder - Ánalise do agendamento</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-navegation">
+            <a href="/home.html"><img class="img-header" src="/img/logo.png"
+                    alt="Logo do site"></a>
+            <div class="list-menu-etapa">
+                <li>Solicitar agendamento </li>
+                <span id="line"></span>
+                <li>Análise do agendamento</li>
+                <span id="line-2"></span>
+                <li id="step-2">Conclusão</li>
+
+            </div>
+            <a href="/area_profissionais.html"
+                style="margin-right: 5%; text-decoration: none;"><span>Voltar</span></a>
+        </div>
+    </header>
+    <div class="line-style-top"></div>
+
+    <div class="icon-text">
+        <i class="fa-regular fa-hourglass-half"
+            style="margin-right: 10px; margin-bottom: 10px; color: #ffd600; font-size: 55px;"></i>
+
+        <h6> Etapa de Análise do Agendamento</h6><span class="info-icon">i</span>
+        <div class="info-bubble">Nesta etapa o profissional irá visualizar e análisar a proposta feita e você poderá ver
+            o progresso.</div>
+        <div id="error-message" class="error-message"><span>Por favor, preencha todos os campos obrigatórios!</span>
+            <div id="progress-bar" class="progress-bar"></div>
+            <div id="error-timer" class="error-timer"></div>
+        </div>
+    </div>
+
+    <div class="container-geral" style="align-items: normal;">
+
+        <div class="card-container">
+            <span id="info-dados-prf">DADOS DO PROFISSIONAL SELECIONADO</span>
+            <div class="card">
+                <div class="profile-picture">
+                    <!--<img src="" alt="Foto do Profissional">-->
+                    <div class="photo-example">
+                        <span>JS</span>
+                    </div>
+                    <h6 class="professional-name">João da Silva</h6>
+                </div>
+
+                <div class="cad-content">
+
+                    <p class="professional-bio">Quem sou eu</p>
+                    <div class="professional-area"></div>
+
+                    <p class="professional-qualifications">Minhas Qualificações</p>
+                    <div class="qualifications">
+                        <div class="qualifications-item">+ Enfermagem</div>
+                        <div class="qualifications-item">+ Gestão Hospitalar</div>
+                        <div class="qualifications-item">+ Psicologia</div>
+                        <div class="qualifications-item">+ Téc. em Cuidadores de Idosos</div>
+                    </div>
+
+
+                    <div class="user-rating">
+                        <span class="rating">Avaliação dos usuários</span>
+                        <div class="rating-area">
+                            <p class="rating-text">Qualidade do Serviço</p>
+                            <p class="rating-text">Preço</p>
+                        </div>
+                    </div>
+
+
+                    <div class="comments">
+                        <div class="comment">Comentários</div>
+                        <div class="comment-area"></div>
+                    </div>
+
+                    <div class="btn-area">
+                        <button class="cta_btn_primary btn-pro none">Contratar</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- BLOCO 2-->
+        <div class="professional_data column">
+            <div class="flex"
+                style="flex-direction: column; max-height: 600px; height: 100%;justify-content: space-between;">
+
+                <h6 class="title-right">Análise de agendamento do profissional</h6>
+
+                <div class="vertical-progress-container">
+                    <div class="vertical-step">
+                        <div class="vertical-step-number"><i class="fa-solid fa-check"></i></div>
+                        <div class="vertical-step-label">1. Aguardando visualização dos dados do
+                            agendamento solicitado.</div>
+                    </div>
+                    <div class="vertical-progress-line"></div>
+                    <div class="vertical-step">
+                        <div class="vertical-step-number"><i class="fa-solid fa-check"></i></div>
+                        <div class="vertical-step-label">2. Aguardando o profissional aceitar os dados do
+                            agendamento.
+                        </div>
+                    </div>
+                    <div class="vertical-progress-line"></div>
+                    <div class="vertical-step">
+                        <div class="vertical-step-number"><i class="fa-solid fa-check"></i></div>
+                        <div class="vertical-step-label">3. Profissional confirmou o agendamento!</div>
+                    </div>
+                </div>
+
+                <div class="avanced">
+                    <button id="prosseg" class="cta_btn_primary">Avançar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <p class="footer-obj">ACESSIBILIDADE</p>
+        <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
+        <p class="footer-obj">PRIVACIDADE</p>
+        <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat
+            illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia!
+        </p>
+    </footer>
+
+
+
+</body>
+
+</html>

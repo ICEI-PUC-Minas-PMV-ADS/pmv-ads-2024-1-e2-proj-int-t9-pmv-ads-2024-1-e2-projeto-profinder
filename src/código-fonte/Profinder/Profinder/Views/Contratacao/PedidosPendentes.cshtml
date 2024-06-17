@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Profinder.Models.Contratacao>
+
+@{
+    ViewData["Title"] = "Pedidos Pendentes";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/globals.css">
+    <link rel="stylesheet" href="~/css/pendentes.css">
+    <title>ProFinder - Solicitações</title>
+</head>
+<body>
+    <header>
+        <div class="container-navegation">
+            <a href="@Url.Action("Index", "Home")"><img class="img-header" src="~/img/logo.png" alt="Logo do site"></a>
+            <div class="list-menu">
+                <li>Solicitações Pendentes</li>
+            </div>
+            <a href="@Url.Action("AreaProfissionais", "Usuarios")" style="margin-right: 5%; text-decoration: none;"><span>Voltar</span></a>
+        </div>
+    </header>
+    <div class="line-style-top"></div>
+        <div class="ajustment-page">
+            <div class="container-geral">
+               <div class="scrollable-container">
+                    <table class="table-container">
+                        <thead class="table-style">
+                            <tr>
+                                <th>Profissional</th>
+                                <th>Data Início</th>
+                                <th>Data Fim</th>
+                                <th>Status</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody class="row-style">
+
+                            @foreach (var pedido in Model)
+                            {
+                                <tr>
+                                    <td>@pedido.Profissional.NomeUsuario</td>
+                                    <td>@pedido.DataInicio.ToString("dd/MM/yyyy")</td>
+                                    <td>@pedido.DataFim.ToString("dd/MM/yyyy")</td>
+                                    <td>@pedido.Status</td>
+                                    <td>
+                                        <a href="@Url.Action("Etapa2", new { id = pedido.Id })" class="cta_btn_primary_">Continuar</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </div>
+    <footer id="home-footer">
+        <div class="copy">
+            <img src="~/img/logo.png" alt="">
+            <p>&copy; 2023 ProFinder. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

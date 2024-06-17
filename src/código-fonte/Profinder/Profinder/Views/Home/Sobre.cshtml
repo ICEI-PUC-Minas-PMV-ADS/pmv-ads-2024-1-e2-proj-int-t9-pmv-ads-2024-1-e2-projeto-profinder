@@ -1,0 +1,178 @@
+﻿
+@{
+    ViewData["Title"] = "Sobre";
+}
+
+<!--Desenvolvedor responsável: RANAN-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="~/css/globals.css">
+    <link rel="stylesheet" href="~/css/sobre.css">
+    <link rel="icon" href="/img/logo.png" type="image/x-icon">
+    <script defer src="~/js/header.js"></script>
+    <title>Sobre - ProFinder</title>
+
+</head>
+<body>
+
+    <!--AREA DO HEADER-->
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="user-logged">
+            <header class="header">
+                <div class="logo-profinder-logged"><img src="~/img/logo.png" alt="Logo ProFinder"></div>
+                <div class="nav-logged">
+                    <a class="nav-link" href="@Url.Action("Index", "Home")"><li class="nav-li">Home</li></a>
+                    <a class="nav-link" href="@Url.Action("Sobre", "Home")"><li class="nav-li">Sobre</li></a>
+                    <a class="nav-link" href="@Url.Action("Servicos", "Home")"><li class="nav-li">Servicos</li></a>
+                    <a class="nav-link" href="@Url.Action("FaleConosco", "Home")"><li class="nav-li">Fale Conosco</li></a>
+                    <a class="nav-link" href=""><li class="nav-li">Profissionais</li></a>
+
+                    <li id="user-dropdown">
+                        <a class="account-drop" href="#">Minha Conta</a>
+                        <ul id="user-menu" class="dropdown-content" style="display: none;">
+                            <li class="toggle-options"><a class="account-li" href="@Url.Action("Edit", "Usuarios")">Perfil</a></li>
+                            <li class="toggle-options"><a class="account-li" href="../código-fonte/area_minhas_contratacoes.html">Minhas contratações</a></li>
+                            <li class="toggle-options"><a class="account-li" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </header>
+        </div>
+    }
+    else
+    {
+        <div class="wrapper">
+
+            <header class="header">
+                <div class="logo-profinder"><a href="@Url.Action("Index", "Home")"><img class="img-header" src="~/img/logo.png" alt="Logo do site"></a></div>
+                <div class="nav">
+                    <a class="nav-link" href="@Url.Action("Index", "Home")"><li class="nav-li">Home</li></a>
+                    <a class="nav-link" href="@Url.Action("Sobre", "Home")"><li class="nav-li">Sobre</li></a>
+                    <a class="nav-link" href="@Url.Action("Servicos", "Home")"><li class="nav-li">Serviços</li></a>
+                    <a class="nav-link" href="@Url.Action("FaleConosco", "Home")"><li class="nav-li">Fale Conosco</li></a>
+                </div>
+
+                <div class="login-area">
+                    <div class="area-login">
+                        <a href="@Url.Action("Login", "Usuarios")">
+                            <button class="cta_btn_secondary spaces">Entrar</button>
+                        </a>
+                        <a href="@Url.Action("Create", "Usuarios")" class="cta_btn_primary spaces">Criar Conta</a>
+
+                    </div>
+                </div>
+            </header>
+        </div>
+    }
+    <!--FIM - AREA DO HEADER-->
+    <!--INÍCIO CONTEÚDO-->
+
+    <main>
+        <!--SOMOS-->
+        <div class="area-sobre">
+            <div class="about-us-area">
+                <h6 id="title">Somos</h6>
+                <p>
+                    Uma plataforma desenvolvida para unir usuários a cuidadores especializados no atendimento de idosos e pessoas com deficiência.
+                    A plataforma oferece espaço interativo onde usuários poderão facilmente localizar e contratar estes profissionais. Além disso,
+                    os cuidadores terão a oportunidade de divulgar seus serviços e gerenciar os seus comprimissos.
+                </p>
+            </div>
+
+            <div class="about-us-images">
+                <div class="image-local">
+                    <img src="../img/oldiest.png" alt="Idosos na montanha">
+                </div>
+            </div>
+
+            <div class="logo-area-detail">
+                <img src="../img/pro.png" alt="Logo plano de fundo">
+            </div>
+        </div>
+        <!--DESCRIÇÃO QUEM SOMOS-->
+    
+        <div class="description-area">
+            <h6 id="title_">Nossos fundadores</h6>
+            <p>
+                "Em um universo de possibilidades infinitas, nossa paixão pela tecnologia é o ponto de partida, a inovação é a trajetória e o desenvolvimento
+                é a constante evolução que nos impulsiona adiante."
+            </p>
+        </div>
+
+        <!--DESCRIÇÃO QUEM SOMOS-->
+
+        <div class="devs-area">
+            <div class="devs-card">
+                <div class="description-card">
+                    <img src="../img/profile-brian.png" alt="Foto de perfil">
+                    <a href="https://www.linkedin.com/in/brianmduarte/"><h6 id="description-profile">Brian Duarte</h6></a>
+                    <p id="sub-profile">Estagiário de QA</p>
+                    <span class="line-profile"></span>
+                    <div class="icons-card">
+                        <a href="#"><img src="../img/WhatsApp.png" alt="ícone whatsapp"></a>
+                        <a href="#"><img src="../img/LinkedIn Circled.png" alt="ícone LinkedIn"></a>
+                        <a href="#"><img src="../img/Instagram.png" alt="ícone instagram"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="devs-card">
+                <div class="description-card">
+                    <img src="" alt="Foto de perfil">
+                    <a href=""><h6 id="description-profile">Erick C. Nunes</h6></a>
+                    <p id="sub-profile">Desenvolvedor</p>
+                    <span class="line-profile"></span>
+                    <div class="icons-card">
+                        <a href="#"><img src="../img/WhatsApp.png" alt="ícone whatsapp"></a>
+                        <a href="#"><img src="../img/LinkedIn Circled.png" alt="ícone LinkedIn"></a>
+                        <a href="#"><img src="../img/Instagram.png" alt="ícone instagram"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="devs-card">
+                <div class="description-card">
+                    <img src="" alt="Foto de perfil">
+                    <a href=""><h6 id="description-profile">Douglas Henrique</h6></a>
+                    <p id="sub-profile">Desenvolvedor</p>
+                    <span class="line-profile"></span>
+                    <div class="icons-card">
+                        <a href="#"><img src="../img/WhatsApp.png" alt="ícone whatsapp"></a>
+                        <a href="#"><img src="../img/LinkedIn Circled.png" alt="ícone LinkedIn"></a>
+                        <a href="#"><img src="../img/Instagram.png" alt="ícone instagram"></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="devs-card">
+                <div class="description-card">
+                    <img src="" alt="Foto de perfil">
+                    <a href=""><h6 id="description-profile">Mateus Salomé</h6></a>
+                    <p id="sub-profile">Desenvolvedor</p>
+                    <span class="line-profile"></span>
+                    <div class="icons-card">
+                        <a href="#"><img src="~/img/WhatsApp.png" alt="ícone whatsapp"></a>
+                        <a href="#"><img src="~/img/LinkedIn Circled.png" alt="ícone LinkedIn"></a>
+                        <a href="#"><img src="~/img/Instagram.png" alt="ícone instagram"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <!--FIM CONTEÚDO-->
+    <!--AREA DO FOOTER-->
+    <footer id="home-footer">
+        <div class="copy">
+            <img src="~/img/logo.png" alt="">
+            <p>&copy; 2023 ProFinder. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <!--FIM AREA DO FOOTER-->
+</body>
+</html>

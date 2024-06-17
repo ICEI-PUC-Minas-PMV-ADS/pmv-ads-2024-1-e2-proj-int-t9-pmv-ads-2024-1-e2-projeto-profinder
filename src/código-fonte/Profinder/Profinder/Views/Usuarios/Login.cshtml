@@ -1,0 +1,101 @@
+﻿@model Profinder.Models.Usuario
+
+@{
+    ViewData["Title"] = "Login";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/login-user.css">
+    <link rel="stylesheet" href="~/css/globals.css">
+    <title>Login</title>
+</head>
+
+    <body>
+        <header>
+            <div class="login">
+                <a href="@Url.Action("Index", "Home")"><img class="img-header" src="~/img/logo.png" alt="Logo do site"></a>
+            </div>
+        </header>
+
+        <div class="line-separation"></div>
+
+        <main>
+            <div class="form-login">
+                @if (TempData["SuccessMessage"] != null)
+                {
+                    <div class="alert alert-success">
+                        @TempData["SuccessMessage"]
+                    </div>
+                }
+
+                <div>
+                <form asp-action="Login" id="loginForm">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="user-email">
+                            <i><img src="~/img/user_icon.png" class="icon-email"></i>
+                            <input asp-for="Email" class="input-login" placeholder="Informe o e-mail cadastrado" />
+
+                        </div>
+                        <div class="user-pass">
+                            <i><img src="~/img/secure_icon.png" class="icon-secure"></i>
+                            <input asp-for="Senha" class="input-login" placeholder="Informe a senha cadastrada"/>
+
+                        </div>
+                        <div class="login-area">
+                            <button type="submit" class="cta_btn_primary login-btn" id="loginButton">
+                                Entrar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Exibir mensagem de erro -->
+                @if (!string.IsNullOrEmpty(ViewBag.Message))
+                {
+                    <div class="span-error">@ViewBag.Message</div>
+                }
+            </div>
+        </main>
+    </body>
+
+<!--AREA DO FOOTER-->
+<footer id="home-footer">
+    <div class="copy">
+        <img src="~/img/logo.png" alt="">
+        <p>&copy; 2023 ProFinder. Todos os direitos reservados.</p>
+    </div>
+</footer>
+<!--FIM AREA DO FOOTER-->
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Previne o envio imediato do formulário
+
+            var loginButton = document.getElementById('loginButton');
+            var spinner = document.createElement('div');
+            spinner.className = 'spinner';
+
+            // Desabilita o botão e adiciona o spinner
+            loginButton.disabled = true;
+            loginButton.innerHTML = ''; // Remove o texto "Entrar"
+            loginButton.appendChild(spinner);
+
+            // Adiciona o atraso de 4 segundos
+            setTimeout(function () {
+                document.getElementById('loginForm').submit(); // Envia o formulário após 4 segundos
+            }, 2500);
+        });
+    </script>
+
+
+</html>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

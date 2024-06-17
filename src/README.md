@@ -1,11 +1,30 @@
-# Instruções de utilização
+## Configuração de Ambiente de Desenvolvimento
 
-## Instalação do Site
+#### Orientações gerais aos desenvolvedores
 
-O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores...
+Ao clonar o repositório, esteja ciente de que o projeto já possui todos os pacotes instalados. Se for necessário a atualização dos pacotes, o próprio VS Community indicará.
+- Para abrir o projeto corretamente, acesse o arquivo Profinder.snl (*código-fonte > Profinder > Profinder.sln*)
+#### Pacotes que precisam estar instalados no Visual Studio Community para que a aplicação funcione totalmente
 
-## Histórico de versões
+*Principais para o MVC*
+- Microsoft.EntityFrameworkCore
+- Microsoft.EntityFrameworkCore.Design
+- Microsoft.EntityFrameworkCore.SqlServer
+- Microsoft.EntityFrameworkCore.Tools
+- Microsoft.AspNetCore.Authentication
+- Microsoft.AspNetCore.Identity
+- Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
 
-### [0.1.0] - DD/MM/AAAA
-#### Adicionado
-- Adicionado ...
+*Pacotes da Azure*
+- Azure.Identity
+- Azure.Storage.Blobs
+- Azure.Storage.Files.Shares
+- Azure.Storage-Queues
+- Microsoft.Extensions.Azure
+- Microsoft.VisualStudio.Azure.Containers.Tools.Targ
+
+*Demais Pacotes importantes*
+- BCrypt.Net-Next
+- Microsoft.VisualStudio.Web.CodeGeneration.Design
+- Portable.BouncyCastle
+

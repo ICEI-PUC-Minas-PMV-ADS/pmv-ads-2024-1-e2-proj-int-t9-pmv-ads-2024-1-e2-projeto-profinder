@@ -1,0 +1,496 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --amarelo: #FFD600;
+    --azul: #8f9bef;
+}
+
+.scrollable-container {
+    margin-top: 25px;
+    max-height: 620px;
+    overflow-y: auto;
+}
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+h1 {
+    font-size: 2.986rem;
+}
+
+h2 {
+    font-size: 2.488rem;
+}
+
+h3 {
+    font-size: 2.074rem;
+}
+
+h4 {
+    font-size: 1.728rem;
+}
+
+h5 {
+    font-size: 1.44rem;
+}
+
+h6 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+p {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.small {
+    font-size: 0.8rem;
+}
+
+
+.cta_btn_primary {
+    background-color: var(--amarelo);
+    color: #ffffff;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 7px;
+    border: 1px solid #ffd600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s all;
+    margin-left: 5px;
+}
+
+.cta_btn_secondary {
+    background-color: transparent;
+    color: var(--amarelo);
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 7px;
+    border: 1px solid var(--amarelo);
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+    .cta_btn_primary:hover,
+    .cta_btn_secondary:hover {
+        box-shadow: 0px 0px 15px 1px #ffe355;
+    }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-header {
+    width: auto;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 2200px;
+    margin: 0 auto;
+    padding: 0 0px; /* Adiciona um pouco de padding para melhor visualização */
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/* Layout de colunas usando Flex */
+.column-layout {
+    display: flex;
+    /* Permite que as colunas quebrem para a próxima linha */
+    flex-wrap: wrap;
+}
+
+.column {
+    /* Cada coluna ocupa o mesmo espaço disponível */
+    flex: 1 1 400px;
+    /* Espaçamento entre as colunas */
+    margin: 0 10px;
+}
+
+/* Isso cria um layout de grade responsivo com colunas que se ajustam automaticamente ao tamanho da tela.*/
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Cria colunas automáticas com no mínimo 250px de largura */
+    grid-gap: 20px;
+    /* Espaçamento entre as células */
+}
+
+
+.copy {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+}
+
+.copy img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.container-navegation {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    width: 100%;
+}
+
+.list-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 55%;
+}
+
+    .list-menu li {
+        list-style-type: none;
+        font-weight: 400;
+        cursor: pointer;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+        .list-menu li:hover {
+            font-weight: 400;
+            color: #FFD600;
+            transition: 0.3s ease;
+        }
+
+.line-style-top {
+    height: 1px;
+    background-color: #FFD600;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.img-header {
+    margin-left: 30px;
+}
+
+.space {
+    margin-left: 10px;
+}
+
+.login-btn {
+    margin-top: 15px;
+    width: 120px;
+    height: 35px;
+}
+
+/* HEADER - ESTILIZAÇÃO - USUÁRIO NÃO CADASTRADO */
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .wrapper > * {
+        flex: 1 100%;
+    }
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: 1.5px solid #FFD600;
+}
+
+.nav li:hover {
+    font-weight: 400;
+    color: #FFD600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-logged li:hover {
+    font-weight: 400;
+    color: #FFD600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+
+
+.logo-profinder {
+    height: 100px;
+    padding-top: 20px;
+    padding-left: 3%;
+}
+
+.logo-profinder-logged {
+    height: 100px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.nav-logged {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.account-drop {
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+
+    .account-drop:hover {
+        font-weight: 400;
+        color: #FFD600;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+
+.nav {
+    justify-content: space-around;
+    display: flex;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    transition: ease 0.4s;
+}
+
+.nav-li {
+    list-style: none;
+}
+
+.login-area {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.account-li {
+    text-decoration: none;
+}
+
+.toggle-options:hover {
+    background-color: #ffffff;
+    background-color: #FFD600;
+    border-radius: 5px;
+    font-weight: 400;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#user-dropdown {
+    position: relative;
+    list-style: none;
+    margin-right: 2%;
+}
+
+#user-menu {
+    position: absolute;
+    display: none;
+    background-color: #ffffff;
+    border: 1px solid #FFD600;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 5px;
+    width: 150px;
+}
+
+
+#user-dropdown:hover #user-menu {
+    display: block;
+}
+
+#user-menu li {
+    list-style: none;
+    margin: 15px;
+    padding: 5px;
+}
+
+    #user-menu li a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    #user-menu li:not(:first-child) {
+        margin-top: 10px;
+    }
+
+
+
+.span-error {
+    color: #ff0000;
+    margin-top: 15px;
+}
+/* FIM - HEADER ESTILIZAÇÃO */
+/* AREA DE RESPONSIVIDADE - HEADER */
+@media screen and (max-width:1260px) {
+    .login-area {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width:1145px) {
+    .logo-profinder {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .nav, .login-area {
+        margin-bottom: 3%;
+    }
+
+    .login-area {
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width:1115px) {
+    .logo-profinder {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: 20px;
+        justify-content: space-around;
+    }
+
+    .login-area {
+        width: 100%;
+        text-align: center;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+    .benefits {
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .logo-profinder {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    input[type="text"] {
+        width: 300px;
+    }
+
+    textarea {
+        width: 300px;
+    }
+
+    .nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .nav-li {
+        margin-left: 0px;
+    }
+
+    .login-area {
+        width: 100%;
+        text-align: center;
+        justify-content: space-around;
+        margin-left: 0;
+    }
+}
+
+/* RESPONSIVIDADE PARA USUARIOS LOGADOS */
+
+@media screen and (max-width:1700px) {
+
+    .logo-profinder-logged {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+
+    .nav-logged {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+    .body {
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+}
+
+@media screen and (max-width:999px) {
+
+    .logo-profinder-logged {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+
+    .nav-logged {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: 0;
+        gap: 30px;
+    }
+}
+
+/* FIM AREA DE RESPONSIVIDADE - HEADER */
+

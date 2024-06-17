@@ -1,0 +1,266 @@
+﻿@model Profinder.Models.Usuario
+
+@{
+    ViewData["Title"] = "Editar Perfil";
+
+}
+
+
+<!--Desenvolvedor responsável: LUIZ-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/globals.css">
+    <link rel="stylesheet" href="~/css/area_meu_perfil copy.css">
+    <link href="/css/area_profissionais.css" rel="stylesheet" />
+    
+    <script defer src="~/js/meu_perfil.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <title>ProFinder - Meu Perfil</title>
+</head>
+<!--AREA DO HEADER-->
+<body>
+
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+        var userRole = User.FindFirst(System.Security.Claims.ClaimTypes.Role)?.Value;
+
+        if (userRole == "Cliente")
+        {
+            <div class="user-logged">
+                <header class="header">
+                    <div class="logo-profinder-logged"><img src="~/img/logo.png" alt="Logo ProFinder"></div>
+                    <div class="nav-logged">
+                        <a class="nav-link" href="@Url.Action("Index", "Home")"><li class="nav-li">Home</li></a>
+                        <a class="nav-link" href="@Url.Action("PedidosPendentes", "Contratacao")"><li class="nav-li">Minhas solicitações</li></a>
+                        <a class="nav-link" href="@Url.Action("AreaProfissionais", "Usuarios")"><li class="nav-li">Profissionais</li></a>
+                        <li id="user-dropdown">
+                            <a class="account-drop" href="#">Minha Conta</a>
+                            <ul id="user-menu" class="dropdown-content" style="display: none;">
+                                <li class="toggle-options"><a asp-action="Edit" asp-controller="Usuarios" asp-route-id="@userId" class="account-li">Perfil</a></li>
+                                <li class="toggle-options"><a class="account-li" href="@Url.Action("MinhasContratacoes", "Home")">Minhas contratações</a></li>
+                                <li class="toggle-options"><a class="account-li" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </header>
+                
+                <!-- Conteúdo específico para Cliente -->
+            </div>
+        }
+        else if (userRole == "Profissional")
+        {
+            <div class="user-logged">
+                <header class="header">
+                    <div class="logo-profinder-logged"><img src="~/img/logo.png" alt="Logo ProFinder"></div>
+                    <div class="nav-logged">
+                        <a class="nav-link" href="@Url.Action("Index", "Home")"><li class="nav-li">Home</li></a>
+                        <a href="@Url.Action("SolicitarAgendamentos", "Contratacao")"><li class="nav-li">Minhas Solicitações</li></a>
+                        <li id="user-dropdown">
+                            <a class="account-drop" href="#">Minha Conta</a>
+                            <ul id="user-menu" class="dropdown-content" style="display: none;">
+                                <li class="toggle-options"><a asp-action="Edit" asp-controller="Usuarios" asp-route-id="@userId" class="account-li">Perfil</a></li>
+                                <li class="toggle-options"><a class="account-li" href="@Url.Action("MinhasContratacoes", "Home")">Minhas contratações</a></li>
+                                <li class="toggle-options"><a class="account-li" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </header>
+                
+                <!-- Conteúdo específico para Profissional -->
+            </div>
+            
+        }
+    }
+    else
+    {
+        <div class="wrapper">
+            <header class="header">
+                <div class="logo-profinder"><a href="@Url.Action("Index", "Home")"><img class="img-header" src="~/img/logo.png" alt="Logo do site"></a></div>
+                <div class="nav">
+                    <a class="nav-link" href="@Url.Action("Index", "Home")"><li class="nav-li">Home</li></a>
+                    <a class="nav-link" href="@Url.Action("Sobre", "Home")"><li class="nav-li">Sobre</li></a>
+                    <a class="nav-link" href="@Url.Action("Servicos", "Home")"><li class="nav-li">Serviços</li></a>
+                    <a class="nav-link" href="@Url.Action("FaleConosco", "Home")"><li class="nav-li">Fale Conosco</li></a>
+                </div>
+                <div class="login-area">
+                    <div class="area-login">
+                        <a href="@Url.Action("Login", "Usuarios")">
+                            <button class="cta_btn_secondary spaces">Entrar</button>
+                        </a>
+                        <a href="@Url.Action("Create", "Usuarios")" class="cta_btn_primary spaces">Criar Conta</a>
+                    </div>
+                </div>
+            </header>
+        </div>
+    }
+
+    <!--FIM - AREA DO HEADER-->
+    <!--INÍCIO CONTEÚDO-->
+
+    <main>
+
+        <div class="container-profile">
+            <div class="detail-top-menu">
+                <div class="detail-circle">
+                    <p>LI</p>
+                </div>
+            </div>
+            <div class="detail-bot-menu">
+                <div class="Line1">
+                    <h4>LOREM IPSUM</h4>
+                </div>
+                <div class="Line2">
+                    <p>DADOS PESSOAIS</p>
+                </div>
+                
+                    
+                <form asp-action="Edit" asp-controller="Usuarios" method="post">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input type="hidden" asp-for="Id" />
+                        <div class="Line-grid">
+                            <div class="stage1">
+                                <label asp-for="NomeUsuario" class="campoP"></label>
+                                <input asp-for="NomeUsuario"/>
+                                <span asp-validation-for="NomeUsuario" class="text-danger"></span>
+                            </div>
+                            <div class="stage2">
+                                <label asp-for="Email" class="campoP"></label>
+                                <input asp-for="Email"/>
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                            <div class="stage3">
+                                <label asp-for="CPF" class="campoP"></label>
+                                <input asp-for="CPF" />
+                                <span asp-validation-for="CPF" class="text-danger"></span>
+                            </div>
+                            <div class="stage1">
+                                <label asp-for="DataNascimento" class="campoP"></label>
+                                <input asp-for="DataNascimento" />
+                                <span asp-validation-for="DataNascimento" class="text-danger"></span>
+                            </div>
+                            <div class="stage2">
+                                <label asp-for="Telefone" class="campoP"></label>
+                                <input asp-for="Telefone" />
+                                <span asp-validation-for="Telefone" class="text-danger"></span>
+                            </div>
+                            <div class="stage3">
+                                <label asp-for="Endereco" class="campoP"></label>
+                                <input asp-for="Endereco" />
+                                <span asp-validation-for="Endereco" class="text-danger"></span>
+                            </div>
+                            <div class="stage1">
+                                <label asp-for="NumeroResidencia" class="campoP"></label>
+                                <input asp-for="NumeroResidencia" />
+                                <span asp-validation-for="NumeroResidencia" class="text-danger"></span>
+                            </div>
+                            <div class="stage2">
+                                <label asp-for="Cep" class="campoP"></label>
+                                <input asp-for="Cep" />
+                                <span asp-validation-for="Cep" class="text-danger"></span>
+                            </div>
+                            <div class="stage3">
+                                <label asp-for="Cidade" class="campoP"></label>
+                                <input asp-for="Cidade"/>
+                                <span asp-validation-for="Cidade" class="text-danger"></span>
+                            </div>
+                            <div class="stage1">
+                                <label asp-for="Bairro" class="campoP"></label>
+                                <input asp-for="Bairro"/>
+                                <span asp-validation-for="Bairro" class="text-danger"></span>
+                            </div>
+                            <div class="stage2">
+                                <label asp-for="Complemento" class="campoP"></label>
+                                <input asp-for="Complemento" />
+                                <span asp-validation-for="Complemento" class="text-danger"></span>
+                            </div>
+                            <div class="stage3">
+                                <label asp-for="Senha" class="campoP"></label>
+                                <input type="password" asp-for="Senha" />
+                                <span asp-validation-for="Senha" class="text-danger"></span>
+                            </div>
+
+                            @if (User.IsInRole("Cliente"))
+                            {
+                                <div class="stage1">
+                                    <label asp-for="NecessidadesEspecificas" class="campoP"></label>
+                                    <input asp-for="NecessidadesEspecificas" />
+                                    <span asp-validation-for="NecessidadesEspecificas" class="text-danger"></span>
+                                </div>
+                            }
+                            else if (User.IsInRole("Profissional"))
+                            {
+                                <div class="stage1">
+                                    <label asp-for="Habilidades" class="campoP"></label>
+                                    <input asp-for="Habilidades" />
+                                    <span asp-validation-for="Habilidades" class="text-danger"></span>
+                                </div>
+                                <div class="stage2">
+                                    <label asp-for="Formacao" class="campoP"></label>
+                                    <input asp-for="Formacao"  />
+                                    <span asp-validation-for="Formacao" class="text-danger"></span>
+                                </div>
+                                <div class="stage3">
+                                    <label asp-for="Experiencia" class="campoP"></label>
+                                    <input asp-for="Experiencia"  />
+                                    <span asp-validation-for="Experiencia" class="text-danger"></span>
+                                </div>
+                                <div class="stage1">
+                                <label asp-for="SobreMim" class="campoP"></label>
+                                <input asp-for="SobreMim" />
+                                <span asp-validation-for="SobreMim" class="text-danger"></span>
+                                </div>
+                                <div class="stage2">
+                                    <label asp-for="CNPJ" class="campoP"></label>
+                                    <input asp-for="CNPJ"  />
+                                    <span asp-validation-for="CNPJ" class="text-danger"></span>
+                                </div>
+                            }
+
+                            <input type="hidden" asp-for="Perfil" />
+
+                            
+                   </div>
+                    <div class="ajust-btn">
+                        <input type="submit" value="Salvar Alterações" class="cta_btn_primary" />
+                        
+                    </div>
+                    @if (!string.IsNullOrEmpty(ViewBag.SuccessMessage))
+                    {
+                        <div class="success-message">@ViewBag.SuccessMessage</div>
+                    }
+                        
+                    
+                </form>
+                    </>
+                </div>
+
+                
+
+        </div>
+
+    </main>
+
+
+</body>
+    <!--FIM CONTEÚDO-->
+    <!--AREA DO FOOTER-->
+<footer id="home-footer">
+    <div class="copy">
+        <img src="~/img/logo.png" alt="">
+        <p>&copy; 2023 ProFinder. Todos os direitos reservados.</p>
+    </div>
+</footer>
+    <!--FIM AREA DO FOOTER-->
+</html>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

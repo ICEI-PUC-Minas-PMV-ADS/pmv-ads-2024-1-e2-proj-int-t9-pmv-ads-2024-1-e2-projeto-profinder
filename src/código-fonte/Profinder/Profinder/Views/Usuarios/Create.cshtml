@@ -1,0 +1,271 @@
+﻿
+
+@model Profinder.Models.Usuario
+
+@{
+    ViewData["Title"] = "Cadastro de Usuários";
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/globals.css">
+    <link rel="stylesheet" href="~/css/login.css">
+    <script defer src="~/js/cadastro.js"></script>
+    <script defer src="~/js/fale_conosco.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <title>Cadastre-se ;)</title>
+</head>
+<body>
+    <header>
+        <div class="login">
+            <a class="nav-link" style="justify-content: center" href="@Url.Action("Index", "Home")"><img class="img-header" src="~/img/logo.png" alt="Logo do site"></a>
+        </div>
+    </header>
+    <div class="line-separation"></div>
+    
+    <div class="parent">
+        <form asp-action="Create" id="loginForm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <label asp-for="NomeUsuario" class="control-label"></label>
+                    <input asp-for="NomeUsuario" class="input-login" />
+                    <span asp-validation-for="NomeUsuario" class="text-danger"></span>
+                </div>
+
+                <div class="grid-item">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" id="email" class="input-login" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="grid-item">
+                    <label asp-for="CPF" class="control-label"></label>
+                    <input asp-for="CPF" id="cpf" class="input-login" />
+                    <span asp-validation-for="CPF" class="text-danger"></span>
+                </div>
+
+                <div class="grid-item">
+                    <label asp-for="DataNascimento" class="control-label"></label>
+                    <input type="date" asp-for="DataNascimento" class="input-login" />
+                    <span asp-validation-for="DataNascimento" class="text-danger"></span>
+                </div>
+
+                <div class="grid-item">
+                    <label asp-for="Telefone" class="control-label"></label>
+                    <input asp-for="Telefone" id="telefone" class="input-login" id="numberPhone" />
+                    <span asp-validation-for="Telefone" class="text-danger"></span>
+                </div>
+
+                <div class="grid-item">
+                    <label asp-for="Endereco" class="control-label"></label>
+                    <input asp-for="Endereco" class="input-login" />
+                    <span asp-validation-for="Endereco" class="text-danger"></span>
+                </div>
+
+                <div class="grid-item">
+                    <label asp-for="NumeroResidencia" class="control-label"></label>
+                    <input asp-for="NumeroResidencia" class="input-login" />
+                    <span asp-validation-for="NumeroResidencia" class="text-danger"></span>
+                </div>
+
+                <div class="grid-item">
+                    <label asp-for="Cep" class="control-label"></label>
+                    <input asp-for="Cep" id="cep" class="input-login" />
+                    <span asp-validation-for="Cep" class="text-danger"></span>
+                </div>
+
+                <div class="grid-item">
+                    <label asp-for="Cidade" class="control-label"></label>
+                    <input asp-for="Cidade" id="cidade" class="input-login" />
+                    <span asp-validation-for="Cidade" class="text-danger"></span>
+                </div>
+
+                <div class="grid-item">
+                    <label asp-for="Bairro" class="control-label"></label>
+                    <input asp-for="Bairro" class="input-login" />
+                    <span asp-validation-for="Bairro" class="text-danger"></span>
+                </div>
+
+                <div class="grid-item">
+                    <label asp-for="Complemento" class="control-label"></label>
+                    <input asp-for="Complemento" class="input-login" />
+                    <span asp-validation-for="Complemento" class="text-danger"></span>
+                </div>
+
+                <div class="grid-item">
+                    <label asp-for="Senha"></label>
+                    <input asp-for="Senha" class="input-login" />
+                    <span asp-validation-for="Senha" class="text-danger"></span>
+                </div>
+
+                <!--Novos inputs-->
+                <div class="grid-item">
+                    <div>
+                        <label asp-for="Perfil"></label>
+                        <select asp-for="Perfil" id="perfilSelect">
+                            <option value="Cliente">Cliente</option>
+                            <option value="Profissional">Profissional</option>
+                        </select>
+                    </div>
+                </div>
+                    <div class="grid-item">
+                        <div id="clienteFields">
+                            <div class="especiais">
+                                <label asp-for="NecessidadesEspecificas"></label>
+                                <input asp-for="NecessidadesEspecificas" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="profissionalFields" style="display: none;">
+                        
+                        <div class="grid-item">
+                            <div class="especiais">
+                                <label asp-for="Habilidades"></label>
+                                <input asp-for="Habilidades" />
+                            </div>
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="especiais">
+                                <label asp-for="Experiencia"></label>
+                                <input asp-for="Experiencia" />
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="especiais">
+                                <label asp-for="Formacao"></label>
+                                <input asp-for="Formacao" />
+                            </div>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <div class="especiais">
+                                <label asp-for="CNPJ"></label>
+                                <input asp-for="CNPJ" />
+                            </div>
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="especiais about">
+                                <label asp-for="SobreMim"></label>
+                                <textarea asp-for="SobreMim" placeholder="Conte-nos um pouco sobre você, suas experiências e habilidades =)" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+  
+                <div class="grid-item">
+                    <div class="form-check">
+                        <p>Tenho interesse por:</p>
+                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="ProcurandoCuidadorIdosos" /> @Html.DisplayNameFor(model => model.ProcurandoCuidadorIdosos)
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="ProcurandoCuidadorDeficiencia" /> @Html.DisplayNameFor(model => model.ProcurandoCuidadorDeficiencia)
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="login-area">
+                <a class="cta_btn_secondary login-btn" href="@Url.Action("Index", "Home")"> <h6>Voltar</h6> </a>
+                <button type="submit" class="cta_btn_primary login-btn" id="loginButton" style="margin-left: 15px">
+                    Cadastrar-se
+                </button>
+            </div>
+        </form>
+
+
+    </div>
+    <footer id="home-footer">
+        <div class="copy">
+            <img src="~/img/logo.png" alt="">
+            <p>&copy; 2023 ProFinder. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Previne o envio imediato do formulário
+
+            var loginButton = document.getElementById('loginButton');
+            var spinner = document.createElement('div');
+            spinner.className = 'spinner';
+
+            // Desabilita o botão e adiciona o spinner
+            loginButton.disabled = true;
+            loginButton.innerHTML = ''; // Remove o texto "Entrar"
+            loginButton.appendChild(spinner);
+
+            // Adiciona o atraso de 4 segundos
+            setTimeout(function () {
+                document.getElementById('loginForm').submit(); // Envia o formulário após 4 segundos
+            }, 4000);
+        });
+    </script>
+</body>
+</html>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+    <script>
+        document.getElementById('perfilSelect').addEventListener('change', function () {
+            var perfil = this.value;
+            var clienteFields = document.getElementById('clienteFields');
+            var profissionalFields = document.getElementById('profissionalFields');
+
+            if (perfil === 'Cliente') {
+                clienteFields.style.display = 'block';
+                profissionalFields.style.display = 'none';
+            } else if (perfil === 'Profissional') {
+                clienteFields.style.display = 'none';
+                profissionalFields.style.display = 'block';
+            } else {
+                clienteFields.style.display = 'none';
+                profissionalFields.style.display = 'none';
+            }
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#cep').on('blur', function () {
+                var cep = $(this).val().replace(/\D/g, '');
+
+                if (cep.length != 8) {
+                    return;
+                }
+
+                $.getJSON('https://viacep.com.br/ws/' + cep + '/json/', function (data) {
+                    if (!("erro" in data)) {
+                        $('#cidade').val(data.localidade);
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#cpf').mask('000.000.000-00', { reverse: true });
+        });
+
+    </script>
+
+    

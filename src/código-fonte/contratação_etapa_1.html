@@ -1,0 +1,149 @@
+<!--Desenvolvedor responsável: BRIAN--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/area_profissionais.css">
+    <link rel="stylesheet" href="/styles/etapa_1.css">
+    <link rel="stylesheet" href="/globals.css">
+    <script defer src="/js/etapa1.js"></script>
+    <title>ProFinder - Agendamento</title>
+</head>
+
+<!-- TIMELINE -->
+    <body>
+        <header>
+            <div class="container-navegation">
+                <a href="/home.html"><img class="img-header" src="/img/logo.png" alt="Logo do site"></a>
+                <div class="list-menu-etapa">
+                    <li>Solicitar agendamento </li>
+                    <span id="line"></span>
+                    <li id="step-2">Análise do agendamento</li>
+                    <span id="line-2"></span>
+                    <li id="step-2">Conclusão</li>
+                    
+                </div>
+                <a href="/area_profissionais.html" style="margin-right: 5%; text-decoration: none;"><span>Voltar</span></a>
+            </div>
+        </header>
+        <div class="line-style-top"></div>
+    <!-- TIMELINE-->  
+
+
+    <!--ÁREA DOS CARDS-->
+        <div class="icon-text">
+            <img src="/img/Schedule.png" alt="Calendário">
+            <h6> Etapa de Solicitação do Agendamento</h6><span class="info-icon">i</span>
+            <div class="info-bubble">Nesta etapa você poderá entrar em contato com o profissional selecionado para combinar o dia, data, hora e valores para prosseguir com a contratação do serviço.</div>
+            <div id="error-message" class="error-message"><span>Por favor, preencha todos os campos obrigatórios!</span>
+                <div id="progress-bar" class="progress-bar"></div>
+                <div id="error-timer" class="error-timer"></div>
+            </div>
+        </div>
+    
+        <div class="container-geral">
+            
+            <div class="card-container">
+                <span id="info-dados-prf">DADOS DO PROFISSIONAL SELECIONADO</span>
+                <div class="card">
+                    <div class="profile-picture">
+                        <!--<img src="" alt="Foto do Profissional">-->
+                        <div class="photo-example">
+                            <span>JS</span>
+                        </div>
+                        <h6 class="professional-name">João da Silva</h6>
+                    </div>
+
+                    <div class="cad-content">
+                        
+                        <p class="professional-bio">Quem sou eu</p>
+                        <div class="professional-area"></div>
+
+                        <p class="professional-qualifications">Minhas Qualificações</p>
+                            <div class="qualifications">
+                                <div class="qualifications-item">+ Enfermagem</div>
+                                <div class="qualifications-item">+ Gestão Hospitalar</div>
+                                <div class="qualifications-item">+ Psicologia</div>
+                                <div class="qualifications-item">+ Téc. em Cuidadores de Idosos</div>
+                            </div>
+
+                            
+                        <div class="user-rating">
+                            <span class="rating">Avaliação dos usuários</span>
+                            <div class="rating-area">
+                                <p class="rating-text">Qualidade do Serviço</p>
+                                <p class="rating-text">Preço</p>
+                            </div>
+                        </div>
+
+
+                        <div class="comments">
+                            <div class="comment">Comentários</div>
+                            <div class="comment-area"></div>
+                        </div>
+
+                        <div class="btn-area">
+                            <button class="cta_btn_primary btn-pro none">Contratar</button>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLOCO 2-->
+            <div class="container-right">
+                <h6 class="title-right">CONFIRMANDO A DISPONIBILIDADE DO PROFISSIONAL</h6>
+                
+                <div class="general-text">
+                    <p>1. Clique no botão abaixo para conversar com o [name-profissional] no Whatsapp</p>
+                    <button class="wpp-area"><img src="/img/wpp_white.png" alt="">Iniciar conversa</button>
+                    
+                    <p>2.Veja a disponibilidade do profissional e confirme a <span style="color: #FFD600; font-weight: 500;">data</span> e <span style="color: #FFD600; font-weight: 500;">horário</span> desejados.</p>
+                    
+                    <p>3. Descreva abaixo os principais detalhes sobre a pessoa que será assistida:</p>
+                    <textarea name="person" id="person-details" style="resize: none;" placeholder="Descreva detalhadamente os cuidados específicos que serão necessários com o paciente para que o cuidador se prepare da melhor maneira possível."></textarea>
+                    
+                    <p>4. Selecione o período de contratação e o horário confirmado com o profissional:</p>
+                    <div class="date-area">
+                        <div class="date-initial-end">
+                            Início<span style="color: red;">*</span><input type="date"  id="initial-date">
+                            <span style="margin-left: 15px;">Fim</span><span style="color: red;">*</span><input type="date" name="end-date" id="end-date">
+                        </div>
+                        <div class="hour-initial-end">
+                            Horário de início</span><span style="color: red;">*</span> <input type="time"  id="initial-time">
+                            <span style="margin-left: 15px;">Horário de término</span><span style="color: red;">*</span><input type="time"  id="end-time">
+    
+                        </div>
+                    </div>
+    
+                    <p id="days-contracted" style="font-size: 14px; font-weight: 400;">Dias contratados:</p>
+                </div>
+
+
+                <div class="avanced">
+                    <button id="prosseg" class="cta_btn_primary">Avançar</button>
+                </div>
+                
+
+            </div>
+        </div>
+    <!--ÁREA DOS CARDS-->
+
+    <footer>
+        <p class="footer-obj">ACESSIBILIDADE</p>
+        <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
+        <p class="footer-obj">PRIVACIDADE</p>
+        <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat 
+            illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia!
+        </p>
+    </footer>
+
+    <!--ÁREA DO FOOTER-->
+    
+    </body>    
+    
+</html>
+
