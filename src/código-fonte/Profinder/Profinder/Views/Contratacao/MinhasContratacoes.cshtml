@@ -1,27 +1,19 @@
-﻿
-﻿
-@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model IEnumerable<Profinder.Models.Contratacao>
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="~/css/home.css">
     <link rel="stylesheet" href="~/css/globals.css">
+    <link rel="stylesheet" href="~/css/minhas_contratacoes.css">
     <link rel="icon" href="/img/logo.png" type="image/x-icon">
     <script defer src="~/js/header.js"></script>
-    <link rel="stylesheet" href="~/css/solicitacoes.css">
-    <script defer src="~/js/notification.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.10/signalr.min.js"></script>
-</head>
-
-<body>
-
     
-
+    <title>ProFinder - Minhas Contratações</title>
+</head>
+<body>
     @if (User.Identity.IsAuthenticated)
     {
         var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
@@ -34,21 +26,19 @@
                     <div class="logo-profinder-logged"><img src="~/img/logo.png" alt="Logo ProFinder"></div>
                     <div class="nav-logged">
                         <a class="nav-link" href="@Url.Action("Index", "Home")"><li class="nav-li">Home</li></a>
-                        <a class="nav-link" href="@Url.Action("PedidosPendentes", "Contratacao")"><li class="nav-li">Minhas solicitações</li></a>
+                    
                         <a class="nav-link" href="@Url.Action("AreaProfissionais", "Usuarios")"><li class="nav-li">Profissionais</li></a>
                         <li id="user-dropdown">
                             <a class="account-drop" href="#">Minha Conta</a>
                             <ul id="user-menu" class="dropdown-content" style="display: none;">
                                 <li class="toggle-options"><a asp-action="Edit" asp-controller="Usuarios" asp-route-id="@userId" class="account-li">Perfil</a></li>
-                                <li class="toggle-options"><a class="account-li" href="@Url.Action("MinhasContratacoes", "Contratacao")">Minhas contratações</a></li>
+                                <li class="toggle-options"><a class="account-li" href="@Url.Action("MinhasContratacoes", "Home")">Minhas contratações</a></li>
                                 <li class="toggle-options"><a class="account-li" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
                             </ul>
                         </li>
                     </div>
                 </header>
-                <div class="ajust-welcome">
-                    <h2 id="welcome_name">Seja Bem-vindo, Cliente!</h2>
-                </div>
+               
                 <!-- Conteúdo específico para Cliente -->
             </div>
         }
@@ -64,7 +54,7 @@
                             <a class="account-drop" href="#">Minha Conta</a>
                             <ul id="user-menu" class="dropdown-content" style="display: none;">
                                 <li class="toggle-options"><a asp-action="Edit" asp-controller="Usuarios" asp-route-id="@userId" class="account-li">Perfil</a></li>
-                                <li class="toggle-options"><a class="account-li" href="@Url.Action("MinhasContratacoes", "Contratacao")">Minhas contratações</a></li>
+                                <li class="toggle-options"><a class="account-li" href="@Url.Action("MinhasContratacoes", "Home")">Minhas contratações</a></li>
                                 <li class="toggle-options"><a class="account-li" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
                             </ul>
                         </li>
@@ -106,93 +96,48 @@
             </header>
         </div>
     }
-    <div class="tabela">
-        <ul>
-            <li><img src="~/img/Cont-profi.png"><span>+5.000 Profissionais</span></li>
-            <li><img src="~/img/cont-user.png"><span>+20.000 Usuários na Plataforma</span></li>
-            <li><img src="~/img/cont-espec.png"><span>+ 50 Especializações</span></li>
-            <li><img src="~/img/cont-local.png"><span>Encontre quando você quiser</span></li>
-            <li><img src="~/img/cont-pag.png"><span>Parcele em até 12X</span></li>
-        </ul>
-    </div>
-    <div class="line-style-top"></div>
-    
-        <div class="container">
 
 
-            <div class="right">
-                <div class="title">Bem-vindo ao <span style="color: #FFD600;"> ProFinder</span>, onde o cuidado encontra seu lar.</div>
+    <div class="professional_data column">
+        <div class="scrollable-container">
+            <div class="flex">
+                <h4 class="historic">Histórico de Contratações</h4>
+                <div class="conclusion_inputs">
+                    @foreach (var contratacao in Model)
+                    {
+                        <div class="contract">
+                            <label>Nome do profissional contratado</label>
+                            <input type="text" value="@contratacao.Profissional.NomeUsuario" readonly>
 
-                <div class="benefits">
-                    <img src="~/img/Ok1.png" alt="Ícone de Ok"><span>Encontre cuidadores confiáveis com apenas alguns cliques.</span><br>
-                    <img src="~/img/Ok1.png" alt="Ícone de Ok"><span>Acesso a uma rede de cuidadores profissionais e qualificados, pré-selecionados e avaliados pela comunidade.</span> <br>
-                    <img src="~/img/Ok1.png" alt="Ícone de Ok"><span>Opções de agendamento flexíveis, permitindo que as famílias encontrem cuidadores disponíveis nos horários e datas que melhor se adequam às suas necessidades.</span> <br>
-                    <img src="~/img/Ok1.png" alt="Ícone de Ok"><span>Possibilidade de avaliar e fornecer feedback sobre a experiência com os cuidadores, contribuindo para a transparência e o aprimoramento contínuo da qualidade dos serviços oferecidos.</span>
+                            <label>Histórico de Período contratado</label>
+                            <input type="text" value="@($"Do dia {contratacao.DataInicio:dd/MM/yyyy} às {contratacao.HoraInicio} ao dia {contratacao.DataFim:dd/MM/yyyy} às {contratacao.HoraFim}")" readonly>
+
+
+                            <label>Valor pago ao profissional</label>
+                            <input type="text" value="@contratacao.Valor.ToString("C")" readonly>
+
+                            <form method="post" action="@Url.Action("AvaliarProfissional", "Contratacao")">
+                                <input type="hidden" name="contratacaoId" value="@contratacao.Id" />
+                                <label for="nota">Deixe uma nota para o profissional</label>
+                                <input type="number" name="nota" min="1" max="5" required placeholder="Atribua uma nota de 1 a 5">
+                            
+                                <div class="especiais about">
+                                    <label for="comentario">Comentário</label>
+                                    <textarea placeholder="Conte-nos um pouco sobre sua experiência com este profissional!" name="comentario" required></textarea>
+                                </div>
+
+                           
+                                <div id="btn-order"> 
+                                    <button type="submit" class="cta_btn_primary">Enviar Avaliação</button>
+                                </div>
+                            
+                            </form>
+                        </div>
+                    }
                 </div>
-
-                <div class="btn-area">
-                    Clique no botão abaixo para iniciar essa incrível experiência!
-                    <a href="@Url.Action("Create", "Usuarios")"><button class="cta_btn_primary">Buscar um ProFinder</button></a>
-                </div>
-
-            <div class="phone-area">
-                <img src="/img/Group 11.png" alt="Celular com localização dos profissionais" />
             </div>
-            </div>
-
-            <div class="left">
-                <img src="~/img/home01.png" alt="Cuidador de Idosos">
-                <span>
-                    <p>Cuidador de Idosos</p>
-                    <h6>O serviço oferece cuidadores confiáveis, agendamento flexível e a possibilidade de avaliar a experiência</h6>
-                </span>
-
-                <img src="~/img/home02.png" alt="Cuidador de pessoa com deficiência">
-                <span id="img-2">
-                    <p>Cuidador de Pessoa com Deficiência</p>
-                    <h6>Profissionais qualificados e avaliados diariamente por milhares de usuários.</h6>
-                </span>
-            </div>
-
-            
-
         </div>
-        
-
-
-    <div class="rodape">
-
-        <div class="secao-rodape">
-
-            <p class="rodape-cabecalho">MAPA DO SITE</p>
-            <p class="rodape-text">Quem Somos</p>
-            <p class="rodape-text">Seja um Profinder</p>
-            <p class="rodape-text">Buscar um Profinder</p>
-            <p class="rodape-text">Noticias</p>
-
-        </div>
-
-        <div class="secao-rodape">
-
-            <p class="rodape-cabecalho">PRECISA DE AJUDA?</p>
-            <span class="rodape-text"><img src="~/img/Chat1.png" alt="ícone de chat">Chat on-line</span><br>
-            <span class="rodape-text"><img src="~/img/Envelope1.png" alt="ícone de email">E-mail</span><br>
-            <span class="rodape-text"><img src="~/img/Phone Message1.png" alt="ícone de fale conosco">Fale conosco</span><br>
-            <span class="rodape-text"><img src="~/img/WhatsApp.png" alt="ícone do whatsapp">Whatsapp</span>
-
-        </div>
-
-        <div class="secao-rodape-redes-sociais">
-            <p>ENCONTRE-NOS NAS REDES SOCIAIS</p>
-            <img src="~/img/linkdin.png" alt="">
-            <img src="~/img/instagram home.png" alt="">
-            <img src="~/img/facebook.png" alt="">
-            <img src="~/img/youtube.png" alt="">
-
-        </div>
-
     </div>
-
 
     <footer id="home-footer">
         <div class="copy">
@@ -200,7 +145,5 @@
             <p>&copy; 2024 ProFinder. Todos os direitos reservados.</p>
         </div>
     </footer>
-
 </body>
-
 </html>

@@ -49,6 +49,7 @@
                             <th>Data de Fim</th>
                             <th>Hora de Início</th>
                             <th>Hora de Fim</th>
+                            <th>Valor Acordado</th>
                             <th>Resposta</th>
                         </tr>
                     </thead>
@@ -71,6 +72,7 @@
                                 <td>@solicitacao.DataFim.ToString("dd/MM/yyyy")</td>
                                 <td>@solicitacao.HoraInicio</td>
                                 <td>@solicitacao.HoraFim</td>
+                                <td>@solicitacao.Valor.ToString("C")</td>
                                 <td>
                                     @if (solicitacao.Status == "Pendente")
                                     {
@@ -96,7 +98,7 @@
     <footer id="home-footer">
         <div class="copy">
             <img src="~/img/logo.png" alt="">
-            <p>&copy; 2023 ProFinder. Todos os direitos reservados.</p>
+            <p>&copy; 2024 ProFinder. Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>

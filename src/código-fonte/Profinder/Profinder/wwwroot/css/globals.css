@@ -146,7 +146,9 @@ img {
 
 .copy img {
     vertical-align: middle;
-    margin-right: 10px;
+    max-width: 150px;
+    height: 70px;
+
 }
 
 .container-navegation {
@@ -362,7 +364,13 @@ img {
 /* AREA DE RESPONSIVIDADE - HEADER */
 @media screen and (max-width:1260px) {
     .login-area {
-        margin-left: 5%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .area-login {
+        width: auto;
+        height: 50px;
     }
 }
 
@@ -479,6 +487,7 @@ img {
         width: 100%;
         text-align: center;
         margin-bottom: 2%;
+        margin-top: 2%;
     }
 
     .nav-logged {

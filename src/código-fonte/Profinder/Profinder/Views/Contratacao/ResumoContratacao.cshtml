@@ -1,0 +1,74 @@
+﻿@model ResumoContratacaoViewModel
+
+@{
+    ViewData["Title"] = "Resumo da Contratação";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/globals.css">
+    <link rel="stylesheet" href="~/css/minhas_contratacoes.css">
+    <link rel="stylesheet" href="~/css/area_profissionais.css">
+    <link rel="icon" href="/img/logo.png" type="image/x-icon">
+    <script defer src="~/js/avaliation_modal.js"></script>
+    <script defer src="~/js/set_observation.js"></script>
+    <title>ProFinder - Resumo da Contratação</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-navegation">
+            <a href="@Url.Action("Index", "Home")"><img class="img-header" src="/img/logo.png" alt="Logo do site"></a>
+
+            <div class="list-menu-finder">
+                <a href="@Url.Action("AreaProfissionais", "Usuarios")"><li>Profissionais</li></a>
+                <a href="@Url.Action("MinhasContratacoes", "Home")"><li>Minhas Contratações</li></a>
+                <a asp-action="Edit" asp-controller="Usuarios" asp-route-id="@User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value" class="account-li"><li>Meu Perfil</li></a>
+                <a asp-area="" asp-controller="Usuarios" asp-action="Logout"><li>Sair</li></a>
+            </div>
+        </div>
+    </header>
+    <div class="line-style-top"></div>
+
+    <main>
+        <div class="hiring-area">
+            <div class="hiring-container">
+                <div class="stage">
+                    Nome do Profissional
+                    <p id="no-profile">@Model.NomeProfissional</p>
+                </div>
+                <div class="stage">
+                    Data e Hora do Serviço
+                    <p id="no-profile">@Model.DataHoraServico</p>
+                </div>
+                <div class="stage">
+                    Endereço do Cliente
+                    <p id="no-profile">@Model.EnderecoCliente</p>
+                </div>
+                <div class="stage">
+                    Valor Pago
+                    <p id="no-profile">@Model.ValorPago.ToString("C")</p>
+                </div>
+                <div class="stage">
+                    Data do Pagamento
+                    <p id="no-profile">@Model.DataPagamento.ToString("dd/MM/yyyy")</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="navega-contratacoes">
+            <a href="@Url.Action("MinhasContratacoes", "Home")" class="cta_btn_primary">Ver Histórico de Contratações</a>
+        </div>
+    </main>
+</body>
+
+<footer id="home-footer">
+    <div class="copy">
+        <img src="~/img/logo.png" alt="">
+        <p>&copy; 2024 ProFinder. Todos os direitos reservados.</p>
+    </div>
+</footer>
+</html>

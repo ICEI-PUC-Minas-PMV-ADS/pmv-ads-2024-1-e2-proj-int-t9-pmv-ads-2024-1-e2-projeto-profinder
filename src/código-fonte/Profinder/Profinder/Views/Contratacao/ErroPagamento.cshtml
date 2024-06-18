@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/globals.css">
+    <link rel="stylesheet" href="~/css/contratacao.css">
+    <title>Erro de Pagamento</title>
+</head>
+<body>
+    <header>
+        <div class="container-navegation">
+            <a href="@Url.Action("Index", "Home")">
+                <img class="img-header" src="/img/logo.png" alt="Logo do site">
+            </a>
+            <div class="list-menu-etapa">
+                <li>Erro de Pagamento</li>
+            </div>
+            <a href="@Url.Action("Index", "Home")" style="margin-right: 5%; text-decoration: none;"><span>Voltar</span></a>
+        </div>
+    </header>
+    <div class="line-style-top"></div>
+
+    <div class="professional_data column">
+        <div class="flex" style="flex-direction: column; max-height: 600px; height: 100%; justify-content: space-between;">
+            <h6 class="title-right" style="margin-bottom: 10px;">Ocorreu um erro no processamento do pagamento.</h6>
+            <p>Por favor, tente novamente mais tarde.</p>
+        </div>
+    </div>
+
+    <footer id="home-footer">
+        <div class="copy">
+            <img src="~/img/logo.png" alt="">
+            <p>&copy; 2024 ProFinder. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

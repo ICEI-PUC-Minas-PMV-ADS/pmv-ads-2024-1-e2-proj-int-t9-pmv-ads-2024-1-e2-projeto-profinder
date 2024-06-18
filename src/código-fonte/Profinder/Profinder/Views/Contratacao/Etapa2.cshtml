@@ -34,62 +34,54 @@
     </header>
     <div class="line-style-top"></div>
 
-        <div class="icon-text">
-            <i class="fa-regular fa-hourglass-half"
-               style="margin-right: 10px; margin-bottom: 10px; color: #ffd600; font-size: 55px;"></i>
-
-            <h6> Etapa de Análise do Agendamento</h6><span class="info-icon">i</span>
-            <div class="info-bubble">
-                Nesta etapa o profissional irá visualizar e análisar a proposta feita e você poderá ver
-                o progresso.
-            </div>
-            <div id="error-message" class="error-message">
-                <span>Por favor, preencha todos os campos obrigatórios!</span>
-                <div id="progress-bar" class="progress-bar"></div>
-                <div id="error-timer" class="error-timer"></div>
-            </div>
+    <div class="icon-text">
+        <i class="fa-regular fa-hourglass-half" style="margin-right: 10px; margin-bottom: 10px; color: #ffd600; font-size: 55px;"></i>
+        <h6> Etapa de Análise do Agendamento</h6><span class="info-icon">i</span>
+        <div class="info-bubble">
+            Nesta etapa o profissional irá visualizar e análisar a proposta feita e você poderá ver o progresso.
         </div>
+        <div id="error-message" class="error-message">
+            <span>Por favor, preencha todos os campos obrigatórios!</span>
+            <div id="progress-bar" class="progress-bar"></div>
+            <div id="error-timer" class="error-timer"></div>
+        </div>
+    </div>
 
-    
-        <div class="professional_data column">
-            <div class="flex"
-
-                
-
-                <div class="vertical-progress-container">
-                    <div class="vertical-step">
-                        <div class="vertical-step-number">1<i class="fa-solid fa-check"></i></div>
-                        <div class="vertical-step-label">
-                            Aguardando confirmação de agendamento pelo Profissional selecionado.
-                        </div>
+    <div class="professional_data column">
+        <div class="flex">
+            <div class="vertical-progress-container">
+                <div class="vertical-step">
+                    <div class="vertical-step-number">1<i class="fa-solid fa-check"></i></div>
+                    <div class="vertical-step-label">
+                        Aguardando confirmação de agendamento pelo Profissional selecionado.
                     </div>
-                    <div class="vertical-progress-line"></div>
-                    <div class="vertical-step">
-                        <div class="vertical-step-number">2<i class="fa-solid fa-check"></i></div>
-                        <div class="vertical-step-label">
+                </div>
+                <div class="vertical-progress-line"></div>
+                <div class="vertical-step">
+                    <div class="vertical-step-number">2<i class="fa-solid fa-check"></i></div>
+                    <div class="vertical-step-label">
                         <p id="status" data-status="@Model.Status"><strong>Status atual da sua solicitação:</strong> @Model.Status</p>
-                        </div>
                     </div>
-                    <div class="vertical-progress-line"></div>
-                    <div class="vertical-step">
-                        <div class="vertical-step-number">3<i class="fa-solid fa-check"></i></div>
-                        <div class="vertical-step-label">Após confirmação, o botão abaixo ficará habilitado para prosseguir para a próxima etapa!</div>
-                    </div>
+                </div>
+                <div class="vertical-progress-line"></div>
+                <div class="vertical-step">
+                    <div class="vertical-step-number">3<i class="fa-solid fa-check"></i></div>
+                    <div class="vertical-step-label">Após confirmação, o botão abaixo ficará habilitado para prosseguir para a próxima etapa!</div>
+                </div>
 
-                    <div class="area-ajs">
-                        <button class="cta_btn_primary" id="btnAvancar" disabled>Avançar</button>
-                    </div>
-                    
-                
+                <div class="area-ajs">
+                    <form method="post" action="@Url.Action("Etapa3", "Contratacao", new { id = @Model.Id })">
+                        <button type="submit" class="cta_btn_primary" id="btnAvancar" @(Model.Status == "Confirmado" ? "" : "disabled")>Avançar</button>
+                    </form>
                 </div>
             </div>
         </div>
-        
+    </div>
 </body>
 <footer id="home-footer">
     <div class="copy">
         <img src="~/img/logo.png" alt="">
-        <p>&copy; 2023 ProFinder. Todos os direitos reservados.</p>
+        <p>&copy; 2024 ProFinder. Todos os direitos reservados.</p>
     </div>
 </footer>
 </html>
