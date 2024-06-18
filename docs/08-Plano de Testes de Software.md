@@ -58,10 +58,10 @@
 | Step 1 	| Acessar um navegador e inserir a url do sistema <br>www.profinder.com.br<br> |
 | Step 2 	| Fazer login como Usuário
 | Step 3 	| Acessar a tela >> Profissionais  |
-| Step 4 	| Acessar barra de pesquisa|
-| Step 5 	| Inserir busca desejada |
-| Step 6 	| Os cards serão reposicionados conforme busca |
-| Resultado esperado | Uma vez que há co-relação com algum dado inserido no cadastro do profissional, o usuário deverá visualizar a lista conforme busca inserida |
+| Step 4 	| Selecionar através dos filtros disponíveis o profissional e sua especialidade, caso deseje para este último|
+| Step 5 	| Os filtros selecionados deverão ser exibidos em uma linha resumo para que o usuário saiba o que será buscado quando aplicá-los |
+| Step 6 	| Clicar em Aplicar para que o filtro retorne suas seleções |
+| Resultado esperado | Deverá ser exibido uma lista de profissionais apenas com as seleções indicadas pelo usuário para tipo de profissional e especialidade |
 |  	|  	|
 
 | **Caso de Teste** 	| **CT-06 – Entrar em contato com o profissional para Agendamento** 	|
