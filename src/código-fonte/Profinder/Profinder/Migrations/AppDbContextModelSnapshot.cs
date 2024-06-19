@@ -22,6 +22,39 @@ namespace Profinder.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Profinder.Models.Avaliacao", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Comentario")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ContratacaoId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DataAvaliacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Nota")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProfissionalId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ContratacaoId")
+                        .IsUnique();
+
+                    b.HasIndex("ProfissionalId");
+
+                    b.ToTable("Avaliacoes");
+                });
+
             modelBuilder.Entity("Profinder.Models.Contratacao", b =>
                 {
                     b.Property<int>("Id")
@@ -53,6 +86,9 @@ namespace Profinder.Migrations
 
                     b.Property<string>("Status")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Valor")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 
@@ -170,6 +206,25 @@ namespace Profinder.Migrations
                     b.HasDiscriminator().HasValue("Profissional");
                 });
 
+            modelBuilder.Entity("Profinder.Models.Avaliacao", b =>
+                {
+                    b.HasOne("Profinder.Models.Contratacao", "Contratacao")
+                        .WithOne("Avaliacao")
+                        .HasForeignKey("Profinder.Models.Avaliacao", "ContratacaoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Profinder.Models.Profissional", "Profissional")
+                        .WithMany()
+                        .HasForeignKey("ProfissionalId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Contratacao");
+
+                    b.Navigation("Profissional");
+                });
+
             modelBuilder.Entity("Profinder.Models.Contratacao", b =>
                 {
                     b.HasOne("Profinder.Models.Usuario", "Cliente")
@@ -187,6 +242,11 @@ namespace Profinder.Migrations
                     b.Navigation("Cliente");
 
                     b.Navigation("Profissional");
+                });
+
+            modelBuilder.Entity("Profinder.Models.Contratacao", b =>
+                {
+                    b.Navigation("Avaliacao");
                 });
 #pragma warning restore 612, 618
         }

@@ -40,3 +40,4 @@ function showNotification(message) {
         modal.classList.add("show");
     }
 }
+

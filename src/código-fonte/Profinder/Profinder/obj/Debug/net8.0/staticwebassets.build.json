@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2QDjJhshOJV36emMl9GVnT00BRTrTPBsLg0IE5pSxPo=",
+  "Hash": "hqugz+/5WR1KYenbyIarQJZhgGEk2ie1wK1HK7ydUnk=",
   "Source": "Profinder",
   "BasePath": "_content/Profinder",
   "Mode": "Default",
@@ -623,6 +623,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\filters.png"
+    },
+    {
+      "Identity": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\img\\Group 11.png",
+      "SourceId": "Profinder",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\",
+      "BasePath": "_content/Profinder",
+      "RelativePath": "img/Group 11.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Group 11.png"
     },
     {
       "Identity": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\img\\home01.png",

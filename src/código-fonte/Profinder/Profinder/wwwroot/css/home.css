@@ -231,6 +231,17 @@
     color: #fce775;
 }
 
+.notification-icon {
+    background-color: #FFD600; /* Cor de fundo */
+    color: black; /* Cor do texto */
+    font-size: 12px; /* Tamanho da fonte */
+    border-radius: 50%; /* Bordas arredondadas para formato de círculo */
+    padding: 2px 9px; /* Espaçamento interno */
+    margin-left: 5px; /* Espaçamento à esquerda para separar do texto */
+    
+}
+
+
 
 @media screen and (max-width:450px) {
     .tabela {
@@ -297,3 +308,5 @@
         width: 100%;
     }
 }
+
+

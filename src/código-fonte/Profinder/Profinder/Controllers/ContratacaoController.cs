@@ -8,10 +8,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-
-
 namespace Profinder.Controllers
-
 {
     public class ContratacaoController : Controller
     {
@@ -25,7 +22,7 @@ namespace Profinder.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> RegistrarContratacao(int profissionalId, string detalhesPaciente, DateTime dataInicio, DateTime dataFim, TimeSpan horaInicio, TimeSpan horaFim)
+        public async Task<IActionResult> RegistrarContratacao(int profissionalId, string detalhesPaciente, DateTime dataInicio, DateTime dataFim, TimeSpan horaInicio, TimeSpan horaFim, decimal valor)
         {
             var profissional = _context.Usuarios.FirstOrDefault(u => u.Id == profissionalId);
             if (profissional == null) return NotFound("Profissional não encontrado.");
@@ -43,15 +40,14 @@ namespace Profinder.Controllers
                 DataFim = dataFim,
                 HoraInicio = horaInicio,
                 HoraFim = horaFim,
-                Status = "Pendente" // Adicione um status inicial
+                Valor = valor,
+                Status = "Pendente"
             };
 
             _context.Contratacoes.Add(contratacao);
             await _context.SaveChangesAsync();
 
-            // Enviar notificação para o profissional
-            var hubContext = HttpContext.RequestServices.GetRequiredService<IHubContext<NotificationHub>>();
-            await hubContext.Clients.User(profissionalId.ToString()).SendAsync("ReceiveNotification", "Você tem uma nova solicitação de agendamento.");
+            await _hubContext.Clients.User(profissionalId.ToString()).SendAsync("ReceiveNotification", "Você tem uma nova solicitação de agendamento.");
 
             return RedirectToAction("Etapa2", new { id = contratacao.Id });
         }
@@ -64,12 +60,29 @@ namespace Profinder.Controllers
             return View(contratacao);
         }
 
-        public IActionResult Etapa3()
+        public IActionResult Etapa3(int id)
         {
-            
-            return View();
-        }
+            var contratacao = _context.Contratacoes
+                .Include(c => c.Profissional)
+                .Include(c => c.Cliente)
+                .FirstOrDefault(c => c.Id == id);
 
+            if (contratacao == null)
+            {
+                return NotFound();
+            }
+
+            var viewModel = new Etapa3ViewModel
+            {
+                NomeProfissional = contratacao.Profissional.NomeUsuario,
+                DataHoraServico = $"Do dia {contratacao.DataInicio:dd/MM/yyyy} às {contratacao.HoraInicio} ao dia {contratacao.DataFim:dd/MM/yyyy} às {contratacao.HoraFim}",
+                EnderecoCliente = contratacao.Cliente.Endereco,
+                ValorPago = contratacao.Valor
+            };
+
+            ViewBag.ContratacaoId = contratacao.Id;
+            return View(viewModel);
+        }
 
         public IActionResult PedidosPendentes()
         {
@@ -113,7 +126,7 @@ namespace Profinder.Controllers
             if (contratacao == null) return NotFound("Solicitação não encontrada.");
 
             contratacao.Status = resposta == "Aceitar" ? "Confirmado" : "Recusado";
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             // Verificar se ainda há solicitações pendentes para o profissional
             var solicitacoesPendentes = _context.Contratacoes.Any(c => c.ProfissionalId == contratacao.ProfissionalId && c.Status == "Pendente");
@@ -124,6 +137,75 @@ namespace Profinder.Controllers
 
             return RedirectToAction("SolicitarAgendamentos");
         }
+
+        [HttpPost]
+        public async Task<IActionResult> ProcessarPagamento(int ContratacaoId)
+        {
+            var contratacao = _context.Contratacoes
+                .Include(c => c.Profissional)
+                .Include(c => c.Cliente)
+                .FirstOrDefault(c => c.Id == ContratacaoId);
+
+            if (contratacao == null)
+            {
+                return NotFound();
+            }
+
+            // Simulação de pagamento
+            // Aqui você pode integrar com uma API de pagamento real
+            var pagamentoEfetuado = SimularPagamento(contratacao.Valor);
+
+            if (pagamentoEfetuado)
+            {
+                contratacao.Status = "Pago";
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction("MinhasContratacoes");
+            }
+
+            return View("ErroPagamento"); // Crie uma view para exibir erro de pagamento
+        }
+
+        private bool SimularPagamento(decimal valor)
+        {
+            // Simulação de sucesso de pagamento
+            return true;
+        }
+
+        public IActionResult MinhasContratacoes()
+        {
+            int clienteId = GetAuthenticatedUserId();
+            var contratacoes = _context.Contratacoes
+                .Where(c => c.ClienteId == clienteId && c.Status == "Pago")
+                .Include(c => c.Profissional)
+                .ToList();
+
+            return View(contratacoes);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AvaliarProfissional(int contratacaoId, int nota, string comentario)
+        {
+            var contratacao = _context.Contratacoes
+            .Include(c => c.Profissional)
+            .FirstOrDefault(c => c.Id == contratacaoId);
+
+            if (contratacao == null) return NotFound();
+
+            contratacao.Avaliacao = new Avaliacao
+            {
+                Nota = nota,
+                Comentario = comentario,
+                DataAvaliacao = DateTime.Now,
+                ProfissionalId = contratacao.ProfissionalId
+            };
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction("MinhasContratacoes");
+
+        }
+
+        
 
         private int GetAuthenticatedUserId()
         {

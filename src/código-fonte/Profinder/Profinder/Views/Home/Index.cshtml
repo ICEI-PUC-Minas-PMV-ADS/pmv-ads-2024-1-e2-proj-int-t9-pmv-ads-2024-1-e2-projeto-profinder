@@ -14,8 +14,9 @@
     <link rel="icon" href="/img/logo.png" type="image/x-icon">
     <script defer src="~/js/header.js"></script>
     <link rel="stylesheet" href="~/css/solicitacoes.css">
-    <script defer src="~/js/notification.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.10/signalr.min.js"></script>
+    <script defer src="~/js/notification.js"></script> <!-- Move o script de notificação aqui -->
 </head>
 
 <body>
@@ -59,7 +60,11 @@
                     <div class="logo-profinder-logged"><img src="~/img/logo.png" alt="Logo ProFinder"></div>
                     <div class="nav-logged">
                         <a class="nav-link" href="@Url.Action("Index", "Home")"><li class="nav-li">Home</li></a>
-                        <a href="@Url.Action("SolicitarAgendamentos", "Contratacao")"><li class="nav-li">Minhas Solicitações</li></a>
+                        <a href="@Url.Action("SolicitarAgendamentos", "Contratacao")">
+                            <li class="nav-li">Minhas Solicitações
+                                <span id="notification-icon" class="notification-icon"></span>
+                            </li>
+                        </a>
                         <li id="user-dropdown">
                             <a class="account-drop" href="#">Minha Conta</a>
                             <ul id="user-menu" class="dropdown-content" style="display: none;">
@@ -204,3 +209,28 @@
 </body>
 
 </html>
+
+    <script>
+        // Função para atualizar o ícone de notificação
+        function updateNotificationIcon() {
+            // Faz uma requisição AJAX para contar as solicitações pendentes
+            $.ajax({
+                url: '@Url.Action("CountSolicitarAgendamentos", "Contratacao")', // Ajuste o caminho da URL conforme sua rota
+                type: 'GET',
+                success: function (data) {
+                    // Atualiza o ícone de notificação com o número de pendências
+                    var notificationIcon = document.getElementById('notification-icon');
+                    notificationIcon.textContent = data.count; // Assume que o retorno é um objeto JSON com a propriedade 'count'
+                    notificationIcon.style.display = data.count > 0 ? 'inline-block' : 'none'; // Mostra o ícone se houver pendências
+                },
+                error: function () {
+                    console.log('Erro ao obter contagem de solicitações pendentes.');
+                }
+            });
+        }
+
+        // Chama a função inicialmente ao carregar a página
+        $(document).ready(function () {
+            updateNotificationIcon(); // Atualiza o ícone ao carregar a página
+        });
+    </script>

@@ -1,11 +1,3 @@
 {
-  "dependencies": {
-    "mssql2": {
-      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/Profinder20240607215728/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsDefault_1C5149B2E0",
-      "secretStore": "AzureAppSettings",
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/proazure/databases/profinder_azure",
-      "type": "mssql.azure",
-      "connectionId": "ConnectionStrings:Default"
-    }
-  }
+  "dependencies": {}
 }

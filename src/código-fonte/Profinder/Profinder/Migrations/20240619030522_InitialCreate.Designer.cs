@@ -12,18 +12,95 @@ using Profinder.Models;
 namespace Profinder.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240523003750_NovoDb")]
-    partial class NovoDb
+    [Migration("20240619030522_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.5")
+                .HasAnnotation("ProductVersion", "8.0.6")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("Profinder.Models.Avaliacao", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Comentario")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ContratacaoId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DataAvaliacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Nota")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProfissionalId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ContratacaoId")
+                        .IsUnique();
+
+                    b.HasIndex("ProfissionalId");
+
+                    b.ToTable("Avaliacoes");
+                });
+
+            modelBuilder.Entity("Profinder.Models.Contratacao", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ClienteId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DataFim")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataInicio")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DetalhesPaciente")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<TimeSpan>("HoraFim")
+                        .HasColumnType("time");
+
+                    b.Property<TimeSpan>("HoraInicio")
+                        .HasColumnType("time");
+
+                    b.Property<int>("ProfissionalId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Status")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Valor")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClienteId");
+
+                    b.HasIndex("ProfissionalId");
+
+                    b.ToTable("Contratacoes");
+                });
 
             modelBuilder.Entity("Profinder.Models.Usuario", b =>
                 {
@@ -130,6 +207,49 @@ namespace Profinder.Migrations
                     b.HasBaseType("Profinder.Models.Usuario");
 
                     b.HasDiscriminator().HasValue("Profissional");
+                });
+
+            modelBuilder.Entity("Profinder.Models.Avaliacao", b =>
+                {
+                    b.HasOne("Profinder.Models.Contratacao", "Contratacao")
+                        .WithOne("Avaliacao")
+                        .HasForeignKey("Profinder.Models.Avaliacao", "ContratacaoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Profinder.Models.Profissional", "Profissional")
+                        .WithMany()
+                        .HasForeignKey("ProfissionalId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Contratacao");
+
+                    b.Navigation("Profissional");
+                });
+
+            modelBuilder.Entity("Profinder.Models.Contratacao", b =>
+                {
+                    b.HasOne("Profinder.Models.Usuario", "Cliente")
+                        .WithMany()
+                        .HasForeignKey("ClienteId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Profinder.Models.Usuario", "Profissional")
+                        .WithMany()
+                        .HasForeignKey("ProfissionalId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Cliente");
+
+                    b.Navigation("Profissional");
+                });
+
+            modelBuilder.Entity("Profinder.Models.Contratacao", b =>
+                {
+                    b.Navigation("Avaliacao");
                 });
 #pragma warning restore 612, 618
         }

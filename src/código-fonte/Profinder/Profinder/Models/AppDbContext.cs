@@ -10,6 +10,7 @@ namespace Profinder.Models
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Profissional> Profissionais { get; set; }
         public DbSet<Contratacao> Contratacoes { get; set; }
+        public DbSet<Avaliacao> Avaliacoes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

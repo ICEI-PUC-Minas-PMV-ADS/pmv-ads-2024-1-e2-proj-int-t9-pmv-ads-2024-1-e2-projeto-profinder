@@ -1,12 +1,5 @@
 {
   "dependencies": {
-    "mssql1": {
-      "serviceConnectorResourceId": "",
-      "secretStore": "LocalSecretsFile",
-      "resourceId": null,
-      "type": "mssql.local",
-      "connectionId": "ConnectionStrings:DefaultConnection"
-    },
     "storage1": {
       "ignored": "true",
       "type": "storage"
@@ -15,7 +8,7 @@
       "connectionInfo": "Registro do aplicativo: profinderads, Locatário: sga.pucminas.br (sgapucminasbr.onmicrosoft.com - Microsoft Entra ID)",
       "type": "identityapp.default"
     },
-    "mssql2": {
+    "mssql1": {
       "serviceConnectorResourceId": "",
       "secretStore": "LocalSecretsFile",
       "resourceId": null,
