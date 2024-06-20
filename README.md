@@ -21,7 +21,7 @@ O ProFinder é uma plataforma desenvolvida para unir usuários a cuidadores espe
 
 ## Instruções de utilização
 
-A primeira versão encontra-se disponível através do link: **[https://profinder20240607215728.azurewebsites.net/](https://profinder2024ads.azurewebsites.net/)**
+A primeira versão encontra-se disponível através do link: **[[https://profinder20240607215728.azurewebsites.net/](https://profinder2024ads.azurewebsites.net/)](https://profinder2024ads.azurewebsites.net/)**
 
 #### Usuários de teste para acessar aplicação
 #### Perfil de Cliente: <p></p>
