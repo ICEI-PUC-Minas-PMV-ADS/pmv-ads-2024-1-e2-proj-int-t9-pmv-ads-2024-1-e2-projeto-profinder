@@ -21,16 +21,16 @@ O ProFinder é uma plataforma desenvolvida para unir usuários a cuidadores espe
 
 ## Instruções de utilização
 
-A primeira versão encontra-se disponível através do link: **https://profinder20240607215728.azurewebsites.net/**
+A primeira versão encontra-se disponível através do link: **[https://profinder20240607215728.azurewebsites.net/](https://profinder2024ads.azurewebsites.net/)**
 
 #### Usuários de teste para acessar aplicação
 #### Perfil de Cliente: <p></p>
 username: usuario@gmail.com <br>
-senha: 123@usuario
+senha: usuario123
 
 #### Perfil de Profisisonal <p></p>
-username: profissional@gmail.com <br>
-senha: 123@profissional
+username: profissional01@gmail.com <br>
+senha: Profissional123
 
 
 # Documentação
