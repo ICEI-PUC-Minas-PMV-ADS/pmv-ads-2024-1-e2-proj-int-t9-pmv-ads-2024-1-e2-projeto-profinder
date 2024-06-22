@@ -77,6 +77,21 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/assets/46661756/8356119d-e36a-4a55-aba1-46dc5d288a5e
 
+
+| **Caso de Teste** 	| **CT-11 – Visualizar resumo da contratação e opções de pagamento** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	|RF-003 - Deverá conter dados do profissional para agendamento. |
+|Registro de evidência | |
+
+| **Caso de Teste** 	| **CT-12 – Usuário efetivar pagamento** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	|RF-003 - Deverá conter dados do profissional para agendamento. |
+|Registro de evidência | |
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/assets/141466989/da701ca2-a96c-412d-b97a-c2ce0cd7ab72
+
+
 ## Avaliação
 
 Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
