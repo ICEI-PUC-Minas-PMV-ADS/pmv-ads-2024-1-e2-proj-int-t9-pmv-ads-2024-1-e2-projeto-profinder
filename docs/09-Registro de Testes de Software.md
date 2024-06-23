@@ -56,6 +56,17 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/assets/117125295/ea4d1c07-8a93-4735-8add-e22ebf2eeda9
 
+| **Caso de Teste** 	| **CT-07 – Visualizar dados do Profissional** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	|RF-003 - Deverá conter dados do profissional para agendamento. |
+|Registro de evidência | |
+
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/assets/117125295/3b1eb285-d5b6-4141-a86a-1ea9fb0fee33
+
+
+
 | **Caso de Teste** 	| **CT-08 – Redirecionamento para Whatsapp entre Usuário e Profissional** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	|RF-003 - Deverá conter dados do profissional para agendamento. |
