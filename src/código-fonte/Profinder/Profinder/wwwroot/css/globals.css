@@ -156,6 +156,7 @@ img {
     height: 100px;
     align-items: center;
     width: 100%;
+    padding: 10px;
 }
 
 .list-menu {
@@ -190,9 +191,7 @@ img {
     margin-top: 10px;
 }
 
-.img-header {
-    margin-left: 30px;
-}
+
 
 .space {
     margin-left: 10px;
@@ -220,6 +219,7 @@ img {
     flex-wrap: wrap;
     width: 100%;
     border-bottom: 1.5px solid #FFD600;
+    justify-content: center;
 }
 
 .nav li:hover {
@@ -240,12 +240,13 @@ img {
 
 .logo-profinder {
     height: 100px;
-    padding-top: 20px;
-    padding-left: 3%;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .logo-profinder-logged {
     height: 100px;
+    margin-top: 2%;
 }
 
 .nav {

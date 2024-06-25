@@ -4,16 +4,12 @@
       "ignored": "true",
       "type": "storage"
     },
-    "identityapp1": {
-      "connectionInfo": "Registro do aplicativo: profinderads, Locatário: sga.pucminas.br (sgapucminasbr.onmicrosoft.com - Microsoft Entra ID)",
-      "type": "identityapp.default"
-    },
-    "mssql1": {
-      "serviceConnectorResourceId": "",
+    "mssql2": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ServiceLinker/locations/brazilsouth/connectors/ConnectionStringsDefaults_57DF9EEDDD",
       "secretStore": "LocalSecretsFile",
-      "resourceId": null,
-      "type": "mssql.onprem",
-      "connectionId": "ConnectionStrings:Default"
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/prodboazure/databases/new_db_profinder",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:Defaults"
     }
   }
 }

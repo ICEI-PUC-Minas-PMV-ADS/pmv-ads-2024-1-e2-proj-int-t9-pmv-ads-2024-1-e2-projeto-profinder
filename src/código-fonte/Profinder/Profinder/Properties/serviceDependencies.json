@@ -5,7 +5,12 @@
     },
     "mssql1": {
       "type": "mssql",
-      "connectionId": "ConnectionStrings:Default"
+      "connectionId": "ConnectionStrings:Default",
+      "dynamicId": null
+    },
+    "mssql2": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:Defaults"
     }
   }
 }

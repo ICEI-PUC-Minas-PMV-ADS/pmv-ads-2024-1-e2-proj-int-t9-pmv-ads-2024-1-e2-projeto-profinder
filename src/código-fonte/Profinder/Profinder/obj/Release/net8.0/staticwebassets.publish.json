@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GRD8Pd7mhApKY6JqZmD00OL7VnmGWvRodd+txa82clA=",
+  "Hash": "k2X6MhVnqc2gTgQDPszGtpqcw2LKJMkknrzsfqyvWOU=",
   "Source": "Profinder",
   "BasePath": "_content/Profinder",
   "Mode": "Default",
@@ -625,6 +625,25 @@
       "OriginalItemSpec": "wwwroot\\img\\filters.png"
     },
     {
+      "Identity": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\img\\Group 11.png",
+      "SourceId": "Profinder",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\",
+      "BasePath": "_content/Profinder",
+      "RelativePath": "img/Group 11.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Group 11.png"
+    },
+    {
       "Identity": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\img\\home01.png",
       "SourceId": "Profinder",
       "SourceType": "Discovered",
@@ -758,6 +777,25 @@
       "OriginalItemSpec": "wwwroot\\img\\logo.png"
     },
     {
+      "Identity": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\img\\mateus.jpg",
+      "SourceId": "Profinder",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\",
+      "BasePath": "_content/Profinder",
+      "RelativePath": "img/mateus.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\mateus.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\img\\Menu.png",
       "SourceId": "Profinder",
       "SourceType": "Discovered",
@@ -775,6 +813,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Menu.png"
+    },
+    {
+      "Identity": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\img\\no-img.png",
+      "SourceId": "Profinder",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\",
+      "BasePath": "_content/Profinder",
+      "RelativePath": "img/no-img.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\no-img.png"
     },
     {
       "Identity": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\código-fonte\\Profinder\\Profinder\\wwwroot\\img\\Ok1.png",

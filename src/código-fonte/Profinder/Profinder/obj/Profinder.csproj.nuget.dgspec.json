@@ -48,7 +48,7 @@
           "dependencies": {
             "Azure.Identity": {
               "target": "Package",
-              "version": "[1.11.3, )"
+              "version": "[1.12.0, )"
             },
             "Azure.Storage.Blobs": {
               "target": "Package",
@@ -72,11 +72,11 @@
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.6, )"
             },
             "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.6, )"
             },
             "Microsoft.AspNetCore.Authorization": {
               "target": "Package",
@@ -116,15 +116,15 @@
             },
             "Microsoft.Extensions.Azure": {
               "target": "Package",
-              "version": "[1.7.3, )"
+              "version": "[1.7.4, )"
             },
             "Microsoft.Identity.Web": {
               "target": "Package",
-              "version": "[2.16.0, )"
+              "version": "[2.19.1, )"
             },
             "Microsoft.Identity.Web.UI": {
               "target": "Package",
-              "version": "[2.16.0, )"
+              "version": "[2.19.1, )"
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",

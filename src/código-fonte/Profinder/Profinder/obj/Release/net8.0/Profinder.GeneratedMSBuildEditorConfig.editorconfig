@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Bryan\Documents\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\src\código-fonte\Profinder\Profinder
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Bryan/Documents/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/src/código-fonte/Profinder/Profinder/Views/Contratacao/ErroPagamento.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhdGFjYW9cRXJyb1BhZ2FtZW50by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Bryan/Documents/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/src/código-fonte/Profinder/Profinder/Views/Contratacao/Etapa2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhdGFjYW9cRXRhcGEyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,8 +38,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhdGFjYW9cRXRhcGEzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Bryan/Documents/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/src/código-fonte/Profinder/Profinder/Views/Contratacao/MinhasContratacoes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhdGFjYW9cTWluaGFzQ29udHJhdGFjb2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Bryan/Documents/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/src/código-fonte/Profinder/Profinder/Views/Contratacao/PedidosPendentes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhdGFjYW9cUGVkaWRvc1BlbmRlbnRlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bryan/Documents/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/src/código-fonte/Profinder/Profinder/Views/Contratacao/ResumoContratacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhdGFjYW9cUmVzdW1vQ29udHJhdGFjYW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Bryan/Documents/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/src/código-fonte/Profinder/Profinder/Views/Contratacao/SolicitarAgendamentos.cshtml]
@@ -54,10 +66,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bryan/Documents/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/src/código-fonte/Profinder/Profinder/Views/Home/MinhasContratacoes.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNaW5oYXNDb250cmF0YWNvZXMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Bryan/Documents/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/src/código-fonte/Profinder/Profinder/Views/Home/Servicos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZXJ2aWNvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -68,6 +76,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Bryan/Documents/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/src/código-fonte/Profinder/Profinder/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bryan/Documents/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/src/código-fonte/Profinder/Profinder/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Bryan/Documents/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder/src/código-fonte/Profinder/Profinder/Views/Shared/_ValidationScriptsPartial.cshtml]

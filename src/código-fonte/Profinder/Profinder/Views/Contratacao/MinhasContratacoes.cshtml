@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="~/css/minhas_contratacoes.css">
     <link rel="icon" href="/img/logo.png" type="image/x-icon">
     <script defer src="~/js/header.js"></script>
-    
+
     <title>ProFinder - Minhas Contratações</title>
 </head>
 <body>
@@ -19,60 +19,79 @@
         var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
         var userRole = User.FindFirst(System.Security.Claims.ClaimTypes.Role)?.Value;
 
-        if (userRole == "Cliente")
-        {
-            <div class="user-logged">
-                <header class="header">
-                    <div class="logo-profinder-logged"><img src="~/img/logo.png" alt="Logo ProFinder"></div>
-                    <div class="nav-logged">
-                        <a class="nav-link" href="@Url.Action("Index", "Home")"><li class="nav-li">Home</li></a>
-                    
+        <div class="user-logged">
+            <header class="header">
+                <div class="logo-profinder"><a href="@Url.Action("Index", "Home")"><img class="img-header" src="~/img/logo.png" alt="Logo do site"></a></div>
+                <div class="nav-logged">
+                    <a class="nav-link" href="@Url.Action("Index", "Home")"><li class="nav-li">Home</li></a>
+                    @if (userRole == "Cliente")
+                    {
                         <a class="nav-link" href="@Url.Action("AreaProfissionais", "Usuarios")"><li class="nav-li">Profissionais</li></a>
-                        <li id="user-dropdown">
-                            <a class="account-drop" href="#">Minha Conta</a>
-                            <ul id="user-menu" class="dropdown-content" style="display: none;">
-                                <li class="toggle-options"><a asp-action="Edit" asp-controller="Usuarios" asp-route-id="@userId" class="account-li">Perfil</a></li>
-                                <li class="toggle-options"><a class="account-li" href="@Url.Action("MinhasContratacoes", "Home")">Minhas contratações</a></li>
-                                <li class="toggle-options"><a class="account-li" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
-                            </ul>
-                        </li>
-                    </div>
-                </header>
-               
-                <!-- Conteúdo específico para Cliente -->
-            </div>
-        }
-        else if (userRole == "Profissional")
-        {
-            <div class="user-logged">
-                <header class="header">
-                    <div class="logo-profinder-logged"><img src="~/img/logo.png" alt="Logo ProFinder"></div>
-                    <div class="nav-logged">
-                        <a class="nav-link" href="@Url.Action("Index", "Home")"><li class="nav-li">Home</li></a>
+                    }
+                    else if (userRole == "Profissional")
+                    {
                         <a href="@Url.Action("SolicitarAgendamentos", "Contratacao")"><li class="nav-li">Minhas Solicitações</li></a>
-                        <li id="user-dropdown">
-                            <a class="account-drop" href="#">Minha Conta</a>
-                            <ul id="user-menu" class="dropdown-content" style="display: none;">
-                                <li class="toggle-options"><a asp-action="Edit" asp-controller="Usuarios" asp-route-id="@userId" class="account-li">Perfil</a></li>
-                                <li class="toggle-options"><a class="account-li" href="@Url.Action("MinhasContratacoes", "Home")">Minhas contratações</a></li>
-                                <li class="toggle-options"><a class="account-li" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
-                            </ul>
-                        </li>
+                    }
+                    <li id="user-dropdown">
+                        <a class="account-drop" href="#">Minha Conta</a>
+                        <ul id="user-menu" class="dropdown-content" style="display: none;">
+                            <li class="toggle-options"><a asp-action="Edit" asp-controller="Usuarios" asp-route-id="@userId" class="account-li">Perfil</a></li>
+                            <li class="toggle-options"><a class="account-li" href="@Url.Action("MinhasContratacoes", "Contratacao")">Minhas contratações</a></li>
+                            <li class="toggle-options"><a class="account-li" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </header>
+        </div>
+
+        <div class="professional_data column">
+            <div class="scrollable-container">
+                <div class="flex">
+                    <h4 class="historic">Histórico de Contratações</h4>
+                    <div class="conclusion_inputs">
+                        @foreach (var contratacao in Model)
+                        {
+                            <div class="contract">
+                                @if (userRole == "Cliente")
+                                {
+                                    <label>Nome do profissional contratado</label>
+                                    <input type="text" value="@contratacao.Profissional.NomeUsuario" readonly>
+                                }
+                                else if (userRole == "Profissional")
+                                {
+                                    <label>Nome do paciente</label>
+                                    <input type="text" value="@contratacao.Cliente.NomeUsuario" readonly>
+                                }
+
+                                <label>Histórico de Período contratado</label>
+                                <input type="text" value="@($"Do dia {contratacao.DataInicio:dd/MM/yyyy} às {contratacao.HoraInicio} ao dia {contratacao.DataFim:dd/MM/yyyy} às {contratacao.HoraFim}")" readonly>
+
+                                <label>Valor recebido pelo serviço</label>
+                                <input type="text" value="@contratacao.Valor.ToString("C")" readonly>
+
+                                @if (userRole == "Cliente")
+                                {
+                                    <form method="post" action="@Url.Action("AvaliarProfissional", "Contratacao")">
+                                        <input type="hidden" name="contratacaoId" value="@contratacao.Id" />
+                                        <label for="nota">Deixe uma nota para o profissional</label>
+                                        <input type="number" name="nota" min="1" max="5" required placeholder="Atribua uma nota de 1 a 5">
+
+                                        <div class="especiais about">
+                                            <label for="comentario">Comentário</label>
+                                            <textarea placeholder="Conte-nos um pouco sobre sua experiência com este profissional!" name="comentario" required></textarea>
+                                        </div>
+
+                                        <div id="btn-order">
+                                            <button type="submit" class="cta_btn_primary">Enviar Avaliação</button>
+                                        </div>
+                                    </form>
+                                }
+                            </div>
+                        }
                     </div>
-                </header>
-                <div class="ajust-welcome">
-                    <h2 id="welcome_name">Seja Bem-vindo, ProFinder!</h2>
-                </div>
-                <!-- Conteúdo específico para Profissional -->
-            </div>
-            <div id="notificationModal" class="modal">
-                <!-- Adiciona a classe "show" para exibir o modal por padrão -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p id="modalMessage">Você tem uma nova solicitação de agendamento.</p>
                 </div>
             </div>
-        }
+        </div>
     }
     else
     {
@@ -96,48 +115,6 @@
             </header>
         </div>
     }
-
-
-    <div class="professional_data column">
-        <div class="scrollable-container">
-            <div class="flex">
-                <h4 class="historic">Histórico de Contratações</h4>
-                <div class="conclusion_inputs">
-                    @foreach (var contratacao in Model)
-                    {
-                        <div class="contract">
-                            <label>Nome do profissional contratado</label>
-                            <input type="text" value="@contratacao.Profissional.NomeUsuario" readonly>
-
-                            <label>Histórico de Período contratado</label>
-                            <input type="text" value="@($"Do dia {contratacao.DataInicio:dd/MM/yyyy} às {contratacao.HoraInicio} ao dia {contratacao.DataFim:dd/MM/yyyy} às {contratacao.HoraFim}")" readonly>
-
-
-                            <label>Valor pago ao profissional</label>
-                            <input type="text" value="@contratacao.Valor.ToString("C")" readonly>
-
-                            <form method="post" action="@Url.Action("AvaliarProfissional", "Contratacao")">
-                                <input type="hidden" name="contratacaoId" value="@contratacao.Id" />
-                                <label for="nota">Deixe uma nota para o profissional</label>
-                                <input type="number" name="nota" min="1" max="5" required placeholder="Atribua uma nota de 1 a 5">
-                            
-                                <div class="especiais about">
-                                    <label for="comentario">Comentário</label>
-                                    <textarea placeholder="Conte-nos um pouco sobre sua experiência com este profissional!" name="comentario" required></textarea>
-                                </div>
-
-                           
-                                <div id="btn-order"> 
-                                    <button type="submit" class="cta_btn_primary">Enviar Avaliação</button>
-                                </div>
-                            
-                            </form>
-                        </div>
-                    }
-                </div>
-            </div>
-        </div>
-    </div>
 
     <footer id="home-footer">
         <div class="copy">

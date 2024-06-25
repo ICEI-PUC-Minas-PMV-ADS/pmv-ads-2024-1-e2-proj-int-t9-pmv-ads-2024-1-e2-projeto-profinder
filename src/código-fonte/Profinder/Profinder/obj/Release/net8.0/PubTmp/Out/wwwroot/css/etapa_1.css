@@ -186,6 +186,15 @@
     padding: 2px;
 }
 
+.value-area {
+    margin-left: 5px;
+    border: 1px solid #FFD600;
+    border-radius: 7px;
+    height: 20px;
+    color: #8f8f8f;
+    padding: 2px;
+}
+
 #btnAvancar:disabled {
     background-color: #C5C5C5;
     color: #ffffff;

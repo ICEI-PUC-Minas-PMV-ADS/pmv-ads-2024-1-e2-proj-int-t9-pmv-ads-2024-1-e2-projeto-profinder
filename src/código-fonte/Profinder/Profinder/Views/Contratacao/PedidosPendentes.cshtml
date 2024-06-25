@@ -9,6 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="~/css/globals.css">
     <link rel="stylesheet" href="~/css/pendentes.css">
     <title>ProFinder - Solicitações</title>
@@ -18,7 +19,7 @@
         <div class="container-navegation">
             <a href="@Url.Action("Index", "Home")"><img class="img-header" src="~/img/logo.png" alt="Logo do site"></a>
             <div class="list-menu">
-                <li>Solicitações Pendentes</li>
+                <li>Minhas Solicitações</li>
             </div>
             <a href="@Url.Action("AreaProfissionais", "Usuarios")" style="margin-right: 5%; text-decoration: none;"><span>Voltar</span></a>
         </div>
@@ -26,8 +27,11 @@
     <div class="line-style-top"></div>
         <div class="ajustment-page">
             <div class="container-geral">
+            
                <div class="scrollable-container">
+                <p>Status de suas solicitações</p>
                     <table class="table-container">
+                        
                         <thead class="table-style">
                             <tr>
                                 <th>Profissional</th>

@@ -87,13 +87,14 @@ namespace Profinder.Controllers
         public IActionResult PedidosPendentes()
         {
             int clienteId = GetAuthenticatedUserId();
-            var pedidos = _context.Contratacoes
-                .Where(c => c.ClienteId == clienteId)
+            var pedidosPendentes = _context.Contratacoes
+                .Where(c => c.ClienteId == clienteId && (c.Status == "Pendente" || c.Status == "Confirmado" || c.Status == "Pago" || c.Status == "Recusado"))
                 .Include(c => c.Profissional)
                 .ToList();
 
-            return View(pedidos);
+            return View(pedidosPendentes);
         }
+
 
         public IActionResult SolicitarAgendamentos()
         {
@@ -174,11 +175,29 @@ namespace Profinder.Controllers
 
         public IActionResult MinhasContratacoes()
         {
-            int clienteId = GetAuthenticatedUserId();
-            var contratacoes = _context.Contratacoes
-                .Where(c => c.ClienteId == clienteId && c.Status == "Pago")
-                .Include(c => c.Profissional)
-                .ToList();
+            var userId = GetAuthenticatedUserId();
+            var userRole = User.FindFirstValue(ClaimTypes.Role);
+
+            IEnumerable<Contratacao> contratacoes;
+
+            if (userRole == "Cliente")
+            {
+                contratacoes = _context.Contratacoes
+                    .Where(c => c.ClienteId == userId && c.Status == "Pago")
+                    .Include(c => c.Profissional)
+                    .ToList();
+            }
+            else if (userRole == "Profissional")
+            {
+                contratacoes = _context.Contratacoes
+                    .Where(c => c.ProfissionalId == userId && c.Status == "Pago")
+                    .Include(c => c.Cliente)
+                    .ToList();
+            }
+            else
+            {
+                return Unauthorized();
+            }
 
             return View(contratacoes);
         }

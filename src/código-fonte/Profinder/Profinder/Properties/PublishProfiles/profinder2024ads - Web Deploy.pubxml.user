@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPjpjlaJKP0mVEN5ZLKf4FQAAAAACAAAAAAAQZgAAAAEAACAAAACBUj+BKfRrXdJ3NGdNuvknuAKHoqu52S3NiCgwYKsckQAAAAAOgAAAAAIAACAAAAC2qrXfSbmaXFPDDUkElc9lfZmj3/GyhUbATy3PqNn+QoAAAABk618ceSTpkaEX62BxYpv+wQKxBFaMK0o+0kCETAegTuhB2IWbwHk3XBOu3/cZf325Ketfc3GLicVjNT0Fbjb4PIkyNyWbm6fqW+Sii4YAfUTXGxM1bxf428mNc4Y1Re1vDsOjyjb41V5OdShH2UgG0aSHQ9TlvdlPRXVQANn+X0AAAACWRzLFVOXhuDBYGRcmykbrXxPhCDuJoZoLk7jR8HYGK2BnKYVIfQ0ioePwxq0fz88vS43vlEFj36QPx1HBkCAc</EncryptedPassword>
+    <History>True|2024-06-25T01:51:21.8914193Z||;True|2024-06-24T12:25:45.8650575-03:00||;True|2024-06-20T18:44:21.5801024-03:00||;True|2024-06-20T18:04:09.4841560-03:00||;True|2024-06-19T20:30:51.2943860-03:00||;False|2024-06-19T20:27:03.0314236-03:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ConnectionStrings">
+      <Value>Server=tcp:prodboazure.database.windows.net,1433%3bInitial Catalog=new_db_profinder%3bPersist Security Info=False%3bUser ID=1498305%40sga.pucminas.br%3bPassword=Dodo91676755%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bAuthentication=Active Directory Password%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

@@ -30,46 +30,38 @@ namespace Profinder.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Login(string email, string senha)
         {
-            // Verifica se o e-mail e a senha não são nulos ou vazios
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(senha))
             {
                 ViewBag.Message = "E-mail e/ou senha inválidos!";
                 return View();
             }
 
-            // Busca o usuário pelo e-mail
             var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == email);
 
-            // Verifica se o usuário existe
             if (usuario == null)
             {
                 ViewBag.Message = "E-mail e/ou senha inválidos!";
                 return View();
             }
 
-            // Verifica a senha usando BCrypt
             bool senhaOk = BCrypt.Net.BCrypt.Verify(senha, usuario.Senha);
 
-            // Se a senha estiver incorreta
             if (!senhaOk)
             {
                 ViewBag.Message = "E-mail e/ou senha inválidos!";
                 return View();
             }
 
-            // Se a senha estiver correta
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, usuario.NomeUsuario),
-                new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),  // Mudança aqui para armazenar o ID
+                new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
                 new Claim(ClaimTypes.Role, usuario.Perfil.ToString())
             };
-
 
             var usuarioIdentity = new ClaimsIdentity(claims, "login");
             var principal = new ClaimsPrincipal(usuarioIdentity);
 
-            // Define as propriedades de autenticação
             var authenticationProperties = new AuthenticationProperties
             {
                 AllowRefresh = true,
@@ -77,10 +69,8 @@ namespace Profinder.Controllers
                 IsPersistent = true,
             };
 
-            // Faz login do usuário
             await HttpContext.SignInAsync(principal, authenticationProperties);
 
-            // Redireciona para a página de edição do perfil do usuário
             return RedirectToAction("Index", "Home");
         }
 
@@ -88,7 +78,6 @@ namespace Profinder.Controllers
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();
-
             return RedirectToAction("Index", "Home");
         }
 
@@ -109,20 +98,17 @@ namespace Profinder.Controllers
             return View(usuario);
         }
 
-        // Exibir a página para o usuário
         public IActionResult Create()
         {
             return View();
         }
 
-        // Ao indicar a requisição como "POST", automaticamente o .NET compreende que a primeira propriedade executará o método GET
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id, NomeUsuario, Email, CPF, DataNascimento, Telefone, Endereco, NumeroResidencia, Cep, Cidade, Bairro, Complemento, Senha, ProcurandoCuidadorIdosos, ProcurandoCuidadorDeficiencia, Perfil, Habilidades, Experiencia, Formacao, SobreMim, CNPJ")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
-                // Verificar se o email já está em uso
                 bool isEmailInUse = await IsEmailInUse(usuario.Email);
                 if (isEmailInUse)
                 {
@@ -185,8 +171,7 @@ namespace Profinder.Controllers
 
                 await _context.SaveChangesAsync();
 
-                // Mensagem exibida após cadastro com sucesso
-                TempData["SuccessMessage"] = "Parabéns, o seu cadastro foi realizado com sucesso! Faça o login =)"; 
+                TempData["SuccessMessage"] = "Parabéns, o seu cadastro foi realizado com sucesso! Faça o login =)";
 
                 return RedirectToAction(nameof(Login));
             }
@@ -195,7 +180,6 @@ namespace Profinder.Controllers
 
         private async Task<bool> IsEmailInUse(string email)
         {
-            // Verifique se o email está em uso no banco de dados
             var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == email);
             return user != null;
         }
@@ -213,12 +197,15 @@ namespace Profinder.Controllers
             {
                 return NotFound();
             }
+
+            ViewBag.Iniciais = GetInitials(usuario.NomeUsuario);
+            ViewBag.NomeCompleto = usuario.NomeUsuario;
+
             return View(usuario);
         }
 
         public async Task<IActionResult> AreaProfissionais()
         {
-            // Filtra os usuários que têm o perfil de "Profissional"
             var profissionais = await _context.Usuarios
                                               .Where(u => u.Perfil == Perfil.Profissional)
                                               .ToListAsync();
@@ -226,10 +213,6 @@ namespace Profinder.Controllers
             return View(profissionais);
         }
 
-
-        // POST: Usuarios/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id, NomeUsuario, Email, CPF, DataNascimento, Telefone, Endereco, NumeroResidencia, Cep, Cidade, Bairro, Complemento, Senha, ProcurandoCuidadorIdosos, ProcurandoCuidadorDeficiencia, Perfil, Habilidades, Experiencia, Formacao, SobreMim, CNPJ")] Usuario usuario)
@@ -249,22 +232,18 @@ namespace Profinder.Controllers
                         return NotFound();
                     }
 
-                    // Verifica se a senha foi alterada
                     if (!string.IsNullOrWhiteSpace(usuario.Senha) && usuario.Senha != existingUsuario.Senha)
                     {
-                        // Criptografa a nova senha
                         usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                     }
                     else
                     {
-                        // Mantém a senha antiga
                         usuario.Senha = existingUsuario.Senha;
                     }
 
                     _context.Update(usuario);
                     await _context.SaveChangesAsync();
 
-                    // Exibe mensagem de sucesso na mesma página
                     ViewBag.SuccessMessage = "Alterações salvas com sucesso!";
                 }
                 catch (DbUpdateConcurrencyException)
@@ -279,7 +258,6 @@ namespace Profinder.Controllers
                     }
                 }
 
-                // Retorna para a mesma view de edição
                 return View(usuario);
             }
             return View(usuario);
@@ -290,7 +268,6 @@ namespace Profinder.Controllers
             return _context.Usuarios.Any(e => e.Id == id);
         }
 
-        // GET: Usuarios/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -307,7 +284,6 @@ namespace Profinder.Controllers
             return View(usuario);
         }
 
-        // POST: Usuarios/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -320,6 +296,17 @@ namespace Profinder.Controllers
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+        }
+
+        private string GetInitials(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                return string.Empty;
+            }
+
+            var initials = string.Join("", name.Split(' ').Select(n => n[0]));
+            return initials.ToUpper();
         }
     }
 }

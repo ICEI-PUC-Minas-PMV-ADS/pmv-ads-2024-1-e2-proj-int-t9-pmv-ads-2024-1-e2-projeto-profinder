@@ -11,12 +11,12 @@ using Microsoft.AspNetCore.SignalR;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ¡rea onde os serviÁos s„o configurados.
+// √Årea onde os servi√ßos s√£o configurados.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
-builder.Services.AddSignalR();  // Adiciona serviÁos do SignalR
+builder.Services.AddSignalR();  // Adiciona servi√ßos do SignalR
 
-// ConfiguraÁ„o do Banco de Dados
+// Configura√ß√£o do Banco de Dados
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
@@ -54,7 +54,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 // Map the SignalR hub
-app.MapHub<NotificationHub>("/notificationHub");  // Mapeia o Hub de NotificaÁıes do SignalR
+app.MapHub<NotificationHub>("/notificationHub");  // Mapeia o Hub de Notifica√ß√µes do SignalR
 
 app.MapControllerRoute(
     name: "contratacao",

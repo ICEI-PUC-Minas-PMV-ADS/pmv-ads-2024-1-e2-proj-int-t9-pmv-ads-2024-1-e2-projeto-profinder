@@ -12,11 +12,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="~/css/globals.css">
     <link rel="stylesheet" href="~/css/area_meu_perfil copy.css">
     <link href="/css/area_profissionais.css" rel="stylesheet" />
-    
-    <script defer src="~/js/meu_perfil.js"></script>
+
+    <script defer src="~/js/header.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
     <title>ProFinder - Meu Perfil</title>
@@ -43,7 +44,7 @@
                             <a class="account-drop" href="#">Minha Conta</a>
                             <ul id="user-menu" class="dropdown-content" style="display: none;">
                                 <li class="toggle-options"><a asp-action="Edit" asp-controller="Usuarios" asp-route-id="@userId" class="account-li">Perfil</a></li>
-                                <li class="toggle-options"><a class="account-li" href="@Url.Action("MinhasContratacoes", "Home")">Minhas contratações</a></li>
+                                <li class="toggle-options"><a class="account-li" href="@Url.Action("MinhasContratacoes", "Contratacao")">Minhas contratações</a></li>
                                 <li class="toggle-options"><a class="account-li" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
                             </ul>
                         </li>
@@ -65,7 +66,7 @@
                             <a class="account-drop" href="#">Minha Conta</a>
                             <ul id="user-menu" class="dropdown-content" style="display: none;">
                                 <li class="toggle-options"><a asp-action="Edit" asp-controller="Usuarios" asp-route-id="@userId" class="account-li">Perfil</a></li>
-                                <li class="toggle-options"><a class="account-li" href="@Url.Action("MinhasContratacoes", "Home")">Minhas contratações</a></li>
+                                <li class="toggle-options"><a class="account-li" href="@Url.Action("MinhasContratacoes", "Contratacao")">Minhas contratações</a></li>
                                 <li class="toggle-options"><a class="account-li" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
                             </ul>
                         </li>
@@ -108,12 +109,12 @@
         <div class="container-profile">
             <div class="detail-top-menu">
                 <div class="detail-circle">
-                    <p>LI</p>
+                    <p>@ViewBag.Iniciais</p>
                 </div>
             </div>
             <div class="detail-bot-menu">
                 <div class="Line1">
-                    <h4>LOREM IPSUM</h4>
+                    <h4>@ViewBag.NomeCompleto</h4>
                 </div>
                 <div class="Line2">
                     <p>DADOS PESSOAIS</p>
@@ -260,7 +261,5 @@
 </html>
 
 @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+    <partial name="_ValidationScriptsPartial" />
 }
