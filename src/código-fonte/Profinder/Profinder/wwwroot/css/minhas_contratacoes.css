@@ -346,9 +346,20 @@ form {
     text-align: start;
 }
 
-/* Aqui será feito o modal de Observações do paciente -----------------*/
+.no-contracts-message {
+    color: #b1b1b1;
+    font-style: italic;
+    margin-top: 150px;
+    font-weight: 300;
+}
 
-#open_set,#disappear_set{
+.no-contracts-message p {
+    font-size: 20px;
+}
+
+
+/* Aqui será feito o modal de Observações do paciente -----------------*/
+#open_set, #disappear_set {
     opacity: 1;
     pointer-events: fill;
 } 

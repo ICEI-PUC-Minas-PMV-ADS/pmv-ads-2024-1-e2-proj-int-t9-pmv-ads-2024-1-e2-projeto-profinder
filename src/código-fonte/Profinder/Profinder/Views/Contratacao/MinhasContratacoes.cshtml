@@ -49,44 +49,53 @@
                 <div class="flex">
                     <h4 class="historic">Histórico de Contratações</h4>
                     <div class="conclusion_inputs">
-                        @foreach (var contratacao in Model)
+                        @if (!Model.Any())
                         {
-                            <div class="contract">
-                                @if (userRole == "Cliente")
-                                {
-                                    <label>Nome do profissional contratado</label>
-                                    <input type="text" value="@contratacao.Profissional.NomeUsuario" readonly>
-                                }
-                                else if (userRole == "Profissional")
-                                {
-                                    <label>Nome do paciente</label>
-                                    <input type="text" value="@contratacao.Cliente.NomeUsuario" readonly>
-                                }
-
-                                <label>Histórico de Período contratado</label>
-                                <input type="text" value="@($"Do dia {contratacao.DataInicio:dd/MM/yyyy} às {contratacao.HoraInicio} ao dia {contratacao.DataFim:dd/MM/yyyy} às {contratacao.HoraFim}")" readonly>
-
-                                <label>Valor recebido pelo serviço</label>
-                                <input type="text" value="@contratacao.Valor.ToString("C")" readonly>
-
-                                @if (userRole == "Cliente")
-                                {
-                                    <form method="post" action="@Url.Action("AvaliarProfissional", "Contratacao")">
-                                        <input type="hidden" name="contratacaoId" value="@contratacao.Id" />
-                                        <label for="nota">Deixe uma nota para o profissional</label>
-                                        <input type="number" name="nota" min="1" max="5" required placeholder="Atribua uma nota de 1 a 5">
-
-                                        <div class="especiais about">
-                                            <label for="comentario">Comentário</label>
-                                            <textarea placeholder="Conte-nos um pouco sobre sua experiência com este profissional!" name="comentario" required></textarea>
-                                        </div>
-
-                                        <div id="btn-order">
-                                            <button type="submit" class="cta_btn_primary">Enviar Avaliação</button>
-                                        </div>
-                                    </form>
-                                }
+                            <div class="no-contracts-message">
+                                <p>Que pena! Você ainda não possui nenhuma contratação na plataforma.</p>
                             </div>
+                        }
+                        else
+                        {
+                            @foreach (var contratacao in Model)
+                            {
+                                <div class="contract">
+                                    @if (userRole == "Cliente")
+                                    {
+                                        <label>Nome do profissional contratado</label>
+                                        <input type="text" value="@contratacao.Profissional.NomeUsuario" readonly>
+                                    }
+                                    else if (userRole == "Profissional")
+                                    {
+                                        <label>Nome do paciente</label>
+                                        <input type="text" value="@contratacao.Cliente.NomeUsuario" readonly>
+                                    }
+
+                                    <label>Histórico de Período contratado</label>
+                                    <input type="text" value="@($"Do dia {contratacao.DataInicio:dd/MM/yyyy} às {contratacao.HoraInicio} ao dia {contratacao.DataFim:dd/MM/yyyy} às {contratacao.HoraFim}")" readonly>
+
+                                    <label>Valor recebido pelo serviço</label>
+                                    <input type="text" value="@contratacao.Valor.ToString("C")" readonly>
+
+                                    @if (userRole == "Cliente")
+                                    {
+                                        <form method="post" action="@Url.Action("AvaliarProfissional", "Contratacao")">
+                                            <input type="hidden" name="contratacaoId" value="@contratacao.Id" />
+                                            <label for="nota">Deixe uma nota para o profissional</label>
+                                            <input type="number" name="nota" min="1" max="5" required placeholder="Atribua uma nota de 1 a 5">
+
+                                            <div class="especiais about">
+                                                <label for="comentario">Comentário</label>
+                                                <textarea placeholder="Conte-nos um pouco sobre sua experiência com este profissional!" name="comentario" required></textarea>
+                                            </div>
+
+                                            <div id="btn-order">
+                                                <button type="submit" class="cta_btn_primary">Enviar Avaliação</button>
+                                            </div>
+                                        </form>
+                                    }
+                                </div>
+                            }
                         }
                     </div>
                 </div>

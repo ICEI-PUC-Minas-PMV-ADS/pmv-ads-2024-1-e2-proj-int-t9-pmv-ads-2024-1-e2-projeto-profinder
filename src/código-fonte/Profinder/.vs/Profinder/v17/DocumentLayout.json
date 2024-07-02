@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\Profinder\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7C976063-6C04-4BE2-AFAB-2AB3F0179F1F}|Profinder\\Profinder.csproj|c:\\users\\bryan\\documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\profinder\\profinder\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7C976063-6C04-4BE2-AFAB-2AB3F0179F1F}|Profinder\\Profinder.csproj|solutionrelative:profinder\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C976063-6C04-4BE2-AFAB-2AB3F0179F1F}|Profinder\\Profinder.csproj|c:\\users\\bryan\\documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\profinder\\profinder\\wwwroot\\css\\sobre.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7C976063-6C04-4BE2-AFAB-2AB3F0179F1F}|Profinder\\Profinder.csproj|solutionrelative:profinder\\wwwroot\\css\\sobre.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C976063-6C04-4BE2-AFAB-2AB3F0179F1F}|Profinder\\Profinder.csproj|c:\\users\\bryan\\documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\profinder\\profinder\\views\\home\\sobre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7C976063-6C04-4BE2-AFAB-2AB3F0179F1F}|Profinder\\Profinder.csproj|solutionrelative:profinder\\views\\home\\sobre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C976063-6C04-4BE2-AFAB-2AB3F0179F1F}|Profinder\\Profinder.csproj|c:\\users\\bryan\\documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\profinder\\profinder\\views\\contratacao\\minhascontratacoes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7C976063-6C04-4BE2-AFAB-2AB3F0179F1F}|Profinder\\Profinder.csproj|solutionrelative:profinder\\views\\contratacao\\minhascontratacoes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C976063-6C04-4BE2-AFAB-2AB3F0179F1F}|Profinder\\Profinder.csproj|c:\\users\\bryan\\documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\profinder\\profinder\\wwwroot\\css\\minhas_contratacoes.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7C976063-6C04-4BE2-AFAB-2AB3F0179F1F}|Profinder\\Profinder.csproj|solutionrelative:profinder\\wwwroot\\css\\minhas_contratacoes.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C976063-6C04-4BE2-AFAB-2AB3F0179F1F}|Profinder\\Profinder.csproj|c:\\users\\bryan\\documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\profinder\\profinder\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7C976063-6C04-4BE2-AFAB-2AB3F0179F1F}|Profinder\\Profinder.csproj|solutionrelative:profinder\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7C976063-6C04-4BE2-AFAB-2AB3F0179F1F}|Profinder\\Profinder.csproj|c:\\users\\bryan\\documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\profinder\\profinder\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C976063-6C04-4BE2-AFAB-2AB3F0179F1F}|Profinder\\Profinder.csproj|solutionrelative:profinder\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,21 +42,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "etapa_1.css",
               "DocumentMoniker": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\Profinder\\Profinder\\wwwroot\\css\\etapa_1.css",
               "RelativeDocumentMoniker": "Profinder\\wwwroot\\css\\etapa_1.css",
               "ToolTip": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\Profinder\\Profinder\\wwwroot\\css\\etapa_1.css",
               "RelativeToolTip": "Profinder\\wwwroot\\css\\etapa_1.css",
-              "ViewState": "AQIAAJkAAAAAAAAAAAAAAK4AAAAbAAAA",
+              "ViewState": "AQIAAJYAAAAAAAAAAIBJwK4AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-06-25T00:53:19.904Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -60,7 +83,81 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MinhasContratacoes.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\Profinder\\Profinder\\Views\\Contratacao\\MinhasContratacoes.cshtml",
+              "RelativeDocumentMoniker": "Profinder\\Views\\Contratacao\\MinhasContratacoes.cshtml",
+              "ToolTip": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\Profinder\\Profinder\\Views\\Contratacao\\MinhasContratacoes.cshtml",
+              "RelativeToolTip": "Profinder\\Views\\Contratacao\\MinhasContratacoes.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T00:19:09.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "home.css",
+              "DocumentMoniker": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\Profinder\\Profinder\\wwwroot\\css\\home.css",
+              "RelativeDocumentMoniker": "Profinder\\wwwroot\\css\\home.css",
+              "ToolTip": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\Profinder\\Profinder\\wwwroot\\css\\home.css",
+              "RelativeToolTip": "Profinder\\wwwroot\\css\\home.css",
+              "ViewState": "AQIAAOQAAAAAAAAAAAAAAAMBAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-26T23:49:30.302Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\Profinder\\Profinder\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Profinder\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\Profinder\\Profinder\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Profinder\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEoAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T23:31:38.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "sobre.css",
+              "DocumentMoniker": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\Profinder\\Profinder\\wwwroot\\css\\sobre.css",
+              "RelativeDocumentMoniker": "Profinder\\wwwroot\\css\\sobre.css",
+              "ToolTip": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\Profinder\\Profinder\\wwwroot\\css\\sobre.css",
+              "RelativeToolTip": "Profinder\\wwwroot\\css\\sobre.css",
+              "ViewState": "AQIAAEQAAAAAAAAAAADwv2kAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-25T14:59:17.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Sobre.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\Profinder\\Profinder\\Views\\Home\\Sobre.cshtml",
+              "RelativeDocumentMoniker": "Profinder\\Views\\Home\\Sobre.cshtml",
+              "ToolTip": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\Profinder\\Profinder\\Views\\Home\\Sobre.cshtml",
+              "RelativeToolTip": "Profinder\\Views\\Home\\Sobre.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T14:54:27.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "minhas_contratacoes.css",
+              "DocumentMoniker": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\Profinder\\Profinder\\wwwroot\\css\\minhas_contratacoes.css",
+              "RelativeDocumentMoniker": "Profinder\\wwwroot\\css\\minhas_contratacoes.css",
+              "ToolTip": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\Profinder\\Profinder\\wwwroot\\css\\minhas_contratacoes.css",
+              "RelativeToolTip": "Profinder\\wwwroot\\css\\minhas_contratacoes.css",
+              "ViewState": "AQIAAD4BAAAAAAAAAAAAAF4BAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-27T00:25:15.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Bryan\\Documents\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-projeto-profinder\\src\\c\u00F3digo-fonte\\Profinder\\Profinder\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Profinder\\Controllers\\HomeController.cs",
@@ -68,8 +165,7 @@
               "RelativeToolTip": "Profinder\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAEwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T01:30:09.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T01:30:09.396Z"
             }
           ]
         }
