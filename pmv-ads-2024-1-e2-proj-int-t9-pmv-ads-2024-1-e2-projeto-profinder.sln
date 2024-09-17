@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+<<<<<<< Updated upstream
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{417FED32-323E-4899-B87E-37DDE29EF169}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "código-fonte", "código-fonte", "{AE61687A-D4CE-4A4F-9750-975EAFD56FD4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProFinder MVC", "src\código-fonte\POC exemplo\ProFinder MVC.csproj", "{28BAE4D7-17E4-40B3-A87B-7BB23BA26FBA}"
+=======
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B86EC6DA-561D-4EFF-B24C-7A9FF09B1407}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "código-fonte", "código-fonte", "{01C57A7E-5FDA-48E3-839A-592ACB61C9EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProFinder MVC", "src\código-fonte\POC exemplo\ProFinder MVC.csproj", "{899748BB-9727-42D3-967A-CE4B5A99815F}"
+>>>>>>> Stashed changes
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< Updated upstream
+		{28BAE4D7-17E4-40B3-A87B-7BB23BA26FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28BAE4D7-17E4-40B3-A87B-7BB23BA26FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28BAE4D7-17E4-40B3-A87B-7BB23BA26FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28BAE4D7-17E4-40B3-A87B-7BB23BA26FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{899748BB-9727-42D3-967A-CE4B5A99815F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{899748BB-9727-42D3-967A-CE4B5A99815F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{899748BB-9727-42D3-967A-CE4B5A99815F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{899748BB-9727-42D3-967A-CE4B5A99815F}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> Stashed changes
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+<<<<<<< Updated upstream
+		{AE61687A-D4CE-4A4F-9750-975EAFD56FD4} = {417FED32-323E-4899-B87E-37DDE29EF169}
+		{28BAE4D7-17E4-40B3-A87B-7BB23BA26FBA} = {AE61687A-D4CE-4A4F-9750-975EAFD56FD4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDCFE230-F23F-4E74-9B3B-A8A52DC37FA8}
+=======
+		{01C57A7E-5FDA-48E3-839A-592ACB61C9EC} = {B86EC6DA-561D-4EFF-B24C-7A9FF09B1407}
+		{899748BB-9727-42D3-967A-CE4B5A99815F} = {01C57A7E-5FDA-48E3-839A-592ACB61C9EC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F62021C-A527-44FC-A9DB-6D80CB1B0FD4}
+>>>>>>> Stashed changes
+	EndGlobalSection
+EndGlobal

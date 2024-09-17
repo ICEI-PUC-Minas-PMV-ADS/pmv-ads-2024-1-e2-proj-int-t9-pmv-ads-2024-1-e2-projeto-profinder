@@ -1,0 +1,282 @@
+﻿html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login {
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+}
+
+.line-separation {
+    border: 0.2px solid #ffd600;
+    width: 100%;
+}
+
+.form-login {
+    display: flex;
+    margin: 25vh auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-email, .user-pass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-email, .icon-secure {
+    margin-right: 10px;
+}
+
+.pass-invisible {
+    position: absolute;
+    right: 25%;
+}
+
+.button-login {
+    text-align: center;
+}
+
+.button-login > button {
+        background-color: #ffd600;
+        color: #fff;
+        font-size: large;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+}
+
+.input-login {
+    margin: 5px 0;
+    width: 100%;
+    max-width: 400px;
+    height: 35px;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+    font-style: italic;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    color: #b1b1b1;
+    margin-bottom: 0px;
+    padding: 5px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.input-login:focus {
+        border-color: #FFD600;
+}
+
+.login-area {
+    display: flex;
+    justify-content: center;
+}
+
+.login-btn {
+    margin-top: 15px;
+    width: 12rem;
+    height: 35px;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 51px;
+    margin-top: 25px;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide em duas colunas */
+    gap: 30px; /* Espaçamento entre os itens */
+    width: 100%; /* Ajusta a largura total */
+    max-width: 800px; /* Largura máxima */
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.control-label {
+    margin-bottom: 1px;
+}
+
+
+.form-group {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-area {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.login-area a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-area h6 {
+    font-size: 15px;
+}
+
+
+.login-btn {
+    margin-top: 15px;
+    width: 12rem;
+    height: 35px;
+}
+
+.cta_btn_primary {
+    background-color: var(--amarelo);
+    color: #ffffff;
+    height: 40px;
+    padding: 0;
+    font-size: 15px;
+    border-radius: 7px;
+    border: 1px solid #ffd600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+.cta_btn_secondary {
+    background-color: transparent;
+    color: var(--amarelo);
+    padding: 0;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 7px;
+    border: 1px solid var(--amarelo);
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+.messageError {
+    color: red;
+    margin: 0;
+}
+
+/* Configuração do botao de esconder a senha ou exibila */
+::-ms-reveal {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 3px currentColor;
+    background-color: #FFD600;
+    width: 20px;
+    height: 20px;
+}
+
+
+.especiais {
+    margin-top: 15px;
+}
+
+.especiais input {
+        margin: 5px 0;
+        width: 100%;
+        max-width: 400px;
+        height: 35px;
+        padding: 10px;
+        border: 1px solid #c5c5c5;
+        border-radius: 5px;
+        font-style: italic;
+        outline: none;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease;
+        color: #b1b1b1;
+        margin-bottom: 0px;
+        padding: 5px;
+        font-size: 14px;
+        color: #000000;
+}
+
+.especiais input:focus {
+    border-color: #FFD600;
+}
+
+.especiais textarea {
+        margin: 5px 0;
+        width: 100%;
+        max-width: 400px;
+        height: 35px;
+        padding: 10px;
+        border: 1px solid #c5c5c5;
+        border-radius: 5px;
+        font-style: italic;
+        outline: none;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease;
+        color: #b1b1b1;
+        margin-bottom: 0px;
+        padding: 5px;
+        font-size: 14px;
+        color: #000000;
+}
+
+.especiais textarea:focus {
+    border-color: #FFD600;
+}
+
+.about textarea {
+    height: 100px;
+    text-align: initial;
+    width: 100%; /* Ajusta a largura do textarea para ocupar todo o espaço disponível */
+    box-sizing: border-box;
+    resize: none;
+}
+
+.text-danger {
+    color: #ff0000;
+    font-size: 0.7em;
+}
+
+/* Estilo para que o botão de login exiba um efeito de "load" quando o usuário clicar */
+
+.spinner {
+    border: 4px solid #ffd600;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border-left-color: #fff;
+    animation: spin 1s ease infinite;
+    display: inline-block;
+    vertical-align: central;
+    margin-top: 3px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

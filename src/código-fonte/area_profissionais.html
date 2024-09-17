@@ -1,0 +1,139 @@
+<!--Desenvolvedor responsável: BRIAN--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/area_profissionais.css">
+    <link rel="stylesheet" href="/globals.css">
+    <script defer src="/js/profissionais.js"></script>
+    <title>ProFinder - Profissionais</title>
+
+
+<!-- MENU DE NAVEGAÇÃO-->
+    <header>
+            <div class="container-navegation">
+                <a href="/home.html"><img class="img-header" src="/img/logo.png" alt="Logo do site"></a>
+                
+                <div class="list-menu-finder">    
+                    <a href="/area_profissionais.html"><li>Profissionais</li></a>
+                    <a href="/area_minhas_contratacoes.html"><li>Minhas Contratações</li></a>
+                    <a href="/area_meu_perfil.html"><li>Meu Perfil</li></a>
+                    <a href="#"><li>Sair</li></a>
+                </div> 
+            </div>
+
+            <div class="ajust-icon">
+                <img class="search-icon" src="/img/search_icon.png" alt="icone de lupa">
+            </div>
+
+            <div class="area-search">
+                <input type="text" class="search-bar" id="searchInput" placeholder="">
+            </div>
+
+    </header>
+    <div class="line-style-top"></div>
+
+<!-- MENU DE NAVEGAÇÃO-->  
+
+
+<!-- FILTROS -->
+    <nav>
+        
+        <div class="filters-container">
+            <div class="img-filter"> <img src="/img/filters.png" alt="Ícone de filtro"></div>
+
+
+            <div class="filters-options">
+                <div class="filter-option" data-filter="option1">Cuidadores de Idosos</div>
+                <div class="filter-option" data-filter="option2">Alzheimer</div>
+                <div class="filter-option" data-filter="option3">Hipertensão</div>
+                <div class="filter-option" data-filter="option4">Depressão</div>
+                <div class="filter-option" data-filter="option5">Cuidadores de PCD</div>
+                <div class="filter-option" data-filter="option6">Deficiência Auditiva</div>
+                <div class="filter-option" data-filter="option7">Deficiência Visual</div>
+                <div class="filter-option" data-filter="option8">Deficiência Intelectual</div>
+                <div class="filter-option" data-filter="option9">Melhores Avaliações</div>
+
+                <button class="apply-filters cta_btn_primary" id="applyFilters">Aplicar</button>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="text-filters small">Filtros selecionados:
+        <div class="summary-options" id="selectedSummary"></div>
+    </div>
+        <!--inserir resumos via javascript-->
+    </div>
+
+<!-- FILTROS -->
+
+    <div class="line-style-base"></div>
+
+<!--ÁREA DOS CARDS-->
+    <p id="professional-title">Veja abaixo a lista de profissionais encontrados de acordo com os filtros selecionados:</p>
+    <div class="card-container">
+        <div class="card">
+            <div class="profile-picture">
+                <!--<img src="" alt="Foto do Profissional">-->
+                <div class="photo-example">
+                    <span>JS</span>
+                </div>
+                <h6 class="professional-name">João da Silva</h6>
+            </div>
+
+            <div class="cad-content">
+                
+                <p class="professional-bio">Quem sou eu</p>
+                <div class="professional-area"></div>
+
+                <p class="professional-qualifications">Minhas Qualificações</p>
+                    <div class="qualifications">
+                        <div class="qualifications-item">+ Enfermagem</div>
+                        <div class="qualifications-item">+ Gestão Hospitalar</div>
+                        <div class="qualifications-item">+ Psicologia</div>
+                        <div class="qualifications-item">+ Téc. em Cuidadores de Idosos</div>
+                    </div>
+
+                    
+                <div class="user-rating">
+                    <span class="rating">Avaliação dos usuários</span>
+                    <div class="rating-area">
+                        <p class="rating-text">Qualidade do Serviço</p>
+                        <p class="rating-text">Preço</p>
+                    </div>
+                </div>
+
+
+                <div class="comments">
+                    <div class="comment">Comentários</div>
+                    <div class="comment-area"></div>
+                </div>
+
+                <div class="btn-area">
+                    <a href="/contratação_etapa_1.html"><button class="cta_btn_primary btn-pro">Contratar</button></a>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+<!--ÁREA DOS CARDS-->
+
+
+<!--ÁREA DO FOOTER-->
+    <footer>
+        <p class="footer-obj">ACESSIBILIDADE</p>
+        <p class="footer-obj">TERMOS E CONDIÇÕES DO SITE</p>
+        <p class="footer-obj">PRIVACIDADE</p>
+        <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur fugiat 
+            illum odit. Asperiores sapiente id nostrum maiores odio nam. Rem totam quos mollitia!
+        </p>
+    </footer>
+
+<!--ÁREA DO FOOTER-->
+</head>
+</body>
+</html>

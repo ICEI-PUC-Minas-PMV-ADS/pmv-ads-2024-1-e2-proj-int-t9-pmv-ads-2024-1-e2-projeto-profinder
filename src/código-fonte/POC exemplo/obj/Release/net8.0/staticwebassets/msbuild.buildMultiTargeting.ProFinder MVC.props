@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ProFinder MVC.props" />
+</Project>

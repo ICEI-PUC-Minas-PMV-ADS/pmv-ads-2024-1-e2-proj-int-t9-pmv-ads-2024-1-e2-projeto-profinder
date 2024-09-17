@@ -1,0 +1,335 @@
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contratações {
+    width: 80%;
+}
+
+.container-profile {
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    border: 1px solid #FFD600;
+    width: 80%;
+    height: 720px;
+    margin: 25px;
+}
+
+
+.detail-top-menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    border-radius: 6px 6px 0px 0px;
+    background-color: #FFD600;
+}
+
+.detail-circle {
+    margin-top: 37px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #FFD600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .detail-circle p {
+        font-size: 1.7em;
+        font-weight: 700;
+        color: #FFD600;
+    }
+
+.Line1 {
+    display: flex;
+    justify-content: center;
+    height: 65px;
+}
+
+    .Line1 h4 {
+        font-size: 1.3em;
+        margin-top: 45px;
+    }
+
+.Line2 {
+    position: relative;
+    top: 30px;
+    margin-left: 20px;
+    color: #8F8F8F;
+}
+
+.Line-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 18px;
+}
+
+    .Line-grid input {
+        width: 70%;
+    }
+
+#espaçamento {
+    margin: 40px 0px 10px 0px;
+}
+
+.stage1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+
+.stage2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+
+.stage3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+
+.ajust-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.success-message {
+    color: #43d121;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+    .stage1 p, .stage2 p, .stage3 p {
+        font-weight: bold;
+    }
+
+    .stage1 input, .stage2 input, .stage3 input {
+        
+        width: 70%;
+        border-radius: 7px;
+        border: 0.5px solid #c5c5c5;
+        padding: 6px;
+        transition: border-color 0.3s ease;
+        color: #b1b1b1;
+    }
+
+        .stage1 input::placeholder, .stage2 input::placeholder, .stage3 input::placeholder {
+            color: #b1b1b1;
+            font-weight: 300;
+        }
+
+        .stage1 input:focus, .stage2 input:focus, .stage3 input:focus {
+            border-color: #FFD600;
+        }
+
+.campoP {
+    width: 75%;
+}
+
+.buttonSalvar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+    .buttonSalvar button {
+        background-color: #FFD600;
+        border: none;
+        color: white;
+        width: 15%;
+        padding: 6px 0px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.8s;
+    }
+
+        .buttonSalvar button:hover {
+            background-color: #ccad13e3;
+        }
+
+#espacoContatos {
+    position: relative;
+    right: 10px;
+    height: 25px;
+    color: #8F8F8F;
+    font-weight: normal;
+}
+
+#icon-senha {
+    position: relative;
+    bottom: 25px;
+    width: 10%;
+    left: 65%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#icon-senha2 {
+    position: relative;
+    bottom: 25px;
+    left: 31%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.not-null {
+    color: red;
+}
+
+
+.sobre_pro, .descricao_pro {
+    margin-left: 30px;
+    color: #8F8F8F;
+}
+
+.textarea_pro {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.campo_pro {
+    width: 100%;
+    margin: 0px 30px;
+    border-radius: 8px;
+    border: 1px solid #FFD600;
+    padding: 10px;
+}
+
+    .campo_pro::placeholder {
+        color: #b1b1b1;
+    }
+
+.linha_pro {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+    .linha_pro div {
+        width: 100%;
+        margin: 20px 30px 0px;
+        border: 1px solid #c5c5c5
+    }
+
+.formacao_pro {
+    display: flex;
+    margin: 0px 30px;
+    gap: 10px;
+    color: #b1b1b1;
+}
+
+    .formacao_pro p:nth-of-type(2) {
+        border: 1px solid #c5c5c5;
+        padding: 0px 5px;
+        border-radius: 2px;
+    }
+
+.campo_formacao {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nome_curso, .nome_instituicao, .campo_date {
+    width: 50%;
+    margin: 0px 30px;
+}
+
+.input_default {
+    border: 1px solid #FFD600;
+    border-radius: 5px;
+    width: 100%;
+    padding-left: 7px;
+}
+
+.descricao_pro {
+    color: black;
+}
+
+.add_pro {
+    display: flex;
+    justify-content: left;
+    margin-left: 30px;
+}
+
+    .add_pro p {
+        border: 1px solid #FFD600;
+        padding: 5px;
+        font-size: small;
+        color: #b1b1b1;
+        border-radius: 7px;
+        margin-top: 20px;
+    }
+
+    .add_pro span {
+        color: #FFD600;
+    }
+
+.pointEvent {
+    cursor: pointer;
+}
+
+
+.add_pro p:hover {
+    color: #8F8F8F;
+    box-shadow: 1px 1px 2px;
+    font-weight: 900;
+    transition: 0.5s;
+}
+
+.idioma_nivel {
+    display: flex;
+    margin-left: 30px;
+    gap: 32px;
+}
+
+    .idioma_nivel input, .idioma_nivel select {
+        position: relative;
+        bottom: 6px;
+        border: 1px solid #FFD600;
+        width: 80px;
+        border-radius: 7px;
+        padding: 2px;
+    }
+
+    .idioma_nivel p {
+        font-size: small;
+    }
+
+.bold_form {
+    font-weight: bold;
+}
+
+.formacaoDate {
+    display: flex;
+}
+
+.campo_date {
+    margin-top: 5px;
+    display: flex;
+    gap: 10%;
+}
+
+.bold_form_date {
+    font-size: small;
+    font-weight: bold;
+}
+
+.campo_date input {
+    width: 80%;
+}

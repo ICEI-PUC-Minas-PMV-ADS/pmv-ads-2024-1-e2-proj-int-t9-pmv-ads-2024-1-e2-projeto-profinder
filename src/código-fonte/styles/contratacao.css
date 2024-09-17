@@ -1,0 +1,232 @@
+@import '../globals.css';
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 922px;
+    width: 100%;
+
+}
+
+.step {
+    max-width: 225px;
+    height: 28px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 4px 10px;
+    text-align: center;
+}
+
+.line {
+    height: 2px;
+    background-color: #ccc;
+    flex: 1;
+    margin-inline: 5px;
+}
+
+.active {
+    background-color: var(--amarelo);
+    border-color: var(--amarelo);
+    /* ou a cor desejada para etapa ativa */
+}
+
+
+
+.professional_data {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-block: 25px;
+}
+
+.section-title {
+
+    color: #aaa9a9;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.professional_info {
+    align-items: center;
+}
+
+.professional-name {
+    font-weight: 600;
+}
+
+.filters-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+
+.filter-option {
+    padding: 0.3em 0.7em;
+    color: white;
+    border: 1px solid var(--amarelo);
+    background-color: var(--amarelo);
+    border-radius: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: contain;
+}
+
+.professional_description {
+    resize: none;
+    max-width: 528px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid var(--amarelo);
+}
+
+.professional_feedback {
+    max-width: 528px;
+    width: 100%;
+    border: 1px solid var(--amarelo);
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating p {
+    color: #aaa9a9;
+    font-style: italic;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-image: url('https://toppng.com/uploads/preview/5-point-stars-png-star-icon-flat-11562958768wpf63hu4tq.png');
+    /* Substitua 'star.png' com a imagem da estrela */
+    background-size: cover;
+    display: inline-block;
+    /* Adicionado */
+}
+
+.rating input:checked~label {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Empty_Star.svg/1024px-Empty_Star.svg.png');
+    /* Substitua 'star-filled.png' com a imagem da estrela preenchida */
+}
+
+.user_feedback_number {
+
+    border-radius: 7px;
+    padding-inline: 4px;
+    color: white;
+    background-color: var(--amarelo);
+    display: inline-block;
+}
+
+.user_quote {
+    color: #aaa9a9;
+    font-style: italic;
+}
+
+
+
+
+.vertical-progress-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.vertical-step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.vertical-step-number {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical-step.active .vertical-step-number {
+    background-color: green;
+    color: white;
+}
+
+.vertical-step-label {
+    font-size: 16px;
+}
+
+.vertical-progress-line {
+    width: 2px;
+    height: 40px;
+    /* Ajuste conforme necessário */
+    background-color: #ccc;
+    margin-inline: 14px;
+    /* Centralizar a linha */
+}
+
+.vertical-progress-line.active {
+    background-color: green;
+}
+
+.conclusion_inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.conclusion_inputs input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid var(--amarelo);
+}
+
+.payment_methods {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--amarelo);
+    border-radius: 7px;
+}
+
+.payment_methods a {
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--amarelo);
+}
+
+.payment_text {
+    flex: 1;
+    /* Ocupa o espaço restante */
+}
